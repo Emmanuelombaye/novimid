@@ -1,0 +1,2 @@
+explore-hero-guarantee{: explore-hero-guarantee{padding-top:0}.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee>img{display:none}.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee-card{background:#fbf8f1!important;border:2px solid #e1dbd6!important;box-shadow:none!important;font-family:var(--font-retro-body, "Figtree", system-ui, sans-serif);lett
+

@@ -1,0 +1,67 @@
+section .bg-white pt-5 tablet:pt-9 desktop:pt-6 pb-8 
+div .u-container 
+h1 .max-w-[37.0625rem] mx-auto text-center text-2xl xs:text-[1.75rem] tablet:text-[2.25rem] leading-[1] tracking-[-0.04em] 
+div .retro-explore-tabs-wrap 
+div .explore-tab-menu mx-auto mb-6 tablet:mb-8 grid data-active-index="0"
+button .explore-tab-link relative flex min-h-[4.5625rem] cursor-pointer items-center overflow-hidden rounded-xl data-explore-tab-link="weight-loss" data-active="true" data-tone="wl"
+span .explore-tab-border 
+span .explore-tab-fill 
+img .explore-tab-img pointer-events-none absolute bottom-0 max-h-[4.5rem] 
+button .explore-tab-link relative flex min-h-[4.5625rem] cursor-pointer items-center overflow-hidden rounded-xl data-explore-tab-link="longevity" data-active="false" data-tone="nad"
+span .explore-tab-border 
+span .explore-tab-fill 
+img .explore-tab-img pointer-events-none absolute bottom-0 max-h-[4.5rem] 
+button .explore-tab-link relative flex min-h-[4.5625rem] cursor-pointer items-center overflow-hidden rounded-xl data-explore-tab-link="muscle-recovery" data-active="false" data-tone="sermorelin"
+span .explore-tab-border 
+span .explore-tab-fill 
+img .explore-tab-img pointer-events-none absolute bottom-0 max-h-[4.5rem] 
+div .explore-tab-pane data-explore-tab-pane="weight-loss" data-active="true"
+section .explore-hero-section bg-white pb-10 xs:pb-14 tablet:pb-[6.25rem] 
+div .explore-hero-container u-container 
+div .explore-hero-grid flex flex-col gap-6 tablet:flex-row tablet:items-start tablet:gap-9 desktop:gap-8 
+div .explore-card explore-hero-card relative flex flex-col justify-between overflow-visible rounded-3xl data-card="wl"
+h2 .explore-hero-card-title mx-auto m-0 text-center text-[1.75rem] tablet:text-[2.5rem] desktop:text-[2.625rem] leading-[1] 
+img .explore-hero-card-price-badge 
+div .explore-hero-card-footer flex items-center justify-between gap-3 
+span .explore-hero-chip inline-flex items-center justify-center rounded-full text-xs font-medium leading-none 
+span .explore-hero-stock inline-flex items-center gap-1.5 rounded-full bg-[#d4ffd6] px-2 py-1 
+span .explore-stock-dot block w-1.5 h-1.5 rounded-full bg-[#14884c] 
+div .explore-hero-content flex flex-col w-full tablet:flex-1 desktop:max-w-[47%] 
+p .explore-hero-copy text-base leading-[1.5] tracking-[-0.01em] text-neutral-900 mb-0 desktop:mb-0 mb-4 
+div .explore-hero-products my-[18px] desktop:my-[18px] flex flex-row flex-wrap items-center gap-x-6 
+div .explore-hero-product flex items-center gap-2 
+div .explore-hero-product-thumb aspect-square w-[34px] max-w-[34px] overflow-clip rounded-full 
+div .explore-hero-product-copy 
+div .explore-hero-product-name text-sm font-medium text-neutral-900 
+div .explore-hero-product-desc 
+div .explore-hero-product flex items-center gap-2 
+div .explore-hero-product-thumb aspect-square w-[34px] max-w-[34px] overflow-clip rounded-full 
+div .explore-hero-product-copy 
+div .explore-hero-product-name text-sm font-medium text-neutral-900 
+div .explore-hero-product-desc 
+div .explore-hero-includes mb-5 grid gap-4 desktop:grid-cols-[0.75fr_1fr] desktop:items-center desktop:gap-4 grid-cols-1 
+div .explore-hero-plans 
+div .explore-hero-plans-label text-sm tracking-[-0.01em] text-neutral-900/40 
+div .explore-hero-plan-list mt-2.5 flex flex-col gap-3 
+div .explore-hero-plan-item flex items-center gap-3 text-sm tracking-[-0.01em] text-neutral-900 
+div .explore-hero-plan-icon flex aspect-square w-6 min-w-6 items-center justify-center overflow-clip 
+div .explore-hero-plan-item flex items-center gap-3 text-sm tracking-[-0.01em] text-neutral-900 
+div .explore-hero-plan-icon flex aspect-square w-6 min-w-6 items-center justify-center overflow-clip 
+div .explore-hero-plan-item flex items-center gap-3 text-sm tracking-[-0.01em] text-neutral-900 
+div .explore-hero-plan-icon flex aspect-square w-6 min-w-6 items-center justify-center overflow-clip 
+div .explore-hero-plan-item flex items-center gap-3 text-sm tracking-[-0.01em] text-neutral-900 
+div .explore-hero-plan-icon flex aspect-square w-6 min-w-6 items-center justify-center overflow-clip 
+div .explore-hero-guarantee relative pt-5 
+div .explore-hero-guarantee-card rounded-2xl bg-neutral-200 px-3 pt-8 pb-4 text-center text-xs 
+div .explore-hero-guarantee-heading 
+img .explore-hero-guarantee-logo 
+span .explore-hero-guarantee-rule 
+span .explore-hero-guarantee-word 
+div .explore-hero-divider mb-9 hidden h-px w-full bg-[#eee] tablet:block 
+div .explore-hero-pricing order-first mb-6 grid grid-cols-1 gap-3 text-center tablet:order-none 
+div .explore-hero-price-row flex items-center justify-between explore-hero-price-row--badge-only 
+div .explore-hero-price-label text-sm tracking-[-0.01em] text-neutral-900/40 
+div .explore-hero-price flex items-baseline gap-2 text-neutral-900 explore-hero-price--badge-only 
+img .explore-hero-price-badge 
+a .explore-hero-cta block w-full rounded-full bg-neutral-900 px-6 py-4 text-base 
+section .retro-happy data-before-after-treatment="weightLoss"

@@ -1,0 +1,2 @@
+.explore-card[data-card=wl]{border:2px solid var(--color-retro-ink);box-shadow:6px 8px 0 0 var(--color-retro-shadow)}
+.explore-card[data-card=wl] span.rounded-full:not(.explore-stock-dot){border:2px solid var(--color-retro-ink);box-shadow:2px 2px 0 0 var(--color-retro-shadow)}

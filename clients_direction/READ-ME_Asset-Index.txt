@@ -1,0 +1,26 @@
+NOVIMID BRAND ASSET PACKAGE
+===========================
+
+Novimid_Brand_Book_2026.pdf   Full brand identity guidelines (12 pages):
+                              logo system, color palette (hex), typography,
+                              icon rules, brand voice, taglines, usage rules.
+
+/Logos
+  Novimid_HORIZ-GRADIENT.png    Primary horizontal lockup (mark + wordmark)
+  Novimid_VERT-GRADIENT.svg     Vertical lockup, vector
+  Novimid_VERT-FLAT.png         Vertical lockup, flat color
+  Novimid_LOGOMARK-GRADIENT.*   N-mark only, gradient (PNG + SVG)
+  Novimid_LOGOMARK-FLAT.*       N-mark only, flat (PNG + SVG)
+  Novimid_LOGOMARK-LIGHT.*      N-mark only, light (for dark backgrounds)
+
+/Icons
+  Novimid_ICON-DARK_512.png     App / favicon icon, 512px  (Midnight Forest bg)
+  Novimid_ICON-DARK_1024.png    App icon, 1024px (App Store / high-res)
+  Novimid_ICON-DARK.svg         App icon, vector master
+  Novimid_ICON-LT.png           Light-background icon variant (web / OG use)
+
+NOTE: The dark icon uses the Midnight Forest (#2C3A35) background specified
+in the brand book for WCAG AA contrast. It replaces the earlier sage-green
+"ICON-DK" version, which did not meet the book's icon-background rule.
+
+For developers: prefer the SVG files wherever vector is supported.

@@ -1,0 +1,330 @@
+
+===== yucca_website.css =====
+
+===== yucca_index.css =====
+
+===== yucca_Tabs.css =====
+.explore-tab-menu[data-astro-cid-oniyb44h] {
+  max-width:606px;
+  grid-template-columns:240px 175px 175px;
+  gap:8px;
+  transition:grid-template-columns .3s ease,margin-left .3s ease;
+}
+.explore-tab-menu[data-astro-cid-oniyb44h] {
+  width:min(68rem,100% - var(--container-gutter, 1.5rem));
+  max-width:none;
+}
+.explore-tab-menu[data-astro-cid-oniyb44h] {
+  width:418px;
+  max-width:none;
+  grid-template-columns:184px 109px 109px;
+}
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="0"] {
+  grid-template-columns:240px 175px 175px;
+}
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="1"] {
+  grid-template-columns:175px 240px 175px;
+}
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="2"] {
+  grid-template-columns:175px 175px 240px;
+}
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="0"] {
+  grid-template-columns:48fr 35fr 35fr;
+}
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="1"] {
+  grid-template-columns:35fr 48fr 35fr;
+}
+.explore-tab-link[data-astro-cid-oniyb44h] {
+  box-shadow:0 0 0 .75px #00000014,-64px 64px 64px -32px #00000005,-32px 32px 32px -16px #00000005,-16px 16px 16px -8px #00000005,-8px 8px 8px -4px #00000005,-4px 4px 4px -2px #00000005,-2px 2px 2px -1px #00000005,-1px 1px 1px -.5px #00000005;
+}
+.explore-tab-link[data-astro-cid-oniyb44h][data-active=true] {
+  background-color:transparent;
+  box-shadow:none;
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false] {
+  background-color:#fff!important;
+  border:2px solid var(--color-retro-ink);
+  box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false]:hover {
+  transform:translate(2px,2px);
+  box-shadow:1px 2px 0 0 var(--color-retro-shadow)!important;
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false]:active {
+  transform:translate(3px,4px);
+  box-shadow:0 0 0 0 var(--color-retro-shadow)!important;
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=true] {
+  background-color:#e6e3ff!important;
+  border:2px solid var(--color-retro-ink);
+  box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;
+  transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease;
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=nad][data-active=true] {
+  background-color:#d7f3d3!important;
+  border:2px solid var(--color-retro-ink);
+  box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;
+  transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease;
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false] .explore-tab-img {
+  display:none!important;
+}
+.explore-tab-pane[data-astro-cid-oniyb44h] {
+  display:none;
+}
+.explore-tab-pane[data-astro-cid-oniyb44h][data-active=true] {
+  display:block;
+}
+.explore-tab-border[data-astro-cid-oniyb44h] {
+  position:absolute;
+  border-radius:12px;
+  padding:2px;
+}
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=wl] .explore-tab-border[data-astro-cid-oniyb44h] {
+  background:linear-gradient(135deg,#b9a9fe,#fee9d4);
+}
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=nad] .explore-tab-border[data-astro-cid-oniyb44h] {
+  background:linear-gradient(135deg,#81c777,#a6d69f);
+}
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=sermorelin] .explore-tab-border[data-astro-cid-oniyb44h] {
+  background:linear-gradient(135deg,#ffcb9b,#ffddbe);
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false]>span:not(.explore-tab-border):not(.explore-tab-fill) {
+  width:100%;
+}
+.explore-tab-fill[data-astro-cid-oniyb44h] {
+  position:absolute;
+  border-radius:10px;
+}
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=wl] .explore-tab-fill[data-astro-cid-oniyb44h] {
+  background:linear-gradient(135deg,#b9a9fe40,#fee9d440);
+}
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=nad] .explore-tab-fill[data-astro-cid-oniyb44h] {
+  background:linear-gradient(135deg,#81c77740,#a6d69f40);
+}
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=sermorelin] .explore-tab-fill[data-astro-cid-oniyb44h] {
+  background:linear-gradient(135deg,#ffcb9b40,#ffddbe40);
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false]>span:not(.explore-tab-border):not(.explore-tab-fill) {
+  width:100%;
+}
+.retro-explore-tabs-wrap .explore-hero-card-price-badge {
+  position:absolute;
+  right:24px;
+  bottom:78px;
+  display:block;
+  width:103.2px;
+}
+.retro-explore-tabs-wrap .explore-hero-card-price-badge {
+  right:18px;
+  bottom:62px;
+  width:6.825rem;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card {
+  width:100%;
+  max-width:none;
+  min-height:0;
+  padding:48px 38px 34px;
+}
+.retro-explore-tabs-wrap .explore-hero-card:has(.explore-hero-card-price-badge) {
+  position:relative!important;
+  overflow:hidden;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card-title {
+  max-width:220px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card-title {
+  max-width:520px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card-title {
+  max-width:330px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card-title {
+  max-width:390px;
+}
+.explore-card[data-astro-cid-oniyb44h][data-card=wl] {
+  background-image:url(/Personalized-GLP-1-Injections.avif),linear-gradient(#c2bbdc,#736b94);
+  background-position:50% 64%,0 0;
+  background-repeat:no-repeat,repeat;
+  background-size:39%,auto;
+}
+.explore-card[data-astro-cid-oniyb44h][data-card=wl] {
+  background-position:50% 65%,0 0;
+  background-size:142px,auto;
+}
+.explore-card[data-astro-cid-oniyb44h][data-card=nad] {
+  background-image:url(/yucca-health-product-nad.avif);
+  background-position:50%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.explore-card[data-astro-cid-oniyb44h][data-card=nad] {
+  background-image:url(/yucca-health-product-nad.avif),linear-gradient(#a8d7a1,#677e64);
+  background-position:50%,0 0;
+  background-repeat:no-repeat,repeat;
+  background-size:contain,auto;
+}
+.explore-card[data-astro-cid-oniyb44h][data-card=sermorelin] {
+  background-image:url(/expt-sermorelin-vial.png),linear-gradient(#ffdfc2,#c69161);
+  background-position:50% 58%,0 0;
+  background-repeat:no-repeat,repeat;
+  background-size:40%,auto;
+}
+.explore-card[data-astro-cid-oniyb44h][data-card=sermorelin] {
+  background-image:url(/expt-sermorelin-vial.png),linear-gradient(#ffcb9b,#a5774b);
+  background-position:50% 58%,0 0;
+  background-repeat:no-repeat,repeat;
+  background-size:48%,auto;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-card[data-card=nad] {
+  border:2px solid var(--color-retro-ink);
+  box-shadow:6px 8px 0 0 var(--color-retro-shadow);
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-card[data-card=wl] {
+  border:2px solid var(--color-retro-ink);
+  box-shadow:6px 8px 0 0 var(--color-retro-shadow);
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-grid {
+  position:relative;
+  display:block;
+  width:1440px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-grid {
+  grid-template-columns:minmax(320px,.95fr) minmax(0,1fr);
+  gap:28px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-grid {
+  gap:24px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid {
+  display:grid;
+  grid-template-columns:minmax(520px,.91fr) minmax(0,1fr);
+  gap:36px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid {
+  position:relative;
+  display:block;
+  width:1440px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid {
+  grid-template-columns:minmax(320px,.95fr) minmax(0,1fr);
+  gap:28px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid {
+  gap:24px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid {
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(360px,504px) minmax(0,1fr);
+  gap:clamp(32px,4vw,56px);
+  width:100%;
+}
+.retro-explore-tabs-wrap .explore-hero-content {
+  padding-top:0!important;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-content {
+  position:absolute;
+  left:720px;
+  top:95px;
+  display:block;
+  width:559px;
+  max-width:none;
+  padding:0;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-content {
+  max-width:none;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-content {
+  display:flex;
+  gap:24px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-content {
+  max-width:none;
+  padding-top:30px;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-content {
+  position:absolute;
+  left:720px;
+  top:42px;
+  display:block;
+  width:559px;
+  max-width:none;
+  padding:0;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-content {
+  gap:22px;
+  padding-top:0!important;
+  justify-content:flex-start!important;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-content {
+  display:flex;
+  gap:24px;
+}
+.retro-explore-tabs-wrap .ba-tag {
+  border:0!important;
+  box-shadow:none!important;
+}
+.retro-explore-tabs-wrap .ba-tag--after {
+  background:var(--color-retro-lavender)!important;
+}
+.retro-explore-tabs-wrap .ba-tag--before {
+  background:var(--color-retro-ink)!important;
+}
+.retro-explore-tabs-wrap .designed-section {
+  background:var(--color-retro-cream)!important;
+}
+.retro-explore-tabs-wrap .designed-cta-btn {
+  padding:0!important;
+  border:3px solid var(--color-retro-ink);
+  background:var(--color-retro-cream)!important;
+  box-shadow:6px 6px 0 0 var(--color-retro-shadow);
+  transition:transform .15s ease,box-shadow .15s ease!important;
+}
+.retro-explore-tabs-wrap .explore-hero-plans {
+  width:100%;
+}
+.retro-explore-tabs-wrap .designed-section h2 {
+  max-width:12.5em;
+  margin-left:auto;
+  margin-right:auto;
+}
+.retro-explore-tabs-wrap .explore-hero-pricing {
+  width:100%;
+  margin:0!important;
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=true] {
+  background-color:#e6e3ff!important;
+  border:2px solid var(--color-retro-ink);
+  box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;
+  transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease;
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=true]:hover {
+  transform:translate(2px,2px);
+  box-shadow:1px 2px 0 0 var(--color-retro-shadow)!important;
+}
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=true]:active {
+  transform:translate(3px,4px);
+  box-shadow:0 0 0 0 var(--color-retro-shadow)!important;
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-card[data-card=wl] {
+  border:2px solid var(--color-retro-ink);
+  box-shadow:6px 8px 0 0 var(--color-retro-shadow);
+}
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-card[data-card=wl] span.rounded-full:not(.explore-stock-dot) {
+  border:2px solid var(--color-retro-ink);
+  box-shadow:2px 2px 0 0 var(--color-retro-shadow);
+}
+VAR --color-retro-ink:#1f2a37;
+VAR --color-retro-ink-soft:#3b444f;
+VAR --color-retro-shadow:#181c24;
+VAR --color-retro-surface:#fff;
+VAR --color-retro-cream:#f2ede0;
+VAR --color-retro-orange:#f5a86a;
+VAR --color-retro-lavender:#c8bbfa;
+VAR --color-retro-sky-1:#598ebc;
+VAR --color-retro-sky-2:#b6bec5;
+VAR --color-retro-green:#6fcb6b;
+VAR --color-retro-yellow:#ffb400;
+VAR --color-retro-purple:#c8bbfa;

@@ -1,0 +1,76 @@
+{
+  "headline": "Explore our treatments below and choose what's best for you.",
+  "tabs": {
+    "weight-loss": "Weight Loss",
+    "longevity": "Longevity",
+    "muscle-recovery": "Muscle Recovery"
+  },
+  "categories": {
+    "weight-loss": {
+      "card_title": "Personalized GLP-1 Injections",
+      "summary": "A weekly treatment designed to support appetite suppression, metabolic optimization, and long-term weight management through GLP-1 receptor activation.",
+      "products": [
+        {
+          "name": "GLP-1 (Semaglutide)",
+          "description": "Gradual, effective results."
+        },
+        {
+          "name": "GLP-1 + GIP (Tirzepatide)",
+          "description": "Faster Results. Dual-action support."
+        }
+      ],
+      "includes_label": "All Plans Include:",
+      "includes": [
+        "Free Medical Consultation",
+        "Free Expedited Shipping",
+        "24/7 Dedicated Support",
+        "Access to Patient Portal"
+      ],
+      "guarantee": "Provider-guided care, medications from U.S. licensed pharmacies, and only charged if treatment is prescribed - with flexibility to change or cancel anytime.",
+      "price_label": "Starting as low as:",
+      "price_badge_alt": "Exclusive $125 per month lowest price ever, 6 month plan",
+      "cta": "See if I qualify",
+      "chip": "Most Popular",
+      "stock": "In Stock",
+      "social_proof": "1000+ bought in past week"
+    },
+    "longevity": {
+      "card_title": "NAD+ Injections",
+      "summary": "A treatment designed to support cellular energy, focus, metabolism, and healthy aging through replenishment of NAD+ levels.",
+      "products": [],
+      "includes_label": "All Plans Include:",
+      "includes": [
+        "Free Medical Consultation",
+        "Free Expedited Shipping",
+        "24/7 Dedicated Support",
+        "Access to Patient Portal"
+      ],
+      "guarantee": "Provider-guided care, medications from U.S. licensed pharmacies, and only charged if treatment is prescribed - with flexibility to change or cancel anytime.",
+      "price_label": "Starting as low as:",
+      "price_badge_alt": "Exclusive $158 per month lowest price ever, 3 month plan",
+      "cta": "See if I qualify",
+      "chip": "New",
+      "stock": "In Stock",
+      "social_proof": "100+ bought in past week"
+    },
+    "muscle-recovery": {
+      "card_title": "Sermorelin Injections",
+      "summary": "A daily peptide injection designed to support natural growth hormone production, energy, sleep quality, and recovery.",
+      "products": [],
+      "includes_label": "All Plans Include:",
+      "includes": [
+        "Free Medical Consultation",
+        "Free Expedited Shipping",
+        "24/7 Dedicated Support",
+        "Access to Patient Portal"
+      ],
+      "guarantee": "Provider-guided care, medications from U.S. licensed pharmacies, and only charged if treatment is prescribed - with flexibility to change or cancel anytime.",
+      "price_label": "Starting as low as:",
+      "price_badge_alt": "Exclusive $158 per month lowest price ever, 3 month plan",
+      "cta": "See if I qualify",
+      "chip": "New",
+      "stock": "In Stock",
+      "social_proof": "100+ bought in past week"
+    }
+  }
+}

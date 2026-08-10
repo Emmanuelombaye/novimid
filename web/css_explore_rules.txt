@@ -1,0 +1,852 @@
+=== yucca_index.css len=141284 ===
+main:has([data-explore-section-stack]) .retro-footer-wrap [class~="tablet:flex-row"]{flex-wrap:wrap}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack]{display:none}
+---
+html:not([data-explore-active-tab]) [data-astro-cid-23f53c3h][data-explore-section-stack=weight-loss],html[data-explore-active-tab=weight-loss] [data-astro-cid-23f53c3h][data-explore-section-stack=weight-loss],html[data-explore-active-tab=longevity] [data-astro-cid-23f53c3h][data-explore-section-stack=longevity],html[data-explore-active-tab=muscle-recovery] [data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery]{display:block;overflow-x:clip}
+---
+.retro-explore-why-wrap[data-astro-cid-23f53c3h] section{background:var(--color-retro-surface)}
+---
+.retro-explore-why-wrap[data-astro-cid-23f53c3h] article{border:2px solid var(--color-retro-ink);box-shadow:6px 8px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-sbs-wrap[data-astro-cid-23f53c3h] .bg-\[\#fbf8f1\]{background:var(--color-retro-cream)!important;border:2px solid var(--color-retro-ink);box-shadow:6px 8px 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-sbs-wrap[data-astro-cid-23f53c3h] [data-reviews-dot]{background:var(--color-retro-ink)!important}
+---
+.retro-explore-sbs-wrap[data-astro-cid-23f53c3h] [data-reviews-dot][data-active=true]{background:#1f2a3740!important}
+---
+.retro-explore-sbs-wrap[data-astro-cid-23f53c3h] [data-reviews-prev],.retro-explore-sbs-wrap[data-astro-cid-23f53c3h] [data-reviews-next]{border-width:2px;border-color:var(--color-retro-ink);background:var(--color-retro-surface);color:var(--color-retro-ink);box-shadow:3px 4px 0 0 var(--color-retro-shadow);transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease}
+---
+.retro-explore-sbs-wrap[data-astro-cid-23f53c3h] [data-reviews-prev]:hover,.retro-explore-sbs-wrap[data-astro-cid-23f53c3h] [data-reviews-next]:hover{background:var(--color-retro-surface);color:var(--color-retro-ink);transform:translate(2px,2px);box-shadow:1px 2px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-sbs-wrap[data-astro-cid-23f53c3h] [data-reviews-prev]:active,.retro-explore-sbs-wrap[data-astro-cid-23f53c3h] [data-reviews-next]:active{transform:translate(3px,4px);box-shadow:0 0 0 0 var(--color-retro-shadow)}
+---
+@media(max-width:767px){main:has([data-explore-section-stack]) .retro-happy{padding-bottom:32px}
+---
+html[data-explore-active-tab=longevity] .retro-home-reviews-filters[data-astro-cid-23f53c3h],html[data-explore-active-tab=muscle-recovery] .retro-home-reviews-filters[data-astro-cid-23f53c3h]{display:none}
+---
+@media(max-width:767px){html[data-explore-active-tab=weight-loss] .retro-home-closing[data-astro-cid-23f53c3h]{align-items:flex-start;height:640px;min-height:640px;padding:249px 20px 110px!important}
+---
+.retro-home-closing-bg--longevity[data-astro-cid-23f53c3h],.retro-home-closing-bg--muscle-recovery[data-astro-cid-23f53c3h],html[data-explore-active-tab=longevity] .retro-home-closing-bg--weight-loss[data-astro-cid-23f53c3h],html[data-explore-active-tab=muscle-recovery] .retro-home-closing-bg--weight-loss[data-astro-cid-23f53c3h]{display:none}
+---
+html[data-explore-active-tab=longevity] .retro-home-closing-bg--longevity[data-astro-cid-23f53c3h],html[data-explore-active-tab=muscle-recovery] .retro-home-closing-bg--muscle-recovery[data-astro-cid-23f53c3h]{display:block}
+---
+html[data-explore-active-tab=weight-loss] .retro-home-closing[data-astro-cid-23f53c3h]:after{background:transparent}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h]{background:#f2ede0;overflow-x:clip}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__visual[data-astro-cid-23f53c3h] .retro-clinical__vial[data-astro-cid-23f53c3h]{position:static;display:block;width:clamp(148px,12.7vw,183px);max-width:none;height:auto;margin:0 auto}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-product[data-astro-cid-23f53c3h]{--product-accent: #6fcb6b;--product-accent-border: #6fcb6b;--product-accent-soft: rgba(111, 203, 107, .14);--product-cta: #6fcb6b}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-product__top[data-astro-cid-23f53c3h]{align-items:start;grid-template-columns:85px minmax(0,1fr) 18px;column-gap:21px;min-height:117px;padding:16px 16px 29px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-product__intro[data-astro-cid-23f53c3h]{padding-top:4px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-product__thumb--nad[data-astro-cid-23f53c3h]{width:85px;height:85px;background:#eff7ec}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-product__check[data-astro-cid-23f53c3h]{display:flex}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__pricing[data-astro-cid-23f53c3h]{gap:7px;padding:28px 29px 24px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-plan[data-astro-cid-23f53c3h]{align-items:center;min-height:68px;grid-template-columns:26px minmax(0,1fr) auto;gap:10px;padding:10px 16px;border-radius:14px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-plan__name[data-astro-cid-23f53c3h]{gap:8px;font-size:16px;line-height:1.3;letter-spacing:0}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-plan__badge[data-astro-cid-23f53c3h]{padding:2px 7px;font-size:10px;line-height:1.3}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__cta[data-astro-cid-23f53c3h]{background:#6fcb6b;border-radius:14px;min-height:60px;margin-top:7px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h]{background:#f7f6f5;padding-bottom:80px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h]{padding-top:40px!important}
+---
+@media(min-width:768px){[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h]{padding-top:60px!important}
+---
+@media(min-width:992px){[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h]{padding-top:80px!important}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol__nad-vial[data-astro-cid-23f53c3h]{display:block;width:100%;height:auto;object-fit:contain;user-select:none;-webkit-user-drag:none}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h] .retro-protocol__right[data-astro-cid-23f53c3h]{gap:12px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h] .retro-protocol-card[data-astro-cid-23f53c3h]{position:relative;min-height:224px;padding:30px 35px 28px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h] .retro-protocol__cta[data-astro-cid-23f53c3h]{background:#6fcb6b;min-height:67px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-expect--nad[data-astro-cid-23f53c3h]{background:#c8bbfa;padding-top:80px;padding-bottom:75px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-expect--nad[data-astro-cid-23f53c3h] .retro-expect__grid[data-astro-cid-23f53c3h]{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:31px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-expect--nad[data-astro-cid-23f53c3h] .retro-expect-card[data-astro-cid-23f53c3h]{background:#fff;box-sizing:border-box;width:100%;min-height:0;padding:20px 20px 26px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-expect--nad[data-astro-cid-23f53c3h] .retro-expect-card__media[data-astro-cid-23f53c3h]{background:#fff;aspect-ratio:370 / 253}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-expect--nad[data-astro-cid-23f53c3h] .retro-expect-card__img[data-astro-cid-23f53c3h]{display:block;width:100%;height:100%;object-fit:cover}
+---
+@media(max-width:1199px){[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-expect--nad[data-astro-cid-23f53c3h] .retro-expect__grid[data-astro-cid-23f53c3h]{display:none}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-expect--nad[data-astro-cid-23f53c3h] .retro-expect__carousel[data-astro-cid-23f53c3h]{display:block;margin-top:30px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-knowall--nad[data-astro-cid-23f53c3h]{background:#f2ede0;padding-top:88px;padding-bottom:88px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-product__top[data-astro-cid-23f53c3h]{height:auto;min-height:117px;padding:16px 16px 29px;grid-template-columns:85px minmax(0,1fr) 18px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__pricing[data-astro-cid-23f53c3h]{position:static!important;left:auto;top:auto;width:auto!important;padding:28px 29px 24px;gap:7px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-plan[data-astro-cid-23f53c3h]{width:auto;height:auto;min-height:68px;padding:10px 16px;grid-template-columns:26px minmax(0,1fr) auto;gap:10px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-expect--nad[data-astro-cid-23f53c3h]{height:908px;padding-left:0;padding-right:0}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-expect--nad[data-astro-cid-23f53c3h] .retro-expect__grid[data-astro-cid-23f53c3h]{grid-template-columns:410px 411px 410px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h] .retro-protocol__inner[data-astro-cid-23f53c3h]{grid-template-columns:minmax(0,536px) minmax(0,673px);column-gap:71px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h]{padding-top:64px;padding-bottom:68px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol__nad-vials[data-astro-cid-23f53c3h]{display:none}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-protocol--nad[data-astro-cid-23f53c3h] .retro-protocol-card[data-astro-cid-23f53c3h]{min-height:0;padding:20px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h]{background:#f2ede0;overflow-x:clip}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__visual[data-astro-cid-23f53c3h] .retro-clinical__vial[data-astro-cid-23f53c3h]{position:static;display:block;width:clamp(148px,12.7vw,183px);max-width:none;height:auto;margin:0 auto}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-product[data-astro-cid-23f53c3h]{--product-accent: #ffbc7d;--product-accent-border: #ff9f4f;--product-accent-soft: rgba(255, 188, 125, .18);--product-cta: #ffbc7d}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-product__top[data-astro-cid-23f53c3h]{align-items:start;grid-template-columns:85px minmax(0,1fr) 18px;column-gap:21px;min-height:117px;padding:16px 16px 29px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-product__intro[data-astro-cid-23f53c3h]{padding-top:4px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-product__thumb--sermorelin[data-astro-cid-23f53c3h]{width:85px;height:85px;background:#ffdfc2}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-product__patients[data-astro-cid-23f53c3h]{display:flex;align-items:center;gap:4px;margin:3px 0 0;font-family:Figtree,system-ui,sans-serif;font-size:11px;font-weight:500;line-height:1.2;color:#1f2a3799}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-product__patients[data-astro-cid-23f53c3h]:before{content:"";width:4px;height:4px;border-radius:999px;background:#f5a86a;flex:0 0 auto}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-product__check[data-astro-cid-23f53c3h]{display:flex}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__pricing[data-astro-cid-23f53c3h]{gap:7px;padding:28px 29px 24px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-plan[data-astro-cid-23f53c3h]{align-items:center;min-height:68px;grid-template-columns:26px minmax(0,1fr) auto;gap:10px;padding:10px 16px;border-radius:14px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-plan[data-astro-cid-23f53c3h]:hover{border-color:#f5a86a}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-plan[data-astro-cid-23f53c3h][data-selected=true]{background:#f5a86a33;border-color:#f5a86a}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-plan[data-astro-cid-23f53c3h][data-selected=true] .retro-clinical-plan__radio[data-astro-cid-23f53c3h]{border-color:#f5a86a}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-plan[data-astro-cid-23f53c3h][data-selected=true] .retro-clinical-plan__radio[data-astro-cid-23f53c3h]:after{inset:4px;background:#f5a86a}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-plan__name[data-astro-cid-23f53c3h]{gap:8px;font-size:16px;line-height:1.3;letter-spacing:0}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-plan__badge[data-astro-cid-23f53c3h]{padding:2px 7px;background:#f5a86a;font-size:10px;line-height:1.3}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__cta[data-astro-cid-23f53c3h]{background:#f5a86a;border-radius:14px;min-height:60px;margin-top:7px}
+---
+@media(min-width:768px)and (max-width:1279px){[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h]{padding:80px clamp(32px,4vw,48px) 72px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__inner[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__inner[data-astro-cid-23f53c3h]{grid-template-columns:auto auto;grid-template-areas:"text text" "visual products";justify-content:center;align-items:center;column-gap:clamp(28px,4.5vw,64px);row-gap:40px;min-height:0}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__text[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__text[data-astro-cid-23f53c3h]{grid-area:text;width:min(560px,100%);max-width:560px;justify-self:center;text-align:center}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__visual[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__visual[data-astro-cid-23f53c3h]{grid-area:visual;position:relative;left:auto;top:auto;width:auto;height:auto;margin-top:0;transform:none;justify-self:end;align-self:center}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__plan-col[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__plan-col[data-astro-cid-23f53c3h]{grid-area:products;position:static;width:min(419px,42vw);max-width:419px;justify-self:start;align-self:center}
+---
+@media(max-width:767px){[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__inner[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__inner[data-astro-cid-23f53c3h]{grid-template-columns:minmax(0,1fr);grid-template-areas:none;justify-items:center;row-gap:32px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__visual[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__visual[data-astro-cid-23f53c3h]{grid-area:auto;position:relative;left:auto;top:auto;width:auto;height:auto;margin:0 auto;transform:none;justify-self:center;align-self:auto}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical__plan-col[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__plan-col[data-astro-cid-23f53c3h]{grid-area:auto;position:static;width:min(419px,100%);max-width:419px;justify-self:center;align-self:auto}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h]{background:#f7f6f5;padding-bottom:80px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h]{padding-top:40px!important}
+---
+@media(min-width:768px){[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h]{padding-top:60px!important}
+---
+@media(min-width:992px){[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h]{padding-top:80px!important}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol__sermorelin-vial[data-astro-cid-23f53c3h]{display:block;width:100%;height:auto;object-fit:contain;user-select:none;-webkit-user-drag:none}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h] .retro-protocol__right[data-astro-cid-23f53c3h]{gap:12px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h] .retro-protocol-card[data-astro-cid-23f53c3h]{position:relative;min-height:224px;padding:30px 35px 28px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h] .retro-protocol-card__icon[data-astro-cid-23f53c3h] img[data-astro-cid-23f53c3h]{display:block;width:100%;height:100%}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h] .retro-protocol__cta[data-astro-cid-23f53c3h]{background:#f5a86a;min-height:67px}
+---
+@media(min-width:100000px){[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h]{height:1050px;min-height:1050px;padding:0;overflow:hidden}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h] .retro-protocol__inner[data-astro-cid-23f53c3h]{position:relative;width:1440px;max-width:none;height:1050px;margin:0 auto;display:block}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h] .retro-protocol__left[data-astro-cid-23f53c3h]{position:absolute;top:52px;left:74px;width:557px;display:block}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h] .retro-protocol__right[data-astro-cid-23f53c3h]{position:absolute;top:80px;left:680px;width:673px;gap:12px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-expect--sermorelin[data-astro-cid-23f53c3h]{background:#c8bbfa;padding-top:80px;padding-bottom:75px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-expect--sermorelin[data-astro-cid-23f53c3h] .retro-expect__grid[data-astro-cid-23f53c3h]{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:31px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-expect--sermorelin[data-astro-cid-23f53c3h] .retro-expect-card[data-astro-cid-23f53c3h]{background:#fff;box-sizing:border-box;width:100%;min-height:0;padding:20px 20px 26px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-expect--sermorelin[data-astro-cid-23f53c3h] .retro-expect-card__media[data-astro-cid-23f53c3h]{background:#fff;aspect-ratio:370 / 253}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-expect--sermorelin[data-astro-cid-23f53c3h] .retro-expect-card__img[data-astro-cid-23f53c3h]{display:block;width:100%;height:100%;object-fit:cover}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-knowall--sermorelin[data-astro-cid-23f53c3h]{background:#f2ede0;padding-top:88px;padding-bottom:88px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-knowall--sermorelin[data-astro-cid-23f53c3h] .retro-knowall__cta[data-astro-cid-23f53c3h]{background:#f5a86a}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical__pricing[data-astro-cid-23f53c3h]{left:29px;top:131px;width:360px!important;padding:0;gap:7px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h]{height:1050px;min-height:1050px;padding:0}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h] .retro-protocol__inner[data-astro-cid-23f53c3h]{position:relative;width:1440px;max-width:none;height:1050px;display:block}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-expect--sermorelin[data-astro-cid-23f53c3h]{height:908px;padding-left:0;padding-right:0}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-expect--sermorelin[data-astro-cid-23f53c3h] .retro-expect__grid[data-astro-cid-23f53c3h]{grid-template-columns:410px 411px 410px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-knowall--sermorelin[data-astro-cid-23f53c3h] .retro-knowall__inner[data-astro-cid-23f53c3h]{max-width:1255px;grid-template-columns:536px 614px;column-gap:86px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-knowall--sermorelin[data-astro-cid-23f53c3h] .retro-knowall__vial[data-astro-cid-23f53c3h]{margin-top:28px;margin-left:220px;align-self:flex-start}
+---
+@media(max-width:1199px){[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-expect--sermorelin[data-astro-cid-23f53c3h] .retro-expect__grid[data-astro-cid-23f53c3h]{display:none}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-expect--sermorelin[data-astro-cid-23f53c3h] .retro-expect__carousel[data-astro-cid-23f53c3h]{display:block;margin-top:30px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h]{padding-top:64px;padding-bottom:68px}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol__sermorelin-vials[data-astro-cid-23f53c3h]{display:none}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-protocol--sermorelin[data-astro-cid-23f53c3h] .retro-protocol-card[data-astro-cid-23f53c3h]{min-height:0;padding:20px}
+---
+.retro-clinical-plan[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical--nad[data-astro-cid-23f53c3h] .retro-clinical-plan[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical--sermorelin[data-astro-cid-23f53c3h] .retro-clinical-plan[data-astro-cid-23f53c3h]{min-height:0!important;height:auto!important;padding-top:16px!important;padding-bottom:16px!important}
+---
+.explore-hero-section,.retro-happy,.retro-protocol,.retro-calculator,.retro-clinical,.retro-expect,.retro-knowall,.retro-home-reviews,.retro-home-why,.retro-home-closing{padding-bottom:60px!important}
+---
+.retro-happy,.retro-protocol,.retro-calculator,.retro-home-why,html[data-explore-active-tab=weight-loss] .retro-home-reviews{padding-top:0!important}
+---
+html[data-explore-active-tab=longevity] .retro-home-reviews,html[data-explore-active-tab=muscle-recovery] .retro-home-reviews{padding-top:60px!important}
+---
+@media(min-width:768px){.explore-hero-section,.retro-happy,.retro-protocol,.retro-calculator,.retro-clinical,.retro-expect,.retro-knowall,.retro-home-reviews,.retro-home-why,.retro-home-closing{padding-bottom:60px!important}
+---
+.retro-clinical,.retro-expect,.retro-knowall,.retro-home-closing,.retro-footer-wrap,html[data-explore-active-tab=longevity] .retro-home-reviews,html[data-explore-active-tab=muscle-recovery] .retro-home-reviews{padding-top:60px!important}
+---
+@media(min-width:992px){.explore-hero-section,.retro-happy,.retro-protocol,.retro-calculator,.retro-clinical,.retro-expect,.retro-knowall,.retro-home-reviews,.retro-home-why,.retro-home-closing{padding-bottom:80px!important}
+---
+.retro-clinical,.retro-expect,.retro-knowall,.retro-home-closing,.retro-footer-wrap,html[data-explore-active-tab=longevity] .retro-home-reviews,html[data-explore-active-tab=muscle-recovery] .retro-home-reviews{padding-top:80px!important}
+---
+@media(max-width:767px){.retro-protocol,html[data-explore-active-tab=weight-loss] .retro-happy,html[data-explore-active-tab=longevity] .retro-happy,html[data-explore-active-tab=muscle-recovery] .retro-happy,html[data-explore-active-tab=weight-loss] .retro-calculator{padding-bottom:60px!important}
+---
+html[data-explore-active-tab=weight-loss] .retro-clinical{padding-top:60px!important}
+---
+@media(min-width:768px){[data-astro-cid-23f53c3h][data-explore-section-stack=weight-loss] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--weight-loss .retro-clinical__inner[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--nad .retro-clinical__inner[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--sermorelin .retro-clinical__inner[data-astro-cid-23f53c3h]{grid-template-columns:minmax(0,35rem) minmax(15rem,20rem);grid-template-areas:"text visual";justify-content:center;align-items:center;column-gap:clamp(32px,6vw,88px);row-gap:0}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=weight-loss] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--weight-loss .retro-clinical__text[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--nad .retro-clinical__text[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--sermorelin .retro-clinical__text[data-astro-cid-23f53c3h]{grid-area:text;width:100%;max-width:35rem;justify-self:end;text-align:left}
+---
+[data-astro-cid-23f53c3h][data-explore-section-stack=weight-loss] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--weight-loss .retro-clinical__visual[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--nad .retro-clinical__visual[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--sermorelin .retro-clinical__visual[data-astro-cid-23f53c3h]{grid-area:visual;justify-self:center;align-self:center;margin-top:0}
+---
+@media(max-width:767px){[data-astro-cid-23f53c3h][data-explore-section-stack=weight-loss] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--weight-loss .retro-clinical__inner[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=longevity] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--nad .retro-clinical__inner[data-astro-cid-23f53c3h],[data-astro-cid-23f53c3h][data-explore-section-stack=muscle-recovery] .retro-clinical[data-astro-cid-23f53c3h].retro-clinical--sermorelin .retro-clinical__inner[data-astro-cid-23f53c3h]{grid-template-columns:minmax(0,1fr);grid-template-areas:"text" "visual";row-gap:32px}
+---
+=== yucca_retro.css len=106333 ===
+=== yucca_Tabs.css len=93477 ===
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=sermorelin][data-active=true]{background-color:#fee7d1!important;border:2px solid var(--color-retro-ink);box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;color:var(--color-retro-ink);transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=sermorelin][data-active=true] .explore-tab-border,.retro-explore-tabs-wrap .explore-tab-link[data-tone=sermorelin][data-active=true] .explore-tab-fill{opacity:0!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=sermorelin][data-active=true]:hover{transform:translate(2px,2px);box-shadow:1px 2px 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=sermorelin][data-active=true]:active{transform:translate(3px,4px);box-shadow:0 0 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-card[data-card=sermorelin]{background-position:50% 62%,0 0;background-size:28% auto,auto;border:2px solid var(--color-retro-ink);box-shadow:none;color:var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-card[data-card=sermorelin] span.rounded-full:not(.explore-stock-dot){border:2px solid var(--color-retro-ink);box-shadow:2px 2px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .bg-neutral-200.rounded-full{background:var(--color-retro-cream)!important;border:1.5px solid var(--color-retro-ink);color:var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .rounded-2xl.bg-neutral-200{background:var(--color-retro-cream)!important;border:2px solid var(--color-retro-ink);box-shadow:6px 8px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee{padding-top:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee>img{display:none}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee-card{background:#fbf8f1!important;border:2px solid #e1dbd6!important;box-shadow:none!important;font-family:var(--font-retro-body, "Figtree", system-ui, sans-serif);letter-spacing:0!important;line-height:150%!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee-heading{display:inline-flex;align-items:center;justify-content:center;gap:5px;margin-bottom:10px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee-logo{display:block;width:56px;height:auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee-rule{display:block;width:13px;height:1px;background:#1f2a37;opacity:.28;transform:rotate(90deg)}
+---
+@media(min-width:992px){.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee-card{width:265px;height:142px;padding:23px 16px 18px;border-radius:12px;font-size:12px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] a.bg-neutral-900{border:2px solid var(--color-retro-ink);box-shadow:3px 4px 0 0 var(--color-retro-shadow);transition:transform .15s ease,box-shadow .15s ease}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] a.bg-neutral-900:hover{transform:translate(2px,2px) scale(1);box-shadow:1px 2px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] a.bg-neutral-900:active{transform:translate(3px,4px) scale(1);box-shadow:0 0 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] section:not(.designed-section) a.bg-neutral-900{background:var(--color-retro-orange)!important;color:var(--color-retro-ink)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .designed-section a.bg-neutral-900{background:var(--color-retro-green)!important;color:var(--color-retro-ink)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .designed-cta-btn{background:var(--color-retro-surface)!important}
+---
+@media(max-width:767px){.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-card[data-card=sermorelin]{background-position:50% 65%,0 0;background-size:34% auto,auto}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=nad][data-active=true]{background-color:#d7f3d3!important;border:2px solid var(--color-retro-ink);box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;color:var(--color-retro-ink);transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=nad][data-active=true] .explore-tab-border,.retro-explore-tabs-wrap .explore-tab-link[data-tone=nad][data-active=true] .explore-tab-fill{opacity:0!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=nad][data-active=true]:hover{transform:translate(2px,2px);box-shadow:1px 2px 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=nad][data-active=true]:active{transform:translate(3px,4px);box-shadow:0 0 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-card[data-card=nad]{border:2px solid var(--color-retro-ink);box-shadow:6px 8px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-card[data-card=nad] span.rounded-full:not(.explore-stock-dot){border:2px solid var(--color-retro-ink);box-shadow:2px 2px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-stock,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-stock{box-shadow:none!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .bg-neutral-200.rounded-full{background:var(--color-retro-cream)!important;border:1.5px solid var(--color-retro-ink);color:var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .rounded-2xl.bg-neutral-200{background:var(--color-retro-cream)!important;border:2px solid var(--color-retro-ink);box-shadow:6px 8px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] a.bg-neutral-900{border:2px solid var(--color-retro-ink);box-shadow:3px 4px 0 0 var(--color-retro-shadow);transition:transform .15s ease,box-shadow .15s ease}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] a.bg-neutral-900:hover{transform:translate(2px,2px) scale(1);box-shadow:1px 2px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] a.bg-neutral-900:active{transform:translate(3px,4px) scale(1);box-shadow:0 0 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] section:not(.designed-section) a.bg-neutral-900{background:#81c777!important;color:var(--color-retro-ink)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .designed-section a.bg-neutral-900{background:var(--color-retro-green)!important;color:var(--color-retro-ink)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .designed-cta-btn{background:var(--color-retro-surface)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad]{color:var(--color-retro-ink);background-image:url(/Nad-Yucca-Image.avif),linear-gradient(180deg,#d7ead6,#a6cca5);background-repeat:no-repeat,repeat;box-shadow:none!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-plan-icon{background:var(--color-retro-cream)!important;border:1.5px solid var(--color-retro-ink);color:var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee{padding-top:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee>img{display:none}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee-card{background:#fbf8f1!important;border:2px solid #e1dbd6!important;box-shadow:none!important;font-family:var(--font-retro-body, "Figtree", system-ui, sans-serif);letter-spacing:0!important;line-height:150%!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee-heading{display:inline-flex;align-items:center;justify-content:center;gap:5px;margin-bottom:10px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee-logo{display:block;width:56px;height:auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee-rule{display:block;width:13px;height:1px;background:#1f2a37;opacity:.28;transform:rotate(90deg)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-cta,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .designed-section a.bg-neutral-900,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .designed-cta-btn{align-items:center;border:2px solid var(--color-retro-ink)!important;box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;display:inline-flex!important;font-family:var(--font-retro-body, "Figtree", system-ui, sans-serif);font-size:16px!important;font-weight:700!important;justify-content:center;letter-spacing:0!important;line-height:1!important;transition:transform .15s ease-out,box-shadow .15s ease-out!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-cta:hover,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-cta:active,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .designed-section a.bg-neutral-900:hover,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .designed-section a.bg-neutral-900:active,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .designed-cta-btn:hover,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .designed-cta-btn:active{transform:translate(2px,3px) scale(1)!important;box-shadow:0 0 0 0 var(--color-retro-shadow)!important}
+---
+@media(min-width:100000px){.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-section{height:676.67px;padding-bottom:0!important;overflow-x:clip}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-container{position:relative;left:50%;width:1440px;max-width:none;height:676.67px;margin:0;padding:0;transform:translate(-50%)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-grid{position:relative;display:block;width:1440px;height:676.67px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad]{position:absolute;left:168.5px;top:0;width:504.2px;height:576.67px;min-height:0;max-width:none;aspect-ratio:auto;padding:24px 28px 25px;background-position:50% 153px,0 0;background-size:145px auto,auto;border-width:2px;border-radius:24px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-stock{border:1.5px solid var(--color-retro-ink);box-shadow:none!important;font-size:12px;line-height:1}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-chip{padding:5.5px 8px;color:#b8437e}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-stock{padding:5px 12px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-content{position:absolute;left:720px;top:95px;display:block;width:559px;height:403px;max-width:none;padding:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-includes{position:absolute;left:0;top:72px;display:block;width:559px;height:160px;margin:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-plan-list{gap:12px;margin-top:8px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-plan-item{gap:12px;height:24px;font-size:16px;line-height:20px!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee{position:absolute;left:296px;top:18px;width:265px;height:142px;padding:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee-card{width:265px;height:142px;padding:23px 16px 18px;border-radius:12px;font-size:12px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-divider{position:absolute;left:0;top:256px;display:block;width:561px;height:1px;margin:0;background:#eee}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-pricing{position:absolute;left:0;top:281px;display:block;width:559px;height:122px;margin:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-price{gap:8px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-price-strike{display:none}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-cta{position:absolute;left:0;top:42px;width:559px;min-height:0;height:52px;padding:0;border-width:2px!important;background:#81c777!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-grid,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-grid{position:static;display:grid;grid-template-columns:504px minmax(0,1fr);column-gap:47.3px;align-items:start;width:auto;height:auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad],.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-card[data-card=sermorelin]{position:static;left:auto;top:auto;width:504px!important;max-width:none!important;aspect-ratio:480 / 549!important;min-height:0;height:auto;padding:24px 28px 25px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad]{background-position:50% 64%,0 0;background-size:clamp(138px,13vw,145px) auto,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-card[data-card=sermorelin]{background-position:50% 62%,0 0;background-size:clamp(138px,13vw,145px) auto,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-grid{grid-template-columns:minmax(320px,.95fr) minmax(0,1fr);gap:28px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad]{min-height:560px;background-position:50% 62%,0 0;background-size:150px auto,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-includes{grid-template-columns:1fr;gap:18px}
+---
+@media(max-width:767px){.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-section{padding-bottom:56px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-grid{gap:24px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad]{height:520px;background-position:50% 82%,0 0;background-size:155px auto,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-content{display:flex;gap:24px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-includes{display:grid;grid-template-columns:1fr;gap:22px;margin:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee-card{border-radius:14px;padding:24px 18px 20px;font-size:14px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-price-row{align-items:flex-start;flex-direction:column;gap:8px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-price{justify-content:flex-start}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-cta{min-height:52px;background:#81c777!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=true]{background-color:#e6e3ff!important;border:2px solid var(--color-retro-ink);box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;color:var(--color-retro-ink);transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=true] .explore-tab-border,.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=true] .explore-tab-fill{opacity:0!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=true]:hover{transform:translate(2px,2px);box-shadow:1px 2px 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=true]:active{transform:translate(3px,4px);box-shadow:0 0 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-card[data-card=wl]{border:2px solid var(--color-retro-ink);box-shadow:6px 8px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-card[data-card=wl] span.rounded-full:not(.explore-stock-dot){border:2px solid var(--color-retro-ink);box-shadow:2px 2px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .w-\[34px\].rounded-full{border:1.5px solid var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .bg-neutral-200.rounded-full{background:var(--color-retro-cream)!important;border:1.5px solid var(--color-retro-ink);color:var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .rounded-2xl.bg-neutral-200{background:var(--color-retro-cream)!important;border:2px solid var(--color-retro-ink);box-shadow:6px 8px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] a.bg-neutral-900{border:2px solid var(--color-retro-ink);box-shadow:3px 4px 0 0 var(--color-retro-shadow);transition:transform .15s ease,box-shadow .15s ease}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] a.bg-neutral-900:hover{transform:translate(2px,2px) scale(1);box-shadow:1px 2px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] a.bg-neutral-900:active{transform:translate(3px,4px) scale(1);box-shadow:0 0 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] section:not(.designed-section) a.bg-neutral-900{background:#b9a9fe!important;color:var(--color-retro-ink)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card[data-card=wl]{color:var(--color-retro-ink);background-image:url(/Personalized-GLP-1-Injections.avif),linear-gradient(180deg,#ded8fb,#cfc5f7);background-position:50% 64%,0 0;background-repeat:no-repeat,repeat;background-size:47%,auto;border-width:3px;box-shadow:none}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-stock{border:2px solid var(--color-retro-ink);box-shadow:none!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product{align-items:flex-start}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-thumb{width:64px!important;max-width:64px!important;border:0!important;border-radius:14px!important;flex:0 0 64px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product:first-child .explore-hero-product-thumb{background:#b9a9fe}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product:nth-child(2) .explore-hero-product-thumb{background:#ffc58f}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-tag{display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:3px 13px;border:2px solid currentColor;border-radius:999px;background:#fff;font-weight:700;font-size:13px;line-height:1;letter-spacing:-.01em}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-plan-icon{background:var(--color-retro-cream)!important;border:1.5px solid var(--color-retro-ink);color:var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee{padding-top:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee>img{display:none}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card{background:#fbf8f1!important;border:2px solid #dedbd4!important;box-shadow:none!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card:before{content:"yücca.  Guarantee";display:block;margin-bottom:12px;font-size:22px;line-height:1;font-weight:600;font-style:italic;letter-spacing:-.03em;color:var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-divider{background:#ececec}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-cta{min-height:64px;display:inline-flex!important;align-items:center;justify-content:center;border:3px solid var(--color-retro-ink)!important;border-radius:999px;background:#b6a5f5!important;box-shadow:0 8px 0 0 var(--color-retro-shadow)!important;font-weight:700}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-cta:hover{transform:translateY(3px) scale(1);box-shadow:0 5px 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-cta:active{transform:translateY(7px) scale(1);box-shadow:0 1px 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid{display:grid;grid-template-columns:minmax(520px,.91fr) minmax(0,1fr);gap:36px;align-items:stretch}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card{width:100%;max-width:none;min-height:0;padding:48px 38px 34px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-stock{padding:7px 15px;font-size:15px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-content{max-width:none;justify-content:center;padding-top:30px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-products{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:34px;align-items:start;margin:0 0 30px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product{gap:18px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-includes{grid-template-columns:minmax(290px,.95fr) minmax(0,1fr);align-items:center;gap:30px;margin-bottom:28px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-plan-list{gap:14px;margin-top:14px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-plan-item{gap:16px;font-size:clamp(18px,1.55vw,23px);font-weight:700;letter-spacing:-.02em}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card{min-height:0;border-radius:18px;padding:24px 24px 22px;font-size:15px;line-height:1.34}
+---
+@media(max-width:767px){.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card[data-card=wl]{height:520px;padding:30px 22px 22px;background-size:220px,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-products{align-items:flex-start;margin-bottom:28px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card{padding:26px 20px 22px;font-size:16px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-price-row{gap:14px;align-items:flex-end}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-price{flex-wrap:wrap;justify-content:flex-end}
+---
+@media(min-width:992px){.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-section{height:676.67px;padding-bottom:0!important;overflow-x:clip}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-container{position:relative;left:50%;width:1440px;max-width:none;height:676.67px;margin:0;padding:0;transform:translate(-50%)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid{position:relative;display:block;width:1440px;height:676.67px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card[data-card=wl]{position:absolute;left:168.5px;top:0;width:519.2px;height:593.83px;min-height:0;max-width:none;aspect-ratio:auto;padding:33px 28px 25px;background-position:50% 58%,0 0;background-size:42%,auto;border-radius:24px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-stock{padding:5px 12px;font-size:12px;border-width:1.5px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-content{position:absolute;left:720px;top:42px;display:block;width:559px;height:auto;max-width:none;padding:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-products{position:relative;display:block;width:564px;height:71px;margin:16px 0 0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product{position:absolute;top:0;display:block;height:71px;gap:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-thumb{position:absolute;left:0;top:0;width:48px!important;max-width:48px!important;height:48px;border-radius:8px!important;flex-basis:48px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-tags{gap:6px;margin-top:11px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-tag{min-height:20px;padding:3px 10px;border-width:1.5px;font-size:12px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-includes{position:relative;display:block;width:559px;min-height:160px;margin:20px 0 0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-plan-list{gap:12px;margin-top:8px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-plan-item{gap:12px;min-height:24px;font-size:16px;line-height:20px;font-weight:700;letter-spacing:-.01em}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee{position:absolute;left:296px;top:18px;width:265px;height:142px;padding:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card{width:265px;height:142px;padding:21px 16px 20px;border-radius:10px;font-size:12px;line-height:1.5;letter-spacing:-.01em}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-divider{position:static;display:block;width:559px;height:1px;margin:24px 0 0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-pricing{position:relative;display:block;width:559px;height:122px;margin:24px 0 0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-cta{position:absolute;left:0;top:42px;width:559px;min-height:0;height:52px;padding:0;border-width:2px!important;box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;font-size:16px;line-height:1}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-title-row{display:flex;align-items:center;gap:8px;min-width:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-name{min-width:0;flex:0 0 auto;font-family:var(--font-retro-body, "Figtree", system-ui, sans-serif);font-weight:700;letter-spacing:0!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-tags{display:inline-flex;align-items:center;flex:0 0 auto;gap:6px;margin:0!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-cta,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .designed-section a.bg-neutral-900,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .designed-cta-btn{border:2px solid var(--color-retro-ink)!important;box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;font-family:var(--font-retro-body, "Figtree", system-ui, sans-serif);font-size:16px!important;font-weight:700!important;letter-spacing:0!important;line-height:1!important;transition:transform .15s ease-out,box-shadow .15s ease-out!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-cta:hover,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-cta:active,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .designed-section a.bg-neutral-900:hover,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .designed-section a.bg-neutral-900:active,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .designed-cta-btn:hover,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .designed-cta-btn:active{transform:translate(2px,3px) scale(1)!important;box-shadow:0 0 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-tag{min-height:20px;padding:3px 9px;font-size:12px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card{padding:23px 16px 18px;font-size:12px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-heading{display:inline-flex;align-items:center;justify-content:center;gap:5px;margin-bottom:10px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-logo{display:block;width:56px;height:auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-rule{display:block;width:13px;height:1px;background:#1f2a37;opacity:.28;transform:rotate(90deg)}
+---
+@media(min-width:992px){.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card[data-card=wl]{left:168.5px;width:504.2px;height:576.67px;padding:24px 28px 25px;background-position:50% 64%,0 0;background-size:38.7% auto,auto;border-width:2px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-tag{min-height:20px;padding:4px 10px;font-size:10px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card{padding:23px 16px 18px;font-size:12px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid{grid-template-columns:minmax(320px,.95fr) minmax(0,1fr);gap:28px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card[data-card=wl]{min-height:560px;padding:32px 24px 22px;background-position:50% 66%,0 0;background-size:min(44%,190px) auto,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card-footer{display:grid;grid-template-columns:minmax(96px,1fr) auto auto;gap:10px;align-items:end;font-size:16px;line-height:1.18}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-stock{padding:7px 13px;font-size:15px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-content{gap:22px;padding-top:0!important;justify-content:flex-start!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-products,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-includes{grid-template-columns:1fr;gap:18px;margin:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;align-items:start;width:100%}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-thumb{width:64px!important;max-width:64px!important;flex-basis:64px;border-radius:12px!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-title-row{flex-wrap:wrap;gap:8px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-plan-item{gap:14px;font-size:18px;line-height:125%!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card{padding:22px 18px 20px;font-size:14px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-grid,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-grid{grid-template-columns:minmax(320px,.95fr) minmax(0,1fr);gap:28px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad],.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-card[data-card=sermorelin],.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-card[data-card=sermorelin]{min-height:560px;padding:32px 24px 22px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad]{background-position:50% 62%,0 0;background-size:150px auto,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-card[data-card=sermorelin],.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-card[data-card=sermorelin]{background-position:50% 64%,0 0;background-size:31% auto,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card-footer,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-card-footer{display:grid;grid-template-columns:minmax(96px,1fr) auto auto;gap:10px;align-items:end;font-size:16px;line-height:1.18}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-stock,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-stock{padding:7px 13px;font-size:15px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-content,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-content{gap:22px;max-width:none;padding-top:0!important;justify-content:flex-start!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-products,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-includes,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-products,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-includes{grid-template-columns:1fr;gap:18px;margin:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-plan-item,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-plan-item{gap:14px;font-size:18px;line-height:125%!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee-card,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee-card{padding:22px 18px 20px;font-size:14px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-section{padding-bottom:32px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid{gap:24px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card[data-card=wl]{height:520px;background-position:42% calc(76% - 40px),0 0;background-size:clamp(150px,42vw,180px) auto,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-content{display:flex;gap:24px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-products{display:grid;grid-template-columns:1fr;gap:18px;margin:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product{display:flex;align-items:flex-start;gap:14px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-thumb{width:56px!important;max-width:56px!important;flex:0 0 56px;border-radius:12px!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-title-row{flex-wrap:wrap}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-includes{display:grid;grid-template-columns:1fr;gap:22px;margin:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card{border-radius:14px;padding:24px 18px 20px;font-size:14px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-price-row{align-items:flex-start;flex-direction:column;gap:8px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-price{justify-content:flex-start}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-section,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-section{padding-bottom:32px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-grid,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-grid{gap:24px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad],.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-card[data-card=sermorelin],.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-card[data-card=sermorelin]{width:100%!important;max-width:430px!important;height:520px!important;min-height:520px!important;margin-inline:auto;padding:38px 24px 22px!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card[data-card=nad],.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-card[data-card=sermorelin],.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-card[data-card=sermorelin]{height:520px!important;min-height:520px!important;background-position:47% 62%,0 0!important;background-size:clamp(112px,30vw,124px) auto,auto!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-card-footer,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-card-footer{display:grid;grid-template-columns:minmax(96px,1fr) auto auto;align-items:end;gap:10px;font-size:14px;line-height:1.18}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-stock,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-chip,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-stock{padding:6px 10px;font-size:12px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-content,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-content{display:flex;gap:24px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-includes,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-includes{display:grid;grid-template-columns:1fr;gap:22px;margin:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-guarantee-card,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-guarantee-card{border-radius:14px;padding:24px 18px 20px;font-size:14px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-price-row,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-price-row{align-items:flex-start;flex-direction:column;gap:8px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-price,.retro-explore-tabs-wrap [data-explore-tab-pane=muscle-recovery] .explore-hero-price{justify-content:flex-start}
+---
+.retro-explore-tabs-wrap .explore-hero-includes{display:contents!important}
+---
+.retro-explore-tabs-wrap .explore-hero-guarantee{order:5;width:100%;padding-top:0!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .designed-section a.bg-neutral-900{background:var(--color-retro-green)!important;color:var(--color-retro-ink)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .designed-cta-btn{background:var(--color-retro-surface)!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .testimonial-card{border:2px solid var(--color-retro-shadow);box-shadow:5px 6px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .bg-neutral-900\/80{border:1.5px solid var(--color-retro-ink)!important;box-shadow:5px 6px 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false]{background-color:#fff!important;border:2px solid var(--color-retro-ink);box-shadow:3px 4px 0 0 var(--color-retro-shadow)!important;color:var(--color-retro-ink);justify-content:center;text-align:center;transition:transform .15s ease,box-shadow .15s ease}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false]>span:not(.explore-tab-border):not(.explore-tab-fill){width:100%;text-align:center}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false] .explore-tab-img{display:none!important;opacity:0!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false]:hover{transform:translate(2px,2px);box-shadow:1px 2px 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-active=false]:active{transform:translate(3px,4px);box-shadow:0 0 0 0 var(--color-retro-shadow)!important}
+---
+.retro-explore-tabs-wrap .explore-tab-link[data-tone=wl][data-active=false],.retro-explore-tabs-wrap .explore-tab-link[data-tone=nad][data-active=false],.retro-explore-tabs-wrap .explore-tab-link[data-tone=sermorelin][data-active=false]{background-color:#fff!important}
+---
+@media(min-width:768px){.retro-explore-tabs-wrap .explore-hero-grid{align-items:center!important}
+---
+.retro-explore-tabs-wrap .explore-hero-content{justify-content:center!important;padding-top:0!important}
+---
+@media(min-width:992px)and (max-width:1439px){.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-section{height:auto;padding-bottom:72px!important;overflow-x:clip}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-container{position:relative;left:auto;width:min(calc(100% - 64px),1160px);max-width:1160px;height:auto;margin:0 auto;padding:0;transform:none!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-grid{position:relative;display:grid;grid-template-columns:minmax(360px,504px) minmax(0,1fr);gap:clamp(32px,4vw,56px);align-items:center!important;width:100%;height:auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-card[data-card=wl]{position:relative;left:auto;top:auto;width:100%;height:clamp(540px,43vw,576.67px);max-width:none;padding:24px 28px 25px;background-position:50% 64%,0 0;background-size:min(38.7%,195px) auto,auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-content{position:static;display:flex;flex-direction:column;width:100%;max-width:none;height:auto;padding:0!important;transform:none!important}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-products{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;width:100%;height:auto;margin:22px 0 26px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product:first-child,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product:nth-child(2){position:relative;left:auto;top:auto;display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:12px;width:auto;height:auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-product-title-row{flex-wrap:wrap;row-gap:6px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-includes{position:static;display:grid;grid-template-columns:minmax(220px,.9fr) minmax(240px,265px);gap:24px;align-items:center;width:100%;height:auto;margin:0 0 28px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-plans,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee{position:static;width:auto;height:auto;padding:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-guarantee-card{width:100%;height:auto;min-height:142px;padding:23px 16px 18px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-pricing{position:static;display:block;width:100%;height:auto;margin:0}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-price-row{display:flex;align-items:baseline;justify-content:space-between;height:auto;margin:0}
+---
+@media(min-width:992px)and (max-width:1120px){.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-products,.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-includes{grid-template-columns:1fr}
+---
+.retro-explore-tabs-wrap .designed-section{background:var(--color-retro-cream)!important}
+---
+.retro-explore-tabs-wrap [data-designed-accordions]>.bg-white{border:2px solid var(--color-retro-ink);box-shadow:4px 6px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap .designed-accordion-icon>span{background:var(--color-retro-ink)!important}
+---
+.retro-explore-tabs-wrap .designed-section a.bg-neutral-900{border:3px solid var(--color-retro-ink);box-shadow:6px 6px 0 0 var(--color-retro-shadow);transition:transform .15s ease,box-shadow .15s ease}
+---
+.retro-explore-tabs-wrap .designed-section a.bg-neutral-900:hover{transform:translate(3px,3px)!important;box-shadow:3px 3px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap .designed-section a.bg-neutral-900:active{transform:translate(6px,6px)!important;box-shadow:0 0 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap .designed-cta-btn:before,.retro-explore-tabs-wrap .designed-cta-btn:after{display:none!important}
+---
+.retro-explore-tabs-wrap .designed-cta-btn{padding:0!important;border:3px solid var(--color-retro-ink);background:var(--color-retro-cream)!important;box-shadow:6px 6px 0 0 var(--color-retro-shadow);transition:transform .15s ease,box-shadow .15s ease!important}
+---
+.retro-explore-tabs-wrap .designed-cta-btn .designed-cta-btn__wrap{background:transparent!important;color:var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap .designed-cta-btn:hover{transform:translate(3px,3px)!important;box-shadow:3px 3px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap .designed-cta-btn:active{transform:translate(6px,6px)!important;box-shadow:0 0 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap .designed-accordion-panel span.rounded-full{border:1.5px solid var(--color-retro-ink)}
+---
+.retro-explore-tabs-wrap .designed-accordion-panel .bg-\[\#f5f5f5\]{background:var(--color-retro-cream)!important;border:2px solid var(--color-retro-ink);box-shadow:4px 6px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap .designed-accordion-panel .min-h-\[19\.375rem\]{border:2px solid var(--color-retro-ink);box-shadow:4px 6px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap .designed-accordion-panel .rounded-xl.overflow-clip,.retro-explore-tabs-wrap .designed-accordion-panel .min-w-\[6rem\]{border:2px solid var(--color-retro-ink);box-shadow:3px 4px 0 0 var(--color-retro-shadow)}
+---
+.retro-explore-tabs-wrap .designed-accordion-panel .border-\[\#b9a9fe\]{border-color:var(--color-retro-ink)!important;border-left-width:2px!important}
+---
+.retro-explore-tabs-wrap .ba-tag{border:0!important;box-shadow:none!important;font-family:var(--font-retro-body);font-weight:600}
+---
+.retro-explore-tabs-wrap .ba-tag--before{background:var(--color-retro-ink)!important;color:#fff!important}
+---
+.retro-explore-tabs-wrap .ba-tag--after{background:var(--color-retro-lavender)!important;color:var(--color-retro-ink)!important}
+---
+.retro-explore-tabs-wrap .explore-hero-card,.retro-explore-tabs-wrap .explore-hero-chip,.retro-explore-tabs-wrap .explore-hero-stock{border-style:solid!important;border-width:1.5px!important}
+---
+.retro-explore-tabs-wrap .explore-hero-price-badge{display:block;width:59px;height:59px;flex:0 0 59px;object-fit:contain}
+---
+.retro-explore-tabs-wrap .explore-hero-card-price-badge{position:absolute;right:24px;bottom:78px;z-index:2;display:block;width:103.2px;height:103.2px;object-fit:contain}
+---
+.retro-explore-tabs-wrap .explore-hero-price-row--badge-only{flex-direction:row!important;align-items:center!important;justify-content:space-between!important}
+---
+.retro-explore-tabs-wrap .explore-hero-price--badge-only{display:flex;align-items:center!important;justify-content:flex-end!important}
+---
+.retro-explore-tabs-wrap .explore-hero-pricing--badge-only{display:grid!important;gap:0!important}
+---
+.retro-explore-tabs-wrap .explore-hero-pricing--badge-only .explore-hero-price-row--badge-only{display:none!important;margin-bottom:0!important}
+---
+.retro-explore-tabs-wrap .explore-hero-price--badge-only .explore-hero-price-badge{position:static;width:103.2px;height:103.2px;flex:0 0 103.2px}
+---
+@media(min-width:768px){.retro-explore-tabs-wrap .explore-hero-pricing--badge-only{margin-top:0!important;padding-top:24px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-pricing{display:block;height:auto}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-price-badge{width:clamp(3.8rem,5vw,4.5rem);height:clamp(3.8rem,5vw,4.5rem);flex-basis:clamp(3.8rem,5vw,4.5rem)}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-pricing>.text-xs{position:static;display:block;width:100%;margin:14px 0 0;line-height:1.35;text-align:center}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-price{flex-wrap:nowrap;gap:.5rem}
+---
+.retro-explore-tabs-wrap .explore-hero-price-badge{width:6.5rem;height:6.5rem;flex-basis:6.5rem}
+---
+.retro-explore-tabs-wrap .explore-hero-price--badge-only .explore-hero-price-badge{width:6.825rem;height:6.825rem;flex-basis:6.825rem}
+---
+@media(min-width:992px){.retro-explore-tabs-wrap [data-explore-tab-pane=weight-loss] .explore-hero-price-badge{width:110px;height:110px;flex-basis:110px}
+---
+.retro-explore-tabs-wrap [data-explore-tab-pane] .explore-hero-price--badge-only .explore-hero-price-badge{width:103.2px;height:103.2px;flex-basis:103.2px}
+---
+.explore-hero-price-badge{display:block;width:72px;height:72px;flex:0 0 72px;object-fit:contain}
+---
+@media(max-width:767px){.explore-hero-price-badge{width:76px;height:76px;flex-basis:76px}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h]{max-width:606px;grid-template-columns:240px 175px 175px;gap:8px;transition:grid-template-columns .3s ease,margin-left .3s ease}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="0"]{grid-template-columns:240px 175px 175px}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="1"]{grid-template-columns:175px 240px 175px}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="2"]{grid-template-columns:175px 175px 240px}
+---
+.explore-tab-link[data-astro-cid-oniyb44h]{box-shadow:0 0 0 .75px #00000014,-64px 64px 64px -32px #00000005,-32px 32px 32px -16px #00000005,-16px 16px 16px -8px #00000005,-8px 8px 8px -4px #00000005,-4px 4px 4px -2px #00000005,-2px 2px 2px -1px #00000005,-1px 1px 1px -.5px #00000005}
+---
+.explore-tab-link[data-astro-cid-oniyb44h][data-active=true]{background-color:transparent;box-shadow:none}
+---
+.explore-tab-border[data-astro-cid-oniyb44h]{position:absolute;inset:0;border-radius:12px;padding:2px;pointer-events:none;opacity:0;z-index:1;transition:opacity .3s ease;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude}
+---
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=wl] .explore-tab-border[data-astro-cid-oniyb44h]{background:linear-gradient(135deg,#b9a9fe,#fee9d4)}
+---
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=nad] .explore-tab-border[data-astro-cid-oniyb44h]{background:linear-gradient(135deg,#81c777,#a6d69f)}
+---
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=sermorelin] .explore-tab-border[data-astro-cid-oniyb44h]{background:linear-gradient(135deg,#ffcb9b,#ffddbe)}
+---
+.explore-tab-link[data-astro-cid-oniyb44h][data-active=true] .explore-tab-border[data-astro-cid-oniyb44h]{opacity:1}
+---
+.explore-tab-fill[data-astro-cid-oniyb44h]{position:absolute;inset:2px;border-radius:10px;pointer-events:none;opacity:0;z-index:0;transition:opacity .3s ease}
+---
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=wl] .explore-tab-fill[data-astro-cid-oniyb44h]{background:linear-gradient(135deg,#b9a9fe40,#fee9d440)}
+---
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=nad] .explore-tab-fill[data-astro-cid-oniyb44h]{background:linear-gradient(135deg,#81c77740,#a6d69f40)}
+---
+.explore-tab-link[data-astro-cid-oniyb44h][data-tone=sermorelin] .explore-tab-fill[data-astro-cid-oniyb44h]{background:linear-gradient(135deg,#ffcb9b40,#ffddbe40)}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="0"]{grid-template-columns:48fr 35fr 35fr}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="1"]{grid-template-columns:35fr 48fr 35fr}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="2"]{grid-template-columns:35fr 35fr 48fr}
+---
+@media(max-width:479px){.explore-tab-menu[data-astro-cid-oniyb44h]{width:418px;max-width:none;grid-template-columns:184px 109px 109px}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="0"]{grid-template-columns:184px 109px 109px;margin-left:18px;margin-right:auto}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="1"]{grid-template-columns:109px 184px 109px;margin-left:calc(50vw - 209px);margin-right:auto}
+---
+.explore-tab-menu[data-astro-cid-oniyb44h][data-active-index="2"]{grid-template-columns:109px 109px 184px;margin-left:calc(100vw - 436px);margin-right:auto}
+---
+.explore-tab-pane[data-astro-cid-oniyb44h]{display:none}
+---
+.explore-tab-pane[data-astro-cid-oniyb44h][data-active=true]{display:block}
+---
+.explore-card[data-astro-cid-oniyb44h][data-card=wl]{background-image:url(/Personalized-GLP-1-Injections.avif),linear-gradient(#c2bbdc,#736b94);background-position:50% 64%,0 0;background-repeat:no-repeat,repeat;background-size:39%,auto}
+---
+.explore-card[data-astro-cid-oniyb44h][data-card=nad]{background-image:url(/yucca-health-product-nad.avif);background-position:50%;background-repeat:no-repeat;background-size:cover}
+---
+.explore-card[data-astro-cid-oniyb44h][data-card=sermorelin]{background-image:url(/expt-sermorelin-vial.png),linear-gradient(#ffdfc2,#c69161);background-position:50% 58%,0 0;background-repeat:no-repeat,repeat;background-size:40%,auto}
+---
+@media(max-width:767px){.explore-card[data-astro-cid-oniyb44h][data-card=wl]{background-position:50% 65%,0 0;background-size:142px,auto}
+---
+.explore-card[data-astro-cid-oniyb44h][data-card=nad]{background-image:url(/yucca-health-product-nad.avif),linear-gradient(#a8d7a1,#677e64);background-position:50%,0 0;background-repeat:no-repeat,repeat;background-size:contain,auto}
+---
+.explore-card[data-astro-cid-oniyb44h][data-card=sermorelin]{background-image:url(/expt-sermorelin-vial.png),linear-gradient(#ffcb9b,#a5774b);background-position:50% 58%,0 0;background-repeat:no-repeat,repeat;background-size:48%,auto}
+---
+=== yucca_website.css len=116451 ===
