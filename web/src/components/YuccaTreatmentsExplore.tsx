@@ -183,7 +183,7 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
             <div className="explore-hero-includes">
               <div className="explore-hero-plans">
                 <div className="explore-hero-plans-label text-sm tracking-[-0.01em] text-neutral-900/40">
-                  All Plans Include:
+                  All plans include:
                 </div>
                 <div className="explore-hero-plan-list mt-2.5 flex flex-col gap-3">
                   {cat.includes.map((label) => (
@@ -258,7 +258,7 @@ function IncludeGlyph({ label }: { label: string }) {
     stroke: "currentColor",
     strokeWidth: 1.25,
   };
-  if (label.includes("Consultation")) {
+  if (label.includes("Consultation") || label.includes("consultation")) {
     return (
       <svg {...common}>
         <path d="M4.5 9.5c-1.2 0-2.2-.9-2.2-2.2V5A2 2 0 0 1 4.3 3h.7" strokeLinecap="round" />
@@ -267,7 +267,7 @@ function IncludeGlyph({ label }: { label: string }) {
       </svg>
     );
   }
-  if (label.includes("Shipping")) {
+  if (label.includes("Shipping") || label.includes("shipping")) {
     return (
       <svg {...common}>
         <path d="M1 7h6l2-3h3" strokeLinecap="round" />
@@ -275,7 +275,7 @@ function IncludeGlyph({ label }: { label: string }) {
       </svg>
     );
   }
-  if (label.includes("Support")) {
+  if (label.includes("Support") || label.includes("support")) {
     return (
       <svg {...common}>
         <path d="M2 7a5 5 0 0 1 10 0" strokeLinecap="round" />
@@ -284,7 +284,7 @@ function IncludeGlyph({ label }: { label: string }) {
       </svg>
     );
   }
-  if (label.includes("Portal")) {
+  if (label.includes("Portal") || label.includes("portal")) {
     return (
       <svg width={14} height={14} viewBox="0 0 17 17" fill="none" stroke="currentColor" strokeWidth={1.25}>
         <path

@@ -11,82 +11,82 @@ import type { YuccaTone } from "@/lib/yuccaExplore";
 
 type FaqItem = { q: string; a: string };
 
-// ── Weight Loss ──────────────────────────────
+// ── Metabolic / GLP-1 ────────────────────────
 
 const WL_FAQS: FaqItem[] = [
   {
-    q: "What is GLP-1 weight loss treatment?",
-    a: "GLP-1 treatment is a class of prescription medication — including GLP-1 (Semaglutide) and GLP-1 + GIP (Tirzepatide) — that works with your body's natural appetite signals, helping you feel full sooner, stay satisfied longer, and reduce constant food noise. Every protocol is reviewed by a licensed provider and built around you.",
+    q: "What is GLP-1 care at novimid?",
+    a: "Physician-directed metabolic support that may include GLP-1 (Semaglutide) and dual-pathway GLP-1 + GIP (Tirzepatide) protocols when clinically appropriate. Care begins with intake and physician review — every plan is built around you.",
   },
   {
-    q: "What's the difference between GLP-1 (Semaglutide) and GLP-1 + GIP (Tirzepatide)?",
-    a: "Semaglutide is a GLP-1 receptor agonist. Tirzepatide is a dual GIP and GLP-1 receptor agonist. Both are designed to support appetite regulation and long-term weight management, but they work through different receptor pathways. Your provider reviews your health history and goals to determine what may be appropriate for you.",
+    q: "What's the difference between Semaglutide and Tirzepatide?",
+    a: "Semaglutide is a GLP-1 receptor agonist. Tirzepatide is a dual GIP and GLP-1 receptor agonist. Both support appetite regulation and metabolic health through different receptor pathways. Your physician reviews your history and goals to determine what may be appropriate.",
   },
   {
-    q: "Who is GLP-1 treatment for?",
-    a: "GLP-1 treatment may be considered for adults working toward provider-guided weight management who meet clinical criteria. Eligibility is determined by a licensed provider based on your medical history, current health, and goals. Treatment isn't right for everyone — that's why every plan begins with a provider review, not a checkout.",
+    q: "Who is metabolic GLP-1 care for?",
+    a: "GLP-1 care may be considered for adults seeking physician-guided metabolic support who meet clinical criteria. Eligibility is determined by a licensed physician based on your medical history, current health, and goals. Treatment isn't right for everyone — every plan begins with a provider review.",
   },
   {
     q: "How does the prescription process work?",
-    a: "You complete a quick clinical intake, share your medical history, and connect with a licensed provider. If approved, your medication is prepared by a partner pharmacy and shipped directly. Your provider stays involved as your dosing is titrated and adjusted over time.",
+    a: "You complete a short clinical intake, share your medical history, and connect with a licensed physician. If approved, medication is prepared through our licensed compounding pharmacy when indicated and shipped directly. Your physician stays involved as dosing is titrated over time.",
   },
   {
     q: "What should I know about side effects?",
-    a: "Side effects vary by person. Common effects may include nausea, constipation, diarrhea, appetite changes, or digestive discomfort, especially while your body adjusts. Your provider reviews your medical history, explains what to watch for, and can adjust your protocol if needed.",
+    a: "Side effects vary by person. Common effects may include nausea, constipation, diarrhea, appetite changes, or digestive discomfort while your body adjusts. Your physician reviews your history, explains what to watch for, and can adjust your protocol if needed.",
   },
   {
     q: "Are compounded medications FDA-approved?",
-    a: "No. We provide compounded medications containing the same active pharmaceutical ingredients (APIs) as brand-name drugs. Compounded medications are prepared by licensed U.S. pharmacies, are not FDA-approved, and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
+    a: "No. Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
   },
 ];
 
-// ── Longevity / NAD+ ─────────────────────────
+// ── Peptides ─────────────────────────────────
 
 const NAD_FAQS: FaqItem[] = [
   {
-    q: "What is NAD+ treatment?",
-    a: "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme your body produces naturally — and uses to generate cellular energy, support DNA repair, and maintain metabolic function. Levels decline with age. NAD+ therapy is a provider-guided protocol designed to replenish those levels through structured dosing. Every protocol is reviewed by a licensed provider and built around your medical history.",
+    q: "What is peptide therapy at novimid?",
+    a: "Physician-prescribed peptide protocols designed to support recovery, cellular energy, and performance. When clinically appropriate, prescriptions may be compounded through our licensed 503A pharmacy after physician review.",
   },
   {
-    q: "How does NAD+ support cellular health?",
-    a: "NAD+ plays a role in how your cells produce energy, repair damage, and regulate metabolism. By supporting these underlying processes, NAD+ therapy is intended to support steadier energy, recovery, and long-term cellular function. The goal isn't a quick lift — it's restoring a baseline your body relies on.",
+    q: "How do peptide protocols support recovery and energy?",
+    a: "Peptide therapies are selected to work with pathways involved in repair, cellular signaling, and metabolic function. Your physician chooses a protocol based on your goals, history, and clinical picture — not a one-size template.",
   },
   {
-    q: "Who is NAD+ treatment for?",
-    a: "NAD+ therapy is generally considered by adults focused on long-term wellness, energy, recovery, and metabolic support. Eligibility is determined by a licensed provider based on your medical history, current health, and goals. Treatment isn't right for everyone — that's why every plan begins with a provider review, not a checkout.",
+    q: "Who is peptide therapy for?",
+    a: "Peptide therapy may be considered for adults focused on recovery, energy, performance, and long-term wellness. Eligibility is determined by a licensed physician. Treatment isn't right for everyone — every plan begins with a provider review.",
   },
   {
     q: "How does the prescription process work?",
-    a: "You complete a quick clinical intake, share your medical history, and connect with a licensed provider. If approved, your medication is prepared by a partner pharmacy and shipped directly. Your provider stays involved as your dosing is titrated and adjusted over time.",
+    a: "You complete a short clinical intake, share your medical history, and connect with a licensed physician. If approved, medication is prepared when indicated and shipped directly. Your care team stays involved as your protocol is reviewed over time.",
   },
   {
     q: "Are compounded medications FDA-approved?",
-    a: "No. We provide compounded medications containing the same active pharmaceutical ingredients (APIs) as brand-name drugs. Compounded medications are prepared by licensed U.S. pharmacies, are not FDA-approved, and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
+    a: "No. Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
   },
 ];
 
-// ── Muscle Recovery / Sermorelin ─────────────
+// ── Hormones / TRT ───────────────────────────
 
 const SERM_FAQS: FaqItem[] = [
   {
-    q: "What is Sermorelin treatment?",
-    a: "Sermorelin is a synthetic peptide that stimulates the pituitary gland to produce more growth hormone (GH). As a GHRH analogue, it works with your body's own regulatory system rather than replacing GH directly. Every protocol is reviewed and prescribed by a licensed provider based on your health history and goals.",
+    q: "What is TRT at novimid?",
+    a: "Testosterone replacement therapy under physician oversight — with labs, dosing, and follow-up built into an accountable plan. Eligibility and dosing are physician decisions based on your clinical picture.",
   },
   {
-    q: "How does Sermorelin support recovery and energy?",
-    a: "Growth hormone plays a role in muscle repair, fat metabolism, sleep quality, and overall energy. Sermorelin is intended to support these processes by stimulating the natural production of GH through the pituitary, rather than introducing exogenous hormone. Results are gradual and build over time.",
+    q: "How does hormone optimization work here?",
+    a: "Your physician reviews symptoms, history, and labs where appropriate, then designs a protocol around your biology. Follow-up keeps dosing accountable as your response is monitored over time.",
   },
   {
-    q: "Who is Sermorelin treatment for?",
-    a: "Sermorelin may be considered by adults experiencing age-related decline in GH levels who are looking to support recovery, body composition, energy, and sleep. Eligibility is determined by a licensed provider based on your medical history, labs, and goals. Every plan begins with a provider review.",
+    q: "Who is TRT for?",
+    a: "TRT may be considered for adults with clinically appropriate indications after physician evaluation. It isn't right for everyone — every plan begins with intake and provider review, not a checkout.",
   },
   {
     q: "How does the prescription process work?",
-    a: "You complete a quick clinical intake, share your medical history, and connect with a licensed provider. If approved, your medication is prepared by a partner pharmacy and shipped directly. Your provider stays involved as your dosing is reviewed and adjusted over time.",
+    a: "You complete a short clinical intake, share your medical history, and connect with a licensed physician. If approved, treatment is coordinated with clear instructions and ongoing oversight.",
   },
   {
     q: "Are compounded medications FDA-approved?",
-    a: "No. We provide compounded medications containing the same active pharmaceutical ingredients (APIs) as brand-name drugs. Compounded medications are prepared by licensed U.S. pharmacies, are not FDA-approved, and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
+    a: "No. When compounding is used, medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
   },
 ];
 
@@ -178,52 +178,52 @@ const WL_PROTOCOL: ProtocolData = {
 };
 
 const NAD_PROTOCOL: ProtocolData = {
-  heading: "NAD+ restores cellular energy as you age.",
-  sub: "NAD+ works with the cellular systems your body already relies on for energy production, DNA repair, and mitochondrial function.",
+  heading: "Peptides work with pathways\nyour body already uses.",
+  sub: "Physician-directed peptide protocols are selected to support recovery, cellular energy, and performance — compounded when clinically appropriate.",
   vialImg: "/yucca/vials-nad.png",
-  vialAlt: "Personalized NAD+ injection vials",
+  vialAlt: "Personalized peptide therapy vials",
   modifier: "retro-protocol--nad",
   cards: [
     {
       icon: <IconWave />,
-      title: "Fuels mitochondrial energy production.",
-      body: "NAD+ is the coenzyme your cells use in the energy-producing structures inside your cells. By restoring healthy NAD+ levels, treatment is intended to support the cellular energy production that declines with age.",
+      title: "Supports cellular signaling and repair.",
+      body: "Peptide protocols are chosen to engage pathways involved in recovery and cellular communication. Your physician selects what fits your clinical picture — not a generic stack.",
     },
     {
       icon: <IconDot />,
-      title: "Activates sirtuins for longevity and repair.",
-      body: "NAD+ is required for sirtuin activity \u2014 a family of proteins involved in DNA repair, stress resistance, and longevity. By supporting NAD+ levels, you help activate these pathways that decline with age.",
+      title: "Built around energy and performance goals.",
+      body: "Whether the focus is steadier energy, training recovery, or long-term resilience, dosing and follow-up stay accountable to how you respond over time.",
     },
     {
       icon: <IconLines />,
-      title: "Supports metabolic health and insulin sensitivity.",
-      body: "NAD+ is essential for cellular metabolism, including how your body converts food into energy. By maintaining healthy NAD+ levels, you support the cellular pathways that influence glucose handling and metabolic function.",
+      title: "Compounded when clinically indicated.",
+      body: "When appropriate, prescriptions are prepared through our licensed 503A compounding pharmacy after physician review — with clear instructions and ongoing oversight.",
     },
   ],
   ctaLink: "/start",
 };
 
 const SERM_PROTOCOL: ProtocolData = {
-  heading: "Sermorelin stimulates\ngrowth hormone\nproduction as you age.",
-  sub: "Sermorelin works with the hormonal system your body already relies on for growth hormone regulation, recovery, and cellular repair.",
+  heading: "Hormone optimization\nwith accountable follow-up.",
+  sub: "TRT at novimid pairs physician evaluation with labs, dosing, and follow-through — so your protocol stays precise as your biology responds.",
   vialImg: "/yucca/vial-sermorelin.png",
-  vialAlt: "Personalized Sermorelin injection vial",
+  vialAlt: "Personalized hormone therapy vial",
   modifier: "retro-protocol--sermorelin",
   cards: [
     {
       icon: <IconWave />,
-      title: "Stimulates your pituitary to release more growth hormone.",
-      body: "Sermorelin is a GHRH analogue that signals the pituitary gland to produce and release growth hormone. Unlike exogenous HGH, it works with your body\u2019s own regulatory feedback system \u2014 so production remains physiologically controlled.",
+      title: "Starts with physician evaluation.",
+      body: "Eligibility and dosing are clinical decisions. Your physician reviews history, symptoms, and labs where appropriate before any protocol begins.",
     },
     {
       icon: <IconDot />,
-      title: "Supports lean muscle and fat metabolism.",
-      body: "Growth hormone plays a direct role in how your body builds and maintains lean tissue and metabolizes fat. By supporting GH production, Sermorelin is intended to support the body composition changes that become harder to achieve with age.",
+      title: "Labs and dosing stay connected.",
+      body: "Hormone optimization isn't set-and-forget. Monitoring helps your physician adjust dosing with accountability — aligned to your response and goals.",
     },
     {
       icon: <IconLines />,
-      title: "Promotes better sleep and recovery.",
-      body: "GH is predominantly released during deep sleep. Sermorelin therapy is intended to support both the quality of growth hormone pulses and the recovery processes that depend on them \u2014 so the benefits compound over time.",
+      title: "Follow-up is part of the plan.",
+      body: "Clear instructions, ongoing oversight, and a care team that stays involved — so hormone therapy remains measured, not guesswork.",
     },
   ],
   ctaLink: "/start",
@@ -270,7 +270,7 @@ function RetroCalculator() {
       <div className="yt-calculator__panel">
         <div className="yt-calculator__left">
           <h2 id="yt-calc-heading" className="yt-calculator__heading">
-            Let&apos;s see your <em>potential</em> with GLP-1s
+            Let&apos;s see your <em>potential</em> with GLP-1 care
           </h2>
           <div className="yt-calculator__control">
             <label className="sr-only" htmlFor="yt-calc-weight">Enter your weight (lbs)</label>
@@ -330,16 +330,16 @@ type ClinicalData = {
 };
 
 const WL_CLINICAL: ClinicalData = {
-  eyebrow: "Personalized GLP-1, GLP-1 + GIP Treatments",
-  heading: "A clinically studied\napproach to weight\nmanagement.",
+  eyebrow: "Metabolic · Physician-directed GLP-1 care",
+  heading: "Evidence-based\npharmacotherapy for\nmetabolic health.",
   body: (
     <>
-      <p>GLP-1 medications work with your body&apos;s natural hunger signals to regulate appetite and support steady weight loss over time.</p>
+      <p>GLP-1 receptor agonists engage pathways that govern satiety, gastric emptying, and glycemic control — supporting measured, clinically supervised metabolic care.</p>
       <ul>
-        <li><strong>Semaglutide acts on a single GLP-1 pathway</strong> — a clinically studied foundation for gradual, sustainable progress.</li>
-        <li><strong>Tirzepatide acts on two pathways — GLP-1 and GIP</strong> — for stronger appetite regulation and a broader metabolic response.</li>
+        <li><strong>Semaglutide (GLP-1)</strong> — selective GLP-1 receptor agonism for progressive appetite regulation.</li>
+        <li><strong>Tirzepatide (GLP-1 + GIP)</strong> — dual incretin agonism for broader metabolic support when clinically appropriate.</li>
       </ul>
-      <p>Your dosing protocol is reviewed and prescribed by a licensed provider, adjusted as you progress.</p>
+      <p>Each protocol is prescribed by a licensed physician and titrated to your response, tolerability, and clinical goals.</p>
     </>
   ),
   vialImg: "/yucca/vial-tirz.avif",
@@ -350,8 +350,8 @@ const WL_CLINICAL: ClinicalData = {
       id: "sema",
       vialImg: "/yucca/vial-sema.avif",
       title: "GLP-1 (Semaglutide)",
-      sub: "Gradual, effective results.",
-      tag: "Most affordable!",
+      sub: "Gradual, physician-guided progress.",
+      tag: "Most accessible",
       tagColor: "purple",
       patientsBold: "Physician-guided",
       patientsRest: "dosing protocols",
@@ -365,8 +365,8 @@ const WL_CLINICAL: ClinicalData = {
       id: "tirz",
       vialImg: "/yucca/vial-tirz.avif",
       title: "GLP-1 + GIP (Tirzepatide)",
-      sub: "Faster Results. Dual-action support.",
-      tag: "Faster Results",
+      sub: "Dual-pathway metabolic support.",
+      tag: "Dual pathway",
       tagColor: "green",
       patientsBold: "Physician-guided",
       patientsRest: "dosing protocols",
@@ -380,12 +380,12 @@ const WL_CLINICAL: ClinicalData = {
 };
 
 const NAD_CLINICAL: ClinicalData = {
-  eyebrow: "Personalized NAD+",
-  heading: "A clinically studied\napproach to cellular\nlongevity.",
+  eyebrow: "Peptides · 503A when indicated",
+  heading: "Physician-directed\npeptide protocols for\nrecovery and energy.",
   body: (
     <>
-      <p>NAD+ is a vital coenzyme your cells use for energy production, DNA repair, and mitochondrial function. Your care is reviewed by a licensed provider and adjusted as you progress.</p>
-      <p>NAD+ levels naturally decline with age. Treatment is designed to support cellular energy, focus, metabolism, and healthy aging. Individual results vary.</p>
+      <p>Personalized peptide therapy is reviewed by a licensed physician and adjusted as you progress. When clinically appropriate, prescriptions may be compounded through our licensed 503A pharmacy.</p>
+      <p>Protocols are selected around your goals — recovery, cellular energy, and performance — with clear follow-through.</p>
     </>
   ),
   vialImg: "/yucca/vial-nad-lp.png",
@@ -394,9 +394,9 @@ const NAD_CLINICAL: ClinicalData = {
     {
       id: "nad",
       vialImg: "/yucca/vial-nad-lp.png",
-      title: "Personalized NAD+",
-      sub: "Fuel for energy and healthy aging.",
-      tag: "Cellular Energy",
+      title: "Peptide therapy",
+      sub: "Recovery, energy, and performance support.",
+      tag: "Personalized",
       tagColor: "green",
       plans: [
         { name: "*3 month supply", now: "$158" },
@@ -407,11 +407,11 @@ const NAD_CLINICAL: ClinicalData = {
 };
 
 const SERM_CLINICAL: ClinicalData = {
-  eyebrow: "Personalized Sermorelin",
-  heading: "A clinically studied\napproach to growth\nhormone optimization.",
+  eyebrow: "Hormones · Clinical oversight",
+  heading: "Accountable TRT with\nlabs, dosing, and\nfollow-up.",
   body: (
     <>
-      <p>Sermorelin is a growth hormone-releasing peptide that stimulates your pituitary gland to naturally produce more HGH — levels that decline with age. Your dosing protocol is reviewed and prescribed by a licensed provider, adjusted as you progress.</p>
+      <p>Hormone optimization at novimid is physician-directed. Eligibility and dosing are clinical decisions — supported by labs where appropriate and follow-up that keeps your protocol accountable.</p>
     </>
   ),
   vialImg: "/yucca/vial-sermorelin.png",
@@ -420,9 +420,9 @@ const SERM_CLINICAL: ClinicalData = {
     {
       id: "sermorelin",
       vialImg: "/yucca/vial-sermorelin-orange.jpg",
-      title: "Personalized Sermorelin",
-      sub: "Support for energy, sleep, and recovery.",
-      tag: "Muscle Recovery",
+      title: "TRT",
+      sub: "Labs, dosing, and physician follow-up.",
+      tag: "Clinical oversight",
       tagColor: "orange",
       plans: [
         { name: "*3 month supply", now: "$158" },
@@ -522,7 +522,7 @@ function RetroClinical({ data }: { data: ClinicalData }) {
                       );
                     })}
                     <Link href={p.ctaLink} className="yt-clinical__cta">
-                      Add to cart
+                      See if I qualify
                     </Link>
                   </div>
                 ) : null}
@@ -547,50 +547,50 @@ function RetroClinical({ data }: { data: ClinicalData }) {
 type ExpectCard = { img: string; alt: string; label: string; desc: string };
 
 const WL_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
-  heading: "What to expect, week by week with your GLP-1 Treatment",
-  sub: "No guesswork. Here\u2019s how the first months typically look for patients in the program. Individual experiences vary.",
+  heading: "What to expect, week by week with your GLP-1 care",
+  sub: "No guesswork. Here\u2019s how the first months typically look under physician-directed metabolic care. Individual experiences vary.",
   cards: [
     {
       img: "/yucca/expect-wl-1.avif",
       alt: "Woman at her kitchen table examining her GLP-1 dose",
       label: "Week 1 \u2192 4 \u00b7 Your body is adjusting",
-      desc: "You start on a low dose \u2014 intentionally. Your GLP-1 treatment is introduced gradually to give your body time to adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your provider is available throughout.",
+      desc: "You start on a low dose \u2014 intentionally. Your GLP-1 protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
     },
     {
       img: "/yucca/expect-wl-2.avif",
       alt: "Woman stretching in morning light as her GLP-1 protocol settles in",
       label: "Week 4 \u2192 12 \u00b7 The protocol starts to settle",
-      desc: "This is when most patients begin to feel the treatment working more consistently. The signals that drove constant hunger \u2014 the food noise, the cravings \u2014 start to quiet. Fullness arrives earlier and stays longer. Your dose may be reviewed and adjusted.",
+      desc: "This is when most patients begin to feel more consistent regulation. Food noise and cravings often quiet. Fullness arrives earlier and stays longer. Your dose may be reviewed and adjusted.",
     },
     {
       img: "/yucca/expect-wl-3.avif",
       alt: "Woman in activewear at home as her provider fine-tunes her GLP-1 protocol",
       label: "Month 3+ \u00b7 Calibrated to you",
-      desc: "This is where the protocol becomes truly personal. With how your body has responded \u2014 to the dose, to the titration, to the treatment itself \u2014 your provider can now fine-tune your plan with real precision.",
+      desc: "This is where care becomes truly personal. With how your body has responded \u2014 to the dose, to titration, to the protocol itself \u2014 your physician can fine-tune with real precision.",
     },
   ],
 };
 
 const NAD_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
   heading: "What to expect,\nweek by week",
-  sub: "NAD (Nicotinamide Adenine Dinucleotide) is a coenzyme that helps cells generate energy and repair themselves. Here\u2019s how it typically unfolds.",
+  sub: "Peptide therapy unfolds gradually under physician oversight. Here\u2019s how the first months typically look. Individual experiences vary.",
   cards: [
     {
       img: "/yucca/expect-nad-1.avif",
-      alt: "Patient at her kitchen table reviewing her NAD+ dose",
-      label: "Week 1 \u2192 4 \u00b7 NAD+ begins working",
-      desc: "You start on a measured dose \u2014 intentionally. NAD+ is introduced gradually so your body can begin to respond at the cellular level. Some patients notice early shifts in energy or recovery. Others take a few more weeks. Both are normal.",
+      alt: "Patient reviewing their peptide protocol",
+      label: "Week 1 \u2192 4 \u00b7 Protocol begins",
+      desc: "You start on a measured dose \u2014 intentionally. Your peptide protocol is introduced so your body can begin to respond. Some patients notice early shifts in energy or recovery. Others take longer. Both are normal.",
     },
     {
       img: "/yucca/expect-nad-2.avif",
-      alt: "Patient stretching in morning light as her NAD+ protocol settles in",
-      label: "Week 4 \u2192 12 \u00b7 Cellular energy builds",
-      desc: "This is when most patients begin to feel the protocol working more consistently. Energy holds steadier through the day. Recovery comes back faster. Focus stays sharper for longer. Your dose may be reviewed and adjusted.",
+      alt: "Patient as their peptide protocol settles in",
+      label: "Week 4 \u2192 12 \u00b7 Consistency builds",
+      desc: "This is when most patients begin to feel the protocol working more consistently. Energy, recovery, or focus may hold steadier. Your physician may review and adjust dosing.",
     },
     {
       img: "/yucca/expect-nad-3.avif",
-      alt: "Patient in activewear at home as her provider fine-tunes her NAD+ protocol",
-      label: "Month 3+ \u00b7 Long-term cellular support",
+      alt: "Patient as their provider fine-tunes peptide care",
+      label: "Month 3+ \u00b7 Long-term support",
       desc: "This is where the protocol becomes truly personal. The focus shifts from adjustment to consistency, and long-term support becomes the rhythm.",
     },
   ],
@@ -598,25 +598,25 @@ const NAD_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
 
 const SERM_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
   heading: "What to expect,\nweek by week",
-  sub: "Sermorelin works gradually through the body\u2019s own growth hormone system. Here\u2019s how it typically unfolds.",
+  sub: "TRT is monitored carefully. Here\u2019s how the first months typically unfold under physician-directed hormone care.",
   cards: [
     {
       img: "/yucca/expect-ser-1.avif",
-      alt: "Patient beginning their Sermorelin protocol with Novimid",
-      label: "Week 1 \u2192 4 \u00b7 The system wakes up",
-      desc: "Sermorelin is introduced at a low starting dose \u2014 intentionally. The pituitary begins responding to the GHRH signal. Early changes in sleep depth and morning energy are common first signs. Your provider is available throughout.",
+      alt: "Patient beginning hormone optimization with Novimid",
+      label: "Week 1 \u2192 4 \u00b7 Evaluation to start",
+      desc: "Care begins with physician review and a starting protocol when appropriate. Early follow-up confirms tolerability and clarifies what to expect as dosing settles in.",
     },
     {
       img: "/yucca/expect-ser-2.avif",
-      alt: "Patient noticing recovery improvements during Sermorelin protocol",
-      label: "Week 4 \u2192 12 \u00b7 Recovery improves",
-      desc: "Growth hormone production builds as the protocol settles in. Most patients report improvements in recovery time, sleep quality, and overall energy during this phase. Your dose may be reviewed and adjusted.",
+      alt: "Patient during hormone protocol follow-up",
+      label: "Week 4 \u2192 12 \u00b7 Dosing finds rhythm",
+      desc: "Labs and check-ins help your physician refine dosing. Many patients notice steadier energy and clearer follow-through as the protocol is calibrated.",
     },
     {
       img: "/yucca/expect-ser-3.avif",
-      alt: "Patient experiencing sustained improvements after 3 months of Sermorelin",
-      label: "Month 3+ \u00b7 Sustained support",
-      desc: "This is where the protocol becomes truly personal. Body composition, recovery, and energy continue to improve as GH levels are maintained. The focus shifts from titration to long-term optimization.",
+      alt: "Patient with sustained hormone care support",
+      label: "Month 3+ \u00b7 Accountable maintenance",
+      desc: "This is where hormone care becomes long-term and precise. Monitoring continues so your protocol stays aligned to your response and clinical goals.",
     },
   ],
 };
@@ -952,7 +952,7 @@ function NadStack() {
       <RetroKnowall
         faqs={NAD_FAQS}
         vialImg="/yucca/vial-nad-lp.png"
-        vialAlt="Personalized NAD+ injection vial"
+        vialAlt="Personalized peptide therapy vial"
         ctaLink="/start"
         modifier="yt-knowall--nad"
       />
@@ -969,7 +969,7 @@ function SermStack() {
       <RetroKnowall
         faqs={SERM_FAQS}
         vialImg="/yucca/vial-sermorelin.png"
-        vialAlt="Personalized Sermorelin injection vial"
+        vialAlt="Personalized hormone therapy vial"
         ctaLink="/start"
         modifier="yt-knowall--sermorelin"
       />
@@ -984,21 +984,21 @@ function SermStack() {
 const HOME_REVIEWS = [
   {
     quote:
-      "The process was seamless from intake to delivery. My provider explained everything clearly and checked in regularly.",
+      "The process was seamless from intake to delivery. My physician explained everything clearly and checked in regularly.",
     name: "Sarah M.",
-    treatment: "Weight Loss",
+    treatment: "Metabolic",
   },
   {
     quote:
-      "I noticed better energy within the first few weeks. Having a licensed provider guide the protocol made all the difference.",
+      "I noticed better energy within the first few weeks. Having a licensed physician guide the protocol made all the difference.",
     name: "David K.",
-    treatment: "Longevity",
+    treatment: "Peptides",
   },
   {
     quote:
-      "Recovery feels more consistent and my sleep improved. The team was responsive whenever I had questions.",
+      "Labs, dosing, and follow-up felt accountable. The team was responsive whenever I had questions.",
     name: "Emily R.",
-    treatment: "Muscle Recovery",
+    treatment: "Hormones",
   },
 ] as const;
 

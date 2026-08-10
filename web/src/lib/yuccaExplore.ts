@@ -1,6 +1,5 @@
 /**
- * Exact Try Yucca explore-treatments clone data (rebrand later).
- * Source: https://tryyucca.com/treatments/
+ * Novimid treatments explore data — Yucca layout structure, client category words.
  */
 
 export type YuccaTone = "wl" | "nad" | "sermorelin";
@@ -38,10 +37,10 @@ export type YuccaExploreCategory = {
 };
 
 const INCLUDES = [
-  "Free Medical Consultation",
-  "Free Expedited Shipping",
-  "24/7 Dedicated Support",
-  "Access to Patient Portal",
+  "Physician consultation",
+  "Expedited shipping",
+  "Dedicated clinical support",
+  "Patient portal access",
 ] as const;
 
 const GUARANTEE =
@@ -51,12 +50,12 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
   {
     id: "wl",
     novimidId: "metabolic",
-    tab: "Weight Loss",
+    tab: "Metabolic",
     tone: "wl",
-    title: "Personalized GLP-1 Injections",
-    titleMaxCh: 15,
+    title: "Personalized GLP-1 care",
+    titleMaxCh: 16,
     summary:
-      "A weekly treatment designed to support appetite suppression, metabolic optimization, and long-term weight management through GLP-1 receptor activation.",
+      "A weekly physician-directed protocol designed to support appetite regulation and metabolic health. GLP-1 and dual-pathway options when clinically appropriate.",
     chip: "Most Popular",
     chipClass: "bg-[#8bae8c] text-[#2c3a35]",
     stock: "In Stock",
@@ -68,13 +67,13 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     products: [
       {
         name: "GLP-1 (Semaglutide)",
-        desc: "Gradual, effective results.",
+        desc: "Gradual, physician-guided progress.",
         thumb: "/yucca/expt-wl-sema.jpg",
         thumbBg: "#c5d5b0",
       },
       {
         name: "GLP-1 + GIP (Tirzepatide)",
-        desc: "Faster Results. Dual-action support.",
+        desc: "Dual-pathway metabolic support.",
         thumb: "/yucca/expt-wl-tirz.jpg",
         thumbBg: "#f7d4a0",
       },
@@ -86,13 +85,13 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
   {
     id: "nad",
     novimidId: "peptides",
-    tab: "Longevity",
+    tab: "Peptides",
     tone: "nad",
-    title: "NAD+ Injections",
-    titleMaxCh: 10,
+    title: "Peptide therapy",
+    titleMaxCh: 14,
     summary:
-      "A treatment designed to support cellular energy, focus, metabolism, and healthy aging through replenishment of NAD+ levels.",
-    chip: "New",
+      "Personalized peptide protocols to support recovery, cellular energy, and performance — compounded after physician review when appropriate.",
+    chip: "503A",
     chipClass: "bg-[#dce8dd] text-[#2c3a35]",
     stock: "In Stock",
     footerSocialBold: "Licensed",
@@ -107,13 +106,13 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
   {
     id: "sermorelin",
     novimidId: "hormones",
-    tab: "Muscle Recovery",
+    tab: "Hormones",
     tone: "sermorelin",
-    title: "Sermorelin Injections",
-    titleMaxCh: 10,
+    title: "TRT",
+    titleMaxCh: 8,
     summary:
-      "A daily peptide injection designed to support natural growth hormone production, energy, sleep quality, and recovery.",
-    chip: "New",
+      "Hormone optimization with labs, dosing, and follow-up built into an accountable plan. Eligibility and dosing are physician decisions.",
+    chip: "Clinical oversight",
     chipClass: "bg-[#ffe9c8] text-[#4a5a52]",
     stock: "In Stock",
     footerSocialBold: "Licensed",
