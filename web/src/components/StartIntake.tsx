@@ -4,8 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FormEvent, useMemo, useState } from "react";
 import { media } from "@/lib/media";
+import {
+  getActiveScreeningQuestions,
+  isScreeningComplete,
+  questionIsDisqualified,
+} from "@/lib/intake";
 
-const TOTAL_STEPS = 4;
+const TOTAL_STEPS = 5;
 
 const goals = [
   {
@@ -79,6 +84,10 @@ type Draft = {
   phone: string;
   state: string;
   notes: string;
+  height: string;
+  weight: string;
+  sex: string;
+  answers: Record<string, string>;
 };
 
 const empty: Draft = {
@@ -89,6 +98,10 @@ const empty: Draft = {
   phone: "",
   state: "",
   notes: "",
+  height: "",
+  weight: "",
+  sex: "",
+  answers: {},
 };
 
 export function StartIntake() {
@@ -97,11 +110,30 @@ export function StartIntake() {
   const [submitted, setSubmitted] = useState(false);
 
   const progress = useMemo(() => ((step + 1) / TOTAL_STEPS) * 100, [step]);
+  const screeningIntake = useMemo(
+    () => ({ answers: draft.answers, sexAtBirth: draft.sex }),
+    [draft.answers, draft.sex],
+  );
+  const screeningQuestions = useMemo(
+    () => getActiveScreeningQuestions(screeningIntake),
+    [screeningIntake],
+  );
   const canContinue =
     (step === 0 && !!draft.goal) ||
     (step === 1 && !!draft.interest) ||
-    (step === 2 && !!draft.name && !!draft.email && !!draft.state) ||
-    step === 3;
+    (step === 2 &&
+      !!draft.name &&
+      !!draft.email &&
+      !!draft.state &&
+      !!draft.height &&
+      !!draft.weight &&
+      !!draft.sex) ||
+    step === 3 ||
+    (step === 4 && isScreeningComplete(screeningIntake));
+
+  function setAnswer(id: string, value: string) {
+    setDraft((d) => ({ ...d, answers: { ...d.answers, [id]: value } }));
+  }
 
   function next() {
     setStep((s) => Math.min(TOTAL_STEPS - 1, s + 1));
@@ -304,6 +336,40 @@ export function StartIntake() {
                     ))}
                   </select>
                 </label>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <Field
+                    label="Height"
+                    value={draft.height}
+                    onChange={(v) => setDraft((d) => ({ ...d, height: v }))}
+                    required
+                  />
+                  <Field
+                    label="Weight (lbs)"
+                    type="number"
+                    value={draft.weight}
+                    onChange={(v) => setDraft((d) => ({ ...d, weight: v }))}
+                    required
+                  />
+                </div>
+                <label className="block">
+                  <span className="label-caps">Sex assigned at birth</span>
+                  <div className="mt-2 grid grid-cols-3 gap-2">
+                    {["Male", "Female", "Other"].map((sex) => (
+                      <button
+                        key={sex}
+                        type="button"
+                        onClick={() => setDraft((d) => ({ ...d, sex }))}
+                        className={`h-11 rounded-full border-[0.5px] text-[14px] ${
+                          draft.sex === sex
+                            ? "border-midnight bg-[#DCE8DD] text-midnight"
+                            : "border-mist bg-white text-forest"
+                        }`}
+                      >
+                        {sex}
+                      </button>
+                    ))}
+                  </div>
+                </label>
               </div>
             </StepCard>
           ) : null}
@@ -313,7 +379,7 @@ export function StartIntake() {
               title="Anything else your care team should know?"
               hint="Optional — share goals or context for your consult."
             >
-              <form id="intake-final" className="space-y-5" onSubmit={onSubmit}>
+              <div className="space-y-5">
                 <label className="block">
                   <span className="label-caps">Notes for your care team</span>
                   <textarea
@@ -324,6 +390,72 @@ export function StartIntake() {
                     placeholder="Goals, timeline, questions…"
                   />
                 </label>
+              </div>
+            </StepCard>
+          ) : null}
+
+          {step === 4 ? (
+            <StepCard
+              title="Clinical screening"
+              hint="Answer each question. Completing intake does not guarantee a prescription."
+            >
+              <form id="intake-final" className="space-y-5" onSubmit={onSubmit}>
+                {screeningQuestions.map((q) => {
+                  const value = draft.answers[q.id] || "";
+                  const blocked = questionIsDisqualified(q, value);
+                  return (
+                    <div key={q.id}>
+                      <p className="text-[15px] font-normal text-midnight">
+                        {q.question}
+                        {q.required ? " *" : ""}
+                      </p>
+                      {q.type === "boolean" ? (
+                        <div className="mt-2 grid grid-cols-2 gap-2">
+                          {(["yes", "no"] as const).map((opt) => (
+                            <button
+                              key={opt}
+                              type="button"
+                              onClick={() => setAnswer(q.id, opt)}
+                              className={`h-11 rounded-full border-[0.5px] text-[14px] ${
+                                value === opt
+                                  ? "border-midnight bg-[#DCE8DD] text-midnight"
+                                  : "border-mist bg-white text-forest"
+                              }`}
+                            >
+                              {opt === "yes" ? "Yes" : "No"}
+                            </button>
+                          ))}
+                        </div>
+                      ) : q.type === "select" ? (
+                        <select
+                          className="field-control mt-2"
+                          value={value}
+                          onChange={(e) => setAnswer(q.id, e.target.value)}
+                        >
+                          <option value="">Select</option>
+                          {(q.options || []).map((opt) => (
+                            <option key={opt} value={opt}>
+                              {opt}
+                            </option>
+                          ))}
+                        </select>
+                      ) : (
+                        <textarea
+                          rows={3}
+                          className="field-control mt-2"
+                          value={value}
+                          onChange={(e) => setAnswer(q.id, e.target.value)}
+                          placeholder="Enter your answer…"
+                        />
+                      )}
+                      {blocked ? (
+                        <p className="mt-2 text-[13px] font-light text-[#9B3A3A]">
+                          This answer requires physician review before treatment can continue.
+                        </p>
+                      ) : null}
+                    </div>
+                  );
+                })}
                 <label className="flex items-start gap-3 rounded-2xl border-[0.5px] border-mist bg-cloud p-4 text-[13px] font-light leading-relaxed text-forest">
                   <input
                     type="checkbox"
@@ -363,7 +495,7 @@ export function StartIntake() {
             </button>
           )}
 
-          {step < 3 ? (
+          {step < 4 ? (
             <button
               type="button"
               disabled={!canContinue}
@@ -376,7 +508,8 @@ export function StartIntake() {
             <button
               type="submit"
               form="intake-final"
-              className="inline-flex h-12 flex-1 items-center justify-center rounded-full bg-sage text-[15px] font-normal text-[#FFFFFF]"
+              disabled={!canContinue}
+              className="inline-flex h-12 flex-1 items-center justify-center rounded-full bg-sage text-[15px] font-normal text-[#FFFFFF] disabled:cursor-not-allowed disabled:opacity-40"
             >
               Submit intake
             </button>
