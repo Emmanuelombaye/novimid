@@ -18,7 +18,7 @@ export const howSteps: HowStep[] = [
     titleItalic: "intake",
     body: "Share your goals and history in a short intake. Browse physician-directed options — peptide therapy, GLP-1 care, or TRT — so your care team can confirm whether treatment may be appropriate.",
     image: {
-      src: "/images/how-step1.jpg",
+      src: "/images/how-step1.jpg?v=nologo2",
       alt: "Personalized protocol vials representing treatment options",
       width: 1200,
       height: 900,
