@@ -1,13 +1,9 @@
 import type { NextConfig } from "next";
-import path from "path";
 
 const oneYear = "public, max-age=31536000, immutable";
 const oneHour = "public, max-age=3600, must-revalidate";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: path.join(__dirname),
-  },
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [390, 430, 640, 750, 828, 1080, 1200, 1536, 1920],
