@@ -34,8 +34,8 @@ export function HomeHero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[calc(100vh-64px)] w-full flex-col justify-between overflow-hidden bg-[#fafbf9] text-midnight">
-      {/* Novimid background — full image visible behind orbit layer (Hims-style) */}
+    <section className="hero-section relative flex min-h-[calc(100dvh-64px)] w-full flex-col justify-between overflow-hidden bg-[#fafbf9] text-midnight">
+      {/* Novimid background — full image behind orbit, seam hidden by blend layers */}
       <div className="hero-bg-layer absolute inset-0 z-0 bg-[#eef3ee]">
         <Image
           src="/images/hero-brand.png"
@@ -45,17 +45,17 @@ export function HomeHero() {
           priority
           sizes="100vw"
         />
-        {/* Narrow scrim — only behind left copy, not over the product photo */}
-        <div className="hero-copy-scrim pointer-events-none absolute inset-y-0 left-0 z-[1]" aria-hidden />
-        <div className="hero-bottom-scrim pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-28 sm:h-24" aria-hidden />
+        <div className="hero-seam-blend pointer-events-none absolute inset-0 z-[1]" aria-hidden />
+        <div className="hero-copy-scrim pointer-events-none absolute inset-0 z-[2]" aria-hidden />
+        <div className="hero-bottom-scrim pointer-events-none absolute inset-x-0 bottom-0 z-[3] h-32 sm:h-24" aria-hidden />
       </div>
 
       {/* Hims-style floating products + orbiting micro-copy */}
       <HeroOrbitStage />
 
-      {/* Copy — left on desktop, stacked on mobile */}
-      <div className="shell relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-end px-6 pb-6 pt-[min(52vh,420px)] sm:justify-center sm:px-10 sm:py-16 sm:pt-16 lg:px-16">
-        <div className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-sage/20 bg-sage/10 px-4 py-1.5 backdrop-blur-md">
+      {/* Copy — stacked on mobile (Yucca-style), left on desktop */}
+      <div className="hero-copy shell relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-end px-5 pb-5 pt-[min(46vh,360px)] sm:justify-center sm:px-10 sm:py-16 sm:pt-16 lg:px-16">
+        <div className="hero-badge mb-5 inline-flex items-center gap-2 self-start rounded-full border border-sage/20 bg-white/75 px-4 py-1.5 backdrop-blur-md sm:mb-6 sm:bg-sage/10">
           <span className="h-2 w-2 animate-pulse rounded-full bg-sage" />
           <span className="text-[12px] font-medium tracking-wide uppercase text-midnight sm:text-[13px]">
             Physician-Directed Care
@@ -63,7 +63,7 @@ export function HomeHero() {
         </div>
 
         <div className="max-w-2xl">
-          <h1 className="font-display text-[2.25rem] font-normal leading-[1.08] tracking-[-0.025em] text-midnight sm:text-[3.4rem] lg:text-[4rem]">
+          <h1 className="font-display text-[2rem] font-normal leading-[1.1] tracking-[-0.025em] text-midnight min-[390px]:text-[2.25rem] sm:text-[3.4rem] lg:text-[4rem]">
             Personalized{" "}
             <span
               className={`inline-block font-medium text-sage transition-all duration-300 ${
@@ -81,16 +81,16 @@ export function HomeHero() {
           </p>
         </div>
 
-        <div className="mt-8 flex flex-col gap-3.5 sm:flex-row sm:items-center">
+        <div className="hero-cta-row mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center">
           <Link
             href="/start"
-            className="inline-flex h-13 items-center justify-center rounded-full bg-sage px-8 text-[15px] font-medium text-white shadow-lg shadow-sage/20 transition-all hover:scale-[1.01] hover:bg-sage-mid sm:min-w-[220px]"
+            className="inline-flex h-12 w-full items-center justify-center rounded-full bg-sage px-8 text-[15px] font-medium text-white shadow-lg shadow-sage/20 transition-all hover:scale-[1.01] hover:bg-sage-mid sm:h-13 sm:min-w-[220px] sm:w-auto"
           >
             See if I qualify
           </Link>
           <Link
             href="/treatments"
-            className="group inline-flex h-13 items-center justify-center gap-2 rounded-full border border-midnight/15 bg-white/80 px-7 text-[15px] font-medium text-midnight backdrop-blur-md transition-all hover:bg-white sm:min-w-[200px]"
+            className="group inline-flex h-12 w-full items-center justify-center gap-2 rounded-full border border-midnight/15 bg-white/85 px-7 text-[15px] font-medium text-midnight backdrop-blur-md transition-all hover:bg-white sm:h-13 sm:min-w-[200px] sm:w-auto"
           >
             Explore treatments
             <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-midnight text-[12px] text-white transition-transform group-hover:translate-x-0.5">
@@ -100,12 +100,12 @@ export function HomeHero() {
         </div>
       </div>
 
-      <div className="relative z-10 border-t border-mist/60 bg-white/70 py-4 backdrop-blur-md">
-        <div className="shell mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 sm:px-10 lg:px-16">
+      <div className="hero-proof-bar relative z-10 border-t border-mist/50 bg-white/80 py-3.5 backdrop-blur-md sm:py-4">
+        <div className="shell mx-auto flex max-w-7xl items-stretch gap-3 overflow-x-auto px-5 pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] sm:flex-wrap sm:justify-between sm:gap-4 sm:overflow-visible sm:px-10 lg:px-16 [&::-webkit-scrollbar]:hidden">
           {proofs.map((chip) => (
-            <div key={chip.k} className="flex items-center gap-2">
-              <span className="text-[13px] font-semibold text-sage">{chip.k}</span>
-              <span className="text-[13px] text-forest">{chip.v}</span>
+            <div key={chip.k} className="hero-proof-chip flex min-w-[13.5rem] shrink-0 items-center gap-2 sm:min-w-0">
+              <span className="text-[12px] font-semibold text-sage sm:text-[13px]">{chip.k}</span>
+              <span className="text-[12px] text-forest sm:text-[13px]">{chip.v}</span>
             </div>
           ))}
         </div>
