@@ -155,7 +155,7 @@ type ProtocolData = {
 const WL_PROTOCOL: ProtocolData = {
   heading: "Hunger was never the enemy. Clarity was missing.",
   sub: "Novimid GLP-1 care restores the fullness signal your body already knows how to send \u2014 so appetite settles into something quieter, steadier, and finally easier to trust.",
-  vialImg: "/yucca/vials-wl.png",
+  vialImg: "/images/novimid-vials-pair.png",
   vialAlt: "Personalized Tirzepatide and Semaglutide GLP-1 injection vials",
   cards: [
     {
@@ -180,7 +180,7 @@ const WL_PROTOCOL: ProtocolData = {
 const NAD_PROTOCOL: ProtocolData = {
   heading: "Peptides work with pathways\nyour body already uses.",
   sub: "Physician-directed peptide protocols are selected to support recovery, cellular energy, and performance — compounded when clinically appropriate.",
-  vialImg: "/yucca/vials-nad.png",
+  vialImg: "/images/novimid-vial-single.png",
   vialAlt: "Personalized peptide therapy vials",
   modifier: "retro-protocol--nad",
   cards: [
@@ -206,7 +206,7 @@ const NAD_PROTOCOL: ProtocolData = {
 const SERM_PROTOCOL: ProtocolData = {
   heading: "Hormone optimization\nwith accountable follow-up.",
   sub: "TRT at novimid pairs physician evaluation with labs, dosing, and follow-through — so your protocol stays precise as your biology responds.",
-  vialImg: "/yucca/vial-sermorelin.png",
+  vialImg: "/images/product-trt-v2.png",
   vialAlt: "Personalized hormone therapy vial",
   modifier: "retro-protocol--sermorelin",
   cards: [
@@ -342,13 +342,13 @@ const WL_CLINICAL: ClinicalData = {
       <p>Each protocol is prescribed by a licensed physician and titrated to your response, tolerability, and clinical goals.</p>
     </>
   ),
-  vialImg: "/yucca/vial-tirz.avif",
-  vialImg2: "/yucca/vial-sema.avif",
+  vialImg: "/images/novimid-vials-pair.png",
+  vialImg2: "/images/novimid-vial-single.png",
   modifier: "yt-clinical--weight-loss",
   products: [
     {
       id: "sema",
-      vialImg: "/yucca/vial-sema.avif",
+      vialImg: "/images/novimid-vial-single.png",
       title: "GLP-1 (Semaglutide)",
       sub: "Gradual, physician-guided progress.",
       tag: "Most accessible",
@@ -363,7 +363,7 @@ const WL_CLINICAL: ClinicalData = {
     },
     {
       id: "tirz",
-      vialImg: "/yucca/vial-tirz.avif",
+      vialImg: "/images/novimid-vials-pair.png",
       title: "GLP-1 + GIP (Tirzepatide)",
       sub: "Dual-pathway metabolic support.",
       tag: "Dual pathway",
@@ -388,12 +388,12 @@ const NAD_CLINICAL: ClinicalData = {
       <p>Protocols are selected around your goals — recovery, cellular energy, and performance — with clear follow-through.</p>
     </>
   ),
-  vialImg: "/yucca/vial-nad-lp.png",
+  vialImg: "/images/novimid-vial-single.png",
   modifier: "yt-clinical--nad",
   products: [
     {
       id: "nad",
-      vialImg: "/yucca/vial-nad-lp.png",
+      vialImg: "/images/novimid-vial-single.png",
       title: "Peptide therapy",
       sub: "Recovery, energy, and performance support.",
       tag: "Personalized",
@@ -414,12 +414,12 @@ const SERM_CLINICAL: ClinicalData = {
       <p>Hormone optimization at novimid is physician-directed. Eligibility and dosing are clinical decisions — supported by labs where appropriate and follow-up that keeps your protocol accountable.</p>
     </>
   ),
-  vialImg: "/yucca/vial-sermorelin.png",
+  vialImg: "/images/product-trt-v2.png",
   modifier: "yt-clinical--sermorelin",
   products: [
     {
       id: "sermorelin",
-      vialImg: "/yucca/vial-sermorelin-orange.jpg",
+      vialImg: "/images/product-trt-v2.png",
       title: "TRT",
       sub: "Labs, dosing, and physician follow-up.",
       tag: "Clinical oversight",
