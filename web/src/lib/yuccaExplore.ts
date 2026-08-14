@@ -61,7 +61,7 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
-    tabImage: "/images/product-glp1-v2.png",
+    tabImage: "/images/tab-metabolic.png",
     productBg: "/images/novimid-card-glp1.png",
     products: [
       {
@@ -95,7 +95,7 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
-    tabImage: "/images/product-peptide-v2.png",
+    tabImage: "/images/tab-peptides.png",
     productBg: "/images/novimid-card-peptide.png",
     includes: [...INCLUDES],
     guarantee: GUARANTEE,
@@ -115,7 +115,7 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
-    tabImage: "/images/novimid-vial-single.png",
+    tabImage: "/images/tab-hormones.png",
     productBg: "/images/novimid-card-trt.png",
     includes: [...INCLUDES],
     guarantee: GUARANTEE,

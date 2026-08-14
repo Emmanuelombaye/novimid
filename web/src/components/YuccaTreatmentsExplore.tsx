@@ -58,19 +58,14 @@ export function YuccaTreatmentsExplore({
             >
               <span className="explore-tab-border" aria-hidden />
               <span className="explore-tab-fill" aria-hidden />
-              <span className="relative z-[2] max-w-[55%]">{c.tab}</span>
-              <span
-                className={`explore-tab-img pointer-events-none absolute bottom-0 h-[4.5rem] w-[52%] max-h-[4.5rem] ${
-                  c.tone === "sermorelin" ? "right-[-14px]" : "right-0"
-                }`}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={c.tabImage}
-                  alt=""
-                  className="h-full w-full object-cover object-[center_28%]"
-                />
-              </span>
+              <span className="relative z-[2] max-w-[55%] whitespace-nowrap">{c.tab}</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={c.tabImage}
+                alt=""
+                className="explore-tab-img pointer-events-none absolute bottom-0 max-h-[4.5rem]"
+                style={{ right: c.tone === "sermorelin" ? -14 : 0 }}
+              />
             </button>
           );
         })}
@@ -93,7 +88,7 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
         <div className="explore-hero-grid flex flex-col gap-5 sm:gap-7">
           {/* Left product stage — stays full-width until CSS grid (≥1120px) to avoid crush */}
           <div
-            className="explore-card explore-hero-card relative flex h-[27.5rem] w-full flex-col justify-between overflow-hidden rounded-3xl px-6 pt-6 pb-5 text-xs font-medium tracking-[-0.01em] text-[#2c3a35] sm:h-auto sm:min-h-0 sm:px-7 sm:pt-8 sm:pb-7"
+            className="explore-card explore-hero-card relative flex h-[32.5rem] min-h-[32.5rem] w-full flex-col justify-between overflow-hidden rounded-3xl px-6 pt-6 pb-5 text-xs font-medium tracking-[-0.01em] text-[#2c3a35] sm:px-7 sm:pt-8 sm:pb-7"
             data-card={cat.tone}
           >
             <h2
@@ -102,22 +97,6 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
             >
               {cat.title}
             </h2>
-
-            {/* Product image: mix-blend-mode multiply makes white/checkerboard invisible on colored card */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={cat.productBg}
-              alt=""
-              className="explore-hero-card-product"
-              aria-hidden="true"
-              loading="eager"
-              decoding="async"
-            />
-
-            <div
-              className="explore-hero-card-stage min-h-[10rem] flex-1 sm:min-h-[11rem] lg:min-h-[14rem]"
-              aria-hidden
-            />
 
             {cat.priceBadge ? (
               // eslint-disable-next-line @next/next/no-img-element
