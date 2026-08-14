@@ -483,47 +483,30 @@ textarea.field-control {
 }
 
 @media (max-width: 1023px) {
+  .hero-section {
+    min-height: auto;
+  }
+
   .hero-bg-layer {
     background: linear-gradient(
       180deg,
-      #e8efe8 0%,
-      #eef3ee 34%,
-      #f4f7f3 58%,
+      #e5ece5 0%,
+      #ebf1eb 28%,
+      #f2f6f1 52%,
       #fafbf9 100%
     );
   }
 
   .hero-bg-photo {
-    object-fit: cover;
-    object-position: 72% 38%;
-    transform: scale(1.08);
-    transform-origin: center 36%;
-    opacity: 0.92;
-    mask-image: linear-gradient(
-      180deg,
-      #000 0%,
-      #000 38%,
-      rgb(0 0 0 / 0.72) 52%,
-      rgb(0 0 0 / 0.28) 68%,
-      transparent 84%
-    );
-    -webkit-mask-image: linear-gradient(
-      180deg,
-      #000 0%,
-      #000 38%,
-      rgb(0 0 0 / 0.72) 52%,
-      rgb(0 0 0 / 0.28) 68%,
-      transparent 84%
-    );
+    display: none;
   }
 
   .hero-seam-blend {
     background: linear-gradient(
       180deg,
-      rgb(238 243 238 / 0.18) 0%,
-      rgb(250 251 249 / 0.55) 38%,
-      rgb(250 251 249 / 0.88) 54%,
-      rgb(250 251 249 / 0.97) 68%,
+      rgb(238 243 238 / 0.08) 0%,
+      rgb(250 251 249 / 0.45) 42%,
+      rgb(250 251 249 / 0.92) 62%,
       #fafbf9 100%
     );
   }
@@ -532,19 +515,31 @@ textarea.field-control {
     background: linear-gradient(
       180deg,
       transparent 0%,
-      rgb(250 251 249 / 0.35) 40%,
-      rgb(250 251 249 / 0.9) 58%,
+      rgb(250 251 249 / 0.2) 36%,
+      rgb(250 251 249 / 0.88) 58%,
       rgb(250 251 249 / 0.98) 72%,
       #fafbf9 100%
     );
   }
 
+  .hero-bottom-scrim {
+    height: 48%;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgb(250 251 249 / 0.55) 38%,
+      rgb(250 251 249 / 0.96) 100%
+    );
+  }
+
   .hero-copy {
     justify-content: flex-end;
+    width: 100%;
+    max-width: none;
   }
 
   .hero-proof-bar {
-    background: rgb(255 255 255 / 0.92);
+    background: rgb(255 255 255 / 0.96);
   }
 }
 
@@ -651,29 +646,58 @@ textarea.field-control {
 
 @media (max-width: 1023px) {
   .hero-orbit-stage {
-    top: clamp(7.5rem, 28vw, 10.5rem);
+    top: clamp(4.75rem, 18vw, 6.5rem);
     right: 50%;
-    width: min(340px, 92vw);
-    height: min(340px, 92vw);
+    width: min(300px, 88vw);
+    height: min(300px, 88vw);
     transform: translate(50%, 0);
   }
 
   .hero-orbit-stage-inner {
-    transform: rotateX(4deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateX(4deg) rotateY(0deg) rotateZ(0deg) scale(0.94);
   }
 
   .hero-orbit-product--main img {
-    width: min(260px, 72vw) !important;
+    width: min(220px, 62vw) !important;
   }
 
   .hero-orbit-product--accent {
-    left: 6%;
-    top: 70%;
-    transform: translate(-50%, -50%) rotate(-12deg) scale(0.82);
+    left: 4%;
+    top: 72%;
+    transform: translate(-50%, -50%) rotate(-12deg) scale(0.78);
   }
 
   .hero-orbit-ring {
-    opacity: 0.82;
+    opacity: 0.78;
+  }
+
+  .hero-orbit-glow {
+    width: 76%;
+    height: 76%;
+  }
+}
+
+@media (max-width: 639px) {
+  .hero-orbit-stage {
+    top: 4.5rem;
+    width: min(272px, 90vw);
+    height: min(272px, 90vw);
+  }
+
+  .hero-orbit-stage-inner {
+    transform: scale(0.88);
+  }
+
+  .hero-orbit-product--main img {
+    width: min(200px, 58vw) !important;
+  }
+
+  .hero-orbit-text {
+    font-size: 7.5px;
+  }
+
+  .hero-orbit-ring--reverse .hero-orbit-text {
+    font-size: 7px;
   }
 }
 
@@ -1204,22 +1228,12 @@ details[open] .faq-plus {
 }
 
 .explore-tab-link[data-active="true"][data-tone="wl"],
-.explore-tab-link[data-active="true"][data-tone="metabolic"] {
-  background-color: #c5d5b0 !important;
-  border: 2px solid #2c3a35;
-  box-shadow: 3px 4px 0 0 #2c3a35 !important;
-}
-
+.explore-tab-link[data-active="true"][data-tone="metabolic"],
 .explore-tab-link[data-active="true"][data-tone="nad"],
-.explore-tab-link[data-active="true"][data-tone="peptides"] {
-  background-color: #dce8dd !important;
-  border: 2px solid #2c3a35;
-  box-shadow: 3px 4px 0 0 #2c3a35 !important;
-}
-
+.explore-tab-link[data-active="true"][data-tone="peptides"],
 .explore-tab-link[data-active="true"][data-tone="sermorelin"],
 .explore-tab-link[data-active="true"][data-tone="hormones"] {
-  background-color: #ffe9c8 !important;
+  background-color: #c5d5b0 !important;
   border: 2px solid #2c3a35;
   box-shadow: 3px 4px 0 0 #2c3a35 !important;
 }
@@ -1259,45 +1273,30 @@ details[open] .faq-plus {
 }
 
 /* Left product stage — product art via CSS background (Try Yucca pattern) */
-.explore-card[data-card="wl"] {
+.explore-card[data-card="wl"],
+.explore-card[data-card="nad"],
+.explore-card[data-card="sermorelin"] {
   color: #2c3a35;
-  background-image: url(/images/novimid-card-glp1.png),
-    linear-gradient(180deg, #e8f0ea, #c5d5b0);
-  background-position: 50% 48%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: min(36%, 185px) auto, auto;
-  border: 3px solid #2c3a35;
+  background-position: 50% 52%, 0 0;
+  background-size: min(34%, 175px) auto, auto;
+  border: 2px solid #2c3a35;
   box-shadow: none;
+}
+
+.explore-card[data-card="wl"] {
+  background-image: url(/images/novimid-card-glp1.png),
+    linear-gradient(180deg, #e8f0ea 0%, #c5d5b0 100%);
 }
 
 .explore-card[data-card="nad"] {
-  color: #2c3a35;
   background-image: url(/images/novimid-card-peptide.png),
-    linear-gradient(180deg, #dce8dd, #8bae8c);
-  background-position: 50% 58%, 0 0;
-  background-repeat: no-repeat, repeat;
-  background-size: clamp(120px, 26vw, 145px) auto, auto;
-  border: 2px solid #2c3a35;
-  box-shadow: none;
-}
-
-.retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-card[data-card="nad"] {
-  box-shadow: none !important;
+    linear-gradient(180deg, #e8f0ea 0%, #c5d5b0 100%);
 }
 
 .explore-card[data-card="sermorelin"] {
-  color: #2c3a35;
   background-image: url(/images/novimid-card-trt.png),
-    linear-gradient(180deg, #ffe9c8, #d4a574);
-  background-position: 50% 58%, 0 0;
-  background-repeat: no-repeat, repeat;
-  background-size: min(32%, 165px) auto, auto;
-  border: 2px solid #2c3a35;
-  box-shadow: none;
-}
-
-.retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-card[data-card="sermorelin"] {
-  box-shadow: none !important;
+    linear-gradient(180deg, #e8f0ea 0%, #c5d5b0 100%);
 }
 
 .explore-hero-card-title {
@@ -1312,22 +1311,25 @@ details[open] .faq-plus {
 }
 
 .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-card[data-card="wl"] {
-  border-width: 3px;
+  border-width: 2px;
   box-shadow: none;
 }
 
+.retro-explore-tabs-wrap .explore-hero-chip,
 .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-chip {
-  border: 2px solid #2c3a35;
-  box-shadow: 2px 2px 0 0 #2c3a35;
+  border: 1.5px solid #2c3a35;
+  box-shadow: none;
 }
 
+.retro-explore-tabs-wrap .explore-hero-product-thumb,
 .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-product-thumb {
   border: 1.5px solid #2c3a35;
 }
 
+.retro-explore-tabs-wrap .explore-hero-stock,
 .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-stock {
-  border: 2px solid #2c3a35;
-  box-shadow: 2px 2px 0 0 #2c3a35;
+  border: 1.5px solid #2c3a35;
+  box-shadow: none;
 }
 
 .explore-hero-card-price-badge {
@@ -1356,15 +1358,11 @@ details[open] .faq-plus {
     display: none;
   }
 
-  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-card[data-card="wl"] {
-    background-position: 50% 48%, 0 0;
-    background-size: clamp(140px, 38vw, 170px) auto, auto;
-  }
-
+  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-card[data-card="wl"],
   .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-card[data-card="nad"],
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-card[data-card="sermorelin"] {
-    background-position: 50% 56%, 0 0 !important;
-    background-size: clamp(112px, 28vw, 124px) auto, auto !important;
+    background-position: 50% 52%, 0 0;
+    background-size: clamp(120px, 32vw, 170px) auto, auto;
   }
 }
 
@@ -1440,17 +1438,11 @@ details[open] .faq-plus {
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-card[data-card="sermorelin"] {
     padding: 24px 28px 25px;
   }
-  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-card[data-card="wl"] {
-    background-position: 50% 48%, 0 0;
-    background-size: min(36%, 185px) auto, auto;
-  }
-  .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-card[data-card="nad"] {
-    background-position: 50% 58%, 0 0;
-    background-size: clamp(130px, 13vw, 145px) auto, auto;
-  }
+  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-card[data-card="wl"],
+  .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-card[data-card="nad"],
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-card[data-card="sermorelin"] {
-    background-position: 50% 58%, 0 0;
-    background-size: clamp(130px, 13vw, 140px) auto, auto;
+    background-position: 50% 52%, 0 0;
+    background-size: min(34%, 175px) auto, auto;
   }
   .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-card-title,
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-card-title {
@@ -1469,7 +1461,7 @@ details[open] .faq-plus {
    TREATMENTS — Yucca structure, Novimid brand colors
    Ink/shadow → midnight-forest
    Soft bands → cloud / sage-mist
-   Tones: WL sage-mist · NAD sage · Serm warm peach (hormones)
+   Tones: unified Novimid sage across Metabolic · Peptides · Hormones
 ═══════════════════════════════════════════════════════════ */
 
 .yucca-treatments {
@@ -1477,16 +1469,17 @@ details[open] .faq-plus {
   --yt-shadow: var(--midnight-forest);
   --yt-cream: var(--cloud);
   --yt-surface: #ffffff;
+  --yt-cta: #8bae8c;
   --yt-lavender: var(--sage-mist);
   --yt-green-bg: #dce8dd;
-  --yt-peach: #ffe9c8;
+  --yt-peach: #dce8dd;
   --yt-neutral-200: var(--mist);
   --yt-wl: var(--sage-mist);
   --yt-wl-deep: #a8c4a9;
   --yt-nad: var(--sage);
   --yt-nad-soft: #dce8dd;
-  --yt-serm: #f7d4a0;
-  --yt-serm-soft: #ffe9c8;
+  --yt-serm: #c5d5b0;
+  --yt-serm-soft: #dce8dd;
   --yt-expect: var(--sage-mist);
   --yt-guarantee: var(--cloud);
   font-family: var(--font-figtree), "Figtree", system-ui, sans-serif;
@@ -1799,25 +1792,14 @@ details[open] .faq-plus {
   }
 }
 
+.retro-explore-tabs-wrap .explore-hero-cta,
+.retro-explore-tabs-wrap .explore-hero-cta--wl,
+.retro-explore-tabs-wrap .explore-hero-cta--nad,
+.retro-explore-tabs-wrap .explore-hero-cta--sermorelin,
 .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-cta,
-.retro-explore-tabs-wrap .explore-hero-cta--wl {
-  background: #8bae8c !important;
-  color: var(--yt-ink) !important;
-  min-height: 52px;
-}
-
 .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-cta,
-.retro-explore-tabs-wrap .explore-hero-cta--nad {
-  background: #6b8f71 !important;
-  color: var(--yt-ink) !important;
-  min-height: 52px;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-.retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-cta,
-.retro-explore-tabs-wrap .explore-hero-cta--sermorelin {
-  background: #f7d4a0 !important;
+.retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-cta {
+  background: var(--yt-cta) !important;
   color: var(--yt-ink) !important;
   min-height: 52px;
   font-weight: 700;
@@ -1918,7 +1900,7 @@ details[open] .faq-plus {
   padding: 14px 28px;
   border: 2px solid var(--yt-ink);
   border-radius: 999px;
-  background: var(--yt-lavender);
+  background: var(--yt-cta);
   color: var(--yt-ink);
   font-size: 1rem;
   font-weight: 700;
@@ -1948,15 +1930,7 @@ details[open] .faq-plus {
   }
 }
 
-/* NAD variant: green accent */
-.retro-protocol--nad .yt-protocol__cta {
-  background: var(--yt-green-bg);
-}
-
-/* Sermorelin variant: peach accent */
-.retro-protocol--sermorelin .yt-protocol__cta {
-  background: var(--yt-peach);
-}
+/* Category variants inherit unified CTA */
 
 /* ── retro-calculator ─────────────────────── */
 
@@ -2263,16 +2237,10 @@ details[open] .faq-plus {
   line-height: 1;
   margin: 0;
 }
-.yt-clinical-product__tag--purple {
-  background: var(--yt-lavender);
-  color: var(--yt-ink);
-}
-.yt-clinical-product__tag--green {
-  background: var(--yt-green-bg);
-  color: var(--yt-ink);
-}
+.yt-clinical-product__tag--purple,
+.yt-clinical-product__tag--green,
 .yt-clinical-product__tag--orange {
-  background: var(--yt-peach);
+  background: var(--yt-green-bg);
   color: var(--yt-ink);
 }
 
@@ -2420,21 +2388,11 @@ details[open] .faq-plus {
   box-shadow: 1px 2px 0 0 var(--yt-shadow);
 }
 
-/* WL: purple CTA */
-.yt-clinical--weight-loss .yt-clinical__cta {
-  background: #8bae8c;
-  color: var(--yt-ink);
-}
-
-/* NAD: green CTA */
-.yt-clinical--nad .yt-clinical__cta {
-  background: #6b8f71;
-  color: var(--yt-ink);
-}
-
-/* Sermorelin: peach CTA */
+.yt-clinical__cta,
+.yt-clinical--weight-loss .yt-clinical__cta,
+.yt-clinical--nad .yt-clinical__cta,
 .yt-clinical--sermorelin .yt-clinical__cta {
-  background: #f7d4a0;
+  background: var(--yt-cta);
   color: var(--yt-ink);
 }
 
@@ -2575,7 +2533,7 @@ details[open] .faq-plus {
 
 .yt-knowall--nad,
 .yt-knowall--sermorelin {
-  background: #f0f4f1;
+  background: #fff;
 }
 
 .yt-knowall__inner {
@@ -2696,17 +2654,11 @@ details[open] .faq-plus {
   box-shadow: 1px 2px 0 0 var(--yt-shadow);
 }
 
-/* WL: purple CTA */
-.yt-knowall .yt-knowall__cta {
-  background: #8bae8c;
-  color: var(--yt-ink);
-}
-.yt-knowall--nad .yt-knowall__cta {
-  background: #6b8f71;
-  color: var(--yt-ink);
-}
+/* Unified sage CTA across all treatment stacks */
+.yt-knowall .yt-knowall__cta,
+.yt-knowall--nad .yt-knowall__cta,
 .yt-knowall--sermorelin .yt-knowall__cta {
-  background: #f7d4a0;
+  background: var(--yt-cta);
   color: var(--yt-ink);
 }
 

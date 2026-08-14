@@ -34,7 +34,7 @@ export function HomeHero() {
   }, []);
 
   return (
-    <section className="hero-section relative flex min-h-[calc(100dvh-64px)] w-full flex-col justify-between overflow-hidden bg-[#fafbf9] text-midnight">
+    <section className="hero-section relative flex min-h-0 w-full flex-col justify-between overflow-hidden bg-[#fafbf9] text-midnight lg:min-h-[calc(100dvh-64px)]">
       {/* Novimid background — full image behind orbit, seam hidden by blend layers */}
       <div className="hero-bg-layer absolute inset-0 z-0 bg-[#eef3ee]">
         <Image
@@ -54,7 +54,7 @@ export function HomeHero() {
       <HeroOrbitStage />
 
       {/* Copy — stacked on mobile (Yucca-style), left on desktop */}
-      <div className="hero-copy shell relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-end px-5 pb-5 pt-[min(46vh,360px)] sm:justify-center sm:px-8 sm:py-16 sm:pt-16 lg:mx-0 lg:ml-10 lg:mr-auto lg:max-w-[46%] lg:pl-0 lg:pr-8 xl:ml-14 xl:mr-auto xl:pr-12">
+      <div className="hero-copy shell relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-end px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-[clamp(16.75rem,47vw,20.5rem)] sm:justify-center sm:px-8 sm:py-16 sm:pt-16 lg:mx-0 lg:ml-10 lg:mr-auto lg:max-w-[46%] lg:pl-0 lg:pr-8 lg:pb-5 xl:ml-14 xl:mr-auto xl:pr-12">
         <div className="hero-badge mb-5 inline-flex items-center gap-2 rounded-full border border-sage/20 bg-white/75 px-4 py-1.5 backdrop-blur-md sm:mb-6 sm:bg-sage/10">
           <span className="h-2 w-2 animate-pulse rounded-full bg-sage" />
           <span className="text-[11px] font-medium tracking-wide uppercase text-midnight sm:text-[12px]">
@@ -63,10 +63,10 @@ export function HomeHero() {
         </div>
 
         <div className="hero-copy-inner max-w-xl lg:max-w-[30rem]">
-          <h1 className="font-display text-[1.875rem] font-normal leading-[1.12] tracking-[-0.025em] text-midnight min-[390px]:text-[2rem] sm:text-[2.65rem] lg:text-[3rem] xl:text-[3.15rem]">
+          <h1 className="font-display text-[1.75rem] font-normal leading-[1.14] tracking-[-0.025em] text-midnight min-[390px]:text-[1.9rem] sm:text-[2.65rem] lg:text-[3rem] xl:text-[3.15rem]">
             Personalized{" "}
             <span
-              className={`inline-block font-medium text-sage transition-all duration-300 ${
+              className={`inline-block max-w-full font-medium text-sage transition-all duration-300 ${
                 fade ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0"
               }`}
             >
@@ -100,12 +100,15 @@ export function HomeHero() {
         </div>
       </div>
 
-      <div className="hero-proof-bar relative z-10 border-t border-mist/50 bg-white/80 py-3.5 backdrop-blur-md sm:py-4">
-        <div className="shell mx-auto flex max-w-7xl items-stretch gap-3 overflow-x-auto px-5 pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] sm:flex-wrap sm:justify-between sm:gap-4 sm:overflow-visible sm:px-10 lg:px-16 [&::-webkit-scrollbar]:hidden">
+      <div className="hero-proof-bar relative z-10 border-t border-mist/50 bg-white/92 py-3 backdrop-blur-md sm:bg-white/80 sm:py-4">
+        <div className="shell mx-auto grid max-w-7xl gap-2 px-5 sm:flex sm:flex-wrap sm:items-stretch sm:justify-between sm:gap-4 sm:px-10 lg:px-16">
           {proofs.map((chip) => (
-            <div key={chip.k} className="hero-proof-chip flex min-w-[13.5rem] shrink-0 items-center gap-2 sm:min-w-0">
-              <span className="text-[12px] font-semibold text-sage sm:text-[13px]">{chip.k}</span>
-              <span className="text-[12px] text-forest sm:text-[13px]">{chip.v}</span>
+            <div
+              key={chip.k}
+              className="hero-proof-chip flex items-center gap-2 border-b border-mist/40 py-2 last:border-b-0 sm:min-w-0 sm:border-b-0 sm:py-0"
+            >
+              <span className="shrink-0 text-[11px] font-semibold text-sage sm:text-[13px]">{chip.k}</span>
+              <span className="text-[11px] leading-snug text-forest sm:text-[13px]">{chip.v}</span>
             </div>
           ))}
         </div>

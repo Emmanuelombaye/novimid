@@ -57,7 +57,7 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     summary:
       "A weekly physician-directed protocol designed to support appetite regulation and metabolic health. GLP-1 and dual-pathway options when clinically appropriate.",
     chip: "Most Popular",
-    chipClass: "bg-[#8bae8c] text-[#2c3a35]",
+    chipClass: "bg-[#dce8dd] text-[#2c3a35]",
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
@@ -68,13 +68,13 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
         name: "GLP-1 (Semaglutide)",
         desc: "Gradual, physician-guided progress.",
         thumb: "/images/icon-vial-a-v2.png",
-        thumbBg: "#c5d5b0",
+        thumbBg: "#dce8dd",
       },
       {
         name: "GLP-1 + GIP (Tirzepatide)",
         desc: "Dual-pathway metabolic support.",
         thumb: "/images/icon-vial-b-v2.png",
-        thumbBg: "#f7d4a0",
+        thumbBg: "#dce8dd",
       },
     ],
     includes: [...INCLUDES],
@@ -111,7 +111,7 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     summary:
       "Hormone optimization with labs, dosing, and follow-up built into an accountable plan. Eligibility and dosing are physician decisions.",
     chip: "Clinical oversight",
-    chipClass: "bg-[#ffe9c8] text-[#4a5a52]",
+    chipClass: "bg-[#dce8dd] text-[#2c3a35]",
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
