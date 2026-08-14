@@ -206,7 +206,7 @@ const NAD_PROTOCOL: ProtocolData = {
 const SERM_PROTOCOL: ProtocolData = {
   heading: "Hormone optimization\nwith accountable follow-up.",
   sub: "TRT at novimid pairs physician evaluation with labs, dosing, and follow-through — so your protocol stays precise as your biology responds.",
-  vialImg: "/images/product-trt-v2.png",
+  vialImg: "/images/novimid-vial-single.png",
   vialAlt: "Personalized hormone therapy vial",
   modifier: "retro-protocol--sermorelin",
   cards: [
@@ -414,12 +414,12 @@ const SERM_CLINICAL: ClinicalData = {
       <p>Hormone optimization at novimid is physician-directed. Eligibility and dosing are clinical decisions — supported by labs where appropriate and follow-up that keeps your protocol accountable.</p>
     </>
   ),
-  vialImg: "/images/product-trt-v2.png",
+  vialImg: "/images/novimid-vial-single.png",
   modifier: "yt-clinical--sermorelin",
   products: [
     {
       id: "sermorelin",
-      vialImg: "/images/product-trt-v2.png",
+      vialImg: "/images/novimid-vial-single.png",
       title: "TRT",
       sub: "Labs, dosing, and physician follow-up.",
       tag: "Clinical oversight",
@@ -968,7 +968,7 @@ function SermStack() {
       <RetroExpect data={SERM_EXPECT} modifier="yt-expect--sermorelin" />
       <RetroKnowall
         faqs={SERM_FAQS}
-        vialImg="/images/product-trt-v2.png"
+        vialImg="/images/novimid-vial-single.png"
         vialAlt="Personalized hormone therapy vial"
         ctaLink="/start"
         modifier="yt-knowall--sermorelin"

@@ -115,7 +115,7 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
-    tabImage: "/images/product-trt-v2.png",
+    tabImage: "/images/novimid-vial-single.png",
     productBg: "/images/novimid-card-trt.avif",
     includes: [...INCLUDES],
     guarantee: GUARANTEE,
