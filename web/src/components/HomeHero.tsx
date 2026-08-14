@@ -6,10 +6,16 @@ import { useEffect, useState } from "react";
 
 const rotatingWords = [
   "GLP-1 Weight Loss",
-  "Peptide Therapy",
-  "Hormone Optimization (TRT)",
-  "Metabolic Care",
+  "Peptide Protocols",
+  "Hormone Optimization",
+  "Precision Medicine",
 ];
+
+const proofs = [
+  { k: "Physician+", v: "Board-certified care — not a quiz" },
+  { k: "503A", v: "Licensed compounding when indicated" },
+  { k: "California", v: "Created & shipped end-to-end in CA" },
+] as const;
 
 export function HomeHero() {
   const [index, setIndex] = useState(0);
@@ -27,37 +33,38 @@ export function HomeHero() {
   }, []);
 
   return (
-    <section className="relative w-full bg-[#181310] text-[#f4efe8] overflow-hidden pt-6 pb-12 sm:pt-8 sm:pb-20">
-      {/* Top Banner Chip */}
-      <div className="flex justify-center px-4 mb-6 sm:mb-8">
-        <div className="inline-flex items-center gap-2 rounded-full border border-[#e8c599]/30 bg-[#2d241e]/80 px-4 py-1.5 text-[12px] font-medium text-[#e8c599] backdrop-blur-sm sm:text-[13px]">
-          <span>The GLP-1 & Peptide protocol is here.</span>
-          <Link href="/start" className="underline hover:text-white transition-colors">
-            Check eligibility →
-          </Link>
-        </div>
+    <section className="relative flex min-h-[calc(100vh-64px)] w-full flex-col justify-between overflow-hidden bg-[#fafbf9] text-midnight">
+      {/* Full Background Image - Full Page Cover */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/hero-brand.png"
+          alt="Novimid precision medicine protocol"
+          fill
+          className="object-cover object-right-top opacity-90 sm:object-right"
+          priority
+          sizes="100vw"
+        />
+        {/* Scrim Gradient to ensure high text contrast on the left side */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#fafbf9] via-[#fafbf9]/85 to-transparent sm:w-2/3" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#fafbf9] via-transparent to-transparent sm:hidden" />
       </div>
 
-      <div className="shell mx-auto max-w-6xl px-4">
-        {/* Studio Product Centerpiece Image (Hims Aesthetic) */}
-        <div className="relative mx-auto h-[320px] w-full max-w-3xl overflow-hidden rounded-3xl border border-[#382c23] shadow-2xl sm:h-[440px] lg:h-[480px]">
-          <Image
-            src="/images/hero-hims.png"
-            alt="Novimid studio compound pill and pen protocol"
-            fill
-            className="object-cover object-center"
-            priority
-          />
-          {/* Subtle Warm Vignette Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#181310] via-transparent to-transparent opacity-80" />
+      {/* Main Hero Content */}
+      <div className="shell relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-6 py-12 sm:px-10 sm:py-16 lg:px-16">
+        {/* Top Chip */}
+        <div className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-sage/20 bg-sage/10 px-4 py-1.5 backdrop-blur-md">
+          <span className="h-2 w-2 rounded-full bg-sage animate-pulse" />
+          <span className="text-[12px] font-medium tracking-wide uppercase text-midnight sm:text-[13px]">
+            Physician-Directed Care
+          </span>
         </div>
 
-        {/* Text Container with Hims-style Dynamic Rotating Headline */}
-        <div className="mt-8 text-center sm:mt-12">
-          <h1 className="font-display text-[2rem] font-medium leading-tight text-[#f4efe8] sm:text-[3rem] lg:text-[3.6rem]">
+        {/* Headline with Rotating Words */}
+        <div className="max-w-2xl">
+          <h1 className="font-display text-[2.5rem] font-normal leading-[1.1] tracking-[-0.025em] text-midnight sm:text-[3.6rem] lg:text-[4.2rem]">
             Personalized{" "}
             <span
-              className={`inline-block text-[#e8c599] transition-all duration-300 ${
+              className={`inline-block text-sage font-medium transition-all duration-300 ${
                 fade ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
               }`}
             >
@@ -66,25 +73,41 @@ export function HomeHero() {
             <br />
             with physician oversight.
           </h1>
-          <p className="mx-auto mt-4 max-w-xl text-[15px] font-normal leading-relaxed text-[#c7bcae] sm:text-[17px]">
-            Evidence-based protocols designed around your biology — compounded through our licensed California pharmacy.
-          </p>
 
-          {/* CTA Group */}
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/start"
-              className="inline-flex h-13 min-w-[240px] items-center justify-center rounded-full bg-[#e8c599] px-8 text-[15px] font-semibold text-[#181310] transition-all hover:bg-[#f0d4b0] hover:scale-[1.02]"
-            >
-              Get Started Now
-            </Link>
-            <Link
-              href="/treatments"
-              className="inline-flex h-13 min-w-[200px] items-center justify-center rounded-full border border-[#382c23] bg-[#231c18] px-6 text-[15px] font-medium text-[#f4efe8] transition-all hover:border-[#524134] hover:bg-[#2d241e]"
-            >
-              View Treatments
-            </Link>
-          </div>
+          <p className="mt-5 max-w-lg text-[16px] font-normal leading-relaxed text-forest sm:text-[18px]">
+            Board-certified physicians. Evidence-based care. Licensed 503A California compounding when clinically indicated.
+          </p>
+        </div>
+
+        {/* CTAs */}
+        <div className="mt-8 flex flex-col gap-3.5 sm:flex-row sm:items-center">
+          <Link
+            href="/start"
+            className="inline-flex h-13 items-center justify-center rounded-full bg-sage px-8 text-[15px] font-medium text-white shadow-lg shadow-sage/20 transition-all hover:bg-sage-mid hover:scale-[1.01] sm:min-w-[220px]"
+          >
+            See if I qualify
+          </Link>
+          <Link
+            href="/treatments"
+            className="group inline-flex h-13 items-center justify-center gap-2 rounded-full border border-midnight/15 bg-white/80 px-7 text-[15px] font-medium text-midnight backdrop-blur-md transition-all hover:bg-white sm:min-w-[200px]"
+          >
+            Explore treatments
+            <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-midnight text-[12px] text-white transition-transform group-hover:translate-x-0.5">
+              →
+            </span>
+          </Link>
+        </div>
+      </div>
+
+      {/* Bottom Proof Strip - Full Width Footer Bar inside Hero */}
+      <div className="relative z-10 border-t border-mist/60 bg-white/70 backdrop-blur-md py-4">
+        <div className="shell mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 sm:px-10 lg:px-16">
+          {proofs.map((chip) => (
+            <div key={chip.k} className="flex items-center gap-2">
+              <span className="text-[13px] font-semibold text-sage">{chip.k}</span>
+              <span className="text-[13px] text-forest">{chip.v}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
