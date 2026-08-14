@@ -75,126 +75,23 @@ const productStage: Record<Goal["tone"], string> = {
   sand: "bg-[#EEF2EB]",
 };
 
-/** VitaWellRX-style goal picker: cutout + soft white product card. */
-export function PersonalizedTreatments() {
-  const [goal, setGoal] = useState(0);
-  const active = goals[goal];
+import { YuccaTreatmentsExplore } from "./YuccaTreatmentsExplore";
 
+export function PersonalizedTreatments() {
   return (
-    <section
-      className={`relative isolate overflow-x-clip px-3 pt-8 pb-10 transition-colors duration-500 sm:px-5 sm:pt-10 sm:pb-12 lg:px-6 lg:pt-11 lg:pb-12 ${sectionBg[active.tone]}`}
-    >
-      <div className="relative z-[1] mx-auto w-full max-w-[72rem]">
-        <div className="mx-auto mb-5 max-w-[38rem] text-center sm:mb-6 lg:mb-7">
-          <h2 className="mx-auto max-w-[18ch] font-[family-name:var(--font-dm-sans)] text-[1.7rem] font-light leading-[1.12] tracking-[-0.02em] text-midnight sm:max-w-[20ch] sm:text-[2.1rem] lg:text-[2.45rem]">
+    <section className="relative bg-white pt-8 pb-12 sm:pt-12 sm:pb-16 lg:pt-14 lg:pb-20">
+      <div className="mx-auto w-full max-w-[72rem] px-4 sm:px-6">
+        <div className="mx-auto mb-6 max-w-[38rem] text-center sm:mb-8 lg:mb-9">
+          <h2 className="mx-auto max-w-[20ch] font-[family-name:var(--font-dm-sans)] text-[1.75rem] font-medium leading-[1.12] tracking-[-0.03em] text-[#2c3a35] sm:text-[2.25rem] lg:text-[2.5rem]">
             Personalized treatments to help achieve your goals
           </h2>
-          <p className="mx-auto mt-2 mb-4 max-w-md font-[family-name:var(--font-dm-sans)] text-[13.5px] font-light text-forest sm:mt-2.5 sm:mb-5 sm:text-[15px]">
+          <p className="mx-auto mt-2.5 max-w-md font-[family-name:var(--font-dm-sans)] text-[14px] font-light text-forest sm:text-[15px]">
             Build a custom health plan by starting with a goal below.
           </p>
-
-          <div
-            className="mx-auto flex w-full max-w-md items-center justify-center gap-1 overflow-x-auto rounded-full border-[0.5px] border-midnight bg-white p-1 [-ms-overflow-style:none] [scrollbar-width:none] sm:inline-flex sm:w-auto sm:max-w-none [&::-webkit-scrollbar]:hidden"
-            role="tablist"
-            aria-label="Treatment goals"
-          >
-            {goals.map((g) => {
-              const on = goal === g.id;
-              return (
-                <button
-                  key={g.id}
-                  type="button"
-                  role="tab"
-                  aria-selected={on}
-                  onClick={() => setGoal(g.id)}
-                  className={`min-w-0 flex-1 whitespace-nowrap rounded-full border-[0.5px] px-3 py-2.5 font-[family-name:var(--font-dm-sans)] text-[12.5px] font-light leading-none text-midnight transition-colors sm:flex-none sm:px-5 sm:text-[14px] ${
-                    on
-                      ? `${tabOn[g.tone]} border-midnight`
-                      : "border-transparent bg-transparent"
-                  }`}
-                >
-                  {g.label}
-                </button>
-              );
-            })}
-          </div>
         </div>
 
-        <div className="mx-auto flex w-full max-w-[48rem] flex-col items-center lg:max-w-[64rem] lg:flex-row lg:items-end lg:justify-center lg:gap-2 xl:gap-3">
-          <div className="relative h-[22rem] w-[min(78vw,18.5rem)] shrink-0 sm:h-[26rem] sm:w-[20rem] lg:h-[32rem] lg:w-[22rem] xl:h-[34rem] xl:w-[24rem]">
-            <p
-              key={active.ghostLabel}
-              className="pointer-events-none absolute top-1 left-[-4%] z-0 select-none font-[family-name:var(--font-dm-sans)] font-light uppercase tracking-[-0.04em] text-midnight/10"
-              aria-hidden
-            >
-              <span className="block text-[clamp(3rem,12vw,5.25rem)] leading-[0.9]">
-                {active.ghostLabel}
-              </span>
-            </p>
-
-            <div className="pt-cutout absolute inset-0 z-[1]">
-              <SiteImage
-                key={active.person.src}
-                image={active.person}
-                fill
-                className="!object-contain !object-bottom"
-                sizes="(max-width:1024px) 78vw, 384px"
-                priority={goal === 0}
-              />
-            </div>
-          </div>
-
-          {/* VitaWellRX product card */}
-          <div className="relative z-[2] -mt-6 w-full max-w-[24rem] sm:-mt-8 sm:max-w-[26rem] lg:mt-0 lg:mb-0 lg:w-[26rem] lg:max-w-none lg:shrink-0 xl:w-[28rem]">
-            <article className="rounded-[28px] border border-[#E5E7EB] bg-white p-6 shadow-[0_1px_2px_rgba(44,58,53,0.04)] sm:rounded-[32px] sm:p-7">
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="rounded-full bg-[#EEF1EF] px-3 py-1 text-[12px] font-normal text-[#3D4A44]">
-                  {active.label}
-                </span>
-                <span className="rounded-full border border-[#E5E7EB] bg-white px-3 py-1 text-[12px] font-normal text-[#3D4A44]">
-                  {active.badge}
-                </span>
-              </div>
-
-              <div
-                className={`relative mx-auto mt-5 aspect-square w-full max-w-[15.5rem] overflow-hidden rounded-[22px] sm:max-w-[17rem] ${productStage[active.tone]}`}
-              >
-                <SiteImage
-                  key={active.product.src}
-                  image={active.product}
-                  fill
-                  className="!object-contain !object-center p-4"
-                  sizes="272px"
-                />
-              </div>
-
-              <p className="mt-5 text-[11px] font-normal tracking-[0.14em] text-[#8A9690] uppercase">
-                Personalized
-              </p>
-              <h3 className="mt-1.5 font-[family-name:var(--font-dm-sans)] text-[1.65rem] leading-[1.15] tracking-[-0.03em] text-[#1F2A26] sm:text-[1.85rem]">
-                {active.title}
-              </h3>
-              <p className="mt-3 text-[14px] leading-[1.55] font-light text-[#4A5A52] sm:text-[15px]">
-                {active.body} {active.available}
-              </p>
-
-              <div className="mt-6 flex items-center gap-2.5">
-                <Link
-                  href="/start"
-                  className="inline-flex h-12 flex-[1.35] items-center justify-center rounded-full bg-sage px-5 text-[14px] font-normal text-white transition-colors hover:bg-[#5F8165]"
-                >
-                  See if I qualify
-                </Link>
-                <Link
-                  href="/treatments"
-                  className="inline-flex h-12 flex-1 items-center justify-center rounded-full border border-[#2C3A35] bg-white px-4 text-[14px] font-normal text-[#2C3A35] transition-colors hover:bg-cloud"
-                >
-                  Learn more
-                </Link>
-              </div>
-            </article>
-          </div>
-        </div>
+        {/* Exact TryYucca.com Explore Layout Component */}
+        <YuccaTreatmentsExplore />
       </div>
     </section>
   );
