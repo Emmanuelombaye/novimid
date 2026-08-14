@@ -35,18 +35,19 @@ export function HomeHero() {
 
   return (
     <section className="relative flex min-h-[calc(100vh-64px)] w-full flex-col justify-between overflow-hidden bg-[#fafbf9] text-midnight">
-      {/* Novimid background */}
-      <div className="absolute inset-0 z-0">
+      {/* Novimid background — full image visible behind orbit layer (Hims-style) */}
+      <div className="hero-bg-layer absolute inset-0 z-0 bg-[#eef3ee]">
         <Image
           src="/images/hero-brand.png"
           alt="Novimid precision medicine protocol"
           fill
-          className="object-cover object-right-top opacity-90 sm:object-right"
+          className="hero-bg-photo"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#fafbf9] via-[#fafbf9]/80 to-[#fafbf9]/20 sm:via-[#fafbf9]/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#fafbf9] via-transparent to-[#fafbf9]/30 sm:hidden" />
+        {/* Narrow scrim — only behind left copy, not over the product photo */}
+        <div className="hero-copy-scrim pointer-events-none absolute inset-y-0 left-0 z-[1]" aria-hidden />
+        <div className="hero-bottom-scrim pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-28 sm:h-24" aria-hidden />
       </div>
 
       {/* Hims-style floating products + orbiting micro-copy */}

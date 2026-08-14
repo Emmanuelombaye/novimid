@@ -5,6 +5,11 @@ import { useState } from "react";
 import { YuccaTreatmentsExplore } from "./YuccaTreatmentsExplore";
 import type { YuccaTone } from "@/lib/yuccaExplore";
 
+const IMG_GLP1 = "/images/product-glp1-v2.png";
+const IMG_PEPTIDE = "/images/product-peptide-v2.png";
+const IMG_TRT = "/images/product-trt-v2.png";
+const IMG_VIAL_A = "/images/icon-vial-a-v2.png";
+
 /* ─────────────────────────────────────────────
    DATA
 ───────────────────────────────────────────── */
@@ -155,7 +160,7 @@ type ProtocolData = {
 const WL_PROTOCOL: ProtocolData = {
   heading: "Hunger was never the enemy. Clarity was missing.",
   sub: "Novimid GLP-1 care restores the fullness signal your body already knows how to send \u2014 so appetite settles into something quieter, steadier, and finally easier to trust.",
-  vialImg: "/images/novimid-vials-pair.png",
+  vialImg: IMG_GLP1,
   vialAlt: "Personalized Tirzepatide and Semaglutide GLP-1 injection vials",
   cards: [
     {
@@ -180,7 +185,7 @@ const WL_PROTOCOL: ProtocolData = {
 const NAD_PROTOCOL: ProtocolData = {
   heading: "Peptides work with pathways\nyour body already uses.",
   sub: "Physician-directed peptide protocols are selected to support recovery, cellular energy, and performance — compounded when clinically appropriate.",
-  vialImg: "/images/novimid-vial-single.png",
+  vialImg: IMG_PEPTIDE,
   vialAlt: "Personalized peptide therapy vials",
   modifier: "retro-protocol--nad",
   cards: [
@@ -206,7 +211,7 @@ const NAD_PROTOCOL: ProtocolData = {
 const SERM_PROTOCOL: ProtocolData = {
   heading: "Hormone optimization\nwith accountable follow-up.",
   sub: "TRT at novimid pairs physician evaluation with labs, dosing, and follow-through — so your protocol stays precise as your biology responds.",
-  vialImg: "/images/novimid-vial-single.png",
+  vialImg: IMG_TRT,
   vialAlt: "Personalized hormone therapy vial",
   modifier: "retro-protocol--sermorelin",
   cards: [
@@ -342,13 +347,13 @@ const WL_CLINICAL: ClinicalData = {
       <p>Each protocol is prescribed by a licensed physician and titrated to your response, tolerability, and clinical goals.</p>
     </>
   ),
-  vialImg: "/images/novimid-vials-pair.png",
-  vialImg2: "/images/novimid-vial-single.png",
+  vialImg: IMG_GLP1,
+  vialImg2: IMG_VIAL_A,
   modifier: "yt-clinical--weight-loss",
   products: [
     {
       id: "sema",
-      vialImg: "/images/novimid-vial-single.png",
+      vialImg: IMG_VIAL_A,
       title: "GLP-1 (Semaglutide)",
       sub: "Gradual, physician-guided progress.",
       tag: "Most accessible",
@@ -363,7 +368,7 @@ const WL_CLINICAL: ClinicalData = {
     },
     {
       id: "tirz",
-      vialImg: "/images/novimid-vials-pair.png",
+      vialImg: IMG_GLP1,
       title: "GLP-1 + GIP (Tirzepatide)",
       sub: "Dual-pathway metabolic support.",
       tag: "Dual pathway",
@@ -388,12 +393,12 @@ const NAD_CLINICAL: ClinicalData = {
       <p>Protocols are selected around your goals — recovery, cellular energy, and performance — with clear follow-through.</p>
     </>
   ),
-  vialImg: "/images/novimid-vial-single.png",
+  vialImg: IMG_PEPTIDE,
   modifier: "yt-clinical--nad",
   products: [
     {
       id: "nad",
-      vialImg: "/images/novimid-vial-single.png",
+      vialImg: IMG_PEPTIDE,
       title: "Peptide therapy",
       sub: "Recovery, energy, and performance support.",
       tag: "Personalized",
@@ -414,12 +419,12 @@ const SERM_CLINICAL: ClinicalData = {
       <p>Hormone optimization at novimid is physician-directed. Eligibility and dosing are clinical decisions — supported by labs where appropriate and follow-up that keeps your protocol accountable.</p>
     </>
   ),
-  vialImg: "/images/novimid-vial-single.png",
+  vialImg: IMG_TRT,
   modifier: "yt-clinical--sermorelin",
   products: [
     {
       id: "sermorelin",
-      vialImg: "/images/novimid-vial-single.png",
+      vialImg: IMG_TRT,
       title: "TRT",
       sub: "Labs, dosing, and physician follow-up.",
       tag: "Clinical oversight",
@@ -607,13 +612,13 @@ const SERM_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
       desc: "Care begins with physician review and a starting protocol when appropriate. Early follow-up confirms tolerability and clarifies what to expect as dosing settles in.",
     },
     {
-      img: "/yucca/expect-ser-2.avif",
+      img: "/images/physician-2.png",
       alt: "Patient during hormone protocol follow-up",
       label: "Week 4 \u2192 12 \u00b7 Dosing finds rhythm",
       desc: "Labs and check-ins help your physician refine dosing. Many patients notice steadier energy and clearer follow-through as the protocol is calibrated.",
     },
     {
-      img: "/yucca/expect-ser-3.avif",
+      img: "/images/product-trt-v2.png",
       alt: "Patient with sustained hormone care support",
       label: "Month 3+ \u00b7 Accountable maintenance",
       desc: "This is where hormone care becomes long-term and precise. Monitoring continues so your protocol stays aligned to your response and clinical goals.",
@@ -737,7 +742,7 @@ type HappyCard = HappyWlCard | HappyNadCard;
 const WL_HAPPY: HappyWlCard[] = [
   {
     kind: "wl",
-    src: "/yucca/happy/Lisa-C.-p-800.avif",
+    src: "/images/happy/Lisa-C.-p-800.avif",
     name: "Lisa C.",
     lbs: "75",
     time: "in 10 Months",
@@ -745,7 +750,7 @@ const WL_HAPPY: HappyWlCard[] = [
   },
   {
     kind: "wl",
-    src: "/yucca/happy/Blaze-B.-p-800.avif",
+    src: "/images/happy/Blaze-B.-p-800.avif",
     name: "Blaze B.",
     lbs: "50",
     time: "in 6 Months",
@@ -753,7 +758,7 @@ const WL_HAPPY: HappyWlCard[] = [
   },
   {
     kind: "wl",
-    src: "/yucca/happy/Crystal-G.-p-800.avif",
+    src: "/images/happy/Crystal-G.-p-800.avif",
     name: "Crystal G.",
     lbs: "50",
     time: "in 6 Months",
@@ -761,7 +766,7 @@ const WL_HAPPY: HappyWlCard[] = [
   },
   {
     kind: "wl",
-    src: "/yucca/happy/Jamilyn-C.-p-800.avif",
+    src: "/images/happy/Jamilyn-C.-p-800.avif",
     name: "JamiLyn O.",
     lbs: "36",
     time: "in 14 Weeks",
@@ -769,7 +774,7 @@ const WL_HAPPY: HappyWlCard[] = [
   },
   {
     kind: "wl",
-    src: "/yucca/happy/Kim-B.-p-800.avif",
+    src: "/images/happy/Kim-B.-p-800.avif",
     name: "Kim B.",
     lbs: "8",
     time: "in 6 Weeks",
@@ -780,26 +785,26 @@ const WL_HAPPY: HappyWlCard[] = [
 const NAD_HAPPY: HappyNadCard[] = [
   {
     kind: "nad",
-    before: "/yucca/happy/nad-ba-1-before.avif",
-    after: "/yucca/happy/nad-ba-1-after.avif",
+    before: "/images/happy/nad-ba-1-before.avif",
+    after: "/images/happy/nad-ba-1-after.avif",
     name: "Mart C.",
   },
   {
     kind: "nad",
-    before: "/yucca/happy/nad-ba-2-before.avif",
-    after: "/yucca/happy/nad-ba-2-after.avif",
+    before: "/images/happy/nad-ba-2-before.avif",
+    after: "/images/happy/nad-ba-2-after.avif",
     name: "Dana R.",
   },
   {
     kind: "nad",
-    before: "/yucca/happy/nad-ba-3-before.avif",
-    after: "/yucca/happy/nad-ba-3-after.avif",
+    before: "/images/happy/nad-ba-3-before.avif",
+    after: "/images/happy/nad-ba-3-after.avif",
     name: "Alex P.",
   },
   {
     kind: "nad",
-    before: "/yucca/happy/nad-ba-4-before.avif",
-    after: "/yucca/happy/nad-ba-4-after.avif",
+    before: "/images/happy/nad-ba-4-before.avif",
+    after: "/images/happy/nad-ba-4-after.avif",
     name: "Jordan M.",
   },
 ];
@@ -935,7 +940,7 @@ function WlStack() {
       <RetroExpect data={WL_EXPECT} />
       <RetroKnowall
         faqs={WL_FAQS}
-        vialImg="/images/novimid-vials-pair.png"
+        vialImg={IMG_GLP1}
         vialAlt="Personalized Tirzepatide and Semaglutide GLP-1 injection vials"
         ctaLink="/start"
       />
@@ -951,7 +956,7 @@ function NadStack() {
       <RetroExpect data={NAD_EXPECT} modifier="yt-expect--nad" />
       <RetroKnowall
         faqs={NAD_FAQS}
-        vialImg="/images/novimid-vial-single.png"
+        vialImg={IMG_PEPTIDE}
         vialAlt="Personalized peptide therapy vial"
         ctaLink="/start"
         modifier="yt-knowall--nad"
@@ -968,7 +973,7 @@ function SermStack() {
       <RetroExpect data={SERM_EXPECT} modifier="yt-expect--sermorelin" />
       <RetroKnowall
         faqs={SERM_FAQS}
-        vialImg="/images/novimid-vial-single.png"
+        vialImg={IMG_TRT}
         vialAlt="Personalized hormone therapy vial"
         ctaLink="/start"
         modifier="yt-knowall--sermorelin"
