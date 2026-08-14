@@ -548,49 +548,49 @@ type ExpectCard = { img: string; alt: string; label: string; desc: string };
 
 const WL_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
   heading: "What to expect, week by week with your GLP-1 care",
-  sub: "No guesswork. Here\u2019s how the first months typically look under physician-directed metabolic care. Individual experiences vary.",
+  sub: "No guesswork. Here’s how the first months typically look under physician-directed metabolic care. Individual experiences vary.",
   cards: [
     {
-      img: "/yucca/expect-wl-1.avif",
-      alt: "Woman at her kitchen table examining her GLP-1 dose",
-      label: "Week 1 \u2192 4 \u00b7 Your body is adjusting",
-      desc: "You start on a low dose \u2014 intentionally. Your GLP-1 protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
+      img: "/images/care-woman.jpg",
+      alt: "Patient examining dose and consultation summary",
+      label: "Week 1 → 4 · Your body is adjusting",
+      desc: "You start on a low dose — intentionally. Your GLP-1 protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
     },
     {
-      img: "/yucca/expect-wl-2.avif",
-      alt: "Woman stretching in morning light as her GLP-1 protocol settles in",
-      label: "Week 4 \u2192 12 \u00b7 The protocol starts to settle",
+      img: "/images/physician-1.png",
+      alt: "Patient in morning light as GLP-1 protocol settles in",
+      label: "Week 4 → 12 · The protocol starts to settle",
       desc: "This is when most patients begin to feel more consistent regulation. Food noise and cravings often quiet. Fullness arrives earlier and stays longer. Your dose may be reviewed and adjusted.",
     },
     {
-      img: "/yucca/expect-wl-3.avif",
-      alt: "Woman in activewear at home as her provider fine-tunes her GLP-1 protocol",
-      label: "Month 3+ \u00b7 Calibrated to you",
-      desc: "This is where care becomes truly personal. With how your body has responded \u2014 to the dose, to titration, to the protocol itself \u2014 your physician can fine-tune with real precision.",
+      img: "/images/care-man.jpg",
+      alt: "Patient at home as provider fine-tunes GLP-1 protocol",
+      label: "Month 3+ · Calibrated to you",
+      desc: "This is where care becomes truly personal. With how your body has responded — to the dose, to titration, to the protocol itself — your physician can fine-tune with real precision.",
     },
   ],
 };
 
 const NAD_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
   heading: "What to expect,\nweek by week",
-  sub: "Peptide therapy unfolds gradually under physician oversight. Here\u2019s how the first months typically look. Individual experiences vary.",
+  sub: "Peptide therapy unfolds gradually under physician oversight. Here’s how the first months typically look. Individual experiences vary.",
   cards: [
     {
-      img: "/yucca/expect-nad-1.avif",
+      img: "/images/care-woman.jpg",
       alt: "Patient reviewing their peptide protocol",
-      label: "Week 1 \u2192 4 \u00b7 Protocol begins",
-      desc: "You start on a measured dose \u2014 intentionally. Your peptide protocol is introduced so your body can begin to respond. Some patients notice early shifts in energy or recovery. Others take longer. Both are normal.",
+      label: "Week 1 → 4 · Protocol begins",
+      desc: "You start on a measured dose — intentionally. Your peptide protocol is introduced so your body can begin to respond. Some patients notice early shifts in energy or recovery. Others take longer. Both are normal.",
     },
     {
-      img: "/yucca/expect-nad-2.avif",
+      img: "/images/physician-2.png",
       alt: "Patient as their peptide protocol settles in",
-      label: "Week 4 \u2192 12 \u00b7 Consistency builds",
+      label: "Week 4 → 12 · Consistency builds",
       desc: "This is when most patients begin to feel the protocol working more consistently. Energy, recovery, or focus may hold steadier. Your physician may review and adjust dosing.",
     },
     {
-      img: "/yucca/expect-nad-3.avif",
+      img: "/images/care-man.jpg",
       alt: "Patient as their provider fine-tunes peptide care",
-      label: "Month 3+ \u00b7 Long-term support",
+      label: "Month 3+ · Long-term support",
       desc: "This is where the protocol becomes truly personal. The focus shifts from adjustment to consistency, and long-term support becomes the rhythm.",
     },
   ],
@@ -598,10 +598,10 @@ const NAD_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
 
 const SERM_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
   heading: "What to expect,\nweek by week",
-  sub: "TRT is monitored carefully. Here\u2019s how the first months typically unfold under physician-directed hormone care.",
+  sub: "TRT is monitored carefully. Here’s how the first months typically unfold under physician-directed hormone care.",
   cards: [
     {
-      img: "/yucca/expect-ser-1.avif",
+      img: "/images/care-man.jpg",
       alt: "Patient beginning hormone optimization with Novimid",
       label: "Week 1 \u2192 4 \u00b7 Evaluation to start",
       desc: "Care begins with physician review and a starting protocol when appropriate. Early follow-up confirms tolerability and clarifies what to expect as dosing settles in.",
