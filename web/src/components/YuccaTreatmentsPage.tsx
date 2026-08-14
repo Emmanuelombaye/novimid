@@ -935,7 +935,7 @@ function WlStack() {
       <RetroExpect data={WL_EXPECT} />
       <RetroKnowall
         faqs={WL_FAQS}
-        vialImg="/yucca/vials-wl.png"
+        vialImg="/images/novimid-vials-pair.png"
         vialAlt="Personalized Tirzepatide and Semaglutide GLP-1 injection vials"
         ctaLink="/start"
       />
@@ -951,7 +951,7 @@ function NadStack() {
       <RetroExpect data={NAD_EXPECT} modifier="yt-expect--nad" />
       <RetroKnowall
         faqs={NAD_FAQS}
-        vialImg="/yucca/vial-nad-lp.png"
+        vialImg="/images/novimid-vial-single.png"
         vialAlt="Personalized peptide therapy vial"
         ctaLink="/start"
         modifier="yt-knowall--nad"
@@ -968,7 +968,7 @@ function SermStack() {
       <RetroExpect data={SERM_EXPECT} modifier="yt-expect--sermorelin" />
       <RetroKnowall
         faqs={SERM_FAQS}
-        vialImg="/yucca/vial-sermorelin.png"
+        vialImg="/images/product-trt-v2.png"
         vialAlt="Personalized hormone therapy vial"
         ctaLink="/start"
         modifier="yt-knowall--sermorelin"
