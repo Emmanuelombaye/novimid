@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, type CSSProperties } from "react";
+import { useState } from "react";
 import {
   yuccaExploreCategories,
   type YuccaExploreCategory,
@@ -95,11 +95,6 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
           <div
             className="explore-card explore-hero-card relative flex h-[27.5rem] w-full flex-col justify-between overflow-hidden rounded-3xl px-6 pt-6 pb-5 text-xs font-medium tracking-[-0.01em] text-[#2c3a35] sm:h-auto sm:min-h-0 sm:px-7 sm:pt-8 sm:pb-7"
             data-card={cat.tone}
-            style={
-              {
-                "--yucca-product": `url(${cat.productBg})`,
-              } as CSSProperties
-            }
           >
             <h2
               className="explore-hero-card-title relative z-[2] mx-auto m-0 shrink-0 text-center text-[1.75rem] leading-[1] font-medium tracking-[-0.04em] text-[#2c3a35] sm:text-[2.5rem] lg:text-[2.625rem]"
@@ -107,6 +102,17 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
             >
               {cat.title}
             </h2>
+
+            {/* Product image: mix-blend-mode multiply makes white/checkerboard invisible on colored card */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={cat.productBg}
+              alt=""
+              className="explore-hero-card-product"
+              aria-hidden="true"
+              loading="eager"
+              decoding="async"
+            />
 
             <div
               className="explore-hero-card-stage min-h-[10rem] flex-1 sm:min-h-[11rem] lg:min-h-[14rem]"
