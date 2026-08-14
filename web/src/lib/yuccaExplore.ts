@@ -44,7 +44,7 @@ const INCLUDES = [
 ] as const;
 
 const GUARANTEE =
-  "Physician-directed care, medications from U.S. licensed pharmacies, and only charged if treatment is prescribed — with flexibility to change or cancel anytime.";
+  "Physician-directed care, medications from U.S. licensed compounding pharmacies, and only charged if treatment is prescribed — with flexibility to change or cancel anytime.";
 
 export const yuccaExploreCategories: YuccaExploreCategory[] = [
   {
@@ -61,20 +61,19 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
-    tabImage: "/yucca/Weight-Loss-Image-from-TinyPNG.avif",
-    productBg: "/yucca/Personalized-GLP-1-Injections.avif",
-    priceBadge: "/yucca/lowest-price-ever-badge-6-mo.png",
+    tabImage: "/images/product-glp1-v2.png",
+    productBg: "/images/novimid-card-glp1.png",
     products: [
       {
         name: "GLP-1 (Semaglutide)",
         desc: "Gradual, physician-guided progress.",
-        thumb: "/yucca/expt-wl-sema.jpg",
+        thumb: "/images/icon-vial-a-v2.png",
         thumbBg: "#c5d5b0",
       },
       {
         name: "GLP-1 + GIP (Tirzepatide)",
         desc: "Dual-pathway metabolic support.",
-        thumb: "/yucca/expt-wl-tirz.jpg",
+        thumb: "/images/icon-vial-b-v2.png",
         thumbBg: "#f7d4a0",
       },
     ],
@@ -96,9 +95,8 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
-    tabImage: "/yucca/Longevity--Image-.avif",
-    productBg: "/yucca/Nad-Yucca-Image.avif",
-    priceBadge: "/yucca/lowest-price-ever-badge-3-mo.png",
+    tabImage: "/images/product-peptide-v2.png",
+    productBg: "/images/novimid-card-peptide.png",
     includes: [...INCLUDES],
     guarantee: GUARANTEE,
     ctaTone: "nad",
@@ -117,9 +115,8 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
-    tabImage: "/yucca/Muscle-Recovery-Image.avif",
-    productBg: "/yucca/expt-sermorelin-vial.png",
-    priceBadge: "/yucca/lowest-price-ever-badge-3-mo.png",
+    tabImage: "/images/product-trt-v2.png",
+    productBg: "/images/novimid-card-trt.png",
     includes: [...INCLUDES],
     guarantee: GUARANTEE,
     ctaTone: "sermorelin",
