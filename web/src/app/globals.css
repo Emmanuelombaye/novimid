@@ -938,17 +938,17 @@ details[open] .faq-plus {
   box-shadow: 1px 2px 0 0 rgba(31, 42, 55, 0.85) !important;
 }
 
-/* Left product stage — full luxury studio hero imagery fitting card stage */
+/* Left product stage — prominent big transparent cutout floating seamlessly on card background */
 .explore-card[data-card="wl"] {
   color: #2c3a35;
   background-image:
-    var(--yucca-product, url(/images/novimid-card-glp1.jpg)),
+    var(--yucca-product, url(/images/novimid-card-glp1.png)),
     linear-gradient(180deg, #e8f0ea, #c5d5b0);
   background-position:
-    50% 50%,
+    50% 55%,
     0 0;
   background-repeat: no-repeat, repeat;
-  background-size: cover, auto;
+  background-size: min(78%, 330px) auto, auto;
   border: 3px solid #2c3a35;
   box-shadow: none;
 }
@@ -956,13 +956,13 @@ details[open] .faq-plus {
 .explore-card[data-card="nad"] {
   color: #2c3a35;
   background-image:
-    var(--yucca-product, url(/images/novimid-card-peptide.jpg)),
+    var(--yucca-product, url(/images/novimid-card-peptide.png)),
     linear-gradient(180deg, #dce8dd, #8bae8c);
   background-position:
-    50% 50%,
+    50% 55%,
     0 0;
   background-repeat: no-repeat, repeat;
-  background-size: cover, auto;
+  background-size: min(75%, 310px) auto, auto;
   border: 2px solid #2c3a35;
   box-shadow: none;
 }
@@ -970,22 +970,22 @@ details[open] .faq-plus {
 .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-card[data-card="nad"] {
   box-shadow: none !important;
   background-image:
-    var(--yucca-product, url(/images/novimid-card-peptide.jpg)),
+    var(--yucca-product, url(/images/novimid-card-peptide.png)),
     linear-gradient(180deg, #dce8dd, #8bae8c);
-  background-position: 50% 50%, 0 0;
-  background-size: cover, auto;
+  background-position: 50% 55%, 0 0;
+  background-size: min(75%, 310px) auto, auto;
 }
 
 .explore-card[data-card="sermorelin"] {
   color: #2c3a35;
   background-image:
-    var(--yucca-product, url(/images/novimid-card-trt.jpg)),
+    var(--yucca-product, url(/images/novimid-card-trt.png)),
     linear-gradient(180deg, #ffe9c8, #d4a574);
   background-position:
-    50% 50%,
+    50% 55%,
     0 0;
   background-repeat: no-repeat, repeat;
-  background-size: cover, auto;
+  background-size: min(72%, 300px) auto, auto;
   border: 2px solid #2c3a35;
   box-shadow: none;
 }
@@ -993,10 +993,10 @@ details[open] .faq-plus {
 .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-card[data-card="sermorelin"] {
   box-shadow: none !important;
   background-image:
-    var(--yucca-product, url(/images/novimid-card-trt.jpg)),
+    var(--yucca-product, url(/images/novimid-card-trt.png)),
     linear-gradient(180deg, #ffe9c8, #d4a574);
-  background-position: 50% 50%, 0 0;
-  background-size: cover, auto;
+  background-position: 50% 55%, 0 0;
+  background-size: min(72%, 300px) auto, auto;
 }
 
 .explore-hero-card-title {
