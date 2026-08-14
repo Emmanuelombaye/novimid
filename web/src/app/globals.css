@@ -431,6 +431,11 @@ textarea.field-control {
 
 .hero-copy {
   max-width: 100%;
+  text-align: left;
+}
+
+.hero-copy-inner {
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -468,7 +473,12 @@ textarea.field-control {
   }
 
   .hero-copy {
-    max-width: 36rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .hero-copy-inner {
+    max-width: 30rem;
   }
 }
 

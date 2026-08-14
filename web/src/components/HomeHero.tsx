@@ -54,16 +54,16 @@ export function HomeHero() {
       <HeroOrbitStage />
 
       {/* Copy — stacked on mobile (Yucca-style), left on desktop */}
-      <div className="hero-copy shell relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-end px-5 pb-5 pt-[min(46vh,360px)] sm:justify-center sm:px-10 sm:py-16 sm:pt-16 lg:px-16">
-        <div className="hero-badge mb-5 inline-flex items-center gap-2 self-start rounded-full border border-sage/20 bg-white/75 px-4 py-1.5 backdrop-blur-md sm:mb-6 sm:bg-sage/10">
+      <div className="hero-copy shell relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-end px-5 pb-5 pt-[min(46vh,360px)] sm:justify-center sm:px-8 sm:py-16 sm:pt-16 lg:mx-0 lg:ml-10 lg:mr-auto lg:max-w-[46%] lg:pl-0 lg:pr-8 xl:ml-14 xl:mr-auto xl:pr-12">
+        <div className="hero-badge mb-5 inline-flex items-center gap-2 rounded-full border border-sage/20 bg-white/75 px-4 py-1.5 backdrop-blur-md sm:mb-6 sm:bg-sage/10">
           <span className="h-2 w-2 animate-pulse rounded-full bg-sage" />
-          <span className="text-[12px] font-medium tracking-wide uppercase text-midnight sm:text-[13px]">
+          <span className="text-[11px] font-medium tracking-wide uppercase text-midnight sm:text-[12px]">
             Physician-Directed Care
           </span>
         </div>
 
-        <div className="max-w-2xl">
-          <h1 className="font-display text-[2rem] font-normal leading-[1.1] tracking-[-0.025em] text-midnight min-[390px]:text-[2.25rem] sm:text-[3.4rem] lg:text-[4rem]">
+        <div className="hero-copy-inner max-w-xl lg:max-w-[30rem]">
+          <h1 className="font-display text-[1.875rem] font-normal leading-[1.12] tracking-[-0.025em] text-midnight min-[390px]:text-[2rem] sm:text-[2.65rem] lg:text-[3rem] xl:text-[3.15rem]">
             Personalized{" "}
             <span
               className={`inline-block font-medium text-sage transition-all duration-300 ${
@@ -76,12 +76,12 @@ export function HomeHero() {
             with physician oversight.
           </h1>
 
-          <p className="mt-5 max-w-lg text-[15px] font-normal leading-relaxed text-forest sm:text-[18px]">
+          <p className="mt-4 max-w-md text-[14px] font-normal leading-relaxed text-forest sm:mt-5 sm:text-[15px] lg:text-[16px]">
             Board-certified physicians. Evidence-based care. Licensed 503A California compounding when clinically indicated.
           </p>
         </div>
 
-        <div className="hero-cta-row mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center">
+        <div className="hero-cta-row mt-6 flex w-full max-w-md flex-col gap-3 sm:mt-7 lg:max-w-none lg:flex-row lg:items-center">
           <Link
             href="/start"
             className="inline-flex h-12 w-full items-center justify-center rounded-full bg-sage px-8 text-[15px] font-medium text-white shadow-lg shadow-sage/20 transition-all hover:scale-[1.01] hover:bg-sage-mid sm:h-13 sm:min-w-[220px] sm:w-auto"
