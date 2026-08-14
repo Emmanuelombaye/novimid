@@ -69,7 +69,13 @@ const tabOn: Record<Goal["tone"], string> = {
   sand: "bg-[#E8EDE6]",
 };
 
-/** Brand-book personalized treatments: flat Cloud wash, 0.5px, light type. */
+const productStage: Record<Goal["tone"], string> = {
+  sage: "bg-[#E7F0E8]",
+  mist: "bg-[#EAF2EC]",
+  sand: "bg-[#EEF2EB]",
+};
+
+/** VitaWellRX-style goal picker: cutout + soft white product card. */
 export function PersonalizedTreatments() {
   const [goal, setGoal] = useState(0);
   const active = goals[goal];
@@ -138,51 +144,55 @@ export function PersonalizedTreatments() {
             </div>
           </div>
 
+          {/* VitaWellRX product card */}
           <div className="relative z-[2] -mt-6 w-full max-w-[24rem] sm:-mt-8 sm:max-w-[26rem] lg:mt-0 lg:mb-0 lg:w-[26rem] lg:max-w-none lg:shrink-0 xl:w-[28rem]">
-            <div className="rounded-[12px] border-[0.5px] border-midnight bg-white p-4 sm:p-5">
-              <div className="flex flex-wrap items-center gap-1.5">
-                <span className="rounded-full bg-cloud px-2.5 py-0.5 text-[11px] font-light text-midnight">
+            <article className="rounded-[28px] border border-[#E5E7EB] bg-white p-6 shadow-[0_1px_2px_rgba(44,58,53,0.04)] sm:rounded-[32px] sm:p-7">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="rounded-full bg-[#EEF1EF] px-3 py-1 text-[12px] font-normal text-[#3D4A44]">
                   {active.label}
                 </span>
-                <span className="rounded-full border-[0.5px] border-mist px-2.5 py-0.5 text-[11px] font-light text-forest">
+                <span className="rounded-full border border-[#E5E7EB] bg-white px-3 py-1 text-[12px] font-normal text-[#3D4A44]">
                   {active.badge}
                 </span>
               </div>
 
-              <div className="relative mx-auto mt-3 h-[7.25rem] w-full max-w-[15rem] sm:h-[8.25rem]">
+              <div
+                className={`relative mx-auto mt-5 aspect-square w-full max-w-[15.5rem] overflow-hidden rounded-[22px] sm:max-w-[17rem] ${productStage[active.tone]}`}
+              >
                 <SiteImage
                   key={active.product.src}
                   image={active.product}
                   fill
-                  className="!object-contain !object-center"
-                  sizes="240px"
+                  className="!object-contain !object-center p-4"
+                  sizes="272px"
                 />
               </div>
 
-              <p className="label-caps mt-3">Personalized</p>
-              <h3 className="mt-1 font-[family-name:var(--font-dm-sans)] text-[1.2rem] font-light leading-tight tracking-[-0.02em] text-midnight sm:text-[1.3rem]">
+              <p className="mt-5 text-[11px] font-normal tracking-[0.14em] text-[#8A9690] uppercase">
+                Personalized
+              </p>
+              <h3 className="mt-1.5 font-[family-name:var(--font-dm-sans)] text-[1.65rem] leading-[1.15] tracking-[-0.03em] text-[#1F2A26] sm:text-[1.85rem]">
                 {active.title}
               </h3>
-              <p className="mt-2 text-[12.5px] font-light leading-relaxed text-forest sm:text-[13px]">
-                {active.body}{" "}
-                <span className="font-normal text-midnight">{active.available}</span>
+              <p className="mt-3 text-[14px] leading-[1.55] font-light text-[#4A5A52] sm:text-[15px]">
+                {active.body} {active.available}
               </p>
 
-              <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+              <div className="mt-6 flex items-center gap-2.5">
                 <Link
                   href="/start"
-                  className="inline-flex h-11 flex-1 items-center justify-center rounded-full bg-sage px-4 text-[13px] font-light text-white sm:text-[14px]"
+                  className="inline-flex h-12 flex-[1.35] items-center justify-center rounded-full bg-sage px-5 text-[14px] font-normal text-white transition-colors hover:bg-[#5F8165]"
                 >
                   See if I qualify
                 </Link>
                 <Link
                   href="/treatments"
-                  className="inline-flex h-11 items-center justify-center rounded-full border-[0.5px] border-midnight bg-white px-4 text-[13px] font-light text-midnight sm:min-w-[6.75rem] sm:text-[14px]"
+                  className="inline-flex h-12 flex-1 items-center justify-center rounded-full border border-[#2C3A35] bg-white px-4 text-[14px] font-normal text-[#2C3A35] transition-colors hover:bg-cloud"
                 >
                   Learn more
                 </Link>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>

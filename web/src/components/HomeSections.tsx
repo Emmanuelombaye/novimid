@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { faqPreview } from "@/lib/content";
 import { media } from "@/lib/media";
+import { ClinicalProcess } from "./ClinicalProcess";
 import { PersonalizedTreatments } from "./PersonalizedTreatments";
 import { Reveal } from "./Reveal";
 import { ReviewsStrip } from "./ReviewsStrip";
@@ -110,33 +111,6 @@ const loveCategories = [
         focus: "503A fulfillment",
       },
     ],
-  },
-] as const;
-
-const howSteps = [
-  {
-    step: "01",
-    meta: "Online intake",
-    t: "Complete your intake form",
-    b: "Answer a short medical questionnaire so our physicians can determine if treatment is right for you.",
-    img: media.product.glp1Hero,
-    kind: "product" as const,
-  },
-  {
-    step: "02",
-    meta: "Physician review",
-    t: "Provider evaluation",
-    b: "A board-certified physician reviews your intake and determines whether treatment is appropriate.",
-    img: media.lifestyle.physician1,
-    kind: "cover" as const,
-  },
-  {
-    step: "03",
-    meta: "503A fulfillment",
-    t: "Start treatment at home",
-    b: "If approved, your prescription is prepared through our licensed 503A pharmacy and shipped with clear instructions.",
-    img: media.product.peptideHero,
-    kind: "product" as const,
   },
 ] as const;
 
@@ -248,190 +222,12 @@ export function HomeSections() {
 
       <PersonalizedTreatments />
 
-      {/* 3. How it works — Top-Notch Professional Redesign */}
+      <ClinicalProcess />
+
       <section className="bg-[#FAFBF9] py-16 sm:py-24">
         <div className="shell">
-          <Reveal>
-            <div className="flex flex-col items-center text-center">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-midnight/20 bg-white px-3.5 py-1 text-[11px] font-bold tracking-wider text-midnight uppercase shadow-xs">
-                <span className="h-1.5 w-1.5 rounded-full bg-sage animate-pulse" />
-                ✦ Streamlined 3-Step Care
-              </span>
-              <h2 className="mt-4 font-[family-name:var(--font-dm-sans)] text-[clamp(1.85rem,4.5vw,2.75rem)] font-bold tracking-tight text-midnight">
-                How it{" "}
-                <em className="font-[family-name:var(--font-dm-serif)] italic text-sage-dark">
-                  works
-                </em>
-              </h2>
-              <p className="mx-auto mt-3 max-w-2xl text-[15px] font-light leading-relaxed text-forest sm:text-[16.5px]">
-                From onboarding through treatment, we support and guide you at every step.
-              </p>
-            </div>
-          </Reveal>
-
-          <ol className="mt-12 grid gap-6 md:grid-cols-3 lg:gap-7">
-            {/* Step 1 */}
-            <Reveal
-              delayMs={0}
-              as="li"
-              className="group relative flex flex-col justify-between overflow-hidden rounded-[26px] border-[2px] border-midnight bg-white p-6 shadow-[6px_6px_0_0_#1F2A37] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[8px_8px_0_0_#1F2A37] sm:p-7"
-            >
-              <div>
-                <div className="flex items-center justify-between">
-                  <span className="rounded-full bg-midnight px-3 py-1 text-[11px] font-bold tracking-wider text-white uppercase">
-                    Step 01
-                  </span>
-                  <span className="text-[11px] font-bold text-forest/70 uppercase tracking-wider">5-Min Intake</span>
-                </div>
-
-                <h3 className="mt-5 font-[family-name:var(--font-dm-sans)] text-[1.25rem] font-bold text-midnight sm:text-[1.35rem]">
-                  Complete your intake form
-                </h3>
-
-                <p className="mt-2.5 text-[13.5px] font-light leading-relaxed text-forest">
-                  Answer a short medical questionnaire covering your health goals, medical history, and bloodwork parameters — 100% online.
-                </p>
-              </div>
-
-              <div className="mt-6 flex flex-col gap-2.5">
-                <div className="rounded-2xl border border-midnight/12 bg-[#F4F7F4] p-3.5 shadow-inner">
-                  <div className="flex items-center justify-between text-[11px] font-bold text-midnight">
-                    <span>Intake Assessment</span>
-                    <span className="text-sage-dark">100% Complete</span>
-                  </div>
-                  <div className="mt-2 h-1.5 w-full rounded-full bg-midnight/10">
-                    <div className="h-full w-full rounded-full bg-sage" />
-                  </div>
-                  <div className="mt-2.5 flex items-center justify-between text-[10px] font-bold text-forest/70">
-                    <span>🔒 HIPAA Compliant</span>
-                    <span>⚡ Instant Submit</span>
-                  </div>
-                </div>
-
-                <div className="relative h-[120px] w-full overflow-hidden rounded-2xl border border-midnight/10 bg-[#EAF0EA] p-2">
-                  <SiteImage
-                    image={media.product.glp1Hero}
-                    fill
-                    className="!object-contain !object-center transition-transform duration-500 group-hover:scale-105"
-                    sizes="340px"
-                  />
-                </div>
-              </div>
-            </Reveal>
-
-            {/* Step 2 */}
-            <Reveal
-              delayMs={70}
-              as="li"
-              className="group relative flex flex-col justify-between overflow-hidden rounded-[26px] border-[2px] border-midnight bg-white p-6 shadow-[6px_6px_0_0_#1F2A37] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[8px_8px_0_0_#1F2A37] sm:p-7"
-            >
-              <div>
-                <div className="flex items-center justify-between">
-                  <span className="rounded-full bg-midnight px-3 py-1 text-[11px] font-bold tracking-wider text-white uppercase">
-                    Step 02
-                  </span>
-                  <span className="text-[11px] font-bold text-forest/70 uppercase tracking-wider">Board MD Review</span>
-                </div>
-
-                <h3 className="mt-5 font-[family-name:var(--font-dm-sans)] text-[1.25rem] font-bold text-midnight sm:text-[1.35rem]">
-                  Provider evaluation
-                </h3>
-
-                <p className="mt-2.5 text-[13.5px] font-light leading-relaxed text-forest">
-                  A board-certified US physician evaluates your intake, reviews labs if needed, and custom-tailors your precise protocol.
-                </p>
-              </div>
-
-              <div className="mt-6">
-                <div className="relative h-[185px] w-full overflow-hidden rounded-2xl border border-midnight/10 bg-[#F0F4F1]">
-                  <SiteImage
-                    image={media.lifestyle.physician1}
-                    fill
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                    sizes="340px"
-                  />
-                  <div className="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-midnight/80 to-transparent" />
-                  <span className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-white/90 px-3 py-1 text-[10.5px] font-bold text-midnight backdrop-blur-md shadow-xs">
-                    <span className="h-1.5 w-1.5 rounded-full bg-sage animate-pulse" />
-                    Dr. Board-Certified MD
-                  </span>
-                  <span className="absolute bottom-3 right-3 flex h-7 w-7 items-center justify-center rounded-full bg-sage text-[12px] font-bold text-midnight shadow-xs">
-                    ✓
-                  </span>
-                </div>
-              </div>
-            </Reveal>
-
-            {/* Step 3 */}
-            <Reveal
-              delayMs={140}
-              as="li"
-              className="group relative flex flex-col justify-between overflow-hidden rounded-[26px] border-[2px] border-midnight bg-white p-6 shadow-[6px_6px_0_0_#1F2A37] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[8px_8px_0_0_#1F2A37] sm:p-7"
-            >
-              <div>
-                <div className="flex items-center justify-between">
-                  <span className="rounded-full bg-midnight px-3 py-1 text-[11px] font-bold tracking-wider text-white uppercase">
-                    Step 03
-                  </span>
-                  <span className="text-[11px] font-bold text-forest/70 uppercase tracking-wider">503A Express Ship</span>
-                </div>
-
-                <h3 className="mt-5 font-[family-name:var(--font-dm-sans)] text-[1.25rem] font-bold text-midnight sm:text-[1.35rem]">
-                  Start treatment at home
-                </h3>
-
-                <p className="mt-2.5 text-[13.5px] font-light leading-relaxed text-forest">
-                  If approved, your prescription is prepared through our licensed 503A pharmacy and delivered cold-chain with clear instructions.
-                </p>
-              </div>
-
-              <div className="mt-6 flex flex-col gap-2.5">
-                <div className="relative h-[125px] w-full overflow-hidden rounded-2xl border border-midnight/10 bg-[#FAF8F5] p-2">
-                  <SiteImage
-                    image={media.product.peptideHero}
-                    fill
-                    className="!object-contain !object-center transition-transform duration-500 group-hover:scale-105"
-                    sizes="340px"
-                  />
-                  <span className="absolute top-2 right-2 rounded-md bg-midnight px-2 py-0.5 text-[9px] font-bold text-white">
-                    Cold-Chain Packaging
-                  </span>
-                </div>
-
-                <div className="flex items-center justify-between rounded-xl border border-midnight/10 bg-[#F4F7F4] px-3 py-2 text-[11px] font-medium text-midnight">
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-sage-dark">🚚</span>
-                    <span className="font-bold">Express Shipment</span>
-                  </div>
-                  <span className="rounded bg-sage/20 px-2 py-0.5 text-[9.5px] font-bold text-sage-dark uppercase">
-                    Active Tracking
-                  </span>
-                </div>
-              </div>
-            </Reveal>
-          </ol>
-
-          {/* Bottom Action Bar */}
-          <div className="mt-10 flex flex-col items-center justify-between gap-4 rounded-[22px] border-[2px] border-midnight bg-white px-6 py-4.5 shadow-[4px_4px_0_0_#1F2A37] sm:flex-row sm:px-8">
-            <div className="flex items-center gap-3 text-center sm:text-left">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sage/20 text-[16px] text-midnight">
-                ✦
-              </span>
-              <div>
-                <p className="text-[14px] font-bold text-midnight">Ready to start your physician-directed protocol?</p>
-                <p className="text-[12px] font-light text-forest">Online consult · California 503A when indicated</p>
-              </div>
-            </div>
-            <Link
-              href="/start"
-              className="inline-flex h-12 shrink-0 items-center justify-center rounded-full border-[1.5px] border-midnight bg-sage px-7 text-[14.5px] font-bold text-midnight shadow-[3px_3px_0_0_#1F2A37] transition-all hover:bg-sage-light hover:-translate-y-0.5"
-            >
-              Start your intake — $125/mo →
-            </Link>
-          </div>
-
           {/* Physician Care Section — Text Outside Card, Standalone Image Card */}
-          <div className="mt-16 grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
+          <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
             {/* Left Column: Text & Ratings (Outside Card) */}
             <div className="flex flex-col justify-center lg:col-span-7">
               {/* Ratings Strip: Google Search & Trustpilot */}
