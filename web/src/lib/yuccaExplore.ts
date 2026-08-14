@@ -62,7 +62,7 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
     tabImage: "/images/product-glp1-v2.png",
-    productBg: "/images/novimid-card-glp1.avif",
+    productBg: "/images/novimid-card-glp1.jpg",
     products: [
       {
         name: "GLP-1 (Semaglutide)",
@@ -96,7 +96,7 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
     tabImage: "/images/product-peptide-v2.png",
-    productBg: "/images/novimid-card-peptide.avif",
+    productBg: "/images/novimid-card-peptide.jpg",
     includes: [...INCLUDES],
     guarantee: GUARANTEE,
     ctaTone: "nad",
@@ -116,7 +116,7 @@ export const yuccaExploreCategories: YuccaExploreCategory[] = [
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
     tabImage: "/images/novimid-vial-single.png",
-    productBg: "/images/novimid-card-trt.avif",
+    productBg: "/images/novimid-card-trt.jpg",
     includes: [...INCLUDES],
     guarantee: GUARANTEE,
     ctaTone: "sermorelin",
