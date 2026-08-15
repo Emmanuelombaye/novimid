@@ -284,7 +284,7 @@ export function StartIntake() {
                         fill
                         className={
                           item.image.src.includes("product-")
-                            ? "object-contain object-center p-3"
+                            ? "object-contain object-center p-4"
                             : "object-cover object-center"
                         }
                         sizes="(max-width: 640px) 92vw, 280px"

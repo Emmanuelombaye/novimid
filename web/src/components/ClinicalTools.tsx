@@ -20,7 +20,9 @@ function ToolCard({
     <article className="flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border-[0.5px] border-mist bg-white">
       <div
         className={`relative aspect-[4/3] sm:aspect-square ${
-          tool.image.src.includes("tool-") ? "bg-[#E8F0EA]" : "bg-midnight"
+          tool.image.src.includes("tool-") || tool.image.src.includes("product-")
+            ? "bg-[#E8F0EA]"
+            : "bg-midnight"
         }`}
       >
         <SiteImage
@@ -29,8 +31,9 @@ function ToolCard({
           priority={priority}
           loading={priority ? undefined : "lazy"}
           className={
-            tool.image.src.includes("tool-")
-              ? "!object-contain !object-center p-5"
+            tool.image.src.includes("tool-") ||
+            tool.image.src.includes("product-")
+              ? "!object-contain !object-center p-4"
               : "object-cover"
           }
           sizes="(max-width: 768px) 82vw, 33vw"

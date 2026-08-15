@@ -59,9 +59,9 @@ export function HeroOrbitStage() {
           <Image
             src="/images/novimid-card-glp1.png"
             alt=""
-            width={631}
-            height={927}
-            className="h-auto w-auto object-contain"
+            width={1024}
+            height={1024}
+            className="h-auto w-auto max-h-full max-w-full object-contain"
             priority
           />
         </div>

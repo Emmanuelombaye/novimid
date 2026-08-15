@@ -63,7 +63,7 @@ export function YuccaTreatmentsExplore({
               <img
                 src={c.tabImage}
                 alt=""
-                className="explore-tab-img pointer-events-none absolute bottom-1 right-2 h-auto max-h-[3.75rem] w-auto max-w-[44%] object-contain object-bottom"
+                className="explore-tab-img pointer-events-none absolute bottom-1 right-1.5 h-auto max-h-[3.75rem] w-auto max-w-[3.75rem] object-contain object-bottom"
               />
             </button>
           );

@@ -1180,14 +1180,16 @@ details[open] .faq-plus {
 }
 
 .explore-tab-link[data-active="true"] .explore-tab-img {
-  right: 10px !important;
-  bottom: 4px !important;
-  max-height: 3.5rem;
-  max-width: 42%;
+  right: 6px !important;
+  bottom: 2px !important;
+  top: auto !important;
+  left: auto !important;
+  max-height: 3.75rem;
+  max-width: 3.75rem;
   width: auto;
   height: auto;
   object-fit: contain;
-  object-position: bottom right;
+  object-position: center bottom;
 }
 
 .explore-tab-link[data-active="true"] {
@@ -1263,39 +1265,28 @@ details[open] .faq-plus {
   margin-inline: auto;
 }
 
+/* Product stage fills leftover card height; image always fully visible */
 .explore-hero-card-stage {
   position: relative;
   z-index: 1;
   flex: 1 1 auto;
-  min-height: 220px;
+  min-height: 0;
   width: 100%;
-  /* Stage is the containing block so product max-height % resolves */
 }
 
 .explore-hero-card-product-img {
   position: absolute;
-  left: 50%;
-  top: 52%;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  box-sizing: border-box;
   display: block;
-  width: auto;
-  height: auto;
-  /* Yucca-like: sized to fit fully — never crop tall Novimid PNGs */
-  max-width: min(58%, 200px);
-  max-height: min(78%, 310px);
+  width: 100%;
+  height: 100%;
+  padding: 6px 14px 8px;
   object-fit: contain;
   object-position: center;
   filter: drop-shadow(0 14px 28px rgba(44, 58, 53, 0.14));
   user-select: none;
   -webkit-user-drag: none;
-}
-
-/* Peptides / TRT art is taller — keep slightly smaller so nothing clips */
-.retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-card-product-img,
-.retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-card-product-img {
-  max-width: min(42%, 160px);
-  max-height: min(76%, 300px);
-  top: 54%;
 }
 
 .explore-hero-card-title {
@@ -1378,35 +1369,24 @@ details[open] .faq-plus {
   }
 
   .explore-tab-link[data-active="true"] .explore-tab-img {
-    right: 8px !important;
-    bottom: 4px !important;
-    max-height: 3.15rem;
-    max-width: 40%;
+    right: 4px !important;
+    bottom: 2px !important;
+    max-height: 3.25rem;
+    max-width: 3.25rem;
   }
 
-  /* Yucca mobile card: fixed 520px stage, product never cropped */
+  /* Mobile: same contain-in-stage rules — square assets never crop */
   .explore-hero-card {
     width: 100% !important;
     max-width: 430px !important;
-    height: 520px !important;
-    min-height: 520px !important;
+    height: 500px !important;
+    min-height: 500px !important;
     margin-inline: auto;
-    padding: 28px 22px 20px !important;
-  }
-
-  .explore-hero-card-stage {
-    min-height: 260px;
+    padding: 24px 18px 18px !important;
   }
 
   .explore-hero-card-product-img {
-    max-width: min(56%, 190px);
-    max-height: min(72%, 280px);
-  }
-
-  .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-card-product-img,
-  .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-card-product-img {
-    max-width: min(40%, 145px);
-    max-height: min(70%, 270px);
+    padding: 4px 10px 6px;
   }
 
   .explore-hero-card-title {
@@ -1422,19 +1402,8 @@ details[open] .faq-plus {
     max-width: 480px;
   }
 
-  .explore-hero-card-stage {
-    min-height: 280px;
-  }
-
   .explore-hero-card-product-img {
-    max-width: min(54%, 210px);
-    max-height: min(74%, 320px);
-  }
-
-  .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-card-product-img,
-  .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-card-product-img {
-    max-width: min(38%, 150px);
-    max-height: min(72%, 300px);
+    padding: 8px 18px 10px;
   }
 }
 
@@ -1512,17 +1481,8 @@ details[open] .faq-plus {
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-card[data-card="sermorelin"] {
     padding: 24px 28px 25px;
   }
-  .explore-hero-card-stage {
-    min-height: 300px;
-  }
   .explore-hero-card-product-img {
-    max-width: min(48%, 200px);
-    max-height: min(72%, 340px);
-  }
-  .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-card-product-img,
-  .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-card-product-img {
-    max-width: min(34%, 145px);
-    max-height: min(70%, 320px);
+    padding: 10px 24px 12px;
   }
   .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-card-title,
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-card-title {
@@ -2583,7 +2543,7 @@ details[open] .faq-plus {
 .yt-expect-card__media--product .yt-expect-card__img {
   object-fit: contain;
   object-position: center;
-  padding: 12px;
+  padding: 16px;
 }
 
 .yt-expect-card__label {
