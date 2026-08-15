@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { HowItWorksFlow } from "@/components/HowItWorksFlow";
 import { Reveal } from "@/components/Reveal";
-import { TrustTicker } from "@/components/TrustTicker";
 import { brand } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -14,8 +13,6 @@ export const metadata: Metadata = {
 export default function HowItWorksPage() {
   return (
     <>
-      <TrustTicker />
-
       <section className="bg-white pt-10 pb-4 sm:pt-14 sm:pb-8">
         <div className="shell">
           <Reveal>

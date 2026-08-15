@@ -139,13 +139,13 @@ export function HomeSections() {
             {[...resultStories, ...resultStories].map((card, i) => (
               <article
                 key={`${card.name}-${i}`}
-                className="relative grid h-[300px] w-[min(92vw,640px)] shrink-0 grid-cols-2 overflow-hidden rounded-[20px] border-[0.5px] border-midnight bg-midnight sm:h-[360px] sm:w-[660px] sm:rounded-[24px]"
+                className="relative grid h-[340px] w-[min(92vw,640px)] shrink-0 grid-cols-2 overflow-hidden rounded-[20px] border-[0.5px] border-midnight bg-midnight sm:h-[400px] sm:w-[660px] sm:rounded-[24px]"
               >
                 <div className="relative overflow-hidden border-r-[0.5px] border-white/20">
                   <SiteImage
                     image={card.before}
                     fill
-                    className="object-cover object-[center_20%] brightness-[0.85]"
+                    className="object-cover object-top brightness-[0.85]"
                     sizes="330px"
                   />
                   <div className="absolute inset-0 bg-midnight/35" aria-hidden />
@@ -166,7 +166,7 @@ export function HomeSections() {
                   <SiteImage
                     image={card.after}
                     fill
-                    className="object-cover object-[center_18%]"
+                    className="object-cover object-top"
                     sizes="330px"
                   />
                   <div className="absolute inset-0 bg-midnight/20" aria-hidden />
@@ -193,28 +193,7 @@ export function HomeSections() {
         </div>
 
         <div className="shell mt-8">
-          <div className="mx-auto flex max-w-2xl flex-col items-stretch overflow-hidden rounded-full bg-midnight sm:flex-row">
-            <div className="flex flex-1 items-center justify-center gap-3 px-5 py-3.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10">
-                <StarMark size="sm" className="text-sage" />
-              </span>
-              <div className="text-left">
-                <p className="text-[13px] font-light text-white">Physician-directed care</p>
-                <p className="text-[11px] font-light text-sage-mist">Board-certified review</p>
-              </div>
-            </div>
-            <div className="hidden w-px bg-white/15 sm:block" aria-hidden />
-            <div className="flex flex-1 items-center justify-center gap-3 border-t-[0.5px] border-white/15 px-5 py-3.5 sm:border-t-0">
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-sage text-[12px] font-light text-white">
-                CA
-              </span>
-              <div className="text-left">
-                <p className="text-[13px] font-light text-white">California supply chain</p>
-                <p className="text-[11px] font-light text-sage-mist">Licensed 503A compounding</p>
-              </div>
-            </div>
-          </div>
-          <p className="mt-4 text-center text-[11px] font-light italic text-fog">
+          <p className="text-center text-[11px] font-light italic text-fog">
             Individual patient experiences and results may vary.
           </p>
         </div>

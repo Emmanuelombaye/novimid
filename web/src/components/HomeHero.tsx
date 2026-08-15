@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { HeroOrbitStage } from "@/components/HeroOrbitStage";
@@ -34,20 +33,12 @@ export function HomeHero() {
   }, []);
 
   return (
-    <section className="hero-section relative flex min-h-0 w-full flex-col justify-between overflow-hidden bg-[#fafbf9] text-midnight lg:min-h-[calc(100dvh-64px)]">
-      {/* Novimid background — full image behind orbit, seam hidden by blend layers */}
-      <div className="hero-bg-layer absolute inset-0 z-0 bg-[#eef3ee]">
-        <Image
-          src="/images/hero-brand.png"
-          alt="Novimid precision medicine protocol"
-          fill
-          className="hero-bg-photo"
-          priority
-          sizes="100vw"
-        />
-        <div className="hero-seam-blend pointer-events-none absolute inset-0 z-[1]" aria-hidden />
-        <div className="hero-copy-scrim pointer-events-none absolute inset-0 z-[2]" aria-hidden />
-        <div className="hero-bottom-scrim pointer-events-none absolute inset-x-0 bottom-0 z-[3] h-32 sm:h-24" aria-hidden />
+    <section className="hero-section relative flex min-h-0 w-full flex-col justify-between overflow-x-clip overflow-y-visible bg-[#fafbf9] text-midnight lg:min-h-[calc(100dvh-64px)]">
+      {/* Soft brand atmosphere — products live in the orbit stage (no double product art) */}
+      <div className="hero-bg-layer absolute inset-0 z-0 bg-[#eef3ee]" aria-hidden>
+        <div className="hero-atmosphere pointer-events-none absolute inset-0" />
+        <div className="hero-copy-scrim pointer-events-none absolute inset-0 z-[2]" />
+        <div className="hero-bottom-scrim pointer-events-none absolute inset-x-0 bottom-0 z-[3] h-32 sm:h-24" />
       </div>
 
       {/* Hims-style floating products + orbiting micro-copy */}

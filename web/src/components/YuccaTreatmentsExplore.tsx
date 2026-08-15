@@ -63,8 +63,7 @@ export function YuccaTreatmentsExplore({
               <img
                 src={c.tabImage}
                 alt=""
-                className="explore-tab-img pointer-events-none absolute bottom-0 max-h-[4.5rem]"
-                style={{ right: c.tone === "sermorelin" ? -14 : 0 }}
+                className="explore-tab-img pointer-events-none absolute bottom-0 right-2 max-h-[4.25rem] w-auto max-w-[46%]"
               />
             </button>
           );
@@ -98,6 +97,17 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
               {cat.title}
             </h2>
 
+            <div className="explore-hero-card-product relative z-[1] flex min-h-0 flex-1 items-center justify-center px-2 py-3 sm:px-4 sm:py-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={cat.productBg}
+                alt=""
+                className="explore-hero-card-product-img pointer-events-none max-h-full w-auto max-w-[min(78%,280px)] object-contain object-center drop-shadow-[0_12px_28px_rgba(44,58,53,0.12)]"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+
             {cat.priceBadge ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -107,7 +117,7 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
               />
             ) : null}
 
-            <div className="explore-hero-card-footer relative z-[2] flex w-full items-center justify-between gap-3 text-xs font-medium leading-none tracking-[-0.01em]">
+            <div className="explore-hero-card-footer relative z-[2] flex w-full shrink-0 items-center justify-between gap-3 text-xs font-medium leading-none tracking-[-0.01em]">
               <div className="min-w-0 shrink">
                 <strong className="font-medium">{cat.footerSocialBold}</strong>
                 {cat.footerSocialSuffix}

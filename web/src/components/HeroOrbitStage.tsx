@@ -61,7 +61,7 @@ export function HeroOrbitStage() {
             alt=""
             width={631}
             height={927}
-            className="h-auto w-[min(220px,62vw)] max-w-none drop-shadow-[0_20px_36px_rgba(44,58,53,0.14)] sm:w-[min(300px,34vw)] lg:w-[340px]"
+            className="h-auto w-auto object-contain"
             priority
           />
         </div>

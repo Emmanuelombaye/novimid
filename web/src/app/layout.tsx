@@ -3,8 +3,6 @@ import { DM_Sans, DM_Serif_Display, Figtree } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { MobileCTA } from "@/components/MobileCTA";
-import { PromoBanner } from "@/components/PromoBanner";
-import { TrustTicker } from "@/components/TrustTicker";
 import { brand } from "@/lib/content";
 import { media } from "@/lib/media";
 import "./globals.css";
@@ -83,9 +81,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${dmSans.variable} ${dmSerif.variable} ${figtree.variable} h-full`}
     >
       <body className="flex min-h-full flex-col bg-white text-midnight antialiased">
-        {/* Site chrome: promo → ticker → nav → page */}
-        <PromoBanner />
-        <TrustTicker />
+        {/* Site chrome: nav → page */}
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
