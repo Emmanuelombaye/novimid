@@ -507,9 +507,9 @@ textarea.field-control {
   position: absolute;
   z-index: 5;
   top: 42%;
-  right: clamp(4.5rem, 12vw, 9rem);
-  width: min(360px, 34vw);
-  height: min(360px, 34vw);
+  right: clamp(5rem, 13vw, 10rem);
+  width: min(340px, 32vw);
+  height: min(340px, 32vw);
   transform: translateY(-50%);
 }
 
@@ -603,15 +603,15 @@ textarea.field-control {
 
 @media (max-width: 1023px) {
   .hero-orbit-stage {
-    top: clamp(4.75rem, 18vw, 6.5rem);
+    top: clamp(3.75rem, 14vw, 5.5rem);
     right: 50%;
-    width: min(300px, 88vw);
-    height: min(300px, 88vw);
+    width: min(250px, 72vw);
+    height: min(250px, 72vw);
     transform: translate(50%, 0);
   }
 
   .hero-orbit-stage-inner {
-    transform: rotateX(4deg) rotateY(0deg) rotateZ(0deg) scale(0.94);
+    transform: rotateX(4deg) rotateY(0deg) rotateZ(0deg) scale(0.96);
   }
 
   .hero-orbit-product--main img {
@@ -622,12 +622,12 @@ textarea.field-control {
   .hero-orbit-product--accent {
     left: 10%;
     top: 68%;
-    width: 26%;
-    height: 26%;
+    width: 24%;
+    height: 24%;
   }
 
   .hero-orbit-ring {
-    opacity: 0.78;
+    opacity: 0.72;
   }
 
   .hero-orbit-glow {
@@ -638,13 +638,13 @@ textarea.field-control {
 
 @media (max-width: 639px) {
   .hero-orbit-stage {
-    top: 4.5rem;
-    width: min(272px, 90vw);
-    height: min(272px, 90vw);
+    top: 3.25rem;
+    width: min(220px, 68vw);
+    height: min(220px, 68vw);
   }
 
   .hero-orbit-stage-inner {
-    transform: scale(0.88);
+    transform: scale(0.94);
   }
 
   .hero-orbit-product--main img {
@@ -653,11 +653,11 @@ textarea.field-control {
   }
 
   .hero-orbit-text {
-    font-size: 7.5px;
+    font-size: 7px;
   }
 
   .hero-orbit-ring--reverse .hero-orbit-text {
-    font-size: 7px;
+    font-size: 6.5px;
   }
 }
 
@@ -1177,10 +1177,10 @@ details[open] .faq-plus {
 }
 
 .explore-tab-link[data-active="true"] .explore-tab-img {
-  right: 10px !important;
-  bottom: 0;
-  max-height: 4.25rem;
-  max-width: 46%;
+  right: 12px !important;
+  bottom: 2px;
+  max-height: 3.75rem;
+  max-width: 40%;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -1271,8 +1271,8 @@ details[open] .faq-plus {
 .explore-hero-card-product-img {
   width: auto;
   height: auto;
-  max-height: min(100%, 300px);
-  max-width: min(68%, 240px);
+  max-height: min(100%, 310px);
+  max-width: min(78%, 280px);
   object-fit: contain;
   object-position: center;
 }
@@ -1336,9 +1336,50 @@ details[open] .faq-plus {
     display: none;
   }
 
+  .explore-tab-menu {
+    max-width: 100%;
+    gap: 6px;
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+  .explore-tab-menu[data-active-index="0"] {
+    grid-template-columns: 1.45fr 1fr 1fr;
+  }
+  .explore-tab-menu[data-active-index="1"] {
+    grid-template-columns: 1fr 1.45fr 1fr;
+  }
+  .explore-tab-menu[data-active-index="2"] {
+    grid-template-columns: 1fr 1fr 1.45fr;
+  }
+
+  .explore-tab-link {
+    min-height: 3.75rem;
+    padding: 0.65rem 0.7rem;
+    font-size: 0.8125rem;
+  }
+
+  .explore-tab-link[data-active="true"] .explore-tab-img {
+    right: 6px !important;
+    max-height: 3.4rem;
+    max-width: 42%;
+  }
+
+  .explore-hero-card {
+    height: auto !important;
+    min-height: 26rem !important;
+  }
+
+  .explore-hero-card-product {
+    min-height: 12rem;
+  }
+
   .explore-hero-card-product-img {
-    max-height: min(100%, 260px);
-    max-width: min(70%, 210px);
+    max-height: 240px !important;
+    max-width: min(86%, 260px) !important;
+  }
+
+  .explore-hero-card-title {
+    font-size: 1.5rem !important;
+    line-height: 1.08 !important;
   }
 }
 

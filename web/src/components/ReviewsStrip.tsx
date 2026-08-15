@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Reveal } from "./Reveal";
-import { StarMark, Stars } from "./Stars";
+import { Stars } from "./Stars";
 
 const featured = {
   h: "Clinical from the first conversation.",
@@ -131,30 +131,7 @@ export function ReviewsStrip() {
           </div>
         </div>
 
-        {/* Bottom Trust Banner */}
-        <div className="mx-auto mt-10 flex max-w-2xl flex-col items-stretch overflow-hidden rounded-full border-[2px] border-midnight bg-white shadow-[4px_4px_0_0_#1F2A37] sm:mt-12 sm:flex-row">
-          <div className="flex flex-1 items-center justify-center gap-3 px-6 py-3.5">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-sage/20 text-midnight font-bold">
-              <StarMark size="sm" />
-            </span>
-            <div>
-              <p className="text-[13.5px] font-bold text-midnight">Physician-directed care</p>
-              <p className="text-[11.5px] font-light text-forest">Board-certified US physician review</p>
-            </div>
-          </div>
-          <div className="hidden w-0.5 bg-midnight/15 sm:block" aria-hidden />
-          <div className="flex flex-1 items-center justify-center gap-3 px-6 py-3.5 bg-[#FAFBF9]">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-sage/20 text-midnight font-bold">
-              ✦
-            </span>
-            <div>
-              <p className="text-[13.5px] font-bold text-midnight">Licensed 503A Pharmacy</p>
-              <p className="text-[11.5px] font-light text-forest">Direct cold-chain shipping</p>
-            </div>
-          </div>
-        </div>
-
-        <p className="mx-auto mt-5 max-w-lg text-center text-[11px] font-light italic text-fog">
+        <p className="mx-auto mt-8 max-w-lg text-center text-[11px] font-light italic text-fog sm:mt-10">
           Reviews are illustrative for layout. Individual patient experiences and results may vary.
         </p>
 

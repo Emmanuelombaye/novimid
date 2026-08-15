@@ -10,7 +10,7 @@ import { Reveal } from "./Reveal";
 import { ReviewsStrip } from "./ReviewsStrip";
 import { SiteImage } from "./SiteImage";
 import { SpecialistsGrid } from "./SpecialistsGrid";
-import { StarMark, Stars } from "./Stars";
+import { Stars } from "./Stars";
 import { WhyNovimidGrid } from "./WhyNovimid";
 
 /** Illustrative journeys only — no invented weight outcomes */
@@ -413,31 +413,9 @@ export function HomeSections() {
             ))}
           </div>
 
-          {/* Bottom Trust Banner */}
-          <div className="mx-auto mt-10 flex max-w-xl flex-col items-center gap-4 sm:mt-12">
-            <div className="flex w-full flex-col items-stretch overflow-hidden rounded-full border-[2px] border-midnight bg-[#DCE8DD] shadow-[4px_4px_0_0_#1F2A37] sm:flex-row">
-              <div className="flex flex-1 items-center justify-center gap-2.5 px-5 py-3">
-                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white text-midnight font-bold shadow-xs">
-                  <StarMark size="xs" />
-                </span>
-                <p className="text-[13px] font-bold text-midnight">
-                  Physician-directed care
-                </p>
-              </div>
-              <div className="hidden w-0.5 bg-midnight/20 sm:block" aria-hidden />
-              <div className="flex flex-1 items-center justify-center gap-2.5 px-5 py-3 bg-white">
-                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-sage/20 text-midnight font-bold">
-                  ✦
-                </span>
-                <p className="text-[13px] font-bold text-midnight">
-                  California 503A Compounding
-                </p>
-              </div>
-            </div>
-            <p className="text-[11px] font-medium italic text-forest/70">
-              Individual patient experiences and results may vary.
-            </p>
-          </div>
+          <p className="mx-auto mt-8 max-w-lg text-center text-[11px] font-medium italic text-forest/70 sm:mt-10">
+            Individual patient experiences and results may vary.
+          </p>
         </div>
       </section>
 

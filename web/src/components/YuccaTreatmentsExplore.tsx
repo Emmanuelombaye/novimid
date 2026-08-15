@@ -87,7 +87,7 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
         <div className="explore-hero-grid flex flex-col gap-5 sm:gap-7">
           {/* Left product stage — stays full-width until CSS grid (≥1120px) to avoid crush */}
           <div
-            className="explore-card explore-hero-card relative flex h-[32.5rem] min-h-[32.5rem] w-full flex-col justify-between overflow-hidden rounded-3xl px-6 pt-6 pb-5 text-xs font-medium tracking-[-0.01em] text-[#2c3a35] sm:px-7 sm:pt-8 sm:pb-7"
+            className="explore-card explore-hero-card relative flex h-auto min-h-[26rem] w-full flex-col justify-between overflow-hidden rounded-3xl px-5 pt-5 pb-4 text-xs font-medium tracking-[-0.01em] text-[#2c3a35] sm:h-[32.5rem] sm:min-h-[32.5rem] sm:px-7 sm:pt-8 sm:pb-7"
             data-card={cat.tone}
           >
             <h2
@@ -97,12 +97,12 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
               {cat.title}
             </h2>
 
-            <div className="explore-hero-card-product relative z-[1] flex min-h-0 flex-1 items-center justify-center px-2 py-3 sm:px-4 sm:py-4">
+            <div className="explore-hero-card-product relative z-[1] flex min-h-[11.5rem] flex-1 items-center justify-center px-3 py-4 sm:min-h-0 sm:px-4 sm:py-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={cat.productBg}
                 alt=""
-                className="explore-hero-card-product-img pointer-events-none max-h-full w-auto max-w-[min(78%,280px)] object-contain object-center drop-shadow-[0_12px_28px_rgba(44,58,53,0.12)]"
+                className="explore-hero-card-product-img pointer-events-none max-h-full w-auto max-w-[min(86%,280px)] object-contain object-center drop-shadow-[0_12px_28px_rgba(44,58,53,0.12)]"
                 loading="eager"
                 decoding="async"
               />
@@ -216,20 +216,20 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
 
             <div className="explore-hero-divider mb-9 hidden h-px w-full bg-[#eee] md:block" />
 
-            <div className="explore-hero-pricing explore-hero-pricing--badge-only order-first mb-6 md:order-none md:mb-0">
-              <div className="explore-hero-price-row explore-hero-price-row--badge-only mb-4 flex items-center justify-between md:mb-0">
-                <span className="explore-hero-price-label text-sm tracking-[-0.01em] text-neutral-900/40">
-                  Starting as low as:
-                </span>
-                {cat.priceBadge ? (
-                  // eslint-disable-next-line @next/next/no-img-element
+            <div className="explore-hero-pricing explore-hero-pricing--badge-only order-first mb-5 md:order-none md:mb-0">
+              {cat.priceBadge ? (
+                <div className="explore-hero-price-row explore-hero-price-row--badge-only mb-4 flex items-center justify-between md:mb-0">
+                  <span className="explore-hero-price-label text-sm tracking-[-0.01em] text-neutral-900/40">
+                    Starting as low as:
+                  </span>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={cat.priceBadge}
                     alt=""
                     className="explore-hero-price-badge h-[72px] w-[72px] object-contain sm:h-[103px] sm:w-[103px]"
                   />
-                ) : null}
-              </div>
+                </div>
+              ) : null}
               <Link
                 href="/start"
                 className={`explore-hero-cta explore-hero-cta--${cat.ctaTone} flex w-full items-center justify-center rounded-full border-2 border-[#2c3a35] px-6 py-4 text-base font-bold leading-none tracking-[-0.01em] shadow-[3px_4px_0_0_#2c3a35] transition-[transform,box-shadow] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_2px_0_0_#2c3a35]`}
