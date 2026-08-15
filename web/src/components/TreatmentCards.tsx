@@ -55,7 +55,7 @@ export function TreatmentCards() {
                 image={card.product}
                 fill
                 loading="lazy"
-                className="!object-contain !object-center p-4"
+                className="!object-contain !object-center p-6 sm:p-7"
                 sizes="224px"
               />
             </div>

@@ -549,7 +549,14 @@ function RetroClinical({ data }: { data: ClinicalData }) {
    SECTION: RetroExpect (Timeline)
 ───────────────────────────────────────────── */
 
-type ExpectCard = { img: string; alt: string; label: string; desc: string };
+type ExpectCard = {
+  img: string;
+  alt: string;
+  label: string;
+  desc: string;
+  /** Product photography — use contain so vials/pens are never cropped */
+  product?: boolean;
+};
 
 const WL_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
   heading: "What to expect, week by week with your GLP-1 care",
@@ -622,6 +629,7 @@ const SERM_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
       alt: "Patient with sustained hormone care support",
       label: "Month 3+ \u00b7 Accountable maintenance",
       desc: "This is where hormone care becomes long-term and precise. Monitoring continues so your protocol stays aligned to your response and clinical goals.",
+      product: true,
     },
   ],
 };
@@ -635,7 +643,9 @@ function RetroExpect({ data, modifier }: { data: typeof WL_EXPECT; modifier?: st
         <div className="yt-expect__grid">
           {data.cards.map((card, i) => (
             <article key={i} className="yt-expect-card">
-              <div className="yt-expect-card__media">
+              <div
+                className={`yt-expect-card__media${card.product ? " yt-expect-card__media--product" : ""}`}
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img className="yt-expect-card__img" src={card.img} alt={card.alt} loading="lazy" decoding="async" />
               </div>

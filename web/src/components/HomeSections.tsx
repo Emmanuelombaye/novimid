@@ -139,14 +139,14 @@ export function HomeSections() {
             {[...resultStories, ...resultStories].map((card, i) => (
               <article
                 key={`${card.name}-${i}`}
-                className="relative grid h-[340px] w-[min(92vw,640px)] shrink-0 grid-cols-2 overflow-hidden rounded-[20px] border-[0.5px] border-midnight bg-midnight sm:h-[400px] sm:w-[660px] sm:rounded-[24px]"
+                className="relative grid h-[300px] w-[min(92vw,560px)] shrink-0 grid-cols-2 overflow-hidden rounded-[20px] border-[0.5px] border-midnight bg-midnight sm:h-[380px] sm:w-[640px] sm:rounded-[24px]"
               >
                 <div className="relative overflow-hidden border-r-[0.5px] border-white/20">
                   <SiteImage
                     image={card.before}
                     fill
-                    className="object-cover object-top brightness-[0.85]"
-                    sizes="330px"
+                    className="object-cover object-[center_22%] brightness-[0.85]"
+                    sizes="320px"
                   />
                   <div className="absolute inset-0 bg-midnight/35" aria-hidden />
                   <span className="absolute top-3 left-3 rounded-lg bg-midnight px-2.5 py-1 text-[11px] font-light text-white sm:top-4 sm:left-4">
@@ -166,8 +166,8 @@ export function HomeSections() {
                   <SiteImage
                     image={card.after}
                     fill
-                    className="object-cover object-top"
-                    sizes="330px"
+                    className="object-cover object-[center_20%]"
+                    sizes="320px"
                   />
                   <div className="absolute inset-0 bg-midnight/20" aria-hidden />
                   <span className="absolute top-3 left-3 rounded-lg bg-[#DCE8DD] px-2.5 py-1 text-[11px] font-light text-midnight sm:top-4 sm:left-4">

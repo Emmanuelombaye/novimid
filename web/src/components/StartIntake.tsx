@@ -273,12 +273,20 @@ export function StartIntake() {
                         : "border-mist bg-white hover:border-sage"
                     }`}
                   >
-                    <div className="relative aspect-[16/10] bg-cloud">
+                    <div
+                      className={`relative aspect-[16/10] ${
+                        item.image.src.includes("product-") ? "bg-[#E8F0EA]" : "bg-cloud"
+                      }`}
+                    >
                       <Image
                         src={item.image.src}
                         alt=""
                         fill
-                        className="object-cover"
+                        className={
+                          item.image.src.includes("product-")
+                            ? "object-contain object-center p-3"
+                            : "object-cover object-center"
+                        }
                         sizes="(max-width: 640px) 92vw, 280px"
                       />
                     </div>

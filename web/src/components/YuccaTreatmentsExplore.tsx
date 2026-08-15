@@ -54,16 +54,16 @@ export function YuccaTreatmentsExplore({
               data-active={on ? "true" : "false"}
               data-tone={c.tone}
               onClick={() => select(c)}
-              className="explore-tab-link relative flex min-h-[4.5625rem] cursor-pointer items-center overflow-hidden rounded-xl p-4 text-sm font-semibold leading-none tracking-[-0.02em] text-[#2c3a35]"
+              className="explore-tab-link relative flex min-h-[4.5625rem] cursor-pointer items-center overflow-hidden rounded-xl p-3 sm:p-4 text-sm font-semibold leading-none tracking-[-0.02em] text-[#2c3a35]"
             >
               <span className="explore-tab-border" aria-hidden />
               <span className="explore-tab-fill" aria-hidden />
-              <span className="relative z-[2] max-w-[55%] whitespace-nowrap">{c.tab}</span>
+              <span className="relative z-[2] max-w-[52%] whitespace-nowrap">{c.tab}</span>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={c.tabImage}
                 alt=""
-                className="explore-tab-img pointer-events-none absolute bottom-0 right-2 max-h-[4.25rem] w-auto max-w-[46%]"
+                className="explore-tab-img pointer-events-none absolute bottom-1 right-2 h-auto max-h-[3.75rem] w-auto max-w-[44%] object-contain object-bottom"
               />
             </button>
           );
@@ -87,7 +87,7 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
         <div className="explore-hero-grid flex flex-col gap-5 sm:gap-7">
           {/* Left product stage — stays full-width until CSS grid (≥1120px) to avoid crush */}
           <div
-            className="explore-card explore-hero-card relative flex h-auto min-h-[26rem] w-full flex-col justify-between overflow-hidden rounded-3xl px-5 pt-5 pb-4 text-xs font-medium tracking-[-0.01em] text-[#2c3a35] sm:h-[32.5rem] sm:min-h-[32.5rem] sm:px-7 sm:pt-8 sm:pb-7"
+            className="explore-card explore-hero-card relative flex w-full flex-col justify-between rounded-3xl px-5 pt-5 pb-4 text-xs font-medium tracking-[-0.01em] text-[#2c3a35] sm:px-7 sm:pt-8 sm:pb-7"
             data-card={cat.tone}
           >
             <h2
@@ -97,12 +97,12 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
               {cat.title}
             </h2>
 
-            <div className="explore-hero-card-product relative z-[1] flex min-h-[11.5rem] flex-1 items-center justify-center px-3 py-4 sm:min-h-0 sm:px-4 sm:py-4">
+            <div className="explore-hero-card-stage relative z-[1] min-h-0 flex-1">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={cat.productBg}
                 alt=""
-                className="explore-hero-card-product-img pointer-events-none max-h-full w-auto max-w-[min(86%,280px)] object-contain object-center drop-shadow-[0_12px_28px_rgba(44,58,53,0.12)]"
+                className="explore-hero-card-product-img pointer-events-none"
                 loading="eager"
                 decoding="async"
               />
@@ -159,7 +159,7 @@ function YuccaPane({ cat }: { cat: YuccaExploreCategory }) {
                         alt=""
                         width={34}
                         height={34}
-                        className="block h-full w-full object-cover"
+                        className="block h-full w-full object-contain object-bottom p-0.5"
                       />
                     </div>
                     <div className="explore-hero-product-copy min-w-0">

@@ -18,13 +18,21 @@ function ToolCard({
 }) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border-[0.5px] border-mist bg-white">
-      <div className="relative aspect-[4/3] bg-midnight sm:aspect-square">
+      <div
+        className={`relative aspect-[4/3] sm:aspect-square ${
+          tool.image.src.includes("tool-") ? "bg-[#E8F0EA]" : "bg-midnight"
+        }`}
+      >
         <SiteImage
           image={tool.image}
           fill
           priority={priority}
           loading={priority ? undefined : "lazy"}
-          className="object-cover"
+          className={
+            tool.image.src.includes("tool-")
+              ? "!object-contain !object-center p-5"
+              : "object-cover"
+          }
           sizes="(max-width: 768px) 82vw, 33vw"
         />
       </div>

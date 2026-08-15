@@ -47,7 +47,7 @@ export function SpecialistsGrid({ showProviderLink = true }: Props) {
                     src={doc.image.src}
                     alt={doc.image.alt}
                     fill
-                    className="object-cover object-[center_12%]"
+                    className="object-cover object-[center_18%]"
                     sizes="(max-width:640px) 45vw, (max-width:1024px) 22vw, 200px"
                   />
                 </div>
