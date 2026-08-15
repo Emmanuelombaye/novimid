@@ -126,7 +126,7 @@ function WhyScienceVisual() {
         <SiteImage
           image={media.product.glp1Hero}
           fill
-          className="!object-contain !object-bottom p-2"
+          className="!object-contain !object-center p-2"
           sizes="150px"
         />
       </div>

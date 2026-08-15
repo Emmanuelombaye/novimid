@@ -1177,19 +1177,20 @@ details[open] .faq-plus {
 .explore-tab-link[data-active="false"] .explore-tab-img {
   display: none !important;
   opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
 }
 
 .explore-tab-link[data-active="true"] .explore-tab-img {
-  right: 6px !important;
-  bottom: 2px !important;
-  top: auto !important;
-  left: auto !important;
-  max-height: 3.75rem;
-  max-width: 3.75rem;
-  width: auto;
-  height: auto;
+  display: block;
+  width: 2.35rem;
+  height: 2.35rem;
+  max-width: 2.35rem;
+  max-height: 2.35rem;
   object-fit: contain;
-  object-position: center bottom;
+  object-position: center;
+  flex-shrink: 0;
 }
 
 .explore-tab-link[data-active="true"] {
@@ -1281,7 +1282,7 @@ details[open] .faq-plus {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 6px 14px 8px;
+  padding: 10px 18px 12px;
   object-fit: contain;
   object-position: center;
   filter: drop-shadow(0 14px 28px rgba(44, 58, 53, 0.14));
@@ -1369,10 +1370,10 @@ details[open] .faq-plus {
   }
 
   .explore-tab-link[data-active="true"] .explore-tab-img {
-    right: 4px !important;
-    bottom: 2px !important;
-    max-height: 3.25rem;
-    max-width: 3.25rem;
+    width: 2rem;
+    height: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
   }
 
   /* Mobile: same contain-in-stage rules — square assets never crop */
@@ -1386,7 +1387,7 @@ details[open] .faq-plus {
   }
 
   .explore-hero-card-product-img {
-    padding: 4px 10px 6px;
+    padding: 8px 14px 10px;
   }
 
   .explore-hero-card-title {
@@ -2186,18 +2187,22 @@ details[open] .faq-plus {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
   min-height: 200px;
-  overflow: hidden;
+  overflow: visible;
+  padding: 12px 8px;
 }
 
 .yt-clinical__vial {
-  height: 220px;
+  height: auto;
+  max-height: 200px;
   width: auto;
+  max-width: min(48%, 150px);
   object-fit: contain;
+  object-position: center;
 }
-.yt-clinical__vial--tirz { transform: translateX(12px) rotate(-6deg); }
-.yt-clinical__vial--sema { transform: translateX(-12px) rotate(6deg); }
+.yt-clinical__vial--tirz { transform: translateX(6px) rotate(-5deg); }
+.yt-clinical__vial--sema { transform: translateX(-6px) rotate(5deg); }
 
 /* Plan product cards */
 .yt-clinical__products {
@@ -2241,14 +2246,15 @@ details[open] .faq-plus {
   overflow: hidden;
   flex-shrink: 0;
   border: 1.5px solid var(--yt-ink);
-  background: var(--yt-neutral-200);
+  background: linear-gradient(180deg, #e8f0ea 0%, #c5d5b0 100%);
 }
 .yt-clinical-product__thumb img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
-  padding: 4px;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 .yt-clinical-product__intro {
@@ -2455,9 +2461,11 @@ details[open] .faq-plus {
   }
   .yt-clinical__visual {
     min-height: 280px;
+    padding: 16px 12px;
   }
   .yt-clinical__vial {
-    height: 300px;
+    max-height: 260px;
+    max-width: min(48%, 170px);
   }
 }
 

@@ -205,7 +205,7 @@ export function StartIntake() {
         backLabel={step === 0 ? "Home" : "Back"}
       />
 
-      <div className="shell flex-1 py-6 pb-28 sm:py-10 sm:pb-32">
+      <div className="shell flex-1 py-6 pb-36 sm:py-10 sm:pb-40">
         <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
           {[
             { k: "Physician-led", v: "Board-certified oversight" },
@@ -274,7 +274,7 @@ export function StartIntake() {
                     }`}
                   >
                     <div
-                      className={`relative aspect-[16/10] ${
+                      className={`relative aspect-[4/3] sm:aspect-[16/10] ${
                         item.image.src.includes("product-") ? "bg-[#E8F0EA]" : "bg-cloud"
                       }`}
                     >
@@ -284,7 +284,7 @@ export function StartIntake() {
                         fill
                         className={
                           item.image.src.includes("product-")
-                            ? "object-contain object-center p-4"
+                            ? "object-contain object-center p-5"
                             : "object-cover object-center"
                         }
                         sizes="(max-width: 640px) 92vw, 280px"

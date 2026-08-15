@@ -58,12 +58,18 @@ export function YuccaTreatmentsExplore({
             >
               <span className="explore-tab-border" aria-hidden />
               <span className="explore-tab-fill" aria-hidden />
-              <span className="relative z-[2] max-w-[52%] whitespace-nowrap">{c.tab}</span>
+              <span
+                className={`relative z-[2] min-w-0 ${
+                  on ? "mr-2 max-w-[58%] shrink truncate sm:max-w-[62%]" : "mx-auto"
+                }`}
+              >
+                {c.tab}
+              </span>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={c.tabImage}
                 alt=""
-                className="explore-tab-img pointer-events-none absolute bottom-1 right-1.5 h-auto max-h-[3.75rem] w-auto max-w-[3.75rem] object-contain object-bottom"
+                className="explore-tab-img pointer-events-none relative z-[2] ml-auto h-9 w-9 shrink-0 object-contain object-center sm:h-10 sm:w-10"
               />
             </button>
           );
