@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { brand } from "@/lib/content";
+import { FooterTrustBadges } from "./FooterTrustBadges";
 import { LegitScriptBadge } from "./LegitScriptBadge";
 
 const treatments = [
@@ -188,6 +189,8 @@ export function Footer() {
             </ul>
           </div>
         </div>
+
+        <FooterTrustBadges tone="light" hipaaHref="/privacy" />
 
         <div className="mt-10 border-t-[0.5px] border-mist pt-6 sm:mt-12 sm:pt-7">
           <p className="text-[12px] font-light leading-relaxed text-fog">
