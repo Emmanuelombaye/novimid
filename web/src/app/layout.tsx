@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     template: `%s · ${brand.displayName}`,
   },
   description:
-    "novimid connects patients with board-certified physicians who design evidence-based protocols — peptide therapy, GLP-1, and TRT — delivered through a licensed compounding pharmacy.",
+    "novimid connects patients with board-certified physicians who design evidence-based Semaglutide and Tirzepatide weight management protocols — delivered through a licensed compounding pharmacy.",
   applicationName: brand.displayName,
   robots: { index: true, follow: true },
   openGraph: {

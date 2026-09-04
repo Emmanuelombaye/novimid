@@ -5,10 +5,9 @@ import { useState } from "react";
 import { YuccaTreatmentsExplore } from "./YuccaTreatmentsExplore";
 import type { YuccaTone } from "@/lib/yuccaExplore";
 
-const IMG_GLP1 = "/images/product-glp1-v2.png";
-const IMG_PEPTIDE = "/images/product-peptide-v2.png";
-const IMG_TRT = "/images/product-trt-v2.png";
+const IMG_PRODUCT = "/images/product-glp1-v2.png";
 const IMG_VIAL_A = "/images/icon-vial-a-v2.png";
+const IMG_VIAL_B = "/images/icon-vial-b-v2.png";
 
 /* ─────────────────────────────────────────────
    DATA
@@ -16,20 +15,18 @@ const IMG_VIAL_A = "/images/icon-vial-a-v2.png";
 
 type FaqItem = { q: string; a: string };
 
-// ── Metabolic / GLP-1 ────────────────────────
-
-const WL_FAQS: FaqItem[] = [
+const SEMA_FAQS: FaqItem[] = [
   {
-    q: "What is GLP-1 care at novimid?",
-    a: "Physician-directed metabolic support that may include GLP-1 (Semaglutide) and dual-pathway GLP-1 + GIP (Tirzepatide) protocols when clinically appropriate. Care begins with intake and physician review — every plan is built around you.",
+    q: "What is the Semaglutide Program at novimid?",
+    a: "Physician-directed Semaglutide care for weight management when clinically appropriate. Care begins with intake and physician review — every plan is built around you. Completing intake does not guarantee a prescription.",
   },
   {
     q: "What's the difference between Semaglutide and Tirzepatide?",
-    a: "Semaglutide is a GLP-1 receptor agonist. Tirzepatide is a dual GIP and GLP-1 receptor agonist. Both support appetite regulation and metabolic health through different receptor pathways. Your physician reviews your history and goals to determine what may be appropriate.",
+    a: "Both support appetite regulation and weight management through related but different pathways. Your physician reviews your history and goals to determine what may be appropriate for you.",
   },
   {
-    q: "Who is metabolic GLP-1 care for?",
-    a: "GLP-1 care may be considered for adults seeking physician-guided metabolic support who meet clinical criteria. Eligibility is determined by a licensed physician based on your medical history, current health, and goals. Treatment isn't right for everyone — every plan begins with a provider review.",
+    q: "Who is Semaglutide care for?",
+    a: "Semaglutide may be considered for adults seeking physician-guided weight management who meet clinical criteria. Eligibility is determined by a licensed physician based on your medical history, current health, and goals. Treatment isn't right for everyone — every plan begins with a provider review.",
   },
   {
     q: "How does the prescription process work?",
@@ -45,53 +42,30 @@ const WL_FAQS: FaqItem[] = [
   },
 ];
 
-// ── Peptides ─────────────────────────────────
-
-const NAD_FAQS: FaqItem[] = [
+const TIRZ_FAQS: FaqItem[] = [
   {
-    q: "What is peptide therapy at novimid?",
-    a: "Physician-prescribed peptide protocols designed to support recovery, cellular energy, and performance. When clinically appropriate, prescriptions may be compounded through our licensed 503A pharmacy after physician review.",
+    q: "What is the Tirzepatide Program at novimid?",
+    a: "Physician-directed Tirzepatide care for weight management when clinically appropriate. Care begins with intake and physician review — every plan is built around you. Completing intake does not guarantee a prescription.",
   },
   {
-    q: "How do peptide protocols support recovery and energy?",
-    a: "Peptide therapies are selected to work with pathways involved in repair, cellular signaling, and metabolic function. Your physician chooses a protocol based on your goals, history, and clinical picture — not a one-size template.",
+    q: "What's the difference between Semaglutide and Tirzepatide?",
+    a: "Both support appetite regulation and weight management through related but different pathways. Your physician reviews your history and goals to determine what may be appropriate for you.",
   },
   {
-    q: "Who is peptide therapy for?",
-    a: "Peptide therapy may be considered for adults focused on recovery, energy, performance, and long-term wellness. Eligibility is determined by a licensed physician. Treatment isn't right for everyone — every plan begins with a provider review.",
+    q: "Who is Tirzepatide care for?",
+    a: "Tirzepatide may be considered for adults seeking physician-guided weight management who meet clinical criteria. Eligibility is determined by a licensed physician based on your medical history, current health, and goals. Treatment isn't right for everyone — every plan begins with a provider review.",
   },
   {
     q: "How does the prescription process work?",
-    a: "You complete a short clinical intake, share your medical history, and connect with a licensed physician. If approved, medication is prepared when indicated and shipped directly. Your care team stays involved as your protocol is reviewed over time.",
+    a: "You complete a short clinical intake, share your medical history, and connect with a licensed physician. If approved, medication is prepared through our licensed compounding pharmacy when indicated and shipped directly. Your physician stays involved as dosing is titrated over time.",
+  },
+  {
+    q: "What should I know about side effects?",
+    a: "Side effects vary by person. Common effects may include nausea, constipation, diarrhea, appetite changes, or digestive discomfort while your body adjusts. Your physician reviews your history, explains what to watch for, and can adjust your protocol if needed.",
   },
   {
     q: "Are compounded medications FDA-approved?",
     a: "No. Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
-  },
-];
-
-// ── Hormones / TRT ───────────────────────────
-
-const SERM_FAQS: FaqItem[] = [
-  {
-    q: "What is TRT at novimid?",
-    a: "Testosterone replacement therapy under physician oversight — with labs, dosing, and follow-up built into an accountable plan. Eligibility and dosing are physician decisions based on your clinical picture.",
-  },
-  {
-    q: "How does hormone optimization work here?",
-    a: "Your physician reviews symptoms, history, and labs where appropriate, then designs a protocol around your biology. Follow-up keeps dosing accountable as your response is monitored over time.",
-  },
-  {
-    q: "Who is TRT for?",
-    a: "TRT may be considered for adults with clinically appropriate indications after physician evaluation. It isn't right for everyone — every plan begins with intake and provider review, not a checkout.",
-  },
-  {
-    q: "How does the prescription process work?",
-    a: "You complete a short clinical intake, share your medical history, and connect with a licensed physician. If approved, treatment is coordinated with clear instructions and ongoing oversight.",
-  },
-  {
-    q: "Are compounded medications FDA-approved?",
-    a: "No. When compounding is used, medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
   },
 ];
 
@@ -157,16 +131,16 @@ type ProtocolData = {
   modifier?: string;
 };
 
-const WL_PROTOCOL: ProtocolData = {
+const SEMA_PROTOCOL: ProtocolData = {
   heading: "Hunger was never the enemy. Clarity was missing.",
-  sub: "Novimid GLP-1 care restores the fullness signal your body already knows how to send \u2014 so appetite settles into something quieter, steadier, and finally easier to trust.",
-  vialImg: IMG_GLP1,
-  vialAlt: "Personalized Tirzepatide and Semaglutide GLP-1 injection vials",
+  sub: "Novimid Semaglutide care helps restore the fullness signal your body already knows how to send \u2014 so appetite settles into something quieter, steadier, and finally easier to trust.",
+  vialImg: IMG_PRODUCT,
+  vialAlt: "Personalized Semaglutide program vial",
   cards: [
     {
       icon: <IconWave />,
-      title: "Targets the hormone that tells your brain you\u2019re full.",
-      body: "After you eat, your body releases a hormone called GLP-1 \u2014 a signal that travels to your brain and says: enough. GLP-1 medications mimic that signal. The result is a clearer, more consistent message to stop eating.",
+      title: "Supports the signal that tells your brain you\u2019re full.",
+      body: "After you eat, your body releases a natural fullness signal that travels to your brain and says: enough. Semaglutide helps reinforce that message. The result is a clearer, more consistent cue to stop eating.",
     },
     {
       icon: <IconDot />,
@@ -176,59 +150,33 @@ const WL_PROTOCOL: ProtocolData = {
     {
       icon: <IconLines />,
       title: "Recalibrates your hunger system \u2014 not shuts it down.",
-      body: "Over time, with structured dosing reviewed by your provider, GLP-1 therapy helps restore a more balanced hormonal response to food \u2014 so the process feels steadier, not like a fight you\u2019re constantly losing.",
+      body: "Over time, with structured dosing reviewed by your provider, Semaglutide care helps restore a more balanced response to food \u2014 so the process feels steadier, not like a fight you\u2019re constantly losing.",
     },
   ],
   ctaLink: "/start",
 };
 
-const NAD_PROTOCOL: ProtocolData = {
-  heading: "Peptides work with pathways\nyour body already uses.",
-  sub: "Physician-directed peptide protocols are selected to support recovery, cellular energy, and performance — compounded when clinically appropriate.",
-  vialImg: IMG_PEPTIDE,
-  vialAlt: "Personalized peptide therapy vials",
-  modifier: "retro-protocol--nad",
+const TIRZ_PROTOCOL: ProtocolData = {
+  heading: "Hunger was never the enemy. Clarity was missing.",
+  sub: "Novimid Tirzepatide care helps restore the fullness signal your body already knows how to send \u2014 so appetite settles into something quieter, steadier, and finally easier to trust.",
+  vialImg: IMG_PRODUCT,
+  vialAlt: "Personalized Tirzepatide program vial",
+  modifier: "retro-protocol--tirzepatide",
   cards: [
     {
       icon: <IconWave />,
-      title: "Supports cellular signaling and repair.",
-      body: "Peptide protocols are chosen to engage pathways involved in recovery and cellular communication. Your physician selects what fits your clinical picture — not a generic stack.",
+      title: "Supports the signal that tells your brain you\u2019re full.",
+      body: "After you eat, your body releases a natural fullness signal that travels to your brain and says: enough. Tirzepatide helps reinforce that message through dual pathways. The result is a clearer, more consistent cue to stop eating.",
     },
     {
       icon: <IconDot />,
-      title: "Built around energy and performance goals.",
-      body: "Whether the focus is steadier energy, training recovery, or long-term resilience, dosing and follow-up stay accountable to how you respond over time.",
+      title: "Slows down how fast food leaves your stomach.",
+      body: "These treatments reduce the rate at which your stomach empties after a meal. The physical sensation of fullness lasts longer \u2014 and hunger returns more slowly.",
     },
     {
       icon: <IconLines />,
-      title: "Compounded when clinically indicated.",
-      body: "When appropriate, prescriptions are prepared through our licensed 503A compounding pharmacy after physician review — with clear instructions and ongoing oversight.",
-    },
-  ],
-  ctaLink: "/start",
-};
-
-const SERM_PROTOCOL: ProtocolData = {
-  heading: "Hormone optimization\nwith accountable follow-up.",
-  sub: "TRT at novimid pairs physician evaluation with labs, dosing, and follow-through — so your protocol stays precise as your biology responds.",
-  vialImg: IMG_TRT,
-  vialAlt: "Personalized hormone therapy vial",
-  modifier: "retro-protocol--sermorelin",
-  cards: [
-    {
-      icon: <IconWave />,
-      title: "Starts with physician evaluation.",
-      body: "Eligibility and dosing are clinical decisions. Your physician reviews history, symptoms, and labs where appropriate before any protocol begins.",
-    },
-    {
-      icon: <IconDot />,
-      title: "Labs and dosing stay connected.",
-      body: "Hormone optimization isn't set-and-forget. Monitoring helps your physician adjust dosing with accountability — aligned to your response and goals.",
-    },
-    {
-      icon: <IconLines />,
-      title: "Follow-up is part of the plan.",
-      body: "Clear instructions, ongoing oversight, and a care team that stays involved — so hormone therapy remains measured, not guesswork.",
+      title: "Recalibrates your hunger system \u2014 not shuts it down.",
+      body: "Over time, with structured dosing reviewed by your provider, Tirzepatide care helps restore a more balanced response to food \u2014 so the process feels steadier, not like a fight you\u2019re constantly losing.",
     },
   ],
   ctaLink: "/start",
@@ -262,10 +210,10 @@ function RetroProtocol({ data }: { data: ProtocolData }) {
 }
 
 /* ─────────────────────────────────────────────
-   SECTION: RetroCalculator (WL only)
+   SECTION: RetroCalculator
 ───────────────────────────────────────────── */
 
-function RetroCalculator() {
+function RetroCalculator({ programLabel }: { programLabel: string }) {
   const [weight, setWeight] = useState("");
   const lbs = parseFloat(weight) || 0;
   const potential = lbs > 0 ? (lbs * 0.2).toFixed(1) : "00.0";
@@ -275,7 +223,7 @@ function RetroCalculator() {
       <div className="yt-calculator__panel">
         <div className="yt-calculator__left">
           <h2 id="yt-calc-heading" className="yt-calculator__heading">
-            Let&apos;s see your <em>potential</em> with GLP-1 care
+            Let&apos;s see your <em>potential</em> with {programLabel}
           </h2>
           <div className="yt-calculator__control">
             <label className="sr-only" htmlFor="yt-calc-weight">Enter your weight (lbs)</label>
@@ -334,103 +282,68 @@ type ClinicalData = {
   modifier: string;
 };
 
-const WL_CLINICAL: ClinicalData = {
-  eyebrow: "Metabolic · Physician-directed GLP-1 care",
-  heading: "Evidence-based\npharmacotherapy for\nmetabolic health.",
+const SEMA_CLINICAL: ClinicalData = {
+  eyebrow: "Weight Management · Semaglutide Program",
+  heading: "Evidence-based\npharmacotherapy for\nweight management.",
   body: (
     <>
-      <p>GLP-1 receptor agonists engage pathways that govern satiety, gastric emptying, and glycemic control — supporting measured, clinically supervised metabolic care.</p>
+      <p>Semaglutide engages pathways that govern satiety, gastric emptying, and metabolic balance — supporting measured, clinically supervised weight management care.</p>
       <ul>
-        <li><strong>Semaglutide (GLP-1)</strong> — selective GLP-1 receptor agonism for progressive appetite regulation.</li>
-        <li><strong>Tirzepatide (GLP-1 + GIP)</strong> — dual incretin agonism for broader metabolic support when clinically appropriate.</li>
+        <li><strong>Semaglutide</strong> — selective receptor support for progressive appetite regulation when clinically appropriate.</li>
       </ul>
-      <p>Each protocol is prescribed by a licensed physician and titrated to your response, tolerability, and clinical goals.</p>
+      <p>Each protocol is prescribed by a licensed physician and titrated to your response, tolerability, and clinical goals. Completing intake does not guarantee a prescription.</p>
     </>
   ),
-  vialImg: IMG_GLP1,
+  vialImg: IMG_PRODUCT,
   vialImg2: IMG_VIAL_A,
   modifier: "yt-clinical--weight-loss",
   products: [
     {
-      id: "sema",
+      id: "semaglutide",
       vialImg: IMG_VIAL_A,
-      title: "GLP-1 (Semaglutide)",
+      title: "Semaglutide",
       sub: "Gradual, physician-guided progress.",
-      tag: "Most accessible",
+      tag: "Weight Management",
       tagColor: "purple",
       patientsBold: "Physician-guided",
       patientsRest: "dosing protocols",
       plans: [
-        { name: "1 Month Supply", save: "Save 43%", was: "$256/mo", now: "$146/mo" },
-        { name: "6 Month Supply", badge: "Best value", save: "Save 51%", was: "$256/mo", now: "$750 total", perMonth: "$125/mo" },
+        { name: "Monthly supply", now: "Quoted after review" },
+        { name: "Multi-month supply", badge: "If prescribed", now: "Discussed with your clinician" },
       ],
       ctaLink: "/start",
     },
+  ],
+};
+
+const TIRZ_CLINICAL: ClinicalData = {
+  eyebrow: "Weight Management · Tirzepatide Program",
+  heading: "Evidence-based\npharmacotherapy for\nweight management.",
+  body: (
+    <>
+      <p>Tirzepatide engages pathways that govern satiety, gastric emptying, and metabolic balance — supporting measured, clinically supervised weight management care.</p>
+      <ul>
+        <li><strong>Tirzepatide</strong> — dual-pathway support for broader appetite regulation when clinically appropriate.</li>
+      </ul>
+      <p>Each protocol is prescribed by a licensed physician and titrated to your response, tolerability, and clinical goals. Completing intake does not guarantee a prescription.</p>
+    </>
+  ),
+  vialImg: IMG_PRODUCT,
+  vialImg2: IMG_VIAL_B,
+  modifier: "yt-clinical--tirzepatide",
+  products: [
     {
-      id: "tirz",
-      vialImg: IMG_GLP1,
-      title: "GLP-1 + GIP (Tirzepatide)",
-      sub: "Dual-pathway metabolic support.",
-      tag: "Dual pathway",
+      id: "tirzepatide",
+      vialImg: IMG_VIAL_B,
+      title: "Tirzepatide",
+      sub: "Physician-guided dual-pathway support.",
+      tag: "Weight Management",
       tagColor: "green",
       patientsBold: "Physician-guided",
       patientsRest: "dosing protocols",
       plans: [
-        { name: "1 Month Supply", save: "Save 46%", was: "$475/mo", now: "$258/mo" },
-        { name: "6 Month Supply", badge: "Best value", save: "Save 53%", was: "$475/mo", now: "$1,350 total", perMonth: "$225/mo" },
-      ],
-      ctaLink: "/start",
-    },
-  ],
-};
-
-const NAD_CLINICAL: ClinicalData = {
-  eyebrow: "Peptides · 503A when indicated",
-  heading: "Physician-directed\npeptide protocols for\nrecovery and energy.",
-  body: (
-    <>
-      <p>Personalized peptide therapy is reviewed by a licensed physician and adjusted as you progress. When clinically appropriate, prescriptions may be compounded through our licensed 503A pharmacy.</p>
-      <p>Protocols are selected around your goals — recovery, cellular energy, and performance — with clear follow-through.</p>
-    </>
-  ),
-  vialImg: IMG_PEPTIDE,
-  modifier: "yt-clinical--nad",
-  products: [
-    {
-      id: "nad",
-      vialImg: IMG_PEPTIDE,
-      title: "Peptide therapy",
-      sub: "Recovery, energy, and performance support.",
-      tag: "Personalized",
-      tagColor: "green",
-      plans: [
-        { name: "*3 month supply", now: "$158" },
-      ],
-      ctaLink: "/start",
-    },
-  ],
-};
-
-const SERM_CLINICAL: ClinicalData = {
-  eyebrow: "Hormones · Clinical oversight",
-  heading: "Accountable TRT with\nlabs, dosing, and\nfollow-up.",
-  body: (
-    <>
-      <p>Hormone optimization at novimid is physician-directed. Eligibility and dosing are clinical decisions — supported by labs where appropriate and follow-up that keeps your protocol accountable.</p>
-    </>
-  ),
-  vialImg: IMG_TRT,
-  modifier: "yt-clinical--sermorelin",
-  products: [
-    {
-      id: "sermorelin",
-      vialImg: IMG_TRT,
-      title: "TRT",
-      sub: "Labs, dosing, and physician follow-up.",
-      tag: "Clinical oversight",
-      tagColor: "orange",
-      plans: [
-        { name: "*3 month supply", now: "$158" },
+        { name: "Monthly supply", now: "Quoted after review" },
+        { name: "Multi-month supply", badge: "If prescribed", now: "Discussed with your clinician" },
       ],
       ctaLink: "/start",
     },
@@ -558,83 +471,57 @@ type ExpectCard = {
   product?: boolean;
 };
 
-const WL_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
-  heading: "What to expect, week by week with your GLP-1 care",
-  sub: "No guesswork. Here’s how the first months typically look under physician-directed metabolic care. Individual experiences vary.",
+const SEMA_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
+  heading: "What to expect, week by week with your Semaglutide care",
+  sub: "No guesswork. Here’s how the first months typically look under physician-directed Semaglutide care. Individual experiences vary.",
   cards: [
     {
       img: "/images/care-woman.jpg",
       alt: "Patient examining dose and consultation summary",
       label: "Week 1 → 4 · Your body is adjusting",
-      desc: "You start on a low dose — intentionally. Your GLP-1 protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
+      desc: "You start on a low dose — intentionally. Your Semaglutide protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
     },
     {
       img: "/images/physician-1.png",
-      alt: "Patient in morning light as GLP-1 protocol settles in",
+      alt: "Patient in morning light as Semaglutide protocol settles in",
       label: "Week 4 → 12 · The protocol starts to settle",
       desc: "This is when most patients begin to feel more consistent regulation. Food noise and cravings often quiet. Fullness arrives earlier and stays longer. Your dose may be reviewed and adjusted.",
     },
     {
       img: "/images/care-man.jpg",
-      alt: "Patient at home as provider fine-tunes GLP-1 protocol",
+      alt: "Patient at home as provider fine-tunes Semaglutide protocol",
       label: "Month 3+ · Calibrated to you",
       desc: "This is where care becomes truly personal. With how your body has responded — to the dose, to titration, to the protocol itself — your physician can fine-tune with real precision.",
     },
   ],
 };
 
-const NAD_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
-  heading: "What to expect,\nweek by week",
-  sub: "Peptide therapy unfolds gradually under physician oversight. Here’s how the first months typically look. Individual experiences vary.",
+const TIRZ_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
+  heading: "What to expect, week by week with your Tirzepatide care",
+  sub: "No guesswork. Here’s how the first months typically look under physician-directed Tirzepatide care. Individual experiences vary.",
   cards: [
     {
       img: "/images/care-woman.jpg",
-      alt: "Patient reviewing their peptide protocol",
-      label: "Week 1 → 4 · Protocol begins",
-      desc: "You start on a measured dose — intentionally. Your peptide protocol is introduced so your body can begin to respond. Some patients notice early shifts in energy or recovery. Others take longer. Both are normal.",
+      alt: "Patient examining dose and consultation summary",
+      label: "Week 1 → 4 · Your body is adjusting",
+      desc: "You start on a low dose — intentionally. Your Tirzepatide protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
     },
     {
-      img: "/images/physician-2.png",
-      alt: "Patient as their peptide protocol settles in",
-      label: "Week 4 → 12 · Consistency builds",
-      desc: "This is when most patients begin to feel the protocol working more consistently. Energy, recovery, or focus may hold steadier. Your physician may review and adjust dosing.",
+      img: "/images/physician-1.png",
+      alt: "Patient in morning light as Tirzepatide protocol settles in",
+      label: "Week 4 → 12 · The protocol starts to settle",
+      desc: "This is when most patients begin to feel more consistent regulation. Food noise and cravings often quiet. Fullness arrives earlier and stays longer. Your dose may be reviewed and adjusted.",
     },
     {
       img: "/images/care-man.jpg",
-      alt: "Patient as their provider fine-tunes peptide care",
-      label: "Month 3+ · Long-term support",
-      desc: "This is where the protocol becomes truly personal. The focus shifts from adjustment to consistency, and long-term support becomes the rhythm.",
+      alt: "Patient at home as provider fine-tunes Tirzepatide protocol",
+      label: "Month 3+ · Calibrated to you",
+      desc: "This is where care becomes truly personal. With how your body has responded — to the dose, to titration, to the protocol itself — your physician can fine-tune with real precision.",
     },
   ],
 };
 
-const SERM_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
-  heading: "What to expect,\nweek by week",
-  sub: "TRT is monitored carefully. Here’s how the first months typically unfold under physician-directed hormone care.",
-  cards: [
-    {
-      img: "/images/care-man.jpg",
-      alt: "Patient beginning hormone optimization with Novimid",
-      label: "Week 1 \u2192 4 \u00b7 Evaluation to start",
-      desc: "Care begins with physician review and a starting protocol when appropriate. Early follow-up confirms tolerability and clarifies what to expect as dosing settles in.",
-    },
-    {
-      img: "/images/physician-2.png",
-      alt: "Patient during hormone protocol follow-up",
-      label: "Week 4 \u2192 12 \u00b7 Dosing finds rhythm",
-      desc: "Labs and check-ins help your physician refine dosing. Many patients notice steadier energy and clearer follow-through as the protocol is calibrated.",
-    },
-    {
-      img: "/images/product-trt-v2.png",
-      alt: "Patient with sustained hormone care support",
-      label: "Month 3+ \u00b7 Accountable maintenance",
-      desc: "This is where hormone care becomes long-term and precise. Monitoring continues so your protocol stays aligned to your response and clinical goals.",
-      product: true,
-    },
-  ],
-};
-
-function RetroExpect({ data, modifier }: { data: typeof WL_EXPECT; modifier?: string }) {
+function RetroExpect({ data, modifier }: { data: typeof SEMA_EXPECT; modifier?: string }) {
   return (
     <section className={`yt-expect${modifier ? ` ${modifier}` : ""}`} aria-labelledby="yt-expect-heading">
       <div className="yt-expect__inner">
@@ -727,321 +614,38 @@ function RetroKnowall({
   );
 }
 
-/* ─────────────────────────────────────────────
-   RETRO HAPPY — patient results marquee
-───────────────────────────────────────────── */
-
-type HappyWlCard = {
-  kind: "wl";
-  src: string;
-  name: string;
-  lbs: string;
-  time: string;
-  alt: string;
-};
-
-type HappyNadCard = {
-  kind: "nad";
-  before: string;
-  after: string;
-  name: string;
-};
-
-type HappyCard = HappyWlCard | HappyNadCard;
-
-const WL_HAPPY: HappyWlCard[] = [
-  {
-    kind: "wl",
-    src: "/images/happy/Lisa-C.-p-800.avif",
-    name: "Lisa C.",
-    lbs: "75",
-    time: "in 10 Months",
-    alt: "Before and after photo of GLP-1 patient Lisa C., who lost 75 lbs in 10 months.",
-  },
-  {
-    kind: "wl",
-    src: "/images/happy/Blaze-B.-p-800.avif",
-    name: "Blaze B.",
-    lbs: "50",
-    time: "in 6 Months",
-    alt: "Before and after photo of GLP-1 patient Blaze B., who lost 50 lbs in 6 months.",
-  },
-  {
-    kind: "wl",
-    src: "/images/happy/Crystal-G.-p-800.avif",
-    name: "Crystal G.",
-    lbs: "50",
-    time: "in 6 Months",
-    alt: "Before and after photo of GLP-1 patient Crystal G., who lost 50 lbs in 6 months.",
-  },
-  {
-    kind: "wl",
-    src: "/images/happy/Jamilyn-C.-p-800.avif",
-    name: "JamiLyn O.",
-    lbs: "36",
-    time: "in 14 Weeks",
-    alt: "Before and after photo of GLP-1 patient JamiLyn O., who lost 36 lbs in 14 weeks.",
-  },
-  {
-    kind: "wl",
-    src: "/images/happy/Kim-B.-p-800.avif",
-    name: "Kim B.",
-    lbs: "8",
-    time: "in 6 Weeks",
-    alt: "Before and after photo of GLP-1 patient Kim B., who lost 8 lbs in 6 weeks.",
-  },
-];
-
-const NAD_HAPPY: HappyNadCard[] = [
-  {
-    kind: "nad",
-    before: "/images/happy/nad-ba-1-before.avif",
-    after: "/images/happy/nad-ba-1-after.avif",
-    name: "Mart C.",
-  },
-  {
-    kind: "nad",
-    before: "/images/happy/nad-ba-2-before.avif",
-    after: "/images/happy/nad-ba-2-after.avif",
-    name: "Dana R.",
-  },
-  {
-    kind: "nad",
-    before: "/images/happy/nad-ba-3-before.avif",
-    after: "/images/happy/nad-ba-3-after.avif",
-    name: "Alex P.",
-  },
-  {
-    kind: "nad",
-    before: "/images/happy/nad-ba-4-before.avif",
-    after: "/images/happy/nad-ba-4-after.avif",
-    name: "Jordan M.",
-  },
-];
-
-function RetroHappy({ variant }: { variant: YuccaTone }) {
-  const cards: HappyCard[] =
-    variant === "wl" ? WL_HAPPY : variant === "nad" ? NAD_HAPPY : NAD_HAPPY;
-  const loop = [...cards, ...cards];
-
-  return (
-    <section
-      className={`yt-happy${variant === "nad" ? " yt-happy--nad" : ""}${
-        variant === "sermorelin" ? " yt-happy--sermorelin" : ""
-      }`}
-      aria-labelledby={`yt-happy-heading-${variant}`}
-    >
-      <h2 id={`yt-happy-heading-${variant}`} className="yt-happy__heading">
-        Our <em className="yt-happy__heading-accent">patients&apos; incredible results</em>
-        <br />- built to last!
-      </h2>
-
-      <div className="yt-happy__marquee" aria-label="Patient transformation showcase">
-        <div className="yt-happy__track" role="list">
-          <ul className="yt-happy__group" role="list">
-            {loop.map((card, i) => (
-              <li key={`${card.name}-${i}`} className="yt-happy__card" role="listitem">
-                {card.kind === "wl" ? (
-                  <>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      className="yt-happy__photo"
-                      src={card.src}
-                      alt={card.alt}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span className="yt-happy__chip yt-happy__chip--before">Before</span>
-                    <span className="yt-happy__chip yt-happy__chip--after">After</span>
-                    <div className="yt-happy__scrim" aria-hidden />
-                    <div className="yt-happy__metric">
-                      <div className="yt-happy__metric-row">
-                        <span className="yt-happy__metric-label">Lost</span>
-                        <svg className="yt-happy__metric-arrow" viewBox="0 0 12 12" fill="none" aria-hidden>
-                          <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </div>
-                      <div className="yt-happy__metric-number yt-happy__metric-lbs">
-                        {card.lbs}
-                        <span className="yt-happy__metric-unit">lbs</span>
-                      </div>
-                      <div className="yt-happy__metric-time">{card.time}</div>
-                    </div>
-                    <div className="yt-happy__pill">
-                      <span className="yt-happy__pill-name">{card.name}</span>
-                      <svg className="yt-happy__pill-check" viewBox="0 0 20 20" fill="none" aria-hidden>
-                        <circle cx="10" cy="10" r="9" fill="#fff" />
-                        <path d="M6 10.2l2.4 2.4L14 7.5" stroke="#2c3a35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                      <span className="yt-happy__pill-verified">Verified patient</span>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="yt-happy__photos">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img className="yt-happy__photo" src={card.before} alt={`${card.name} — before`} loading="lazy" decoding="async" />
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img className="yt-happy__photo" src={card.after} alt={`${card.name} — after`} loading="lazy" decoding="async" />
-                    </div>
-                    <span className="yt-happy__chip yt-happy__chip--before">Before</span>
-                    <span className="yt-happy__chip yt-happy__chip--after">After</span>
-                    <div className="yt-happy__scrim" aria-hidden />
-                    <div className="yt-happy__pill">
-                      <span className="yt-happy__pill-name">{card.name}</span>
-                      <svg className="yt-happy__pill-check" viewBox="0 0 20 20" fill="none" aria-hidden>
-                        <circle cx="10" cy="10" r="9" fill="#fff" />
-                        <path d="M6 10.2l2.4 2.4L14 7.5" stroke="#2c3a35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                      <span className="yt-happy__pill-verified">Verified patient</span>
-                    </div>
-                  </>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div className="yt-happy__reviews-wrap">
-        <div className="yt-happy__reviews-card">
-          <div className="yt-happy__reviews-inner">
-            <button type="button" className="yt-happy__reviews-google">
-              <span className="yt-happy__reviews-google-icon" aria-hidden>
-                G
-              </span>
-              <span className="yt-happy__reviews-google-text">
-                <span className="yt-happy__reviews-google-label">Google Rating</span>
-                <span className="yt-happy__reviews-google-rating">
-                  <strong>4.9</strong>
-                  <span className="yt-happy__reviews-stars" aria-hidden>
-                    ★★★★★
-                  </span>
-                </span>
-              </span>
-            </button>
-            <span className="yt-happy__reviews-divider" aria-hidden />
-            <button type="button" className="yt-happy__reviews-trust">
-              <span className="yt-happy__reviews-trust-icon" aria-hidden>
-                ★
-              </span>
-              <span className="yt-happy__reviews-trust-text">
-                <span>Trustpilot</span>
-                <span className="yt-happy__reviews-trust-score">TrustScore 4.8 · Patient reviews</span>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ─────────────────────────────────────────────
-   TAB STACKS
-───────────────────────────────────────────── */
-
-function WlStack() {
+function SemaStack() {
   return (
     <>
-      <RetroProtocol data={WL_PROTOCOL} />
-      <RetroCalculator />
-      <RetroClinical data={WL_CLINICAL} />
-      <RetroExpect data={WL_EXPECT} />
+      <RetroProtocol data={SEMA_PROTOCOL} />
+      <RetroCalculator programLabel="Semaglutide care" />
+      <RetroClinical data={SEMA_CLINICAL} />
+      <RetroExpect data={SEMA_EXPECT} />
       <RetroKnowall
-        faqs={WL_FAQS}
-        vialImg={IMG_GLP1}
-        vialAlt="Personalized Tirzepatide and Semaglutide GLP-1 injection vials"
+        faqs={SEMA_FAQS}
+        vialImg={IMG_PRODUCT}
+        vialAlt="Personalized Semaglutide program vial"
         ctaLink="/start"
       />
     </>
   );
 }
 
-function NadStack() {
+function TirzStack() {
   return (
     <>
-      <RetroClinical data={NAD_CLINICAL} />
-      <RetroProtocol data={NAD_PROTOCOL} />
-      <RetroExpect data={NAD_EXPECT} modifier="yt-expect--nad" />
+      <RetroProtocol data={TIRZ_PROTOCOL} />
+      <RetroCalculator programLabel="Tirzepatide care" />
+      <RetroClinical data={TIRZ_CLINICAL} />
+      <RetroExpect data={TIRZ_EXPECT} />
       <RetroKnowall
-        faqs={NAD_FAQS}
-        vialImg={IMG_PEPTIDE}
-        vialAlt="Personalized peptide therapy vial"
+        faqs={TIRZ_FAQS}
+        vialImg={IMG_PRODUCT}
+        vialAlt="Personalized Tirzepatide program vial"
         ctaLink="/start"
-        modifier="yt-knowall--nad"
+        modifier="yt-knowall--tirzepatide"
       />
     </>
-  );
-}
-
-function SermStack() {
-  return (
-    <>
-      <RetroClinical data={SERM_CLINICAL} />
-      <RetroProtocol data={SERM_PROTOCOL} />
-      <RetroExpect data={SERM_EXPECT} modifier="yt-expect--sermorelin" />
-      <RetroKnowall
-        faqs={SERM_FAQS}
-        vialImg={IMG_TRT}
-        vialAlt="Personalized hormone therapy vial"
-        ctaLink="/start"
-        modifier="yt-knowall--sermorelin"
-      />
-    </>
-  );
-}
-
-/* ─────────────────────────────────────────────
-   PAGE-LEVEL: What people love (reviews grid)
-───────────────────────────────────────────── */
-
-const HOME_REVIEWS = [
-  {
-    quote:
-      "The process was seamless from intake to delivery. My physician explained everything clearly and checked in regularly.",
-    name: "Sarah M.",
-    treatment: "Metabolic",
-  },
-  {
-    quote:
-      "I noticed better energy within the first few weeks. Having a licensed physician guide the protocol made all the difference.",
-    name: "David K.",
-    treatment: "Peptides",
-  },
-  {
-    quote:
-      "Labs, dosing, and follow-up felt accountable. The team was responsive whenever I had questions.",
-    name: "Emily R.",
-    treatment: "Hormones",
-  },
-] as const;
-
-function YuccaHomeReviews() {
-  return (
-    <section className="yt-home-reviews" aria-labelledby="yt-home-reviews-heading">
-      <div className="shell">
-        <div className="yt-home-reviews__head">
-          <div className="yt-home-reviews__stars" aria-label="Rated 4.8 out of 5">
-            {"★★★★★"}
-          </div>
-          <h2 id="yt-home-reviews-heading" className="yt-home-reviews__heading">
-            What people love about novimid
-          </h2>
-        </div>
-        <ul className="yt-home-reviews__grid" role="list">
-          {HOME_REVIEWS.map((r) => (
-            <li key={r.name} className="yt-home-reviews__card" role="listitem">
-              <p className="yt-home-reviews__quote">&ldquo;{r.quote}&rdquo;</p>
-              <p className="yt-home-reviews__meta">
-                <strong>{r.name}</strong>
-                <span> · {r.treatment}</span>
-              </p>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
   );
 }
 
@@ -1050,7 +654,7 @@ function YuccaHomeReviews() {
 ───────────────────────────────────────────── */
 
 export function YuccaTreatmentsPage() {
-  const [activeTab, setActiveTab] = useState<YuccaTone>("wl");
+  const [activeTab, setActiveTab] = useState<YuccaTone>("semaglutide");
 
   return (
     <div className="yucca-treatments">
@@ -1071,23 +675,15 @@ export function YuccaTreatmentsPage() {
         </div>
       </section>
 
-      {/* ── Results marquee (inside tab pane on Yucca) ── */}
-      <RetroHappy variant={activeTab} />
-
       {/* ── Below-fold sections for active tab ── */}
       <div className="yt-stacks">
-        <div hidden={activeTab !== "wl"}>
-          <WlStack />
+        <div hidden={activeTab !== "semaglutide"}>
+          <SemaStack />
         </div>
-        <div hidden={activeTab !== "nad"}>
-          <NadStack />
-        </div>
-        <div hidden={activeTab !== "sermorelin"}>
-          <SermStack />
+        <div hidden={activeTab !== "tirzepatide"}>
+          <TirzStack />
         </div>
       </div>
-
-      <YuccaHomeReviews />
     </div>
   );
 }

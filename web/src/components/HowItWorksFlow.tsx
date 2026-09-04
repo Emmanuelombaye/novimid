@@ -7,7 +7,6 @@ import { media } from "@/lib/media";
 import { HowItWorksStickySteps } from "./HowItWorksStickySteps";
 import { Reveal } from "./Reveal";
 import { SiteImage } from "./SiteImage";
-import { Stars } from "./Stars";
 
 export function HowItWorksFlow() {
   return (
@@ -58,52 +57,44 @@ export function HowItWorksFlow() {
             ))}
           </div>
 
-          {/* 4 Unique Editorial Patient Cards */}
+          {/* Care journey milestones — no invented patient reviews */}
           <div className="mt-8 grid gap-6 sm:mt-10 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 step: "01",
                 img: media.results[0],
-                title: "Metabolic Renewal",
-                timeline: "Month 3 · GLP-1 Protocol",
-                quote: "My physician adjusted my dosing based on bloodwork — not a template.",
-                patient: "Alex R.",
-                location: "California",
-                metric: "Biomarkers Tracked",
-                focus: "Physician Consult",
+                title: "Clinical intake",
+                timeline: "Share history & goals",
+                body: "A licensed clinician reviews your information before any treatment decision.",
+                metric: "Intake",
+                focus: "Eligibility first",
               },
               {
                 step: "02",
                 img: media.results[1],
-                title: "Cellular Vitality",
-                timeline: "Month 2 · Peptide Therapy",
-                quote: "Clear instructions and direct communication with my care team.",
-                patient: "Morgan S.",
-                location: "California",
-                metric: "Custom Dosing",
-                focus: "Labs & Review",
+                title: "Physician review",
+                timeline: "Labs when indicated",
+                body: "Recommendations are individualized. Completing intake does not guarantee a prescription.",
+                metric: "Clinical review",
+                focus: "Provider-led",
               },
               {
                 step: "03",
                 img: media.results[2],
-                title: "Hormone Balance",
-                timeline: "Month 4 · TRT Protocol",
-                quote: "Fulfillment was calm, cold-chain shipped, and completely discreet.",
-                patient: "Blaze B.",
-                location: "California",
-                metric: "503A Compounded",
-                focus: "Pharmacy Direct",
+                title: "Pharmacy fulfillment",
+                timeline: "If prescribed",
+                body: "When compounding is indicated, medications are prepared through licensed U.S. pharmacies.",
+                metric: "503A when indicated",
+                focus: "U.S. pharmacies",
               },
               {
                 step: "04",
                 img: media.closingCtaLifestyle,
-                title: "Continuous Vitality",
-                timeline: "Month 6 · Full Optimization",
-                quote: "Ongoing physician check-ins kept my goals on track long term.",
-                patient: "Taylor H.",
-                location: "California",
-                metric: "Ongoing MD Oversight",
-                focus: "Long-Term Care",
+                title: "Ongoing oversight",
+                timeline: "Follow-up & adjustments",
+                body: "Your care team stays involved so dosing and follow-up stay accountable over time.",
+                metric: "Follow-up",
+                focus: "Long-term care",
               },
             ].map((story, i) => (
               <Reveal
@@ -111,7 +102,6 @@ export function HowItWorksFlow() {
                 delayMs={i * 60}
                 className="group relative flex flex-col justify-between overflow-hidden rounded-[26px] border-[2px] border-midnight bg-white shadow-[6px_6px_0_0_#1F2A37] transition-all duration-300 hover:-translate-y-2 hover:shadow-[9px_9px_0_0_#1F2A37]"
               >
-                {/* 100% Clean Polaroid Photo Frame — No Text Over Photo */}
                 <div className="relative h-[220px] w-full overflow-hidden bg-[#FAFBF9]">
                   <SiteImage
                     image={story.img}
@@ -124,7 +114,6 @@ export function HowItWorksFlow() {
                   </span>
                 </div>
 
-                {/* Editorial Card Content Below Photo */}
                 <div className="flex flex-1 flex-col justify-between p-5">
                   <div>
                     <div className="flex items-center justify-between gap-1.5">
@@ -143,18 +132,9 @@ export function HowItWorksFlow() {
                       {story.timeline}
                     </p>
 
-                    <p className="mt-3 text-[13px] font-normal leading-relaxed italic text-forest/90">
-                      “{story.quote}”
+                    <p className="mt-3 text-[13px] font-normal leading-relaxed text-forest/90">
+                      {story.body}
                     </p>
-                  </div>
-
-                  {/* Card Footer */}
-                  <div className="mt-5 flex items-center justify-between border-t border-midnight/12 pt-3.5">
-                    <div>
-                      <p className="text-[12.5px] font-bold text-midnight">{story.patient}</p>
-                      <p className="text-[10px] font-bold text-sage-dark">✓ Verified Patient · {story.location}</p>
-                    </div>
-                    <Stars size="xs" />
                   </div>
                 </div>
               </Reveal>

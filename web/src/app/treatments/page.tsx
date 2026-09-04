@@ -5,7 +5,7 @@ import { YuccaTreatmentsPage } from "@/components/YuccaTreatmentsPage";
 export const metadata: Metadata = {
   title: "Treatments",
   description:
-    "Explore physician-directed treatments from novimid — GLP-1 care, peptide therapy, and TRT when clinically appropriate. Licensed 503A compounding.",
+    "Explore physician-directed Semaglutide and Tirzepatide weight management programs from novimid when clinically appropriate. Licensed 503A compounding. Completing intake does not guarantee a prescription.",
   alternates: { canonical: "/treatments" },
 };
 

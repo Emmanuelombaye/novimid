@@ -7,7 +7,7 @@ import { media } from "@/lib/media";
 export const metadata: Metadata = {
   title: { absolute: `${brand.displayName} — ${brand.positioning}` },
   description:
-    "Physician-directed telehealth and licensed 503A compounding — peptide therapy, GLP-1 care, and TRT when clinically appropriate. California supply chain.",
+    "Physician-directed telehealth and licensed 503A compounding — Semaglutide and Tirzepatide weight management programs when clinically appropriate. California supply chain.",
   alternates: { canonical: "/" },
   openGraph: {
     title: `${brand.displayName} — ${brand.positioning}`,

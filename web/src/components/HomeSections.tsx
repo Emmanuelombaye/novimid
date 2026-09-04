@@ -1,248 +1,29 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
 import { faqPreview } from "@/lib/content";
 import { media } from "@/lib/media";
 import { ClinicalProcess } from "./ClinicalProcess";
 import { PersonalizedTreatments } from "./PersonalizedTreatments";
 import { Reveal } from "./Reveal";
-import { ReviewsStrip } from "./ReviewsStrip";
 import { SiteImage } from "./SiteImage";
 import { SpecialistsGrid } from "./SpecialistsGrid";
-import { Stars } from "./Stars";
 import { WhyNovimidGrid } from "./WhyNovimid";
 
-/** Illustrative journeys only — no invented weight outcomes */
-const resultStories = [
-  {
-    before: media.results[0],
-    after: media.results[1],
-    focus: "Metabolic care",
-    when: "Ongoing protocol",
-    name: "Lisa C.",
-    verified: "Verified patient",
-  },
-  {
-    before: media.results[1],
-    after: media.results[2],
-    focus: "Metabolic care",
-    when: "Physician-directed",
-    name: "Blaze B.",
-    verified: "Verified patient",
-  },
-  {
-    before: media.results[2],
-    after: media.results[0],
-    focus: "Peptide support",
-    when: "Clinical follow-up",
-    name: "Crystal G.",
-    verified: "Verified patient",
-  },
-  {
-    before: media.results[0],
-    after: media.results[2],
-    focus: "Hormone care",
-    when: "Labs-guided",
-    name: "JamiLyn O.",
-    verified: "Verified patient",
-  },
-  {
-    before: media.results[1],
-    after: media.results[0],
-    focus: "Metabolic care",
-    when: "Ongoing protocol",
-    name: "Kim B.",
-    verified: "Verified patient",
-  },
-] as const;
-
-const loveCategories = [
-  {
-    id: "care",
-    label: "Care & results",
-    quotes: [
-      {
-        h: "The intake felt clinical — not a sales quiz.",
-        q: "My physician took time with my history before recommending a path. Clear language. No pressure.",
-        n: "Alex R.",
-        focus: "Metabolic care",
-      },
-      {
-        h: "A real plan, not a template.",
-        q: "Transparency about compounding built trust before I started. I always knew what was being prescribed and why.",
-        n: "Sam K.",
-        focus: "Peptide protocol",
-      },
-    ],
-  },
-  {
-    id: "support",
-    label: "Patient support",
-    quotes: [
-      {
-        h: "I always knew the next step.",
-        q: "Coordination stayed responsive from consult through fulfillment and follow-up. It felt like a care team.",
-        n: "Jordan M.",
-        focus: "Care coordination",
-      },
-      {
-        h: "Questions were answered plainly.",
-        q: "When something changed in my protocol, someone explained it in clinical terms I could understand — not marketing language.",
-        n: "Riley T.",
-        focus: "Ongoing support",
-      },
-    ],
-  },
-  {
-    id: "process",
-    label: "Process",
-    quotes: [
-      {
-        h: "Follow-up kept the protocol honest.",
-        q: "Adjustments were based on labs and how I responded — not a one-size plan. That accountability is why I stayed.",
-        n: "Casey L.",
-        focus: "Labs & follow-up",
-      },
-      {
-        h: "Fulfillment was clear and calm.",
-        q: "Shipping instructions were precise. I never wondered whether my prescription was handled with care.",
-        n: "Morgan P.",
-        focus: "503A fulfillment",
-      },
-    ],
-  },
-] as const;
-
 export function HomeSections() {
-  const [love, setLove] = useState(0);
-  const activeLove = loveCategories[love] ?? loveCategories[0];
-
   return (
     <>
-      {/* 1. Results */}
-      <section className="bg-white py-12 sm:py-16">
-        <div className="shell">
-          <Reveal>
-            <h2 className="text-center font-[family-name:var(--font-dm-serif)] text-[clamp(1.65rem,4.2vw,2.4rem)] font-normal leading-[1.15] tracking-tight text-midnight">
-              Patient journeys,{" "}
-              <em className="italic">guided with care</em>
-            </h2>
-            <p className="mx-auto mt-3 max-w-xl text-center font-[family-name:var(--font-dm-sans)] text-[15px] font-light text-forest">
-              Illustrative before-and-after photography. Individual experiences vary.
-            </p>
-          </Reveal>
-        </div>
-
-        <div className="results-marquee-wrap mt-9">
-          <div className="results-marquee" aria-label="Patient journeys">
-            {[...resultStories, ...resultStories].map((card, i) => (
-              <article
-                key={`${card.name}-${i}`}
-                className="relative grid h-[300px] w-[min(92vw,560px)] shrink-0 grid-cols-2 overflow-hidden rounded-[20px] border-[0.5px] border-midnight bg-midnight sm:h-[380px] sm:w-[640px] sm:rounded-[24px]"
-              >
-                <div className="relative overflow-hidden border-r-[0.5px] border-white/20">
-                  <SiteImage
-                    image={card.before}
-                    fill
-                    className="object-cover object-[center_22%] brightness-[0.85]"
-                    sizes="320px"
-                  />
-                  <div className="absolute inset-0 bg-midnight/35" aria-hidden />
-                  <span className="absolute top-3 left-3 rounded-lg bg-midnight px-2.5 py-1 text-[11px] font-light text-white sm:top-4 sm:left-4">
-                    Before
-                  </span>
-                  <div className="absolute inset-x-3 bottom-4 text-left sm:inset-x-5 sm:bottom-8">
-                    <p className="text-[15px] font-light text-white sm:text-[17px]">
-                      {card.focus}
-                    </p>
-                    <p className="mt-1 text-[14px] font-light text-white/90 sm:text-[16px]">
-                      {card.when}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="relative overflow-hidden">
-                  <SiteImage
-                    image={card.after}
-                    fill
-                    className="object-cover object-[center_20%]"
-                    sizes="320px"
-                  />
-                  <div className="absolute inset-0 bg-midnight/20" aria-hidden />
-                  <span className="absolute top-3 left-3 rounded-lg bg-[#DCE8DD] px-2.5 py-1 text-[11px] font-light text-midnight sm:top-4 sm:left-4">
-                    After
-                  </span>
-                  <div className="absolute inset-x-3 bottom-3 sm:inset-x-4 sm:bottom-4">
-                    <div className="inline-flex max-w-full items-center gap-1.5 rounded-full bg-midnight/88 px-3 py-2 backdrop-blur-sm sm:px-3.5">
-                      <span className="truncate text-[12px] font-light text-white sm:text-[13px]">
-                        {card.name}
-                      </span>
-                      <span className="inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-white text-[9px] text-midnight">
-                        ✓
-                      </span>
-                      <span className="truncate text-[11px] font-light text-sage-mist sm:text-[12px]">
-                        {card.verified}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        <div className="shell mt-8">
-          <p className="text-center text-[11px] font-light italic text-fog">
-            Individual patient experiences and results may vary.
-          </p>
-        </div>
-      </section>
-
       <PersonalizedTreatments />
 
       <ClinicalProcess />
 
       <section className="bg-[#FAFBF9] py-16 sm:py-24">
         <div className="shell">
-          {/* Physician Care Section — Text Outside Card, Standalone Image Card */}
           <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
-            {/* Left Column: Text & Ratings (Outside Card) */}
             <div className="flex flex-col justify-center lg:col-span-7">
-              {/* Ratings Strip: Google Search & Trustpilot */}
-              <div className="flex flex-wrap items-center gap-3.5">
-                {/* Google Search Rating Badge */}
-                <div className="inline-flex items-center gap-3 rounded-2xl border-[1.5px] border-midnight bg-white px-4 py-2.5 shadow-[3.5px_3.5px_0_0_#1F2A37]">
-                  <div className="flex h-8.5 w-8.5 items-center justify-center rounded-xl bg-[#4285F4] text-[15px] font-black text-white shadow-2xs">
-                    G
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-[12px] font-bold text-midnight">Google Rating</span>
-                      <Stars value={5} size="xs" />
-                    </div>
-                    <p className="text-[11px] font-bold text-sage-dark">
-                      4.9 ★★★★★ (1,450+ Patient Reviews)
-                    </p>
-                  </div>
-                </div>
-
-                {/* Trustpilot Rating Badge */}
-                <div className="inline-flex items-center gap-3 rounded-2xl border-[1.5px] border-midnight bg-[#1F2A37] px-4 py-2.5 text-white shadow-[3.5px_3.5px_0_0_#1F2A37]">
-                  <div className="flex h-8.5 w-8.5 items-center justify-center rounded-xl bg-[#00B67A] text-[14px] font-bold text-white shadow-2xs">
-                    ★
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-[12px] font-bold text-white">Trustpilot</span>
-                      <Stars value={5} size="xs" />
-                    </div>
-                    <p className="text-[11px] font-medium text-white/90">
-                      TrustScore 4.8 · 1,210 Reviews
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <p className="text-[13px] font-medium leading-relaxed text-forest">
+                Physician-directed telehealth · Prescription only when clinically appropriate
+              </p>
 
               <h2 className="mt-6 font-[family-name:var(--font-dm-sans)] text-[clamp(2.25rem,4.5vw,3.25rem)] font-bold leading-[1.08] tracking-tight text-midnight">
                 Physician-directed care{" "}
@@ -253,7 +34,7 @@ export function HomeSections() {
               </h2>
 
               <p className="mt-4 max-w-xl text-[16px] font-light leading-relaxed text-forest">
-                Our dedicated medical teams guide patients through personalized metabolic, peptide, and hormone treatments — and we are ready to support you at every step.
+                Our dedicated medical teams guide patients through personalized Semaglutide and Tirzepatide weight management programs — and we are ready to support you at every step.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2.5">
@@ -273,12 +54,11 @@ export function HomeSections() {
                   href="/start"
                   className="inline-flex h-12 items-center justify-center rounded-full border-[1.5px] border-midnight bg-sage px-8 text-[15px] font-bold text-midnight shadow-[4px_4px_0_0_#1F2A37] transition-all hover:bg-sage-light hover:-translate-y-0.5"
                 >
-                  Start your intake — $125/mo →
+                  See if I qualify →
                 </Link>
               </div>
             </div>
 
-            {/* Right Column: Standalone Image Card with Small Writings Floating Over Image */}
             <div className="lg:col-span-5">
               <div className="relative overflow-hidden rounded-[32px] border-[2px] border-midnight bg-white shadow-[8px_8px_0_0_#1F2A37]">
                 <div className="relative min-h-[380px] w-full sm:min-h-[460px]">
@@ -290,7 +70,6 @@ export function HomeSections() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-midnight/80 via-midnight/20 to-transparent" />
 
-                  {/* Top Floating Badge */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
                     <span className="inline-flex items-center gap-2 rounded-full border border-midnight/20 bg-white/95 px-3.5 py-1.5 text-[11.5px] font-bold text-midnight backdrop-blur-md shadow-xs">
                       <span className="h-2 w-2 rounded-full bg-sage animate-pulse" />
@@ -301,7 +80,6 @@ export function HomeSections() {
                     </span>
                   </div>
 
-                  {/* Bottom Floating Writings inside Image Card */}
                   <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/30 bg-white/95 p-4 backdrop-blur-md shadow-md">
                     <div className="flex items-center justify-between gap-3">
                       <div>
@@ -320,108 +98,8 @@ export function HomeSections() {
         </div>
       </section>
 
-      {/* 4. What people love — brand editorial testimonials */}
-      <section className="bg-[#FAFBF9] py-16 sm:py-24">
-        <div className="shell">
-          <Reveal>
-            <div className="mx-auto max-w-2xl text-center">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-midnight/20 bg-white px-3.5 py-1 text-[11px] font-bold tracking-wider text-midnight uppercase shadow-xs">
-                <span className="h-1.5 w-1.5 rounded-full bg-sage animate-pulse" />
-                ✦ Patient Voices & Feedback
-              </span>
-              <h2 className="mt-3.5 font-[family-name:var(--font-dm-sans)] text-[clamp(1.85rem,4.5vw,2.75rem)] font-bold tracking-tight text-midnight">
-                What people love about{" "}
-                <em className="font-[family-name:var(--font-dm-serif)] italic text-sage-dark">novimid</em>
-              </h2>
-              <p className="mx-auto mt-3 max-w-lg text-[15px] font-light leading-relaxed text-forest">
-                Physician-directed care and California compounding — described by patients in their own words.
-              </p>
-            </div>
-          </Reveal>
-
-          {/* Tab Navigation Pill Bar */}
-          <div className="mx-auto mt-8 flex justify-center sm:mt-10">
-            <div
-              className="inline-flex w-full max-w-md items-center gap-1.5 rounded-full border-[2px] border-midnight bg-white p-1.5 shadow-[4px_4px_0_0_#1F2A37]"
-              role="tablist"
-              aria-label="Review topics"
-            >
-              {loveCategories.map((tab, i) => {
-                const on = love === i;
-                return (
-                  <button
-                    key={tab.id}
-                    type="button"
-                    role="tab"
-                    aria-selected={on}
-                    onClick={() => setLove(i)}
-                    className={`min-w-0 flex-1 rounded-full px-3.5 py-2 text-[12.5px] font-bold transition-all sm:px-4 sm:text-[13px] ${
-                      on
-                        ? "bg-midnight text-white shadow-xs"
-                        : "bg-transparent text-midnight hover:bg-sage/20"
-                    }`}
-                  >
-                    {tab.label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Cards Grid */}
-          <div className="mx-auto mt-10 grid max-w-5xl gap-6 sm:mt-12 md:grid-cols-2">
-            {activeLove.quotes.map((item, i) => (
-              <Reveal
-                key={`${activeLove.id}-${item.n}`}
-                delayMs={i * 60}
-                className="group relative flex flex-col justify-between overflow-hidden rounded-[26px] border-[2px] border-midnight bg-white p-6.5 shadow-[5px_5px_0_0_#1F2A37] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[8px_8px_0_0_#1F2A37] sm:p-7.5"
-              >
-                <div>
-                  <div className="flex items-start justify-between gap-3">
-                    <span
-                      className="font-[family-name:var(--font-dm-serif)] text-[3.2rem] leading-none text-sage-dark"
-                      aria-hidden
-                    >
-                      “
-                    </span>
-                    <span className="rounded-full border border-midnight/20 bg-sage/20 px-3 py-1 text-[10.5px] font-bold tracking-wider text-sage-dark uppercase">
-                      {item.focus}
-                    </span>
-                  </div>
-
-                  <h3 className="mt-2.5 font-[family-name:var(--font-dm-sans)] text-[1.25rem] font-bold leading-snug text-midnight sm:text-[1.35rem]">
-                    {item.h}
-                  </h3>
-                  <p className="mt-3.5 text-[14.5px] font-normal leading-relaxed text-forest">
-                    {item.q}
-                  </p>
-                </div>
-
-                <div className="mt-6 flex items-center justify-between border-t border-midnight/12 pt-4.5">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-midnight bg-sage/20 text-[13px] font-bold text-midnight">
-                      {item.n.slice(0, 1)}
-                    </div>
-                    <div>
-                      <p className="text-[13.5px] font-bold text-midnight">{item.n}</p>
-                      <p className="text-[11px] font-bold text-sage-dark">✓ Verified Patient</p>
-                    </div>
-                  </div>
-                  <Stars size="sm" />
-                </div>
-              </Reveal>
-            ))}
-          </div>
-
-          <p className="mx-auto mt-8 max-w-lg text-center text-[11px] font-medium italic text-forest/70 sm:mt-10">
-            Individual patient experiences and results may vary.
-          </p>
-        </div>
-      </section>
-
       <SpecialistsGrid />
 
-      {/* 6. Why */}
       <section className="bg-white py-12 sm:py-16">
         <div className="shell">
           <Reveal>
@@ -435,7 +113,6 @@ export function HomeSections() {
         </div>
       </section>
 
-      {/* 7. FAQ */}
       <section className="bg-cloud py-14 sm:py-16 lg:py-20">
         <div className="shell max-w-[45rem]">
           <Reveal>
@@ -488,48 +165,13 @@ export function HomeSections() {
         </div>
       </section>
 
-      <ReviewsStrip />
-
-      {/* 8. Closing CTA — Text Outside Card, Standalone Image Card */}
       <section className="bg-[#FAFBF9] px-[var(--gutter)] py-16 sm:py-24">
         <div className="shell">
           <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
-            {/* Left Column: Text & Ratings Outside Card */}
             <div className="flex flex-col justify-center lg:col-span-7">
-              {/* Ratings Strip: Google & Trustpilot */}
-              <div className="flex flex-wrap items-center gap-3.5">
-                {/* Google Search Rating Badge */}
-                <div className="inline-flex items-center gap-3 rounded-2xl border-[1.5px] border-midnight bg-white px-4 py-2.5 shadow-[3.5px_3.5px_0_0_#1F2A37]">
-                  <div className="flex h-8.5 w-8.5 items-center justify-center rounded-xl bg-[#4285F4] text-[15px] font-black text-white shadow-2xs">
-                    G
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-[12px] font-bold text-midnight">Google Rating</span>
-                      <Stars value={5} size="xs" />
-                    </div>
-                    <p className="text-[11px] font-bold text-sage-dark">
-                      4.9 ★★★★★ (1,450+ Patient Reviews)
-                    </p>
-                  </div>
-                </div>
-
-                {/* Trustpilot Rating Badge */}
-                <div className="inline-flex items-center gap-3 rounded-2xl border-[1.5px] border-midnight bg-[#1F2A37] px-4 py-2.5 text-white shadow-[3.5px_3.5px_0_0_#1F2A37]">
-                  <div className="flex h-8.5 w-8.5 items-center justify-center rounded-xl bg-[#00B67A] text-[14px] font-bold text-white shadow-2xs">
-                    ★
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-[12px] font-bold text-white">Trustpilot</span>
-                      <Stars value={5} size="xs" />
-                    </div>
-                    <p className="text-[11px] font-medium text-white/90">
-                      TrustScore 4.8 · 1,210 Reviews
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <p className="text-[13px] font-medium leading-relaxed text-forest">
+                Physician-directed telehealth · Prescription only when clinically appropriate
+              </p>
 
               <h2 className="mt-6 font-[family-name:var(--font-dm-sans)] text-[clamp(2.2rem,4.5vw,3.25rem)] font-bold leading-[1.08] tracking-tight text-midnight">
                 Personalized protocols,{" "}
@@ -559,7 +201,7 @@ export function HomeSections() {
                   href="/start"
                   className="inline-flex h-12 items-center justify-center rounded-full border-[1.5px] border-midnight bg-sage px-8 text-[15px] font-bold text-midnight shadow-[4px_4px_0_0_#1F2A37] transition-all hover:bg-sage-light hover:-translate-y-0.5"
                 >
-                  Start your intake — $125/mo →
+                  See if I qualify →
                 </Link>
                 <Link
                   href="/treatments"
@@ -570,7 +212,6 @@ export function HomeSections() {
               </div>
             </div>
 
-            {/* Right Column: Standalone Card for NEW Lifestyle Image with Small Writings */}
             <div className="lg:col-span-5">
               <div className="relative overflow-hidden rounded-[32px] border-[2px] border-midnight bg-white shadow-[8px_8px_0_0_#1F2A37]">
                 <div className="relative min-h-[380px] w-full sm:min-h-[460px]">
@@ -582,7 +223,6 @@ export function HomeSections() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-midnight/80 via-midnight/20 to-transparent" />
 
-                  {/* Top Floating Badge */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
                     <span className="inline-flex items-center gap-2 rounded-full border border-midnight/20 bg-white/95 px-3.5 py-1.5 text-[11.5px] font-bold text-midnight backdrop-blur-md shadow-xs">
                       <span className="h-2 w-2 rounded-full bg-sage animate-pulse" />
@@ -593,7 +233,6 @@ export function HomeSections() {
                     </span>
                   </div>
 
-                  {/* Bottom Floating Writings inside Image Card */}
                   <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/30 bg-white/95 p-4 backdrop-blur-md shadow-md">
                     <div className="flex items-center justify-between gap-3">
                       <div>

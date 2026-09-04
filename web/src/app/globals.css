@@ -506,10 +506,10 @@ textarea.field-control {
 .hero-orbit-stage {
   position: absolute;
   z-index: 5;
-  top: 42%;
-  right: clamp(5rem, 13vw, 10rem);
-  width: min(340px, 32vw);
-  height: min(340px, 32vw);
+  top: 46%;
+  right: clamp(3rem, 10vw, 7rem);
+  width: min(420px, 40vw);
+  height: min(420px, 40vw);
   transform: translateY(-50%);
   overflow: visible;
 }
@@ -558,8 +558,8 @@ textarea.field-control {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 78%;
-  height: 78%;
+  width: 92%;
+  height: 92%;
   overflow: visible;
 }
 
@@ -567,54 +567,47 @@ textarea.field-control {
   z-index: 3;
 }
 
+/* Soft mint studio shots — blend plate into hero atmosphere (Hims-style) */
 .hero-orbit-product--main img {
   width: auto !important;
   max-width: 100%;
   max-height: 100%;
   height: auto !important;
   object-fit: contain;
-  filter: drop-shadow(0 18px 32px rgba(44, 58, 53, 0.16));
-}
-
-.hero-orbit-product--accent {
-  z-index: 2;
-  top: 62%;
-  left: 18%;
-  width: 28%;
-  height: 28%;
-  opacity: 0.88;
-  animation-name: float-slow-reverse;
+  border-radius: 50%;
+  filter: drop-shadow(0 10px 22px rgba(44, 58, 53, 0.1));
 }
 
 .hero-orbit-glow {
   position: absolute;
   left: 50%;
-  top: 54%;
+  top: 52%;
   z-index: 0;
-  width: 68%;
-  height: 68%;
+  width: 78%;
+  height: 78%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgb(139 174 140 / 0.14) 0%,
-    rgb(197 213 176 / 0.06) 45%,
-    transparent 72%
+    rgb(255 255 255 / 0.55) 0%,
+    rgb(139 174 140 / 0.18) 38%,
+    rgb(197 213 176 / 0.06) 58%,
+    transparent 74%
   );
-  filter: blur(10px);
+  filter: blur(8px);
 }
 
 @media (max-width: 1023px) {
   .hero-orbit-stage {
-    top: clamp(3.75rem, 14vw, 5.5rem);
+    top: clamp(3.5rem, 12vw, 5rem);
     right: 50%;
-    width: min(250px, 72vw);
-    height: min(250px, 72vw);
+    width: min(280px, 78vw);
+    height: min(280px, 78vw);
     transform: translate(50%, 0);
   }
 
   .hero-orbit-stage-inner {
-    transform: rotateX(4deg) rotateY(0deg) rotateZ(0deg) scale(0.96);
+    transform: rotateX(4deg) rotateY(0deg) rotateZ(0deg) scale(0.98);
   }
 
   .hero-orbit-product--main img {
@@ -622,32 +615,25 @@ textarea.field-control {
     max-height: 100% !important;
   }
 
-  .hero-orbit-product--accent {
-    left: 10%;
-    top: 68%;
-    width: 24%;
-    height: 24%;
-  }
-
   .hero-orbit-ring {
     opacity: 0.72;
   }
 
   .hero-orbit-glow {
-    width: 76%;
-    height: 76%;
+    width: 82%;
+    height: 82%;
   }
 }
 
 @media (max-width: 639px) {
   .hero-orbit-stage {
-    top: 3.25rem;
-    width: min(220px, 68vw);
-    height: min(220px, 68vw);
+    top: 3rem;
+    width: min(240px, 72vw);
+    height: min(240px, 72vw);
   }
 
   .hero-orbit-stage-inner {
-    transform: scale(0.94);
+    transform: scale(0.96);
   }
 
   .hero-orbit-product--main img {
@@ -666,9 +652,9 @@ textarea.field-control {
 
 @media (min-width: 1280px) {
   .hero-orbit-stage {
-    right: clamp(4rem, 10vw, 8rem);
-    width: min(460px, 36vw);
-    height: min(460px, 36vw);
+    right: clamp(3.5rem, 9vw, 7rem);
+    width: min(520px, 42vw);
+    height: min(520px, 42vw);
   }
 }
 
@@ -1125,37 +1111,28 @@ details[open] .faq-plus {
 
 /* ── Treatments explore (Yucca structure, Novimid brand) ── */
 .explore-tab-menu {
-  max-width: 606px;
+  max-width: 480px;
   gap: 8px;
   width: 100%;
-  grid-template-columns: 48fr 35fr 35fr;
+  grid-template-columns: 1fr 1fr;
   transition:
     grid-template-columns 0.3s ease,
     margin-left 0.3s ease;
 }
 
-.explore-tab-menu[data-active-index="0"] {
-  grid-template-columns: 48fr 35fr 35fr;
-}
+.explore-tab-menu[data-active-index="0"],
 .explore-tab-menu[data-active-index="1"] {
-  grid-template-columns: 35fr 48fr 35fr;
-}
-.explore-tab-menu[data-active-index="2"] {
-  grid-template-columns: 35fr 35fr 48fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media (min-width: 768px) {
   .explore-tab-menu {
-    grid-template-columns: 240px 175px 175px;
+    max-width: 520px;
+    grid-template-columns: 1fr 1fr;
   }
-  .explore-tab-menu[data-active-index="0"] {
-    grid-template-columns: 240px 175px 175px;
-  }
+  .explore-tab-menu[data-active-index="0"],
   .explore-tab-menu[data-active-index="1"] {
-    grid-template-columns: 175px 240px 175px;
-  }
-  .explore-tab-menu[data-active-index="2"] {
-    grid-template-columns: 175px 175px 240px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1201,6 +1178,8 @@ details[open] .faq-plus {
 
 .explore-tab-link[data-active="true"][data-tone="wl"],
 .explore-tab-link[data-active="true"][data-tone="metabolic"],
+.explore-tab-link[data-active="true"][data-tone="semaglutide"],
+.explore-tab-link[data-active="true"][data-tone="tirzepatide"],
 .explore-tab-link[data-active="true"][data-tone="nad"],
 .explore-tab-link[data-active="true"][data-tone="peptides"],
 .explore-tab-link[data-active="true"][data-tone="sermorelin"],
@@ -1246,6 +1225,8 @@ details[open] .faq-plus {
 
 /* Left product stage — Yucca geometry: fixed card, product fully contained */
 .explore-card[data-card="wl"],
+.explore-card[data-card="semaglutide"],
+.explore-card[data-card="tirzepatide"],
 .explore-card[data-card="nad"],
 .explore-card[data-card="sermorelin"] {
   color: #2c3a35;
@@ -1282,10 +1263,11 @@ details[open] .faq-plus {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 10px 18px 12px;
+  padding: 6px 14px 8px;
   object-fit: contain;
   object-position: center;
-  filter: drop-shadow(0 14px 28px rgba(44, 58, 53, 0.14));
+  border-radius: 1.25rem;
+  filter: drop-shadow(0 12px 24px rgba(44, 58, 53, 0.12));
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -1301,24 +1283,32 @@ details[open] .faq-plus {
   overflow: hidden;
 }
 
-.retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-card[data-card="wl"] {
+.retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-card[data-card="wl"],
+.retro-explore-tabs-wrap [data-explore-pane="semaglutide"] .explore-card[data-card="semaglutide"],
+.retro-explore-tabs-wrap [data-explore-pane="tirzepatide"] .explore-card[data-card="tirzepatide"] {
   border-width: 2px;
   box-shadow: none;
 }
 
 .retro-explore-tabs-wrap .explore-hero-chip,
-.retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-chip {
+.retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-chip,
+.retro-explore-tabs-wrap [data-explore-pane="semaglutide"] .explore-hero-chip,
+.retro-explore-tabs-wrap [data-explore-pane="tirzepatide"] .explore-hero-chip {
   border: 1.5px solid #2c3a35;
   box-shadow: none;
 }
 
 .retro-explore-tabs-wrap .explore-hero-product-thumb,
-.retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-product-thumb {
+.retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-product-thumb,
+.retro-explore-tabs-wrap [data-explore-pane="semaglutide"] .explore-hero-product-thumb,
+.retro-explore-tabs-wrap [data-explore-pane="tirzepatide"] .explore-hero-product-thumb {
   border: 1.5px solid #2c3a35;
 }
 
 .retro-explore-tabs-wrap .explore-hero-stock,
-.retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-stock {
+.retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-stock,
+.retro-explore-tabs-wrap [data-explore-pane="semaglutide"] .explore-hero-stock,
+.retro-explore-tabs-wrap [data-explore-pane="tirzepatide"] .explore-hero-stock {
   border: 1.5px solid #2c3a35;
   box-shadow: none;
 }
@@ -1351,16 +1341,11 @@ details[open] .faq-plus {
   .explore-tab-menu {
     max-width: 100%;
     gap: 6px;
-    grid-template-columns: 1.4fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-  .explore-tab-menu[data-active-index="0"] {
-    grid-template-columns: 1.45fr 1fr 1fr;
-  }
+  .explore-tab-menu[data-active-index="0"],
   .explore-tab-menu[data-active-index="1"] {
-    grid-template-columns: 1fr 1.45fr 1fr;
-  }
-  .explore-tab-menu[data-active-index="2"] {
-    grid-template-columns: 1fr 1fr 1.45fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .explore-tab-link {
@@ -1502,7 +1487,7 @@ details[open] .faq-plus {
    TREATMENTS — Yucca structure, Novimid brand colors
    Ink/shadow → midnight-forest
    Soft bands → cloud / sage-mist
-   Tones: unified Novimid sage across Metabolic · Peptides · Hormones
+   Tones: unified Novimid sage across Semaglutide · Tirzepatide (Weight Management)
 ═══════════════════════════════════════════════════════════ */
 
 .yucca-treatments {
@@ -1723,7 +1708,9 @@ details[open] .faq-plus {
     padding-top: 0;
   }
 
-  [data-explore-pane="wl"] .explore-hero-guarantee-card {
+  [data-explore-pane="wl"] .explore-hero-guarantee-card,
+  [data-explore-pane="semaglutide"] .explore-hero-guarantee-card,
+  [data-explore-pane="tirzepatide"] .explore-hero-guarantee-card {
     background: var(--yt-guarantee, #f0f4f1) !important;
     border: 2px solid var(--mist, #e2e6e3);
     border-radius: 18px;
@@ -1777,14 +1764,18 @@ details[open] .faq-plus {
 
   .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-plan-list,
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-plan-list,
-  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-plan-list {
+  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-plan-list,
+  .retro-explore-tabs-wrap [data-explore-pane="semaglutide"] .explore-hero-plan-list,
+  .retro-explore-tabs-wrap [data-explore-pane="tirzepatide"] .explore-hero-plan-list {
     gap: 12px;
     margin-top: 10px;
   }
 
   .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-plan-item,
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-plan-item,
-  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-plan-item {
+  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-plan-item,
+  .retro-explore-tabs-wrap [data-explore-pane="semaglutide"] .explore-hero-plan-item,
+  .retro-explore-tabs-wrap [data-explore-pane="tirzepatide"] .explore-hero-plan-item {
     gap: 12px;
     font-size: 16px;
     font-weight: 600;
@@ -1794,7 +1785,9 @@ details[open] .faq-plus {
 
   .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-plan-icon,
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-plan-icon,
-  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-plan-icon {
+  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-plan-icon,
+  .retro-explore-tabs-wrap [data-explore-pane="semaglutide"] .explore-hero-plan-icon,
+  .retro-explore-tabs-wrap [data-explore-pane="tirzepatide"] .explore-hero-plan-icon {
     width: 24px;
     min-width: 24px;
     height: 24px;
@@ -1802,32 +1795,44 @@ details[open] .faq-plus {
 
   .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-plan-icon svg,
   .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-plan-icon svg,
-  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-plan-icon svg {
+  .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-plan-icon svg,
+  .retro-explore-tabs-wrap [data-explore-pane="semaglutide"] .explore-hero-plan-icon svg,
+  .retro-explore-tabs-wrap [data-explore-pane="tirzepatide"] .explore-hero-plan-icon svg {
     width: 14px;
     height: 14px;
   }
 }
 
 @container explore-content (min-width: 560px) {
-  [data-explore-pane="wl"] .explore-hero-plans-label {
+  [data-explore-pane="wl"] .explore-hero-plans-label,
+  [data-explore-pane="semaglutide"] .explore-hero-plans-label,
+  [data-explore-pane="tirzepatide"] .explore-hero-plans-label {
     font-size: 18px;
   }
-  [data-explore-pane="wl"] .explore-hero-plan-list {
+  [data-explore-pane="wl"] .explore-hero-plan-list,
+  [data-explore-pane="semaglutide"] .explore-hero-plan-list,
+  [data-explore-pane="tirzepatide"] .explore-hero-plan-list {
     gap: 14px;
     margin-top: 14px;
   }
-  [data-explore-pane="wl"] .explore-hero-plan-item {
+  [data-explore-pane="wl"] .explore-hero-plan-item,
+  [data-explore-pane="semaglutide"] .explore-hero-plan-item,
+  [data-explore-pane="tirzepatide"] .explore-hero-plan-item {
     gap: 16px;
     font-size: clamp(16px, 1.4vw, 20px);
     font-weight: 700;
     letter-spacing: -0.02em;
   }
-  [data-explore-pane="wl"] .explore-hero-plan-icon {
+  [data-explore-pane="wl"] .explore-hero-plan-icon,
+  [data-explore-pane="semaglutide"] .explore-hero-plan-icon,
+  [data-explore-pane="tirzepatide"] .explore-hero-plan-icon {
     width: 34px;
     min-width: 34px;
     height: 34px;
   }
-  [data-explore-pane="wl"] .explore-hero-plan-icon svg {
+  [data-explore-pane="wl"] .explore-hero-plan-icon svg,
+  [data-explore-pane="semaglutide"] .explore-hero-plan-icon svg,
+  [data-explore-pane="tirzepatide"] .explore-hero-plan-icon svg {
     width: 20px;
     height: 20px;
   }
@@ -1835,9 +1840,13 @@ details[open] .faq-plus {
 
 .retro-explore-tabs-wrap .explore-hero-cta,
 .retro-explore-tabs-wrap .explore-hero-cta--wl,
+.retro-explore-tabs-wrap .explore-hero-cta--semaglutide,
+.retro-explore-tabs-wrap .explore-hero-cta--tirzepatide,
 .retro-explore-tabs-wrap .explore-hero-cta--nad,
 .retro-explore-tabs-wrap .explore-hero-cta--sermorelin,
 .retro-explore-tabs-wrap [data-explore-pane="wl"] .explore-hero-cta,
+.retro-explore-tabs-wrap [data-explore-pane="semaglutide"] .explore-hero-cta,
+.retro-explore-tabs-wrap [data-explore-pane="tirzepatide"] .explore-hero-cta,
 .retro-explore-tabs-wrap [data-explore-pane="nad"] .explore-hero-cta,
 .retro-explore-tabs-wrap [data-explore-pane="sermorelin"] .explore-hero-cta {
   background: var(--yt-cta) !important;

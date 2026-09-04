@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 220 220" role="img" aria-label="Compounded by licensed pharmacies in the USA">
+  <defs>
+    <linearGradient id="usa-gold" x1="40" y1="20" x2="180" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3E2A8"/>
+      <stop offset="0.45" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#8C6A12"/>
+    </linearGradient>
+    <clipPath id="usa-flag-clip">
+      <circle cx="110" cy="110" r="48"/>
+    </clipPath>
+    <path id="usa-top" d="M 24,110 A 86,86 0 0,1 196,110"/>
+    <path id="usa-bot" d="M 24,110 A 86,86 0 0,0 196,110"/>
+  </defs>
+  <circle cx="110" cy="110" r="108" fill="#071525"/>
+  <circle cx="110" cy="110" r="105" fill="none" stroke="url(#usa-gold)" stroke-width="6"/>
+  <circle cx="110" cy="110" r="97" fill="none" stroke="#E8D5A3" stroke-width="1.35" opacity="0.92"/>
+  <circle cx="110" cy="110" r="56" fill="#0B1B33"/>
+  <circle cx="110" cy="110" r="56" fill="none" stroke="url(#usa-gold)" stroke-width="1.4" opacity="0.45"/>
+
+  <text fill="#F7F1DE" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" letter-spacing="2.3">
+    <textPath href="#usa-top" xlink:href="#usa-top" startOffset="50%" text-anchor="middle">COMPOUNDED BY</textPath>
+  </text>
+  <text fill="#F7F1DE" font-family="Arial, Helvetica, sans-serif" font-size="7.8" font-weight="700" letter-spacing="0.55">
+    <textPath href="#usa-bot" xlink:href="#usa-bot" startOffset="50%" text-anchor="middle">LICENSED PHARMACIES IN THE USA</textPath>
+  </text>
+
+  <circle cx="30" cy="110" r="2.1" fill="#E8D5A3"/>
+  <circle cx="190" cy="110" r="2.1" fill="#E8D5A3"/>
+
+  <circle cx="110" cy="110" r="49.5" fill="none" stroke="#E8D5A3" stroke-width="1.3"/>
+  <g clip-path="url(#usa-flag-clip)">
+    <rect x="62" y="62" width="96" height="96" fill="#BF0A30"/>
+    <rect x="62" y="69.4" width="96" height="7.4" fill="#FFFFFF"/>
+    <rect x="62" y="84.2" width="96" height="7.4" fill="#FFFFFF"/>
+    <rect x="62" y="99" width="96" height="7.4" fill="#FFFFFF"/>
+    <rect x="62" y="113.8" width="96" height="7.4" fill="#FFFFFF"/>
+    <rect x="62" y="128.6" width="96" height="7.4" fill="#FFFFFF"/>
+    <rect x="62" y="143.4" width="96" height="7.4" fill="#FFFFFF"/>
+    <rect x="62" y="62" width="44" height="51.8" fill="#002868"/>
+    <g fill="#FFFFFF">
+      <circle cx="70" cy="70" r="1.3"/><circle cx="79" cy="70" r="1.3"/><circle cx="88" cy="70" r="1.3"/><circle cx="97" cy="70" r="1.3"/>
+      <circle cx="74.5" cy="76.5" r="1.3"/><circle cx="83.5" cy="76.5" r="1.3"/><circle cx="92.5" cy="76.5" r="1.3"/>
+      <circle cx="70" cy="83" r="1.3"/><circle cx="79" cy="83" r="1.3"/><circle cx="88" cy="83" r="1.3"/><circle cx="97" cy="83" r="1.3"/>
+      <circle cx="74.5" cy="89.5" r="1.3"/><circle cx="83.5" cy="89.5" r="1.3"/><circle cx="92.5" cy="89.5" r="1.3"/>
+      <circle cx="70" cy="96" r="1.3"/><circle cx="79" cy="96" r="1.3"/><circle cx="88" cy="96" r="1.3"/><circle cx="97" cy="96" r="1.3"/>
+      <circle cx="74.5" cy="102.5" r="1.3"/><circle cx="83.5" cy="102.5" r="1.3"/><circle cx="92.5" cy="102.5" r="1.3"/>
+      <circle cx="70" cy="109" r="1.3"/><circle cx="79" cy="109" r="1.3"/><circle cx="88" cy="109" r="1.3"/><circle cx="97" cy="109" r="1.3"/>
+    </g>
+  </g>
+</svg>

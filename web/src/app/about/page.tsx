@@ -30,7 +30,8 @@ export default function AboutPage() {
               <h2 className="type-h2 mt-4 md:text-[1.75rem]">{brand.tagline}</h2>
               <p className="type-body mt-5">
                 novimid connects patients with board-certified physicians who design
-                evidence-based protocols — from peptide therapy to GLP-1 and TRT —
+                evidence-based protocols — Semaglutide and Tirzepatide weight management
+                programs when clinically appropriate —
                 delivered through our licensed compounding pharmacy with clinical
                 precision.
               </p>

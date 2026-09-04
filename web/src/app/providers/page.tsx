@@ -17,7 +17,7 @@ export default function ProvidersPage() {
           <Reveal>
             <p className="label-caps text-center">Providers</p>
             <p className="mx-auto mt-3 max-w-xl text-center text-[15px] font-light text-forest">
-              Physician-directed care across metabolic, peptide, and hormone protocols.
+              Physician-directed Semaglutide and Tirzepatide weight management care.
             </p>
           </Reveal>
         </div>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 const OUTER_PHRASE =
-  "PHYSICIAN-LED • GLP-1 • PEPTIDES • TRT • 503A • CALIFORNIA • TELEHEALTH • ";
+  "PHYSICIAN-LED • SEMAGLUTIDE • TIRZEPATIDE • TELEHEALTH • 503A • USA • ";
 const INNER_PHRASE =
   "PERSONALIZED • EVIDENCE-BASED • COMPOUNDED • CLINICAL • OVERSIGHT • ";
 
@@ -27,10 +27,7 @@ function OrbitRing({
       className={`hero-orbit-ring ${reverse ? "hero-orbit-ring--reverse" : ""} ${className ?? ""}`}
       aria-hidden
     >
-      <svg
-        viewBox={`0 0 ${size} ${size}`}
-        className="h-full w-full overflow-visible"
-      >
+      <svg viewBox={`0 0 ${size} ${size}`} className="h-full w-full overflow-visible">
         <defs>
           <path
             id={pathId}
@@ -54,7 +51,6 @@ export function HeroOrbitStage() {
         <OrbitRing phrase={OUTER_PHRASE} radius={118} />
         <OrbitRing phrase={INNER_PHRASE} radius={88} reverse />
 
-        {/* Primary product cluster — GLP-1 vials + pen */}
         <div className="hero-orbit-product hero-orbit-product--main animate-float-slow">
           <Image
             src="/images/novimid-card-glp1.png"
@@ -66,18 +62,6 @@ export function HeroOrbitStage() {
           />
         </div>
 
-        {/* Secondary floating vial — depth */}
-        <div className="hero-orbit-product hero-orbit-product--accent animate-float-reverse">
-          <Image
-            src="/images/icon-vial-a-v2.png"
-            alt=""
-            width={256}
-            height={256}
-            className="h-auto w-[72px] opacity-90 drop-shadow-lg sm:w-[88px]"
-          />
-        </div>
-
-        {/* Soft glow behind products */}
         <div className="hero-orbit-glow" />
       </div>
     </div>

@@ -45,19 +45,14 @@ export const journeySteps = [
 
 export const clinicalTools = [
   {
-    title: "Peptide therapy",
-    body: "Physician-prescribed peptide protocols, compounded when clinically appropriate for your plan.",
-    image: media.tools.peptides,
-  },
-  {
-    title: "GLP-1 care",
-    body: "Metabolic support directed by a physician, aligned with current telemedicine guidelines.",
+    title: "Semaglutide Program",
+    body: "Physician-directed Semaglutide care for weight management when clinically appropriate.",
     image: media.tools.glp1,
   },
   {
-    title: "TRT",
-    body: "Hormone optimization with clinical oversight — labs, dosing, and follow-up built in.",
-    image: media.tools.trt,
+    title: "Tirzepatide Program",
+    body: "Physician-directed Tirzepatide care for weight management when clinically appropriate.",
+    image: media.tools.glp1,
   },
 ] as const;
 
@@ -79,7 +74,7 @@ export const faqCategories: FaqCategory[] = [
     items: [
       {
         q: "What is novimid?",
-        a: "novimid connects patients with board-certified physicians who design evidence-based protocols — from peptide therapy to GLP-1 and TRT — delivered through our licensed compounding pharmacy with clinical precision.",
+        a: "novimid connects patients with board-certified physicians who design evidence-based weight management protocols — Semaglutide and Tirzepatide programs when clinically appropriate — delivered through our licensed compounding pharmacy with clinical precision. Completing intake does not guarantee a prescription.",
       },
       {
         q: "How do I get started?",
@@ -87,7 +82,7 @@ export const faqCategories: FaqCategory[] = [
       },
       {
         q: "Who is this for?",
-        a: "Adults seeking physician-directed metabolic, peptide, or hormone care through telehealth — when clinically appropriate. Eligibility is confirmed during intake and physician review.",
+        a: "Adults seeking physician-directed weight management care through telehealth — Semaglutide or Tirzepatide programs when clinically appropriate. Eligibility is confirmed during intake and physician review.",
       },
       {
         q: "What happens after I submit intake?",
@@ -172,4 +167,4 @@ export const faqPreview: FaqItem[] = [
 export const faqItems: FaqItem[] = faqCategories.flatMap((c) => c.items);
 
 export const physicianReviewNote =
-  "Draft marketing copy pending physician and legal review before public launch.";
+  "Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and do not undergo FDA review for safety, effectiveness, or manufacturing quality.";

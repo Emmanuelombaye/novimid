@@ -16,7 +16,7 @@ export const howSteps: HowStep[] = [
     n: "01",
     title: "Start your",
     titleItalic: "intake",
-    body: "Share your goals and history in a short intake. Browse physician-directed options — peptide therapy, GLP-1 care, or TRT — so your care team can confirm whether treatment may be appropriate.",
+    body: "Share your goals and history in a short intake. Browse physician-directed weight management options — Semaglutide or Tirzepatide — so your care team can confirm whether treatment may be appropriate. Completing intake does not guarantee a prescription.",
     image: {
       src: "/images/how-step1.jpg",
       alt: "Personalized protocol vials representing treatment options",
@@ -25,7 +25,7 @@ export const howSteps: HowStep[] = [
       quality: 75,
       sizes: "(max-width: 1024px) 92vw, 50vw",
     },
-    chips: ["Peptides", "GLP-1 care", "TRT"],
+    chips: ["Semaglutide", "Tirzepatide", "Weight Management"],
     callout: {
       value: "Physician-first",
       label: "Care begins with clinical fit — not a template checkout.",

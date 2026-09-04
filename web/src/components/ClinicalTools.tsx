@@ -82,7 +82,7 @@ export function ClinicalTools({ showIntro = true, showLink = true }: Props) {
 
       {/* Desktop / tablet grid */}
       <div
-        className={`hidden gap-4 md:grid md:grid-cols-3 md:gap-6 ${
+        className={`hidden gap-4 md:grid md:grid-cols-2 md:gap-6 ${
           showIntro ? "md:mt-12" : ""
         }`}
       >

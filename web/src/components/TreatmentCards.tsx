@@ -7,35 +7,27 @@ import { media } from "@/lib/media";
 
 const cards = [
   {
-    label: "Metabolic",
+    label: "Weight Management",
     badge: "Physician-directed",
-    title: "GLP-1 care",
-    body: "A weekly physician-directed protocol designed to support appetite regulation and metabolic health. GLP-1 and dual-pathway options when clinically appropriate.",
+    title: "Semaglutide Program",
+    body: "A weekly physician-directed Semaglutide program designed to support appetite regulation and weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
     product: media.product.glp1Hero,
     stage: "bg-[#E7F0E8]",
   },
   {
-    label: "Peptides",
-    badge: "503A when indicated",
-    title: "Peptide therapy",
-    body: "Personalized peptide protocols to support recovery, cellular energy, and performance. Compounded after physician review when appropriate.",
-    product: media.product.peptideHero,
+    label: "Weight Management",
+    badge: "Physician-directed",
+    title: "Tirzepatide Program",
+    body: "A weekly physician-directed Tirzepatide program designed to support appetite regulation and weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
+    product: media.product.glp1Hero,
     stage: "bg-[#EAF2EC]",
-  },
-  {
-    label: "Hormones",
-    badge: "Clinical oversight",
-    title: "TRT",
-    body: "Hormone optimization with labs, dosing, and follow-up built into an accountable plan. Eligibility and dosing are physician decisions.",
-    product: media.product.trtHero,
-    stage: "bg-[#EEF2EB]",
   },
 ] as const;
 
 /** VitaWellRX-style treatment cards — tags, mint product stage, dual CTAs. */
 export function TreatmentCards() {
   return (
-    <div className="mt-8 grid gap-4 md:grid-cols-3 md:gap-5">
+    <div className="mt-8 grid gap-4 md:grid-cols-2 md:gap-5">
       {cards.map((card, i) => (
         <Reveal key={card.title} delayMs={i * 90}>
           <article className="flex h-full flex-col rounded-[28px] border border-[#E5E7EB] bg-white p-6 shadow-[0_1px_2px_rgba(44,58,53,0.04)] sm:rounded-[32px] sm:p-7">

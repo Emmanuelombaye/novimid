@@ -5,12 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { brand } from "@/lib/content";
 import { FooterTrustBadges } from "./FooterTrustBadges";
-import { LegitScriptBadge } from "./LegitScriptBadge";
 
 const treatments = [
-  { href: "/treatments", title: "Personalized GLP-1 care", sub: "Metabolic" },
-  { href: "/treatments", title: "Personalized peptide therapy", sub: "Peptides" },
-  { href: "/treatments", title: "Personalized TRT", sub: "Hormones" },
+  { href: "/treatments", title: "Semaglutide", sub: "Weight Management" },
+  { href: "/treatments", title: "Tirzepatide", sub: "Weight Management" },
 ] as const;
 
 const company = [
@@ -35,38 +33,6 @@ const bottomLegal = [
   { href: "/compounding-disclosure", label: "Compounding" },
 ] as const;
 
-function IconIg() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.25" />
-      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.25" />
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
-    </svg>
-  );
-}
-
-function IconFb() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
-function IconLi() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M6.5 9.5H4V20h2.5V9.5ZM5.25 4a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5ZM20 20h-2.5v-5.2c0-1.7-.7-2.3-1.7-2.3-1.1 0-1.8.8-1.8 2.4V20H11.5V9.5H14v1.2c.5-.8 1.5-1.5 3-1.5 2.3 0 3 1.5 3 4.3V20Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
 export function Footer() {
   const pathname = usePathname();
   if (pathname === "/start") return null;
@@ -76,68 +42,30 @@ export function Footer() {
   return (
     <footer className="bg-cloud px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-12 lg:px-8 lg:pb-12 lg:pt-14">
       <div className="mx-auto max-w-6xl overflow-hidden rounded-[12px] border-[0.5px] border-mist bg-white px-6 py-8 sm:rounded-[24px] sm:px-8 sm:py-10 lg:px-10 lg:py-12">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr] lg:gap-8 xl:gap-10">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-8 xl:gap-10">
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2.5" aria-label="novimid home">
-              <span className="relative h-8 w-8 shrink-0 overflow-hidden rounded-[4px]">
+            <Link href="/" className="inline-flex items-center gap-3" aria-label={`${brand.displayName} home`}>
+              <span className="relative h-10 w-10 shrink-0 overflow-hidden rounded-[6px]">
                 <Image
                   src="/brand/Novimid_ICON-DARK.svg"
                   alt=""
                   fill
-                  className="object-cover"
-                  sizes="32px"
+                  className="object-contain"
+                  sizes="40px"
                 />
               </span>
-              <span className="font-[family-name:var(--font-dm-sans)] text-[1.25rem] font-light tracking-[-0.02em] text-midnight">
-                novimid
+              <span className="font-[family-name:var(--font-dm-sans)] text-[1.4rem] font-medium tracking-[-0.02em] text-midnight">
+                {brand.displayName}
               </span>
             </Link>
-            <p className="mt-3 text-[12px] font-light leading-relaxed text-fog">
-              © {year} novimid. All rights reserved.
+            <p className="mt-3 max-w-xs text-[14px] font-medium leading-snug text-midnight">
+              {brand.positioning}
             </p>
-
-            <div className="mt-5 flex items-center gap-2.5 text-midnight">
-              <a
-                href="#"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border-[0.5px] border-mist transition-colors hover:border-sage hover:text-sage"
-                aria-label="Instagram"
-              >
-                <IconIg />
-              </a>
-              <a
-                href="#"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border-[0.5px] border-mist transition-colors hover:border-sage hover:text-sage"
-                aria-label="Facebook"
-              >
-                <IconFb />
-              </a>
-              <a
-                href="#"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border-[0.5px] border-mist transition-colors hover:border-sage hover:text-sage"
-                aria-label="LinkedIn"
-              >
-                <IconLi />
-              </a>
-            </div>
-
-            <div className="mt-5 flex items-center gap-4">
-              <LegitScriptBadge size="sm" />
-              <div className="flex flex-col gap-1.5">
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-midnight/20 bg-[#FAFBF9] px-3 py-1 text-[11px] font-bold text-midnight shadow-2xs">
-                  <span className="h-1.5 w-1.5 rounded-full bg-sage animate-pulse" />
-                  LegitScript Certified
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-midnight/20 bg-white px-3 py-1 text-[11px] font-bold text-midnight shadow-2xs">
-                  🔒 HIPAA Compliant
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-midnight/20 bg-[#DCE8DD] px-3 py-1 text-[11px] font-bold text-midnight shadow-2xs">
-                  ✓ California 503A Pharmacy
-                </span>
-              </div>
-            </div>
-
-            <p className="mt-4 max-w-xs text-[12px] font-light leading-relaxed text-forest">
-              {brand.positioning}. Telehealth and compounding when clinically indicated.
+            <p className="mt-2 max-w-xs text-[13px] font-light leading-relaxed text-forest">
+              Physician-directed telehealth. Compounded medications when clinically indicated through licensed U.S. pharmacies. Completing intake does not guarantee a prescription.
+            </p>
+            <p className="mt-4 text-[12px] font-light text-fog">
+              © {year} {brand.displayName}. All rights reserved.
             </p>
           </div>
 
@@ -158,7 +86,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="label-caps">novimid</p>
+            <p className="label-caps">{brand.displayName}</p>
             <ul className="mt-3.5 space-y-1">
               {company.map((item) => (
                 <li key={item.href}>
@@ -190,11 +118,12 @@ export function Footer() {
           </div>
         </div>
 
-        <FooterTrustBadges tone="light" hipaaHref="/privacy" />
+        <FooterTrustBadges tone="light" hipaaHref="/privacy" providerNetworkHref="/providers" />
 
         <div className="mt-10 border-t-[0.5px] border-mist pt-6 sm:mt-12 sm:pt-7">
           <p className="text-[12px] font-light leading-relaxed text-fog">
-            Draft marketing site — physician and legal review required before public launch.
+            Compounded medications are prepared for individual patients pursuant to a valid prescription and are not FDA-approved.
+            They do not undergo FDA review for safety, effectiveness, or manufacturing. Eligibility and treatment decisions are made by a licensed clinician.
           </p>
         </div>
       </div>

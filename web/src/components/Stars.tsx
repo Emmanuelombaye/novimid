@@ -82,26 +82,11 @@ export function StarMark({
   );
 }
 
-/** Complete Trustpilot Rating Badge Component */
-export function TrustpilotBadge({
-  rating = "4.8",
-  reviewsCount = "1,210",
-  className = "",
-}: {
+/** Do not show fabricated Trustpilot scores — reserved until real review data exists. */
+export function TrustpilotBadge(_props?: {
   rating?: string;
   reviewsCount?: string;
   className?: string;
 }) {
-  return (
-    <div className={`inline-flex items-center gap-2.5 rounded-xl border border-midnight/20 bg-[#1F2A37] px-3.5 py-2 text-white shadow-sm ${className}`}>
-      <div className="flex items-center gap-1">
-        <span className="text-[#00B67A] text-[14px] font-extrabold">★</span>
-        <span className="text-[12px] font-bold text-white tracking-tight">Trustpilot</span>
-      </div>
-      <Stars value={5} size="xs" />
-      <span className="text-[11.5px] font-medium text-white/90">
-        TrustScore <strong className="text-white font-bold">{rating}</strong> · {reviewsCount} reviews
-      </span>
-    </div>
-  );
+  return null;
 }

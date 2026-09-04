@@ -14,7 +14,7 @@ type Props = {
   activeTone?: YuccaTone;
   onToneChange?: (tone: YuccaTone) => void;
   /** @deprecated use onToneChange */
-  onNovimidChange?: (novimidId: "metabolic" | "peptides" | "hormones") => void;
+  onNovimidChange?: (novimidId: "semaglutide" | "tirzepatide") => void;
 };
 
 /** Exact Try Yucca explore block — tabs + split hero only */
@@ -23,7 +23,7 @@ export function YuccaTreatmentsExplore({
   onToneChange,
   onNovimidChange,
 }: Props) {
-  const [internal, setInternal] = useState<YuccaTone>("wl");
+  const [internal, setInternal] = useState<YuccaTone>("semaglutide");
   const active = activeTone ?? internal;
   const activeIndex = yuccaExploreCategories.findIndex((c) => c.id === active);
   const cat =

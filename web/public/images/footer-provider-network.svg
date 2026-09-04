@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 220 220" role="img" aria-label="Clinical services via licensed provider network">
+  <defs>
+    <linearGradient id="provider-gold" x1="40" y1="20" x2="180" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3E2A8"/>
+      <stop offset="0.45" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#8C6A12"/>
+    </linearGradient>
+    <clipPath id="provider-icon-clip">
+      <circle cx="110" cy="110" r="54"/>
+    </clipPath>
+    <path id="provider-top" d="M 24,110 A 86,86 0 0,1 196,110"/>
+    <path id="provider-bot" d="M 24,110 A 86,86 0 0,0 196,110"/>
+  </defs>
+  <circle cx="110" cy="110" r="108" fill="#071525"/>
+  <circle cx="110" cy="110" r="105" fill="none" stroke="url(#provider-gold)" stroke-width="6"/>
+  <circle cx="110" cy="110" r="97" fill="none" stroke="#E8D5A3" stroke-width="1.35" opacity="0.92"/>
+  <circle cx="110" cy="110" r="56" fill="#0B1B33"/>
+  <circle cx="110" cy="110" r="56" fill="none" stroke="url(#provider-gold)" stroke-width="1.4" opacity="0.45"/>
+
+  <text fill="#F7F1DE" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" letter-spacing="2.1">
+    <textPath href="#provider-top" xlink:href="#provider-top" startOffset="50%" text-anchor="middle">PROVIDER NETWORK</textPath>
+  </text>
+  <text fill="#F7F1DE" font-family="Arial, Helvetica, sans-serif" font-size="9.4" font-weight="700" letter-spacing="1.15">
+    <textPath href="#provider-bot" xlink:href="#provider-bot" startOffset="50%" text-anchor="middle">LICENSED CLINICIANS</textPath>
+  </text>
+
+  <circle cx="30" cy="110" r="2.1" fill="#E8D5A3"/>
+  <circle cx="190" cy="110" r="2.1" fill="#E8D5A3"/>
+
+  <g clip-path="url(#provider-icon-clip)">
+    <path d="M110 68 L113.8 80.4 L126.5 82 L113.8 86.4 L110 99 L106.2 86.4 L93.5 82 L106.2 80.4 Z" fill="#F3E2A8"/>
+    <g fill="#0A0F18">
+      <ellipse cx="88" cy="108" rx="7.6" ry="9"/>
+      <path d="M77 148c.8-18 5.6-27 11-27s10.2 9 11 27v4H77z"/>
+      <path d="M78 122h20v7c-2.6 6-7 9.5-10 9.5s-7.4-3.5-10-9.5z"/>
+      <ellipse cx="110" cy="105" rx="8.6" ry="10"/>
+      <path d="M96 152c1.2-22 7-32 14-32s12.8 10 14 32v5H96z"/>
+      <path d="M97 121h26v8.5c-3.4 7.5-8.6 12-13 12s-9.6-4.5-13-12z"/>
+      <ellipse cx="132" cy="108" rx="7.6" ry="9"/>
+      <path d="M121 148c.8-18 5.6-27 11-27s10.2 9 11 27v4h-22z"/>
+      <path d="M122 122h20v7c-2.6 6-7 9.5-10 9.5s-7.4-3.5-10-9.5z"/>
+    </g>
+  </g>
+</svg>

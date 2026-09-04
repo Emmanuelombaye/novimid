@@ -4,8 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { navLinks } from "@/lib/content";
-import { media } from "@/lib/media";
+import { brand, navLinks } from "@/lib/content";
 
 export function Header() {
   const pathname = usePathname();
@@ -40,18 +39,23 @@ export function Header() {
         <div className="shell relative z-20 flex h-14 items-center justify-between gap-3 sm:h-16">
           <Link
             href="/"
-            className="relative h-7 w-[120px] shrink-0 sm:h-8 sm:w-[140px]"
-            aria-label="novimid home"
+            className="inline-flex shrink-0 items-center gap-2.5"
+            aria-label={`${brand.displayName} home`}
             onClick={() => setOpen(false)}
           >
-            <Image
-              src={media.brand.logoHoriz}
-              alt="novimid"
-              fill
-              className="object-contain object-left"
-              priority
-              sizes="140px"
-            />
+            <span className="relative h-8 w-8 overflow-hidden rounded-[5px] sm:h-9 sm:w-9">
+              <Image
+                src="/brand/Novimid_ICON-DARK.svg"
+                alt=""
+                fill
+                className="object-contain"
+                priority
+                sizes="36px"
+              />
+            </span>
+            <span className="font-[family-name:var(--font-dm-sans)] text-[1.15rem] font-medium tracking-[-0.02em] text-midnight sm:text-[1.25rem]">
+              {brand.displayName}
+            </span>
           </Link>
 
           <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">

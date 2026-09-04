@@ -14,30 +14,30 @@ const TOTAL_STEPS = 5;
 
 const goals = [
   {
+    id: "weight",
+    label: "Weight management",
+    hint: "Appetite regulation and sustainable progress",
+    icon: "◈",
+    color: "bg-[#E8F0EA] text-sage",
+  },
+  {
     id: "health",
     label: "Improve overall health",
     hint: "Energy, resilience, long-term wellness",
     icon: "♥",
-    color: "bg-[#E8F0EA] text-sage",
+    color: "bg-[#E8E4DC] text-forest",
   },
   {
     id: "metabolic",
     label: "Metabolic support",
-    hint: "Appetite regulation and body composition",
-    icon: "◈",
-    color: "bg-[#E8E4DC] text-forest",
-  },
-  {
-    id: "hormones",
-    label: "Hormone balance",
-    hint: "Clinically guided hormone optimization",
+    hint: "Physician-guided metabolic care",
     icon: "◎",
     color: "bg-[#DCE8DD] text-midnight",
   },
   {
-    id: "recovery",
-    label: "Recovery & performance",
-    hint: "Sleep, recovery, peptide-supported care",
+    id: "unsure-goal",
+    label: "Not sure yet",
+    hint: "Start with a physician conversation",
     icon: "✦",
     color: "bg-cloud text-sage-mid",
   },
@@ -45,22 +45,22 @@ const goals = [
 
 const interests = [
   {
-    id: "glp1",
-    label: "GLP-1 care",
-    hint: "Physician-directed metabolic protocols",
+    id: "semaglutide",
+    label: "Semaglutide",
+    hint: "Physician-directed Semaglutide program",
     image: media.product.glp1Hero,
   },
   {
-    id: "peptides",
-    label: "Peptide therapy",
-    hint: "Prescribed when clinically appropriate",
-    image: media.product.peptideHero,
+    id: "tirzepatide",
+    label: "Tirzepatide",
+    hint: "Physician-directed Tirzepatide program",
+    image: media.product.glp1Hero,
   },
   {
-    id: "trt",
-    label: "TRT",
-    hint: "Labs, dosing, and follow-up built in",
-    image: media.product.trtHero,
+    id: "weight",
+    label: "Weight management",
+    hint: "Explore Semaglutide or Tirzepatide with a physician",
+    image: media.lifestyle.physician,
   },
   {
     id: "unsure",
