@@ -1,5 +1,3 @@
-import { media } from "./media";
-
 export const brand = {
   name: "novimid",
   displayName: "Novimid",
@@ -40,19 +38,6 @@ export const journeySteps = [
     n: "05",
     title: "Ship & follow",
     body: "Medication ships with clear instructions. Ongoing physician oversight keeps your protocol accountable.",
-  },
-] as const;
-
-export const clinicalTools = [
-  {
-    title: "Semaglutide Program",
-    body: "Physician-directed Semaglutide care for weight management when clinically appropriate.",
-    image: media.tools.glp1,
-  },
-  {
-    title: "Tirzepatide Program",
-    body: "Physician-directed Tirzepatide care for weight management when clinically appropriate.",
-    image: media.tools.glp1,
   },
 ] as const;
 

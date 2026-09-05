@@ -53,7 +53,7 @@ export function HeroOrbitStage() {
 
         <div className="hero-orbit-product hero-orbit-product--main animate-float-slow">
           <Image
-            src="/images/novimid-card-glp1.png"
+            src="/images/card-vial-semaglutide.png"
             alt=""
             width={1024}
             height={1024}
