@@ -54,10 +54,10 @@ export const howSteps: HowStep[] = [
     body: "A board-certified physician reviews your history and labs as needed. If clarification is required, your care team follows up. Protocols are designed around your biology.",
     image: {
       src: "/images/how-step3.jpg",
-      alt: "Physician reviewing clinical intake",
+      alt: "Adult reviewing care details at home in soft morning light",
       width: 1200,
       height: 900,
-      quality: 75,
+      quality: 78,
       sizes: "(max-width: 1024px) 92vw, 50vw",
     },
     chips: ["Board-certified", "Labs when indicated", "No one-size plan"],
