@@ -3,11 +3,11 @@
 import { usePathname } from "next/navigation";
 
 const items = [
-  "Board-certified physicians",
-  "Nationwide telehealth",
-  "Licensed 503A compounding",
-  "California supply chain",
-  "Physician-directed protocols",
+  "Licensed U.S. clinicians",
+  "Secure clinical intake",
+  "Pharmacy partners when prescribed",
+  "Compounded only when indicated",
+  "No prescription guaranteed by intake",
 ] as const;
 
 export function TrustTicker() {

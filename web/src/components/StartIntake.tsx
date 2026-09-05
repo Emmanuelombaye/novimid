@@ -47,13 +47,13 @@ const interests = [
   {
     id: "semaglutide",
     label: "Semaglutide",
-    hint: "Physician-directed Semaglutide program",
+    hint: "Clinician-guided Semaglutide program",
     image: media.product.glp1Hero,
   },
   {
     id: "tirzepatide",
     label: "Tirzepatide",
-    hint: "Physician-directed Tirzepatide program",
+    hint: "Clinician-guided Tirzepatide program",
     image: media.product.glp1Hero,
   },
   {
@@ -208,9 +208,9 @@ export function StartIntake() {
       <div className="shell flex-1 py-6 pb-36 sm:py-10 sm:pb-40">
         <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3">
           {[
-            { k: "Physician-led", v: "Board-certified oversight" },
-            { k: "503A pharmacy", v: "Compounded when indicated" },
-            { k: "California chain", v: "Created · shipped in CA" },
+            { k: "Licensed review", v: "Independent U.S. clinicians" },
+            { k: "Pharmacy partners", v: "Compounded when indicated" },
+            { k: "No Rx guaranteed", v: "By intake alone" },
           ].map((item) => (
             <div
               key={item.k}
@@ -224,7 +224,7 @@ export function StartIntake() {
 
         <div className="mx-auto mt-8 max-w-2xl text-center">
           <p className="text-[16px] font-light text-forest">
-            See if you qualify for physician-directed care.
+            See if you qualify for clinician-guided care.
           </p>
           <p className="mt-1 text-[16px] font-normal text-midnight">
             Takes less than 2 mins.

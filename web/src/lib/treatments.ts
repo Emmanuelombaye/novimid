@@ -28,7 +28,7 @@ export const treatmentCategories: TreatmentCategory[] = [
     tab: "Semaglutide",
     title: "Semaglutide Program",
     summary:
-      "A physician-directed weekly Semaglutide program designed to support appetite regulation and weight management — prescribed only when clinically appropriate. Completing intake does not guarantee a prescription.",
+      "A clinician-guided weekly Semaglutide program for weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
     tabImage: media.tabs.metabolic,
     heroImage: media.product.glp1Hero,
     badge: "Weight Management",
@@ -64,7 +64,7 @@ export const treatmentCategories: TreatmentCategory[] = [
     ],
     approachTitle: "A clinically guided approach to Semaglutide care",
     approachBody:
-      "Your physician reviews history, labs, and goals before recommending Semaglutide. When compounding is indicated, formulations are prepared through our licensed 503A pharmacy.",
+      "Your clinician reviews history, labs, and goals before recommending Semaglutide. When compounding is indicated, formulations are prepared through licensed U.S. pharmacy partners.",
     approachPoints: [
       "Eligibility and dosing are physician decisions — not checkout defaults.",
       "Compounded medications are not FDA-approved drug products; they are prepared for individual patients pursuant to a valid prescription.",
@@ -88,11 +88,11 @@ export const treatmentCategories: TreatmentCategory[] = [
     faqs: [
       {
         q: "What is the Semaglutide Program at novimid?",
-        a: "Physician-directed Semaglutide care for weight management when clinically appropriate. Care begins with intake and physician review. Completing intake does not guarantee a prescription.",
+        a: "A clinician-guided Semaglutide program for weight management when clinically appropriate. Care begins with intake and licensed-provider review. Completing intake does not guarantee a prescription.",
       },
       {
         q: "Who might be eligible?",
-        a: "Eligibility depends on medical history, labs, and clinical criteria. A board-certified physician determines whether care is right for you.",
+        a: "Eligibility depends on medical history, labs, and clinical criteria. A licensed clinician determines whether care is appropriate. Completing intake does not guarantee a prescription.",
       },
       {
         q: "Are compounded medications FDA-approved?",
@@ -100,7 +100,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       },
       {
         q: "How does fulfillment work?",
-        a: "When indicated, prescriptions are prepared through our licensed compounding pharmacy and shipped with clear instructions.",
+        a: "When indicated and prescribed, medication is prepared through a licensed U.S. pharmacy partner and shipped with clear instructions.",
       },
     ],
   },
@@ -109,7 +109,7 @@ export const treatmentCategories: TreatmentCategory[] = [
     tab: "Tirzepatide",
     title: "Tirzepatide Program",
     summary:
-      "A physician-directed weekly Tirzepatide program designed to support appetite regulation and weight management — prescribed only when clinically appropriate. Completing intake does not guarantee a prescription.",
+      "A clinician-guided weekly Tirzepatide program for weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
     tabImage: media.tabs.metabolic,
     heroImage: media.product.glp1Hero,
     badge: "Weight Management",
@@ -145,7 +145,7 @@ export const treatmentCategories: TreatmentCategory[] = [
     ],
     approachTitle: "A clinically guided approach to Tirzepatide care",
     approachBody:
-      "Your physician reviews history, labs, and goals before recommending Tirzepatide. When compounding is indicated, formulations are prepared through our licensed 503A pharmacy.",
+      "Your clinician reviews history, labs, and goals before recommending Tirzepatide. When compounding is indicated, formulations are prepared through licensed U.S. pharmacy partners.",
     approachPoints: [
       "Eligibility and dosing are physician decisions — not checkout defaults.",
       "Compounded medications are not FDA-approved drug products; they are prepared for individual patients pursuant to a valid prescription.",
@@ -169,11 +169,11 @@ export const treatmentCategories: TreatmentCategory[] = [
     faqs: [
       {
         q: "What is the Tirzepatide Program at novimid?",
-        a: "Physician-directed Tirzepatide care for weight management when clinically appropriate. Care begins with intake and physician review. Completing intake does not guarantee a prescription.",
+        a: "A clinician-guided Tirzepatide program for weight management when clinically appropriate. Care begins with intake and licensed-provider review. Completing intake does not guarantee a prescription.",
       },
       {
         q: "Who might be eligible?",
-        a: "Eligibility depends on medical history, labs, and clinical criteria. A board-certified physician determines whether care is right for you.",
+        a: "Eligibility depends on medical history, labs, and clinical criteria. A licensed clinician determines whether care is appropriate. Completing intake does not guarantee a prescription.",
       },
       {
         q: "Are compounded medications FDA-approved?",
@@ -181,7 +181,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       },
       {
         q: "How does fulfillment work?",
-        a: "When indicated, prescriptions are prepared through our licensed compounding pharmacy and shipped with clear instructions.",
+        a: "When indicated and prescribed, medication is prepared through a licensed U.S. pharmacy partner and shipped with clear instructions.",
       },
     ],
   },

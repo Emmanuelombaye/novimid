@@ -18,8 +18,8 @@ export default function TreatmentsPage() {
         <div className="shell max-w-3xl text-center">
           <p className="text-[13px] font-light leading-relaxed text-forest">
             Compounded medications are not FDA-approved drug products. They are prepared
-            for individual patients pursuant to a valid prescription through our licensed
-            503A compounding pharmacy when clinically indicated.{" "}
+            for individual patients pursuant to a valid prescription through licensed
+            U.S. pharmacy partners when clinically indicated.{" "}
             <Link
               href="/policies/fda-and-medical-disclaimer"
               className="text-sage underline-offset-4 hover:underline"

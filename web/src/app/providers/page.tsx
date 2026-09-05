@@ -17,7 +17,7 @@ export default function ProvidersPage() {
           <Reveal>
             <p className="label-caps text-center">Providers</p>
             <p className="mx-auto mt-3 max-w-xl text-center text-[15px] font-light text-forest">
-              Physician-directed Semaglutide and Tirzepatide weight management care.
+              Physician-directed Semaglutide and Tirzepatide weight management care through a licensed provider network.
             </p>
           </Reveal>
         </div>

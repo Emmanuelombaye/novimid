@@ -3,22 +3,22 @@ import { AboutBleedBand } from "@/components/AboutBleedBand";
 import { CTAPanel } from "@/components/CTAPanel";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
-import { brand, caChain } from "@/lib/content";
+import { brand } from "@/lib/content";
 import { media } from "@/lib/media";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "novimid is physician-directed health optimization — telehealth, personalized protocols, and a licensed California compounding pharmacy.",
+    "Novimid is a technology platform that connects eligible patients with independent U.S.-licensed clinicians for weight-management programs when clinically appropriate.",
 };
 
 export default function AboutPage() {
   return (
     <>
       <PageHero
-        label="About novimid"
-        title="Where telehealth meets the compounding lab"
-        body="Evidence-based. Physician-led. Personalized. novimid exists for patients who want real clinical oversight — not templates, not hype."
+        label="About Novimid"
+        title="Clinician-guided care, without the noise"
+        body="Licensed clinician review. Clear process. Personalized protocols when appropriate — not templates, not hype."
         serif
       />
 
@@ -36,14 +36,14 @@ export default function AboutPage() {
           <Reveal>
             <div className="mx-auto max-w-2xl">
               <p className="type-body text-[16px] sm:text-[17px]">
-                novimid connects patients with board-certified physicians who design
-                evidence-based protocols — Semaglutide and Tirzepatide weight management
-                programs when clinically appropriate — delivered through our licensed
-                compounding pharmacy with clinical precision.
+                Novimid is a technology platform that connects eligible patients with independent
+                U.S.-licensed clinicians for Semaglutide and Tirzepatide weight-management programs
+                when clinically appropriate. Completing intake does not guarantee a prescription.
               </p>
               <p className="type-body mt-5 text-[16px] sm:text-[17px]">
-                We speak with the authority of medicine and the warmth of a physician
-                who listens. Precise language. No jargon walls. No overselling.
+                Novimid is not a pharmacy and does not itself practice medicine. When prescribed,
+                medication is fulfilled through licensed U.S. pharmacy partners. Compounded
+                medications, when used, are not FDA-approved finished products.
               </p>
             </div>
           </Reveal>
@@ -52,8 +52,8 @@ export default function AboutPage() {
 
       <AboutBleedBand
         image={media.about.californiaBand}
-        eyebrow="Structural proof"
-        title="Created · Manufactured · Tested · Packaged · Shipped"
+        eyebrow="How care is delivered"
+        title="Licensed review · Pharmacy partners · Clear follow-up"
         objectPosition="object-cover object-[55%_center]"
         tone="soft"
       />
@@ -62,15 +62,15 @@ export default function AboutPage() {
         <div className="shell section-y">
           <Reveal>
             <p className="mt-0 max-w-2xl text-[15px] font-light text-sage-mist sm:text-lg">
-              All from start to finish in California
+              Built for clinical accountability
             </p>
             <p className="mt-5 max-w-2xl text-[15px] font-light leading-relaxed text-cloud">
-              The integrated California supply chain is a credibility asset — deployed
-              where trust is being evaluated. No overseas supply chains. No mystery
-              middlemen. No compromises on quality.
+              Independent clinicians decide whether treatment is appropriate. Licensed pharmacy
+              partners dispense when prescribed. We keep the process plain so nothing arrives as a
+              surprise later.
             </p>
-            <ul className="mt-10 grid grid-cols-2 gap-2 sm:grid-cols-5 sm:gap-3">
-              {caChain.map((step) => (
+            <ul className="mt-10 grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-3">
+              {["Clinical intake", "Licensed review", "Fulfillment if prescribed"].map((step) => (
                 <li
                   key={step}
                   className="rounded-[var(--radius-card)] border-[0.5px] border-white/15 px-3 py-4 text-center text-[12px] font-light tracking-wide text-sage-mist sm:text-[13px]"
@@ -98,7 +98,7 @@ export default function AboutPage() {
               {[
                 {
                   t: "Empowering",
-                  b: "We inform, not dictate. You and your physician decide together.",
+                  b: "We inform, not dictate. You and your clinician decide together.",
                 },
                 {
                   t: "Modern",
@@ -106,7 +106,7 @@ export default function AboutPage() {
                 },
                 {
                   t: "Transparent",
-                  b: "We name compounding pharmacy, telehealth, and the therapies we offer.",
+                  b: "We name telehealth, pharmacy partners, and compounding status clearly.",
                 },
               ].map((item) => (
                 <div key={item.t}>

@@ -68,7 +68,7 @@ export function Footer() {
               {brand.positioning}
             </p>
             <p className="mt-2 max-w-xs text-[13px] font-light leading-relaxed text-forest">
-              Physician-directed telehealth. Compounded medications when clinically indicated through licensed U.S. pharmacies. Completing intake does not guarantee a prescription.
+              Clinician-guided telehealth. Compounded medications when clinically indicated through licensed U.S. pharmacy partners. Completing intake does not guarantee a prescription.
             </p>
           </div>
 

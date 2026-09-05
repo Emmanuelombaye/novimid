@@ -20,7 +20,7 @@ export function ReviewsStrip() {
               href="/start"
               className="inline-flex h-11 items-center justify-center rounded-full bg-sage px-7 text-[14px] font-light text-white transition-colors hover:bg-sage-mid sm:h-12 sm:text-[15px]"
             >
-              See if I qualify
+              Start clinical intake
             </Link>
           </div>
         </Reveal>

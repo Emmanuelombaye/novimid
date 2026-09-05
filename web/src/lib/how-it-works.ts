@@ -51,7 +51,7 @@ export const howSteps: HowStep[] = [
     n: "03",
     title: "Physician",
     titleItalic: "review",
-    body: "A board-certified physician reviews your history and labs as needed. If clarification is required, your care team follows up. Protocols are designed around your biology.",
+    body: "A licensed clinician reviews your history and labs as needed. If clarification is required, your care team follows up. Completing intake does not guarantee a prescription.",
     image: {
       src: "/images/how-step3.jpg",
       alt: "Adult reviewing care details at home in soft morning light",
@@ -60,13 +60,13 @@ export const howSteps: HowStep[] = [
       quality: 78,
       sizes: "(max-width: 1024px) 92vw, 50vw",
     },
-    chips: ["Board-certified", "Labs when indicated", "No one-size plan"],
+    chips: ["Licensed clinician", "Labs when indicated", "No one-size plan"],
   },
   {
     n: "04",
     title: "Compound &",
     titleItalic: "ship",
-    body: "When clinically indicated, prescriptions are prepared through our licensed 503A compounding pharmacy and shipped with clear instructions — California supply chain accountability from created to shipped.",
+    body: "When clinically indicated and prescribed, medication is prepared through a licensed U.S. pharmacy partner and shipped with clear instructions. Compounded medications are not FDA-approved finished products.",
     image: {
       src: "/images/how-step4.jpg",
       alt: "Medication package delivered to your door",
@@ -75,7 +75,7 @@ export const howSteps: HowStep[] = [
       quality: 75,
       sizes: "(max-width: 1024px) 92vw, 50vw",
     },
-    chips: ["503A pharmacy", "Clear instructions", "CA supply chain"],
+    chips: ["Licensed pharmacy", "Clear instructions", "If prescribed"],
     reverse: true,
     callout: {
       value: "When indicated",

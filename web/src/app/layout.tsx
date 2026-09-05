@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     template: `%s · ${brand.displayName}`,
   },
   description:
-    "novimid connects patients with board-certified physicians who design evidence-based Semaglutide and Tirzepatide weight management protocols — delivered through a licensed compounding pharmacy.",
+    "novimid connects eligible patients with independent U.S.-licensed clinicians for Semaglutide and Tirzepatide weight-management programs when clinically appropriate. Fulfillment through licensed pharmacy partners when prescribed.",
   applicationName: brand.displayName,
   robots: { index: true, follow: true },
   openGraph: {

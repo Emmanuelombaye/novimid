@@ -8,7 +8,7 @@ const programs = [
     id: "semaglutide",
     label: "Weight Management",
     title: "Semaglutide",
-    body: "Weekly physician-directed care for appetite regulation and steady progress — prescribed only when clinically appropriate.",
+    body: "Weekly clinician-guided care for weight management — prescribed only when clinically appropriate.",
     vial: "/images/card-vial-semaglutide.png",
     vialAlt: "Semaglutide injectable solution vial",
     stage: "bg-[#E7F0E8]",

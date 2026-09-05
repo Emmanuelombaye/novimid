@@ -4,7 +4,7 @@ export const brand = {
   positioning: "Physician-Directed Health Optimization",
   tagline: "Your Protocol. Your Physician. Your Results.",
   subTagline: "Precision medicine, compounded for you.",
-  seoTagline: "Evidence-based. Physician-led. Personalized.",
+  seoTagline: "Clinician-guided. Personalized. Transparent.",
 } as const;
 
 export const navLinks = [
@@ -17,27 +17,27 @@ export const journeySteps = [
   {
     n: "01",
     title: "Consult",
-    body: "Meet a board-certified physician who listens first. Your goals, history, and symptoms shape the conversation.",
+    body: "Meet a licensed clinician who listens first. Your goals, history, and symptoms shape the conversation.",
   },
   {
     n: "02",
     title: "Labs",
-    body: "Targeted diagnostics give your physician a clear picture — not a template, your biology.",
+    body: "Targeted diagnostics may be requested so your clinician has a clear picture — not a template, your biology.",
   },
   {
     n: "03",
     title: "Protocol",
-    body: "Your physician designs an evidence-based protocol around your labs, lifestyle, and clinical needs.",
+    body: "If appropriate, your clinician designs a protocol around your history, labs, lifestyle, and clinical needs.",
   },
   {
     n: "04",
     title: "Compound",
-    body: "When indicated, prescriptions are prepared through our licensed 503A compounding pharmacy with clinical precision.",
+    body: "When indicated, prescriptions are prepared through licensed U.S. pharmacy partners for individual patients.",
   },
   {
     n: "05",
     title: "Ship & follow",
-    body: "Medication ships with clear instructions. Ongoing physician oversight keeps your protocol accountable.",
+    body: "Medication ships with clear instructions when prescribed. Ongoing clinician oversight keeps care accountable.",
   },
 ] as const;
 
@@ -125,7 +125,7 @@ export const faqCategories: FaqCategory[] = [
     items: [
       {
         q: "What is a 503A compounding pharmacy?",
-        a: "A 503A pharmacy prepares personalized medications for individual patients pursuant to a valid prescription. Compounded formulations are not FDA-approved drugs; they are prepared for patient-specific need under applicable law.",
+        a: "A licensed 503A pharmacy may prepare personalized medications for individual patients pursuant to a valid prescription. Compounded formulations are not FDA-approved drugs; they are prepared for patient-specific need under applicable law.",
       },
       {
         q: "Where is medication prepared?",

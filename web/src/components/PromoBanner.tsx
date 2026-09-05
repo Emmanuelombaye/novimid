@@ -11,7 +11,7 @@ export function PromoBanner() {
     <div className="border-b-[0.5px] border-midnight/15 bg-[#DCE8DD]">
       <div className="shell flex items-center justify-between gap-3 py-2">
         <p className="min-w-0 truncate text-[13px] font-light text-midnight sm:text-[14px]">
-          Physician-directed care · California 503A compounding
+          Physician-directed care · Licensed pharmacy partners when prescribed
         </p>
         <Link
           href="/start"

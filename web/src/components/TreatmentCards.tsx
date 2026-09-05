@@ -6,7 +6,7 @@ import { Reveal } from "./Reveal";
 const cards = [
   {
     label: "Weight Management",
-    badge: "Physician-directed",
+    badge: "Clinician-guided",
     title: "Semaglutide Program",
     body: "A weekly physician-directed Semaglutide program designed to support appetite regulation and weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
     vial: "/images/card-vial-semaglutide.png",
@@ -16,7 +16,7 @@ const cards = [
   },
   {
     label: "Weight Management",
-    badge: "Physician-directed",
+    badge: "Clinician-guided",
     title: "Tirzepatide Program",
     body: "A weekly physician-directed Tirzepatide program designed to support appetite regulation and weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
     vial: "/images/card-vial-tirzepatide.png",

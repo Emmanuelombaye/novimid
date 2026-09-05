@@ -7,7 +7,7 @@ import { HeroOrbitStage } from "@/components/HeroOrbitStage";
 const rotatingWords = ["Semaglutide", "Tirzepatide", "Weight Management"] as const;
 
 const proofs = [
-  { k: "Physician-led", v: "Licensed clinician review" },
+  { k: "Licensed review", v: "Independent U.S. clinicians" },
   { k: "U.S. pharmacies", v: "Compounded when indicated" },
   { k: "HIPAA", v: "Protected health information" },
 ] as const;
@@ -38,7 +38,7 @@ export function HomeHero() {
 
       <div className="hero-copy shell relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-end px-5 pb-8 pt-[clamp(13rem,40vw,17rem)] sm:justify-center sm:px-8 sm:py-14 sm:pt-14 lg:mx-0 lg:ml-12 lg:mr-auto lg:max-w-[42%] lg:pl-0 lg:pr-6 lg:pb-8 xl:ml-16">
         <p className="mb-4 text-[11px] font-semibold tracking-[0.14em] uppercase text-sage sm:mb-5 sm:text-[12px]">
-          Physician-directed care
+          Clinician-guided care
         </p>
 
         <div className="hero-copy-inner max-w-lg">
@@ -56,7 +56,7 @@ export function HomeHero() {
           </h1>
 
           <p className="mt-4 max-w-sm text-[15px] font-normal leading-relaxed text-forest sm:mt-5 sm:text-[16px]">
-            Licensed clinicians. Evidence-based protocols. Compounded through licensed U.S. pharmacies when indicated.
+            Licensed clinicians review your intake before any prescription. Compounded through licensed U.S. pharmacy partners when indicated.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export function HomeHero() {
             href="/start"
             className="inline-flex h-12 w-full items-center justify-center rounded-full bg-sage px-8 text-[15px] font-medium text-white transition-colors hover:bg-sage-mid sm:w-auto sm:min-w-[200px]"
           >
-            See if I qualify
+            Start clinical intake
           </Link>
           <Link
             href="/treatments"

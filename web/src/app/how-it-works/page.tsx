@@ -6,7 +6,7 @@ import { brand } from "@/lib/content";
 export const metadata: Metadata = {
   title: "How it works",
   description:
-    "See how novimid works — intake, physician review, personalized protocol, 503A compounding when indicated, and ongoing follow-up.",
+    "See how Novimid works — intake, licensed-provider review, personalized protocol when appropriate, pharmacy fulfillment if prescribed, and ongoing follow-up.",
   alternates: { canonical: "/how-it-works" },
 };
 
