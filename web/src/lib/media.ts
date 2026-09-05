@@ -112,7 +112,7 @@ export const media = {
     },
     {
       src: "/images/why-2.jpg",
-      alt: "Physician medical review",
+      alt: "Adult reviewing a personal care plan at home in soft morning light",
       width: 900,
       height: 675,
       quality: photoQ,

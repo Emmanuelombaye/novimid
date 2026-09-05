@@ -108,7 +108,7 @@ export const howWhy = [
   {
     image: media.why[1],
     title: "Tailored personalized care",
-    body: "Protocols built around your labs and goals, decided with your physician.",
+    body: "Protocols built around your labs and goals, decided with your licensed clinician.",
   },
   {
     image: media.why[2],
