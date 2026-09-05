@@ -67,50 +67,72 @@ export const caChain = [
 export type FaqItem = { q: string; a: string };
 export type FaqCategory = { id: string; label: string; items: FaqItem[] };
 
-export const faqCategories: FaqCategory[] = [
+/** Homepage FAQ preview — Efexia question set, Novimid answers. */
+export const faqPreview: FaqItem[] = [
   {
-    id: "start",
-    label: "Getting started",
-    items: [
-      {
-        q: "What is novimid?",
-        a: "novimid connects patients with board-certified physicians who design evidence-based weight management protocols — Semaglutide and Tirzepatide programs when clinically appropriate — delivered through our licensed compounding pharmacy with clinical precision. Completing intake does not guarantee a prescription.",
-      },
-      {
-        q: "How do I get started?",
-        a: "Start your protocol to begin intake. A care coordinator will guide you to a physician consult and explain what to expect at each step.",
-      },
-      {
-        q: "Who is this for?",
-        a: "Adults seeking physician-directed weight management care through telehealth — Semaglutide or Tirzepatide programs when clinically appropriate. Eligibility is confirmed during intake and physician review.",
-      },
-      {
-        q: "What happens after I submit intake?",
-        a: "Your information is reviewed for clinical fit. If eligible, you are scheduled for a physician consult. Your care team stays available for questions throughout.",
-      },
-    ],
+    q: "What is Novimid?",
+    a: "Novimid is a technology platform that connects eligible patients with independent U.S.-licensed clinicians for weight-management programs. Novimid is not a pharmacy. Fulfillment occurs through licensed pharmacy partners only when prescribed.",
   },
   {
-    id: "care",
-    label: "Care & telehealth",
-    items: [
-      {
-        q: "Is this telehealth?",
-        a: "Yes. Care begins with a physician consult via telehealth. Eligibility, prescribing, and follow-up follow applicable state and federal telemedicine rules.",
-      },
-      {
-        q: "How personalized is my protocol?",
-        a: "Your protocol is designed around your labs, history, and goals — not a template. You and your physician decide the path together.",
-      },
-      {
-        q: "Will I have ongoing physician oversight?",
-        a: "Yes. Protocols include follow-up so dosing and goals can be adjusted based on labs and how you respond — not a one-and-done prescription.",
-      },
-      {
-        q: "How soon might I notice changes?",
-        a: "Timelines vary by protocol and individual biology. Your physician sets expectations during consult and adjusts based on follow-up.",
-      },
-    ],
+    q: "When do I complete my medical intake?",
+    a: "After you complete checkout and payment authorization, you finish the secure medical intake and identity-verification steps required for licensed-provider review.",
+  },
+  {
+    q: "Does purchasing guarantee a prescription?",
+    a: "No. Purchasing or completing intake does not guarantee a prescription. A licensed clinician must determine that treatment is medically appropriate before any prescription is issued.",
+  },
+  {
+    q: "What does the monthly price include?",
+    a: "Program pricing reflects the online clinical consultation, standard shipping when a prescription is approved, ordinary program support, and routine follow-up required by the program. Laboratory testing, expedited shipping, and third-party services are not included unless specifically stated.",
+  },
+  {
+    q: "Are the products FDA-approved?",
+    a: "Compounded medications are not FDA-approved. They may be prescribed for an individual patient when a licensed clinician determines they are clinically appropriate.",
+  },
+  {
+    q: "How do I cancel a program?",
+    a: "You may cancel or manage your program through your account or by contacting your care coordinator. Refund eligibility depends on program status and the terms described in our policies.",
+  },
+];
+
+/** Additional FAQ items (How-it-works style) merged into the full FAQ page. */
+export const faqExtended: FaqItem[] = [
+  {
+    q: "Why does the medical intake happen after checkout?",
+    a: "Your payment reserves clinical review capacity and creates the account your intake is attached to. The intake itself is the clinical step, and it happens immediately after checkout — before any provider decision and before any fulfillment.",
+  },
+  {
+    q: "Does paying mean I will receive a prescription?",
+    a: "No. Purchasing or completing intake does not guarantee a prescription. A licensed clinician must determine that treatment is medically appropriate before any prescription is issued.",
+  },
+  {
+    q: "How long does provider review usually take?",
+    a: "Many reviews are completed within one to two business days after a complete intake is submitted. Complex cases or requests for additional information may take longer.",
+  },
+  {
+    q: "What if a provider asks for more information?",
+    a: "You may receive secure messages requesting clarification, photos, or laboratory work before a decision is made. The program cannot move forward until required information is complete.",
+  },
+  {
+    q: "Can I change programs after checkout?",
+    a: "If a clinician determines another program is more appropriate, that recommendation is handled through the clinical review process rather than self-switching products after payment.",
+  },
+  {
+    q: "Is shipping really included?",
+    a: "Standard shipping is included in the monthly program price when a prescription is approved and fulfilled. Expedited or replacement shipments may not be included unless specifically stated.",
+  },
+];
+
+export const faqCategories: FaqCategory[] = [
+  {
+    id: "programs",
+    label: "Programs & pricing",
+    items: faqPreview,
+  },
+  {
+    id: "process",
+    label: "Intake & review",
+    items: faqExtended,
   },
   {
     id: "compounding",
@@ -121,12 +143,8 @@ export const faqCategories: FaqCategory[] = [
         a: "A 503A pharmacy prepares personalized medications for individual patients pursuant to a valid prescription. Compounded formulations are not FDA-approved drugs; they are prepared for patient-specific need under applicable law.",
       },
       {
-        q: "Are compounded medications FDA-approved?",
-        a: "No. Compounded medications are prepared for individual patients and are not FDA-approved drug products. Marketing and clinical use follow 503A compounding-eligible standards.",
-      },
-      {
         q: "Where is medication prepared?",
-        a: "When compounding is indicated, prescriptions are prepared through our licensed California 503A pharmacy — created, manufactured, tested, packaged, and shipped with clinical oversight.",
+        a: "When compounding is indicated, prescriptions are prepared through licensed U.S. pharmacies — created, manufactured, tested, packaged, and shipped with clinical oversight.",
       },
       {
         q: "Do you ship nationwide?",
@@ -143,10 +161,6 @@ export const faqCategories: FaqCategory[] = [
         a: "Your care coordinator is the first point of contact for logistics, shipping, and scheduling. Clinical questions are routed to your physician's care team.",
       },
       {
-        q: "Can my protocol change over time?",
-        a: "Yes. Follow-up labs and check-ins allow your physician to refine dosing, formulations, or goals as your response becomes clearer.",
-      },
-      {
         q: "What if I’m not eligible?",
         a: "If telehealth or a specific therapy isn’t appropriate, your team will say so clearly and may suggest next steps — without pressure to proceed.",
       },
@@ -154,17 +168,17 @@ export const faqCategories: FaqCategory[] = [
   },
 ];
 
-/** Curated homepage / how-it-works preview — fixed order for stable SSR */
-export const faqPreview: FaqItem[] = [
-  faqCategories[0].items[0], // What is novimid?
-  faqCategories[1].items[0], // Is this telehealth?
-  faqCategories[2].items[0], // What is a 503A compounding pharmacy?
-  faqCategories[1].items[1], // How personalized is my protocol?
-  faqCategories[0].items[1], // How do I get started?
-];
-
-/** Flat list of all FAQ items */
-export const faqItems: FaqItem[] = faqCategories.flatMap((c) => c.items);
+/** Flat unique list for the full FAQ page accordion. */
+export const faqItems: FaqItem[] = (() => {
+  const seen = new Set<string>();
+  return [...faqPreview, ...faqExtended, ...faqCategories.flatMap((c) => c.items)].filter(
+    (item) => {
+      if (seen.has(item.q)) return false;
+      seen.add(item.q);
+      return true;
+    },
+  );
+})();
 
 export const physicianReviewNote =
   "Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and do not undergo FDA review for safety, effectiveness, or manufacturing quality.";

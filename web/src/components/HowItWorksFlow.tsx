@@ -4,6 +4,7 @@ import Link from "next/link";
 import { faqPreview } from "@/lib/content";
 import { howWhy } from "@/lib/how-it-works";
 import { media } from "@/lib/media";
+import { FaqAccordion } from "./FaqAccordion";
 import { HowItWorksStickySteps } from "./HowItWorksStickySteps";
 import { Reveal } from "./Reveal";
 import { SiteImage } from "./SiteImage";
@@ -211,50 +212,25 @@ export function HowItWorksFlow() {
       </section>
 
       <section className="py-12 sm:py-16">
-        <Reveal>
-          <p className="label-caps text-center">FAQ</p>
-          <h2 className="mx-auto mt-3 max-w-xl text-center font-[family-name:var(--font-dm-sans)] text-[clamp(1.5rem,3.5vw,2rem)] font-light tracking-[-0.02em] text-midnight">
-            Clear answers before you begin
-          </h2>
-          <p className="mx-auto mt-3 max-w-md text-center text-[14px] font-light text-forest sm:text-[15px]">
-            Telehealth, protocols, and California compounding — without the jargon.
-          </p>
-        </Reveal>
-        <div className="mx-auto mt-8 flex max-w-3xl flex-col gap-3">
-          {faqPreview.map((item, i) => (
-            <Reveal key={item.q} delayMs={i * 40}>
-              <details className="group rounded-[12px] border-[0.5px] border-mist bg-white open:border-sage/40">
-                <summary className="cursor-pointer list-none px-5 py-4 marker:content-none sm:px-6 [&::-webkit-details-marker]:hidden">
-                  <span className="flex items-start justify-between gap-4">
-                    <span className="text-[15px] font-light text-midnight sm:text-[16px]">
-                      {item.q}
-                    </span>
-                    <span
-                      className="faq-toggle flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-[0.5px] border-mist text-[18px] leading-none text-midnight transition-colors group-open:border-sage group-open:bg-sage group-open:text-white"
-                      aria-hidden
-                    >
-                      <span className="group-open:hidden">+</span>
-                      <span className="hidden group-open:inline">×</span>
-                    </span>
-                  </span>
-                </summary>
-                <div className="border-t-[0.5px] border-mist px-5 pt-3 pb-5 sm:px-6">
-                  <p className="faq-answer text-[14px] font-light leading-relaxed text-forest sm:text-[15px]">
-                    {item.a}
-                  </p>
-                </div>
-              </details>
-            </Reveal>
-          ))}
-        </div>
-        <div className="mt-8 text-center">
-          <Link
-            href="/faq"
-            className="inline-flex items-center gap-1.5 text-[15px] font-light text-midnight underline-offset-4 transition-colors hover:text-sage hover:underline"
-          >
-            See all FAQs
-            <span aria-hidden>→</span>
-          </Link>
+        <div className="shell grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
+          <Reveal>
+            <h2 className="font-[family-name:var(--font-dm-serif)] text-[clamp(2rem,4vw,2.75rem)] font-normal leading-[1.08] tracking-[-0.02em] text-midnight">
+              Frequently asked
+            </h2>
+            <p className="mt-3.5 max-w-[34ch] text-[1.02rem] font-light leading-[1.65] text-forest">
+              Six of the questions people ask most. Additional policy details are in
+              our terms and legal resources.
+            </p>
+            <Link
+              href="/faq"
+              className="mt-3.5 inline-flex text-[0.98rem] font-semibold text-midnight underline decoration-midnight/35 underline-offset-[3px] transition-colors hover:text-sage hover:decoration-current"
+            >
+              Read the full FAQ
+            </Link>
+          </Reveal>
+          <Reveal delayMs={80}>
+            <FaqAccordion items={faqPreview} />
+          </Reveal>
         </div>
       </section>
 

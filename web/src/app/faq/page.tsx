@@ -1,49 +1,50 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { FaqExplorer } from "@/components/FaqExplorer";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers about novimid telehealth, physician-directed protocols, and California 503A compounding.",
+    "Answers about Novimid programs, intake, pricing, compounding, and cancellations.",
 };
 
 export default function FaqPage() {
   return (
     <>
-      <section className="border-b-[0.5px] border-mist bg-cloud">
+      <section className="border-b border-mist bg-white">
         <div className="shell py-14 sm:py-16 md:py-20">
           <Reveal>
-            <div className="mx-auto max-w-2xl text-center">
-              <p className="label-caps">FAQ</p>
-              <h1 className="mt-3 font-[family-name:var(--font-dm-sans)] text-[clamp(1.85rem,4.5vw,2.75rem)] font-light leading-[1.12] tracking-[-0.02em] text-midnight">
-                Clear answers before you{" "}
-                <em className="font-[family-name:var(--font-dm-serif)] italic">begin</em>
-              </h1>
-              <p className="mx-auto mt-4 max-w-lg text-[15px] font-light leading-relaxed text-forest sm:text-[16px]">
-                Physician-directed care, telehealth, and California compounding — explained without
-                jargon or hype.
-              </p>
+            <nav className="mb-5 flex items-center gap-2 text-[13px] font-light text-forest" aria-label="Breadcrumb">
+              <Link href="/" className="hover:text-midnight">
+                Home
+              </Link>
+              <span aria-hidden>/</span>
+              <span className="text-midnight">FAQ</span>
+            </nav>
+            <p className="label-caps">FAQ</p>
+            <h1 className="mt-3 max-w-2xl font-[family-name:var(--font-dm-serif)] text-[clamp(2rem,4.5vw,3rem)] font-normal leading-[1.08] tracking-[-0.02em] text-midnight">
+              Frequently asked
+            </h1>
+            <p className="mt-4 max-w-xl text-[15px] font-light leading-relaxed text-forest sm:text-[16px]">
+              Six of the questions people ask most — plus intake, pricing, and policy
+              details. Purchasing does not guarantee a prescription.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link
+                href="/start"
+                className="inline-flex h-11 items-center justify-center rounded-full bg-sage px-7 text-[14px] font-medium text-white transition-colors hover:bg-[#5F8165]"
+              >
+                Get started
+              </Link>
+              <Link
+                href="/how-it-works"
+                className="inline-flex h-11 items-center justify-center rounded-full border border-mist bg-cloud px-7 text-[14px] font-medium text-midnight transition-colors hover:border-sage/40"
+              >
+                How it works
+              </Link>
             </div>
           </Reveal>
-
-          <div className="mx-auto mt-8 flex max-w-xl flex-col items-stretch overflow-hidden rounded-full border-[0.5px] border-mist bg-white sm:mt-10 sm:flex-row">
-            <div className="flex flex-1 items-center justify-center gap-2.5 px-5 py-3">
-              <span className="h-2 w-2 rounded-full bg-sage" aria-hidden />
-              <p className="text-[12px] font-light text-midnight sm:text-[13px]">
-                Physician-directed care
-              </p>
-            </div>
-            <div className="hidden w-px bg-mist sm:block" aria-hidden />
-            <div className="flex flex-1 items-center justify-center gap-2.5 border-t-[0.5px] border-mist px-5 py-3 sm:border-t-0">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-sage text-[9px] font-light text-white">
-                CA
-              </span>
-              <p className="text-[12px] font-light text-midnight sm:text-[13px]">
-                California compounding
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
