@@ -37,8 +37,8 @@ export function CtaBand({
           className={`${objectPosition} scale-[1.01]`}
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(28,42,58,0.78)_0%,rgba(28,42,58,0.52)_38%,rgba(28,42,58,0.22)_62%,rgba(28,42,58,0.08)_100%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,32,44,0.12)_0%,transparent_40%,rgba(20,32,44,0.28)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(44,58,53,0.72)_0%,rgba(44,58,53,0.45)_36%,rgba(44,58,53,0.18)_62%,rgba(44,58,53,0.06)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(44,58,53,0.08)_0%,transparent_42%,rgba(44,58,53,0.22)_100%)]" />
       </div>
 
       <div className="relative z-10 flex min-h-[min(72vh,640px)] items-center sm:min-h-[min(78vh,720px)] lg:min-h-[min(82vh,760px)]">

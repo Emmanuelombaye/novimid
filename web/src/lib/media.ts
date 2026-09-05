@@ -331,18 +331,18 @@ export const media = {
 
   ctaPortrait: {
     src: "/images/cta-band-care.jpg",
-    alt: "Adult representing physician-directed novimid care",
-    width: 2400,
-    height: 1350,
+    alt: "Adult in soft morning light on a calm coastal path",
+    width: 1280,
+    height: 720,
     quality: 86,
     sizes: "100vw",
   } satisfies SiteImage,
 
   closingCtaLifestyle: {
     src: "/images/cta-band-goals.jpg",
-    alt: "Adult representing personalized novimid health goals",
-    width: 2400,
-    height: 1350,
+    alt: "Adult walking through sunlit trees toward personal health goals",
+    width: 1280,
+    height: 720,
     quality: 86,
     sizes: "100vw",
   } satisfies SiteImage,
@@ -350,7 +350,7 @@ export const media = {
   about: {
     promiseBand: {
       src: "/images/about-band-promise.jpg",
-      alt: "Adult in calm California light looking toward coastal hills",
+      alt: "Adult looking toward coastal hills from a bright living space",
       width: 1280,
       height: 720,
       quality: 86,
@@ -358,7 +358,7 @@ export const media = {
     } satisfies SiteImage,
     californiaBand: {
       src: "/images/about-band-california.jpg",
-      alt: "Licensed compounding pharmacy preparation in a calm California lab",
+      alt: "Soft California coastal hills in morning light",
       width: 1280,
       height: 720,
       quality: 86,
@@ -366,7 +366,7 @@ export const media = {
     } satisfies SiteImage,
     voiceBand: {
       src: "/images/about-band-voice.jpg",
-      alt: "Physician and patient in a calm consultation",
+      alt: "Adult journaling at a bright kitchen table in morning light",
       width: 1280,
       height: 720,
       quality: 86,

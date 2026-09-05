@@ -40,7 +40,7 @@ export function HomeSections() {
         primaryLabel="Get started"
         secondaryLabel="Explore treatments"
         secondaryHref="/treatments"
-        objectPosition="object-cover object-[78%_center]"
+        objectPosition="object-cover object-[70%_center]"
       />
     </>
   );

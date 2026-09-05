@@ -54,7 +54,8 @@ export default function AboutPage() {
         image={media.about.californiaBand}
         eyebrow="Structural proof"
         title="Created · Manufactured · Tested · Packaged · Shipped"
-        objectPosition="object-cover object-[68%_center]"
+        objectPosition="object-cover object-[55%_center]"
+        tone="soft"
       />
 
       <section className="bg-midnight text-white">
@@ -86,7 +87,8 @@ export default function AboutPage() {
         image={media.about.voiceBand}
         eyebrow="Voice"
         title="Clinical, not cold. Confident, not loud."
-        objectPosition="object-cover object-[55%_center]"
+        objectPosition="object-cover object-[58%_center]"
+        tone="soft"
       />
 
       <section className="bg-cloud">
