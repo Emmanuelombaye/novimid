@@ -215,8 +215,8 @@ function TrustItems({
 
 /** Provider Network · USA pharmacies · HIPAA trust badges. */
 export function FooterTrustBadges({
-  hipaaHref = "/privacy",
-  providerNetworkHref = "/providers",
+  hipaaHref = "/policies/hipaa-notice",
+  providerNetworkHref = "/policies/provider-network",
   tone = "dark",
   layout = "row",
 }: FooterTrustBadgesProps) {

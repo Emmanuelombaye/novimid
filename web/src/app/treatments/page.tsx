@@ -21,7 +21,7 @@ export default function TreatmentsPage() {
             for individual patients pursuant to a valid prescription through our licensed
             503A compounding pharmacy when clinically indicated.{" "}
             <Link
-              href="/compounding-disclosure"
+              href="/policies/fda-and-medical-disclaimer"
               className="text-sage underline-offset-4 hover:underline"
             >
               Compounding disclosure

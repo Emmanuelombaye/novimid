@@ -69,7 +69,7 @@ export function ClinicalProcess() {
               according to the Novimid refund and cancellation policy.
             </p>
             <Link
-              href="/terms"
+              href="/policies/terms-of-use"
               className="mt-3 inline-block text-[14px] font-normal text-sage underline-offset-4 transition-colors hover:text-midnight hover:underline"
             >
               Read the refund and cancellation policy

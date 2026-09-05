@@ -19,18 +19,23 @@ const company = [
   { href: "/faq", label: "FAQ" },
 ] as const;
 
-const medical = [
-  { href: "/telehealth", label: "Consent to telehealth" },
-  { href: "/compounding-disclosure", label: "Compounding disclosure" },
-  { href: "/privacy", label: "Privacy policy" },
-  { href: "/terms", label: "Terms of service" },
+const policies = [
+  { href: "/policies", label: "All policies" },
+  { href: "/policies/consent-to-telehealth", label: "Telehealth Consent" },
+  { href: "/policies/hipaa-notice", label: "HIPAA Notice" },
+  { href: "/policies/terms-of-use", label: "Terms of Use" },
+  { href: "/policies/provider-network", label: "Provider Network" },
+  { href: "/policies/fda-and-medical-disclaimer", label: "Medical Disclaimer" },
+  { href: "/policies/privacy-policy", label: "Privacy Policy" },
 ] as const;
 
 const bottomLegal = [
-  { href: "/terms", label: "Terms of Service" },
-  { href: "/privacy", label: "Privacy Policy" },
-  { href: "/telehealth", label: "Telehealth" },
-  { href: "/compounding-disclosure", label: "Compounding" },
+  { href: "/policies/terms-of-use", label: "Terms of Use" },
+  { href: "/policies/privacy-policy", label: "Privacy Policy" },
+  { href: "/policies/consent-to-telehealth", label: "Telehealth Consent" },
+  { href: "/policies/hipaa-notice", label: "HIPAA Notice" },
+  { href: "/policies/fda-and-medical-disclaimer", label: "Medical Disclaimer" },
+  { href: "/policies/provider-network", label: "Provider Network" },
 ] as const;
 
 export function Footer() {
@@ -102,9 +107,9 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="label-caps">Medical</p>
+            <p className="label-caps">Policies</p>
             <ul className="mt-3.5 space-y-1">
-              {medical.map((item) => (
+              {policies.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -118,7 +123,11 @@ export function Footer() {
           </div>
         </div>
 
-        <FooterTrustBadges tone="light" hipaaHref="/privacy" providerNetworkHref="/providers" />
+        <FooterTrustBadges
+          tone="light"
+          hipaaHref="/policies/hipaa-notice"
+          providerNetworkHref="/policies/provider-network"
+        />
 
         <div className="mt-10 border-t-[0.5px] border-mist pt-6 sm:mt-12 sm:pt-7">
           <p className="text-[12px] font-light leading-relaxed text-fog">

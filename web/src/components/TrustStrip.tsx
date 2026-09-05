@@ -7,7 +7,11 @@ export function TrustStrip() {
     <section className="border-b border-midnight/10 bg-white py-5 sm:py-6">
       <div className="shell">
         <Reveal>
-          <FooterTrustBadges tone="light" hipaaHref="/privacy" providerNetworkHref="/providers" />
+          <FooterTrustBadges
+            tone="light"
+            hipaaHref="/policies/hipaa-notice"
+            providerNetworkHref="/policies/provider-network"
+          />
         </Reveal>
       </div>
     </section>

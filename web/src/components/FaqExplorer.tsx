@@ -21,13 +21,13 @@ export function FaqExplorer() {
           How it works
         </Link>
         <Link
-          href="/compounding-disclosure"
+          href="/policies/fda-and-medical-disclaimer"
           className="text-[0.98rem] font-semibold text-midnight underline decoration-midnight/35 underline-offset-[3px] transition-colors hover:text-sage hover:decoration-current"
         >
           Compounding disclosure
         </Link>
         <Link
-          href="/terms"
+          href="/policies/terms-of-use"
           className="text-[0.98rem] font-semibold text-midnight underline decoration-midnight/35 underline-offset-[3px] transition-colors hover:text-sage hover:decoration-current"
         >
           Terms and policies

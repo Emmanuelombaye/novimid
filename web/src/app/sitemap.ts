@@ -11,10 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/providers",
     "/faq",
     "/start",
-    "/privacy",
-    "/terms",
-    "/telehealth",
-    "/compounding-disclosure",
+    "/policies",
+    "/policies/consent-to-telehealth",
+    "/policies/hipaa-notice",
+    "/policies/terms-of-use",
+    "/policies/provider-network",
+    "/policies/fda-and-medical-disclaimer",
+    "/policies/privacy-policy",
   ];
 
   return paths.map((path) => ({
