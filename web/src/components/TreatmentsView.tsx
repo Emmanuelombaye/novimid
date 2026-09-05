@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { media } from "@/lib/media";
 import { TreatmentsExplore } from "./TreatmentsExplore";
+import { CtaBand } from "./CtaBand";
 import type { ExploreTone } from "@/lib/treatmentsExplore";
 
 const IMG_PRODUCT = "/images/product-glp1-v2.png";
@@ -107,15 +109,6 @@ function IconCheck() {
     </svg>
   );
 }
-function IconArrowDown() {
-  return (
-    <svg viewBox="0 0 88 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="tx-calc-arrow-svg">
-      <circle cx="6" cy="8" r="4.5" stroke="currentColor" strokeWidth="2" />
-      <path d="M13 8h66" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-      <path d="m73 2 7 6-7 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 
 /* ─────────────────────────────────────────────
    SECTION: RetroProtocol
@@ -210,50 +203,26 @@ function RetroProtocol({ data }: { data: ProtocolData }) {
 }
 
 /* ─────────────────────────────────────────────
-   SECTION: RetroCalculator
+   SECTION: TreatmentCtaBand (replaces weight calculator)
 ───────────────────────────────────────────── */
 
-function RetroCalculator({ programLabel }: { programLabel: string }) {
-  const [weight, setWeight] = useState("");
-  const lbs = parseFloat(weight) || 0;
-  const potential = lbs > 0 ? (lbs * 0.2).toFixed(1) : "00.0";
-
+function TreatmentCtaBand({
+  headline,
+  headlineLine2,
+}: {
+  headline: string;
+  headlineLine2: string;
+}) {
   return (
-    <section className="tx-calculator" aria-labelledby="tx-calc-heading">
-      <div className="tx-calculator__panel">
-        <div className="tx-calculator__left">
-          <h2 id="tx-calc-heading" className="tx-calculator__heading">
-            Let&apos;s see your <em>potential</em> with {programLabel}
-          </h2>
-          <div className="tx-calculator__control">
-            <label className="sr-only" htmlFor="tx-calc-weight">Enter your weight (lbs)</label>
-            <input
-              id="tx-calc-weight"
-              className="tx-calculator__input"
-              type="number"
-              inputMode="decimal"
-              min={120}
-              max={400}
-              step={1}
-              placeholder="Enter your weight (lbs)"
-              value={weight}
-              onChange={(e) => setWeight(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className="tx-calculator__arrow" aria-hidden="true">
-          <IconArrowDown />
-        </div>
-        <div className="tx-calculator__right">
-          <span className="tx-calculator__readout-label">You could <em>lose up to</em></span>
-          <span className="tx-calculator__readout" aria-hidden="true">
-            <span className="tx-calculator__readout-number">{potential}</span>
-            <span className="tx-calculator__readout-unit">lbs</span>
-          </span>
-          <span className="tx-calculator__readout-caption">*Based on our patients results in 6-month plans. Results may vary.</span>
-        </div>
-      </div>
-    </section>
+    <CtaBand
+      image={media.treatmentsCtaLifestyle}
+      headline={headline}
+      headlineLine2={headlineLine2}
+      primaryLabel="Get started"
+      secondaryLabel="How it works"
+      secondaryHref="/how-it-works"
+      objectPosition="object-cover object-[62%_center]"
+    />
   );
 }
 
@@ -618,7 +587,7 @@ function SemaStack() {
   return (
     <>
       <RetroProtocol data={SEMA_PROTOCOL} />
-      <RetroCalculator programLabel="Semaglutide care" />
+      <TreatmentCtaBand headline="Care starts with" headlineLine2="clinical review." />
       <RetroClinical data={SEMA_CLINICAL} />
       <RetroExpect data={SEMA_EXPECT} />
       <RetroKnowall
@@ -635,7 +604,7 @@ function TirzStack() {
   return (
     <>
       <RetroProtocol data={TIRZ_PROTOCOL} />
-      <RetroCalculator programLabel="Tirzepatide care" />
+      <TreatmentCtaBand headline="Built around your" headlineLine2="biology." />
       <RetroClinical data={TIRZ_CLINICAL} />
       <RetroExpect data={TIRZ_EXPECT} />
       <RetroKnowall

@@ -146,6 +146,15 @@ export const media = {
     sizes: "100vw",
   } satisfies SiteImage,
 
+  treatmentsCtaLifestyle: {
+    src: "/images/cta-band-treatments.jpg",
+    alt: "Adult walking a quiet sunlit path through soft coastal greenery",
+    width: 1280,
+    height: 720,
+    quality: 86,
+    sizes: "100vw",
+  } satisfies SiteImage,
+
   about: {
     promiseBand: {
       src: "/images/about-band-promise.jpg",

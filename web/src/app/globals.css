@@ -1515,7 +1515,6 @@ details[open] .faq-plus {
 .treatments-page .explore-hero-section,
 .treatments-page .tx-happy,
 .treatments-page .tx-protocol,
-.treatments-page .tx-calculator,
 .treatments-page .tx-clinical,
 .treatments-page .tx-expect,
 .treatments-page .tx-knowall,
@@ -1527,7 +1526,6 @@ details[open] .faq-plus {
   .treatments-page .explore-hero-section,
   .treatments-page .tx-happy,
   .treatments-page .tx-protocol,
-  .treatments-page .tx-calculator,
   .treatments-page .tx-clinical,
   .treatments-page .tx-expect,
   .treatments-page .tx-knowall,
@@ -1537,8 +1535,7 @@ details[open] .faq-plus {
 }
 
 .treatments-page .tx-happy,
-.treatments-page .tx-protocol,
-.treatments-page .tx-calculator {
+.treatments-page .tx-protocol {
   padding-top: 0 !important;
 }
 
@@ -1566,7 +1563,6 @@ details[open] .faq-plus {
 
 @media (min-width: 768px) {
   .tx-protocol,
-  .tx-calculator,
   .tx-clinical,
   .tx-expect,
   .tx-knowall {
@@ -1577,7 +1573,6 @@ details[open] .faq-plus {
 
 @media (min-width: 992px) {
   .tx-protocol,
-  .tx-calculator,
   .tx-clinical,
   .tx-expect,
   .tx-knowall {
@@ -1981,133 +1976,6 @@ details[open] .faq-plus {
 }
 
 /* Category variants inherit unified CTA */
-
-/* ── tx-calculator ─────────────────────── */
-
-.tx-calculator {
-  background: #fff;
-  border: none;
-  padding: 0 16px 60px;
-}
-
-.tx-calculator__panel {
-  max-width: 1084px;
-  min-height: 264px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
-  align-items: center;
-  background: #2c3a35;
-  border: 1.5px solid #2c3a35;
-  border-radius: 24px;
-  box-shadow: 3px 4px 0 0 #2c3a35;
-  padding: 32px 24px;
-  color: #fff;
-  overflow: hidden;
-}
-
-.tx-calculator__heading {
-  font-size: clamp(1.375rem, 2.5vw, 1.875rem);
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: -0.03em;
-  margin: 0 0 16px;
-  line-height: 1.1;
-}
-
-.tx-calculator__heading em {
-  font-style: italic;
-}
-
-.tx-calculator__input {
-  width: 100%;
-  padding: 14px 18px;
-  border: 2px solid #fff;
-  border-radius: 12px;
-  background: #fff;
-  font-size: 1.0625rem;
-  color: var(--tx-ink);
-  font-weight: 500;
-  outline: none;
-  box-shadow: 3px 4px 0 0 #2c3a35;
-  appearance: textfield;
-}
-.tx-calculator__input:focus {
-  box-shadow: 1px 2px 0 0 #2c3a35;
-  transform: translate(2px, 2px);
-}
-.tx-calculator__input::placeholder {
-  color: var(--tx-ink);
-  opacity: 0.45;
-}
-
-.tx-calculator__arrow {
-  display: none;
-}
-
-.tx-calculator__readout-label {
-  display: block;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.72);
-  margin-bottom: 8px;
-}
-.tx-calculator__readout-label em {
-  font-style: italic;
-}
-
-.tx-calculator__readout {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
-}
-
-.tx-calculator__left,
-.tx-calculator__right {
-  min-width: 0;
-}
-
-.tx-calculator__readout-number {
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  overflow-wrap: anywhere;
-}
-
-.tx-calculator__readout-unit {
-  font-size: clamp(1.25rem, 3vw, 2rem);
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.55);
-}
-
-.tx-calculator__readout-caption {
-  display: block;
-  margin-top: 8px;
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.4;
-}
-
-@media (min-width: 768px) {
-  .tx-calculator__panel {
-    grid-template-columns: 1fr auto 1fr;
-    gap: 40px;
-    padding: 40px 36px;
-  }
-  .tx-calculator__arrow {
-    display: block;
-    color: rgba(255, 255, 255, 0.45);
-    opacity: 1;
-    flex-shrink: 0;
-  }
-  .tx-calc-arrow-svg {
-    width: 80px;
-    height: 16px;
-  }
-}
 
 /* ── tx-clinical ───────────────────────── */
 
