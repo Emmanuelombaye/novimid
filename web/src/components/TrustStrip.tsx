@@ -8,6 +8,7 @@ export function TrustStrip() {
       <div className="shell">
         <Reveal>
           <FooterTrustBadges
+            tone="light"
             hipaaHref="/policies/hipaa-notice"
             providerNetworkHref="/policies/provider-network"
           />
