@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { faqPreview } from "@/lib/content";
+import { faqExtended, faqHowItWorksCopy } from "@/lib/content";
 import { howWhy } from "@/lib/how-it-works";
 import { media } from "@/lib/media";
 import { FaqAccordion } from "./FaqAccordion";
@@ -145,21 +145,20 @@ export function HowItWorksFlow() {
         <div className="shell grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
           <Reveal>
             <h2 className="font-[family-name:var(--font-dm-serif)] text-[clamp(2rem,4vw,2.75rem)] font-normal leading-[1.08] tracking-[-0.02em] text-midnight">
-              Frequently asked
+              {faqHowItWorksCopy.title}
             </h2>
             <p className="mt-3.5 max-w-[34ch] text-[1.02rem] font-light leading-[1.65] text-forest">
-              Six of the questions people ask most. Additional policy details are in
-              our terms and legal resources.
+              {faqHowItWorksCopy.intro}
             </p>
             <Link
               href="/faq"
               className="mt-3.5 inline-flex text-[0.98rem] font-semibold text-midnight underline decoration-midnight/35 underline-offset-[3px] transition-colors hover:text-sage hover:decoration-current"
             >
-              Read the full FAQ
+              {faqHowItWorksCopy.link}
             </Link>
           </Reveal>
           <Reveal delayMs={80}>
-            <FaqAccordion items={faqPreview} />
+            <FaqAccordion items={faqExtended} />
           </Reveal>
         </div>
       </section>

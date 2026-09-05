@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FaqExplorer } from "@/components/FaqExplorer";
 import { Reveal } from "@/components/Reveal";
+import { faqPageCopy } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description:
-    "Answers about Novimid programs, intake, pricing, compounding, and cancellations.",
+  description: faqPageCopy.heroLead,
 };
 
 export default function FaqPage() {
@@ -20,28 +20,27 @@ export default function FaqPage() {
                 Home
               </Link>
               <span aria-hidden>/</span>
-              <span className="text-midnight">FAQ</span>
+              <span className="text-midnight">{faqPageCopy.breadcrumb}</span>
             </nav>
-            <p className="label-caps">FAQ</p>
+            <p className="label-caps">{faqPageCopy.breadcrumb}</p>
             <h1 className="mt-3 max-w-2xl font-[family-name:var(--font-dm-serif)] text-[clamp(2rem,4.5vw,3rem)] font-normal leading-[1.08] tracking-[-0.02em] text-midnight">
-              Frequently asked
+              {faqPageCopy.heroTitle}
             </h1>
             <p className="mt-4 max-w-xl text-[15px] font-light leading-relaxed text-forest sm:text-[16px]">
-              Six of the questions people ask most — plus intake, pricing, and policy
-              details. Purchasing does not guarantee a prescription.
+              {faqPageCopy.heroLead}
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
                 href="/start"
                 className="inline-flex h-11 items-center justify-center rounded-full bg-sage px-7 text-[14px] font-medium text-white transition-colors hover:bg-[#5F8165]"
               >
-                Get started
+                {faqPageCopy.ctaPrimary}
               </Link>
               <Link
                 href="/how-it-works"
                 className="inline-flex h-11 items-center justify-center rounded-full border border-mist bg-cloud px-7 text-[14px] font-medium text-midnight transition-colors hover:border-sage/40"
               >
-                How it works
+                {faqPageCopy.ctaSecondary}
               </Link>
             </div>
           </Reveal>

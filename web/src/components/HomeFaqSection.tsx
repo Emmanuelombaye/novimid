@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { faqPreview } from "@/lib/content";
+import { faqHomeCopy, faqPreview } from "@/lib/content";
 import { FaqAccordion } from "./FaqAccordion";
 import { Reveal } from "./Reveal";
 
@@ -13,17 +13,16 @@ export function HomeFaqSection() {
             id="home-faq-title"
             className="font-[family-name:var(--font-dm-serif)] text-[clamp(2.15rem,4.5vw,3.1rem)] font-normal leading-[1.08] tracking-[-0.02em] text-midnight"
           >
-            Frequently asked
+            {faqHomeCopy.title}
           </h2>
           <p className="mt-3.5 max-w-[34ch] text-[1.02rem] font-light leading-[1.65] text-forest">
-            Six of the questions people ask most. Additional policy details are in
-            our terms and legal resources.
+            {faqHomeCopy.intro}
           </p>
           <Link
             href="/faq"
             className="mt-3.5 inline-flex text-[0.98rem] font-semibold text-midnight underline decoration-midnight/35 underline-offset-[3px] transition-colors hover:text-sage hover:decoration-current"
           >
-            Read the full FAQ
+            {faqHomeCopy.link}
           </Link>
         </Reveal>
 
