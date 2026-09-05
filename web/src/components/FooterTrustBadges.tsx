@@ -6,14 +6,11 @@ const TRUST_BADGE_CSS = `
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   justify-items: center;
-  gap: 1.5rem 2rem;
-  max-width: 52rem;
-  margin: 2rem auto 0;
-  padding: 1.75rem 0.5rem 0.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-.brand-footer-trust--light {
-  border-top-color: rgba(44, 58, 53, 0.12);
+  gap: 1.75rem 2.25rem;
+  max-width: 56rem;
+  margin: 2.25rem auto 0;
+  padding: 2rem 0.5rem 0.5rem;
+  border-top: 1px solid rgba(44, 58, 53, 0.12);
 }
 .brand-footer-trust__item {
   display: flex;
@@ -22,24 +19,30 @@ const TRUST_BADGE_CSS = `
   justify-content: flex-start;
   gap: 14px;
   width: 100%;
-  max-width: 14rem;
+  max-width: 15rem;
   color: inherit;
   text-decoration: none;
   text-align: center;
 }
 .brand-footer-trust__badge {
   display: block;
-  width: 8.25rem;
-  height: 8.25rem;
+  width: 9rem;
+  height: 9rem;
   flex: none;
   object-fit: contain;
-  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.18));
-  transition: transform 0.2s ease, filter 0.2s ease;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px rgba(44, 58, 53, 0.08),
+    0 12px 28px rgba(44, 58, 53, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .brand-footer-trust__item--link:hover .brand-footer-trust__badge,
 .brand-footer-trust__item--link:focus-visible .brand-footer-trust__badge {
-  transform: translateY(-2px) scale(1.02);
-  filter: drop-shadow(0 18px 32px rgba(107, 143, 113, 0.28));
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 0 0 1px rgba(107, 143, 113, 0.35),
+    0 16px 34px rgba(107, 143, 113, 0.22);
 }
 .brand-footer-trust__copy {
   display: flex;
@@ -52,10 +55,6 @@ const TRUST_BADGE_CSS = `
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(196, 204, 216, 0.78);
-}
-.brand-footer-trust--light .brand-footer-trust__kicker,
-.brand-footer-trust__item--light .brand-footer-trust__kicker {
   color: rgba(44, 58, 53, 0.5);
 }
 .brand-footer-trust__title {
@@ -64,10 +63,6 @@ const TRUST_BADGE_CSS = `
   font-weight: 700;
   letter-spacing: 0.01em;
   line-height: 1.3;
-  color: #fff;
-}
-.brand-footer-trust--light .brand-footer-trust__title,
-.brand-footer-trust__item--light .brand-footer-trust__title {
   color: #2c3a35;
 }
 .brand-footer-trust__sub {
@@ -76,40 +71,37 @@ const TRUST_BADGE_CSS = `
   font-size: 0.98rem;
   letter-spacing: 0.02em;
   line-height: 1.25;
-  color: #fff;
-}
-.brand-footer-trust--light .brand-footer-trust__sub,
-.brand-footer-trust__item--light .brand-footer-trust__sub {
   color: #2c3a35;
 }
 .brand-footer-trust__item--link:hover .brand-footer-trust__title {
+  color: #6b8f71;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 @media (max-width: 640px) {
   .brand-footer-trust {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    gap: 0.75rem 0.4rem;
+    gap: 1.5rem 0.75rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     max-width: 100%;
   }
   .brand-footer-trust__item {
     max-width: none;
-    gap: 8px;
+    gap: 10px;
   }
   .brand-footer-trust__badge {
-    width: 5.1rem;
-    height: 5.1rem;
+    width: 6.25rem;
+    height: 6.25rem;
   }
   .brand-footer-trust__kicker {
     font-size: 8px;
     letter-spacing: 0.1em;
   }
   .brand-footer-trust__title {
-    font-size: 0.78rem;
+    font-size: 0.82rem;
   }
   .brand-footer-trust__sub {
-    font-size: 0.74rem;
+    font-size: 0.78rem;
   }
 }
 `;
@@ -117,29 +109,26 @@ const TRUST_BADGE_CSS = `
 type FooterTrustBadgesProps = {
   hipaaHref?: string;
   providerNetworkHref?: string;
-  tone?: "dark" | "light";
   layout?: "row" | "items";
 };
 
 function TrustItems({
   hipaaHref,
   providerNetworkHref,
-  tone,
 }: {
   hipaaHref?: string;
   providerNetworkHref?: string;
-  tone: "dark" | "light";
 }) {
-  const itemClass = `brand-footer-trust__item${tone === "light" ? " brand-footer-trust__item--light" : ""}`;
+  const itemClass = "brand-footer-trust__item";
 
   const providerBody = (
     <>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/footer-provider-network.svg"
+        src="/images/footer/provider-network.png"
         alt=""
-        width={220}
-        height={220}
+        width={288}
+        height={288}
         className="brand-footer-trust__badge"
         loading="lazy"
         decoding="async"
@@ -155,10 +144,10 @@ function TrustItems({
     <>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/footer-usa-pharmacies.svg"
+        src="/images/footer/usa-pharmacies.png"
         alt=""
-        width={220}
-        height={220}
+        width={288}
+        height={288}
         className="brand-footer-trust__badge"
         loading="lazy"
         decoding="async"
@@ -174,18 +163,19 @@ function TrustItems({
     <>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/footer-hipaa-notice.svg"
+        src="/images/footer/hipaa-compliant.png"
         alt=""
-        width={220}
-        height={220}
+        width={288}
+        height={288}
         className="brand-footer-trust__badge"
         loading="lazy"
         decoding="async"
       />
       <span className="brand-footer-trust__copy">
         <span className="brand-footer-trust__kicker">Data protected</span>
-        <span className="brand-footer-trust__title">HIPAA</span>
-        <span className="brand-footer-trust__sub">Compliant</span>
+        <span className="brand-footer-trust__title">
+          HIPAA <span className="brand-footer-trust__sub">Compliant</span>
+        </span>
       </span>
     </>
   );
@@ -217,12 +207,9 @@ function TrustItems({
 export function FooterTrustBadges({
   hipaaHref = "/policies/hipaa-notice",
   providerNetworkHref = "/policies/provider-network",
-  tone = "dark",
   layout = "row",
 }: FooterTrustBadgesProps) {
-  const items = (
-    <TrustItems hipaaHref={hipaaHref} providerNetworkHref={providerNetworkHref} tone={tone} />
-  );
+  const items = <TrustItems hipaaHref={hipaaHref} providerNetworkHref={providerNetworkHref} />;
 
   return (
     <>
@@ -230,7 +217,7 @@ export function FooterTrustBadges({
       {layout === "items" ? (
         items
       ) : (
-        <div className={`brand-footer-trust brand-footer-trust--${tone}`} aria-label="Trust and compliance">
+        <div className="brand-footer-trust" aria-label="Trust and compliance">
           {items}
         </div>
       )}

@@ -122,7 +122,6 @@ export function Footer() {
         </div>
 
         <FooterTrustBadges
-          tone="light"
           hipaaHref="/policies/hipaa-notice"
           providerNetworkHref="/policies/provider-network"
         />
