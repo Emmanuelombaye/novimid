@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { brand } from "@/lib/content";
+import { FooterLegalBar } from "./FooterLegalBar";
 import { FooterTrustBadges } from "./FooterTrustBadges";
 
 const treatments = [
@@ -69,9 +70,6 @@ export function Footer() {
             <p className="mt-2 max-w-xs text-[13px] font-light leading-relaxed text-forest">
               Physician-directed telehealth. Compounded medications when clinically indicated through licensed U.S. pharmacies. Completing intake does not guarantee a prescription.
             </p>
-            <p className="mt-4 text-[12px] font-light text-fog">
-              © {year} {brand.displayName}. All rights reserved.
-            </p>
           </div>
 
           <div>
@@ -134,6 +132,10 @@ export function Footer() {
             Compounded medications are prepared for individual patients pursuant to a valid prescription and are not FDA-approved.
             They do not undergo FDA review for safety, effectiveness, or manufacturing. Eligibility and treatment decisions are made by a licensed clinician.
           </p>
+          <FooterLegalBar
+            copyright={`© ${year} ${brand.displayName}. All rights reserved.`}
+            note="Licensed clinical review required. Treatment not guaranteed."
+          />
         </div>
       </div>
 

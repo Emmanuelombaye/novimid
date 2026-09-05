@@ -85,6 +85,10 @@ Our Responsibilities
 We are required by law to maintain the privacy and security of your PHI, notify you following a breach of unsecured PHI, and follow the terms of the notice currently in effect.
 Complaints and Contact
 If you believe your privacy rights have been violated, you may file a complaint with us or with the US Department of Health and Human Services. You will not be retaliated against for filing a complaint.
+Questions may be sent to privacy@novimid.com or support@novimid.com.
+Novimid LLC
+2111 Carnegie Ln, Redondo Beach, CA 90278
+(310) 809-0912
 This Notice is provided for informational purposes and should be reviewed by legal counsel before final publication.`,
   },
   {
@@ -304,7 +308,9 @@ Novimid® may coordinate access to independent providers, pharmacies, payment pr
 Contact a licensed healthcare provider if you have questions about your health, symptoms, medications, side effects, allergies, or treatment options. Seek urgent or emergency care if symptoms are severe, sudden, or life-threatening.
 14. Contact Us
 Questions about this Medical Disclaimer can be sent to support@novimid.com.
-Novimid LLC d/b/a Novimid®`,
+Novimid LLC d/b/a Novimid®
+2111 Carnegie Ln, Redondo Beach, CA 90278
+(310) 809-0912`,
   },
   {
     slug: 'privacy-policy',
@@ -366,7 +372,10 @@ We retain information for as long as necessary to provide the Novimid® Services
 We may update this Privacy Policy from time to time. When we do, we will revise the “Last updated” date above. Material changes may be communicated through additional notice where required.
 20. Contact Us
 For privacy questions or to exercise your rights, contact: privacy@novimid.com.
-Novimid LLC. d/b/a Novimid®
+Novimid LLC d/b/a Novimid®
+2111 Carnegie Ln, Redondo Beach, CA 90278
+support@novimid.com
+(310) 809-0912
 21. Cookie Notice
 Our use of cookies and similar technologies is described in Section 6 above. You may manage your preferences through your browser settings or any cookie preference tools made available within the Novimid® platform.
 This Privacy Policy is provided for informational purposes and should be reviewed by legal counsel before final publication.`,
