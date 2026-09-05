@@ -46,7 +46,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-cloud px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-12 lg:px-8 lg:pb-12 lg:pt-14">
+    <footer className="bg-cloud px-4 pb-0 pt-10 sm:px-6 sm:pt-12 lg:px-8 lg:pt-14">
       <div className="mx-auto max-w-6xl overflow-hidden rounded-[12px] border-[0.5px] border-mist bg-white px-6 py-8 sm:rounded-[24px] sm:px-8 sm:py-10 lg:px-10 lg:py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-8 xl:gap-10">
           <div className="sm:col-span-2 lg:col-span-1">
@@ -132,7 +132,7 @@ export function Footer() {
             They do not undergo FDA review for safety, effectiveness, or manufacturing. Eligibility and treatment decisions are made by a licensed clinician.
           </p>
           <FooterLegalBar
-            copyright={`© ${year} ${brand.displayName}. All rights reserved.`}
+            copyright={`© ${year} Novimid LLC. All rights reserved. NOVIMID and the Novimid logo are trademarks of Novimid LLC.`}
             note="Licensed clinical review required. Treatment not guaranteed."
           />
         </div>
@@ -152,6 +152,16 @@ export function Footer() {
           </Link>
         ))}
       </nav>
+
+      {/* Hims-style oversized brand close at the absolute end of the site */}
+      <div
+        className="relative mx-auto mt-12 max-w-[100rem] overflow-hidden px-2 sm:mt-14 sm:px-4"
+        aria-hidden="true"
+      >
+        <p className="select-none text-center font-[family-name:var(--font-dm-sans)] text-[clamp(5.5rem,26vw,17rem)] font-medium leading-[0.78] tracking-[-0.065em] text-[#c8d2cb]">
+          {brand.name}
+        </p>
+      </div>
     </footer>
   );
 }
