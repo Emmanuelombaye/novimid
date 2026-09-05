@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { FaqExplorer } from "@/components/FaqExplorer";
 import { Reveal } from "@/components/Reveal";
-import { StarMark } from "@/components/Stars";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -30,9 +29,7 @@ export default function FaqPage() {
 
           <div className="mx-auto mt-8 flex max-w-xl flex-col items-stretch overflow-hidden rounded-full border-[0.5px] border-mist bg-white sm:mt-10 sm:flex-row">
             <div className="flex flex-1 items-center justify-center gap-2.5 px-5 py-3">
-              <span className="flex h-7 w-7 items-center justify-center rounded-full border-[0.5px] border-mist bg-cloud">
-                <StarMark size="xs" />
-              </span>
+              <span className="h-2 w-2 rounded-full bg-sage" aria-hidden />
               <p className="text-[12px] font-light text-midnight sm:text-[13px]">
                 Physician-directed care
               </p>

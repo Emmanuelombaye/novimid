@@ -6,7 +6,7 @@ import { SpecialistsGrid } from "@/components/SpecialistsGrid";
 export const metadata: Metadata = {
   title: "Providers",
   description:
-    "Board-certified physicians who design evidence-based protocols with genuine clinical oversight.",
+    "Clinical services through a licensed U.S. provider network. Completing intake does not guarantee a prescription.",
 };
 
 export default function ProvidersPage() {
