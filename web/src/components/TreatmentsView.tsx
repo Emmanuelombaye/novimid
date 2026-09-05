@@ -482,8 +482,8 @@ const SEMA_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
       desc: "You start on a low dose — intentionally. Your Semaglutide protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
     },
     {
-      img: "/images/physician-1.png",
-      alt: "Patient in morning light as Semaglutide protocol settles in",
+      img: "/images/how-care-experience.jpg",
+      alt: "Adult reviewing a care plan as the protocol settles in",
       label: "Week 4 → 12 · The protocol starts to settle",
       desc: "This is when most patients begin to feel more consistent regulation. Food noise and cravings often quiet. Fullness arrives earlier and stays longer. Your dose may be reviewed and adjusted.",
     },
@@ -507,8 +507,8 @@ const TIRZ_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
       desc: "You start on a low dose — intentionally. Your Tirzepatide protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
     },
     {
-      img: "/images/physician-1.png",
-      alt: "Patient in morning light as Tirzepatide protocol settles in",
+      img: "/images/how-care-experience.jpg",
+      alt: "Adult reviewing a care plan as the protocol settles in",
       label: "Week 4 → 12 · The protocol starts to settle",
       desc: "This is when most patients begin to feel more consistent regulation. Food noise and cravings often quiet. Fullness arrives earlier and stays longer. Your dose may be reviewed and adjusted.",
     },

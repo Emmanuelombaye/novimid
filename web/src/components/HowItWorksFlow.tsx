@@ -14,133 +14,60 @@ export function HowItWorksFlow() {
     <div>
       <HowItWorksStickySteps />
 
-      {/* Every Protocol Has A Story — Unique Interactive Journey Board */}
-      <section className="bg-[#FAFBF9] py-16 sm:py-24">
+      {/* Care path — clear numbered steps */}
+      <section className="bg-cloud py-16 sm:py-20 lg:py-24">
         <div className="shell">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-midnight/20 bg-white px-3.5 py-1 text-[11px] font-bold tracking-wider text-midnight uppercase shadow-xs">
-                <span className="h-1.5 w-1.5 rounded-full bg-sage animate-pulse" />
-                ✦ Patient Care Milestones
-              </span>
-              <h2 className="mt-3.5 font-[family-name:var(--font-dm-sans)] text-[clamp(1.85rem,4.5vw,2.75rem)] font-bold tracking-tight text-midnight">
-                Every protocol has a{" "}
-                <em className="font-[family-name:var(--font-dm-serif)] italic text-sage-dark">
-                  story
-                </em>
+              <p className="label-caps">Care path</p>
+              <h2 className="mt-3 font-[family-name:var(--font-dm-sans)] text-[clamp(1.85rem,4.5vw,2.75rem)] font-light leading-[1.1] tracking-[-0.03em] text-midnight">
+                From first intake to ongoing care
               </h2>
               <p className="mx-auto mt-3 max-w-xl text-[15px] font-light leading-relaxed text-forest sm:text-[16px]">
-                Physician-directed care, clear compounding language, and accountable follow-through.
+                Four accountable steps — structured for clarity, safety, and licensed-provider
+                oversight. Completing intake does not guarantee a prescription.
               </p>
             </div>
           </Reveal>
 
-          {/* Unique Milestone Journey Line */}
-          <div className="mt-10 hidden items-center justify-between gap-4 rounded-full border-[1.5px] border-midnight bg-white p-2.5 shadow-[4px_4px_0_0_#1F2A37] lg:flex">
-            {[
-              { phase: "Phase 01", title: "Intake & Lab Review" },
-              { phase: "Phase 02", title: "MD Consultation" },
-              { phase: "Phase 03", title: "503A Compounding" },
-              { phase: "Phase 04", title: "Ongoing Oversight" },
-            ].map((step, idx) => (
-              <div key={step.phase} className="flex flex-1 items-center justify-between px-3">
-                <div className="flex items-center gap-2.5">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-midnight text-[11px] font-bold text-white">
-                    0{idx + 1}
-                  </span>
-                  <div>
-                    <p className="text-[10px] font-bold text-sage-dark uppercase tracking-wider">{step.phase}</p>
-                    <p className="text-[12px] font-bold text-midnight">{step.title}</p>
-                  </div>
-                </div>
-                {idx < 3 ? <span className="text-[14px] text-midnight/30">→</span> : null}
-              </div>
-            ))}
-          </div>
-
-          {/* Care journey milestones — no invented patient reviews */}
-          <div className="mt-8 grid gap-6 sm:mt-10 md:grid-cols-2 lg:grid-cols-4">
+          <ol className="mt-10 grid gap-4 sm:mt-12 sm:gap-5 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                step: "01",
-                img: media.results[0],
-                title: "Clinical intake",
-                timeline: "Share history & goals",
-                body: "A licensed clinician reviews your information before any treatment decision.",
-                metric: "Intake",
-                focus: "Eligibility first",
+                n: "1",
+                title: "Share your clinical picture",
+                body: "Complete a secure intake so review starts with your history and goals — not a sales quiz.",
               },
               {
-                step: "02",
-                img: media.results[1],
-                title: "Physician review",
-                timeline: "Labs when indicated",
-                body: "Recommendations are individualized. Completing intake does not guarantee a prescription.",
-                metric: "Clinical review",
-                focus: "Provider-led",
+                n: "2",
+                title: "Licensed-provider review",
+                body: "An independent clinician evaluates fit, orders labs when indicated, and decides next steps.",
               },
               {
-                step: "03",
-                img: media.results[2],
-                title: "Pharmacy fulfillment",
-                timeline: "If prescribed",
-                body: "When compounding is indicated, medications are prepared through licensed U.S. pharmacies.",
-                metric: "503A when indicated",
-                focus: "U.S. pharmacies",
+                n: "3",
+                title: "Pharmacy when prescribed",
+                body: "If treatment is appropriate, medication is prepared through licensed U.S. pharmacies.",
               },
               {
-                step: "04",
-                img: media.closingCtaLifestyle,
-                title: "Ongoing oversight",
-                timeline: "Follow-up & adjustments",
-                body: "Your care team stays involved so dosing and follow-up stay accountable over time.",
-                metric: "Follow-up",
-                focus: "Long-term care",
+                n: "4",
+                title: "Ongoing follow-through",
+                body: "Stay connected with your care team so dosing and follow-up remain accountable over time.",
               },
-            ].map((story, i) => (
-              <Reveal
-                key={story.title}
-                delayMs={i * 60}
-                className="group relative flex flex-col justify-between overflow-hidden rounded-[26px] border-[2px] border-midnight bg-white shadow-[6px_6px_0_0_#1F2A37] transition-all duration-300 hover:-translate-y-2 hover:shadow-[9px_9px_0_0_#1F2A37]"
-              >
-                <div className="relative h-[220px] w-full overflow-hidden bg-[#FAFBF9]">
-                  <SiteImage
-                    image={story.img}
-                    fill
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                    sizes="300px"
-                  />
-                  <span className="absolute top-3 right-3 rounded-md border border-midnight/20 bg-white/95 px-2 py-0.5 text-[9.5px] font-bold text-midnight shadow-xs">
-                    Phase {story.step}
+            ].map((step, i) => (
+              <Reveal key={step.n} delayMs={i * 70} as="li">
+                <article className="flex h-full flex-col rounded-[16px] border border-mist bg-white p-6 sm:p-7">
+                  <span className="grid h-9 w-9 place-items-center rounded-full bg-sage font-[family-name:var(--font-dm-sans)] text-[14px] font-medium text-white">
+                    {step.n}
                   </span>
-                </div>
-
-                <div className="flex flex-1 flex-col justify-between p-5">
-                  <div>
-                    <div className="flex items-center justify-between gap-1.5">
-                      <span className="rounded-full bg-sage/20 px-2.5 py-0.5 text-[9.5px] font-bold text-sage-dark uppercase">
-                        {story.metric}
-                      </span>
-                      <span className="text-[10px] font-bold text-forest/70 uppercase">
-                        {story.focus}
-                      </span>
-                    </div>
-
-                    <h3 className="mt-3 font-[family-name:var(--font-dm-sans)] text-[1.2rem] font-bold leading-snug text-midnight">
-                      {story.title}
-                    </h3>
-                    <p className="mt-1 text-[11.5px] font-semibold text-sage-dark">
-                      {story.timeline}
-                    </p>
-
-                    <p className="mt-3 text-[13px] font-normal leading-relaxed text-forest/90">
-                      {story.body}
-                    </p>
-                  </div>
-                </div>
+                  <h3 className="mt-4 font-[family-name:var(--font-dm-sans)] text-[1.1rem] font-normal leading-snug tracking-[-0.01em] text-midnight sm:text-[1.15rem]">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-[14px] font-light leading-relaxed text-forest sm:text-[15px]">
+                    {step.body}
+                  </p>
+                </article>
               </Reveal>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
@@ -172,40 +99,43 @@ export function HowItWorksFlow() {
       </section>
 
       <section className="py-10">
-        <div className="overflow-hidden rounded-[28px] border-[0.5px] border-midnight bg-cloud sm:rounded-[36px]">
-          <div className="grid lg:grid-cols-2">
-            <div className="media-frame relative min-h-[240px] sm:min-h-[300px]">
-              <SiteImage
-                image={media.lifestyle.physician}
-                fill
-                className="object-cover object-[center_18%]"
-              />
-            </div>
-            <div className="flex flex-col justify-center p-7 sm:p-10">
-              <h2 className="text-[clamp(1.4rem,3vw,1.85rem)] font-normal tracking-tight text-midnight">
-                Exceptional experience is our priority
-              </h2>
-              <ul className="mt-5 space-y-3">
-                {[
-                  "Stay in touch with your physician",
-                  "Update your protocol when clinically appropriate",
-                  "Track follow-up with clear accountability",
-                ].map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-2.5 text-[14px] font-light text-forest"
-                  >
-                    <span className="h-1.5 w-1.5 rounded-full bg-sage" aria-hidden />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/start"
-                className="btn-pill-primary mt-7 inline-flex h-12 w-fit items-center justify-center rounded-full bg-sage px-6 text-[15px] font-normal text-[#FFFFFF]"
-              >
-                Start your protocol
-              </Link>
+        <div className="shell">
+          <div className="overflow-hidden rounded-[24px] border border-mist bg-white sm:rounded-[28px]">
+            <div className="grid lg:grid-cols-2">
+              <div className="media-frame relative min-h-[240px] sm:min-h-[320px]">
+                <SiteImage
+                  image={media.lifestyle.physician}
+                  fill
+                  className="object-cover object-[center_30%]"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-7 sm:p-10">
+                <p className="label-caps">Ongoing care</p>
+                <h2 className="mt-3 text-[clamp(1.4rem,3vw,1.85rem)] font-light tracking-tight text-midnight">
+                  Stay supported after you begin
+                </h2>
+                <ul className="mt-5 space-y-3">
+                  {[
+                    "Message your care team when questions come up",
+                    "Adjust your protocol when clinically appropriate",
+                    "Keep follow-up clear and accountable",
+                  ].map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-center gap-2.5 text-[14px] font-light text-forest"
+                    >
+                      <span className="h-1.5 w-1.5 rounded-full bg-sage" aria-hidden />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/start"
+                  className="mt-7 inline-flex h-12 w-fit items-center justify-center rounded-full bg-sage px-6 text-[15px] font-medium text-white transition-colors hover:bg-[#5F8165]"
+                >
+                  Start your protocol
+                </Link>
+              </div>
             </div>
           </div>
         </div>

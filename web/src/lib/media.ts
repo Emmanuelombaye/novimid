@@ -42,12 +42,12 @@ export const media = {
 
   lifestyle: {
     physician: {
-      src: "/images/physician-1.png",
-      alt: "Physician in a calm telehealth consult setting",
-      width: 1000,
-      height: 750,
+      src: "/images/how-care-experience.jpg",
+      alt: "Adult reviewing a personal care plan at home in soft morning light",
+      width: 1280,
+      height: 960,
       position: "object-cover object-center",
-      quality: 80,
+      quality: 84,
       sizes: "(max-width: 1024px) 92vw, 50vw",
     } satisfies SiteImage,
   },
