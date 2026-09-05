@@ -320,6 +320,15 @@ export const media = {
     },
   ] as const satisfies readonly SiteImage[],
 
+  clinicalPathway: {
+    src: "/images/clinical-pathway-band.jpg",
+    alt: "Physician reviewing a care plan with a patient in a calm clinical setting",
+    width: 1280,
+    height: 720,
+    quality: 86,
+    sizes: "100vw",
+  } satisfies SiteImage,
+
   ctaPortrait: {
     src: "/images/cta-band-care.jpg",
     alt: "Adult representing physician-directed novimid care",
@@ -339,6 +348,30 @@ export const media = {
   } satisfies SiteImage,
 
   about: {
+    promiseBand: {
+      src: "/images/about-band-promise.jpg",
+      alt: "Adult in calm California light looking toward coastal hills",
+      width: 1280,
+      height: 720,
+      quality: 86,
+      sizes: "100vw",
+    } satisfies SiteImage,
+    californiaBand: {
+      src: "/images/about-band-california.jpg",
+      alt: "Licensed compounding pharmacy preparation in a calm California lab",
+      width: 1280,
+      height: 720,
+      quality: 86,
+      sizes: "100vw",
+    } satisfies SiteImage,
+    voiceBand: {
+      src: "/images/about-band-voice.jpg",
+      alt: "Physician and patient in a calm consultation",
+      width: 1280,
+      height: 720,
+      quality: 86,
+      sizes: "100vw",
+    } satisfies SiteImage,
     california: {
       src: "/images/about-california.jpg",
       alt: "Soft California coastal hills in morning light",
