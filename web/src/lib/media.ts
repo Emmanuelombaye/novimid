@@ -321,21 +321,21 @@ export const media = {
   ] as const satisfies readonly SiteImage[],
 
   ctaPortrait: {
-    src: "/images/cta-banner.png",
-    alt: "Adults representing personalized novimid health optimization and care",
-    width: 1400,
-    height: 933,
-    quality: photoQ,
-    sizes: "(max-width: 1024px) 100vw, 50vw",
+    src: "/images/cta-band-care.jpg",
+    alt: "Adult representing physician-directed novimid care",
+    width: 2400,
+    height: 1350,
+    quality: 86,
+    sizes: "100vw",
   } satisfies SiteImage,
 
   closingCtaLifestyle: {
-    src: "/images/closing-cta-lifestyle.png",
-    alt: "Healthy athletic couple in modern sunlit living space representing novimid care",
-    width: 1400,
-    height: 933,
-    quality: photoQ,
-    sizes: "(max-width: 1024px) 100vw, 50vw",
+    src: "/images/cta-band-goals.jpg",
+    alt: "Adult representing personalized novimid health goals",
+    width: 2400,
+    height: 1350,
+    quality: 86,
+    sizes: "100vw",
   } satisfies SiteImage,
 
   about: {

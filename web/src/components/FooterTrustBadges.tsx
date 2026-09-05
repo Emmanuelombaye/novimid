@@ -213,7 +213,7 @@ function TrustItems({
   );
 }
 
-/** Provider Network · USA pharmacies · HIPAA — same patch set as Efexia footer. */
+/** Provider Network · USA pharmacies · HIPAA trust badges. */
 export function FooterTrustBadges({
   hipaaHref = "/privacy",
   providerNetworkHref = "/providers",

@@ -1,6 +1,6 @@
 "use client";
 
-import { YuccaTreatmentsExplore } from "./YuccaTreatmentsExplore";
+import { TreatmentsExplore } from "./TreatmentsExplore";
 
 export function PersonalizedTreatments() {
   return (
@@ -18,7 +18,7 @@ export function PersonalizedTreatments() {
           </p>
         </div>
 
-        <YuccaTreatmentsExplore />
+        <TreatmentsExplore />
       </div>
     </section>
   );

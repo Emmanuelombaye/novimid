@@ -1,2 +1,0 @@
-ore-hero-stock{padding:5px 12px}.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-content{position:absolute;left:720px;top:95px;display:block;width:559px;height:403px;max-width:none;padding:0}.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-copy{width:511.36px;margin:0;font-size:16px}.retro-explore-tabs-wrap [data-explore-tab-pane=longevity] .explore-hero-includes{position:absolute;left:0;top:72px;display:block;width:559px;height
----

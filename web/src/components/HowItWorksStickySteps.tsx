@@ -11,7 +11,7 @@ const STICKY_VH = 23;
 const EXTRA_PX = 350;
 
 /**
- * Exact Yucca how-it-works sticky stack:
+ * How-it-works sticky stack:
  * sticky top 23vh + 50vh gaps; prior cards scrub to opacity 0 / scale 0.88 via ScrollTrigger.
  */
 export function HowItWorksStickySteps() {

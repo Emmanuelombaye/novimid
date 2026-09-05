@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { YuccaTreatmentsPage } from "@/components/YuccaTreatmentsPage";
+import { TreatmentsView } from "@/components/TreatmentsView";
 
 export const metadata: Metadata = {
   title: "Treatments",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function TreatmentsPage() {
   return (
     <>
-      <YuccaTreatmentsPage />
+      <TreatmentsView />
 
       <section className="border-t-[0.5px] border-mist bg-cloud py-10">
         <div className="shell max-w-3xl text-center">

@@ -24,7 +24,7 @@ const cards = [
   },
 ] as const;
 
-/** VitaWellRX-style treatment cards — tags, mint product stage, dual CTAs. */
+/** Treatment cards — tags, mint product stage, dual CTAs. */
 export function TreatmentCards() {
   return (
     <div className="mt-8 grid gap-4 md:grid-cols-2 md:gap-5">
