@@ -5,7 +5,7 @@ import { TreatmentsView } from "@/components/TreatmentsView";
 export const metadata: Metadata = {
   title: "Treatments",
   description:
-    "Explore physician-directed Semaglutide and Tirzepatide weight management programs from novimid when clinically appropriate. Licensed 503A compounding. Completing intake does not guarantee a prescription.",
+    "Compare Novimid Semaglutide and Tirzepatide weight-management programs reviewed by licensed providers. Completing intake does not guarantee a prescription.",
   alternates: { canonical: "/treatments" },
 };
 

@@ -1,5 +1,5 @@
 /**
- * Novimid treatments explore data — category copy and media.
+ * Novimid treatments explore — Efexia-style catalog copy (LegitScript-cautious).
  * Public offerings: Semaglutide + Tirzepatide only (Weight Management).
  */
 
@@ -7,7 +7,6 @@ export type ExploreTone = "semaglutide" | "tirzepatide";
 
 export type ExploreCategory = {
   id: ExploreTone;
-  /** Maps to lower-page stacks / treatment ids */
   novimidId: "semaglutide" | "tirzepatide";
   tab: string;
   tone: ExploreTone;
@@ -16,11 +15,11 @@ export type ExploreCategory = {
   summary: string;
   chip: string;
   chipClass: string;
+  /** Status/form badge — not inventory */
   stock: string;
   footerSocialBold: string;
   footerSocialSuffix: string;
   tabImage: string;
-  /** CSS background product art (local mirror preferred) */
   productBg: string;
   productBgFallback?: string;
   priceBadge?: string;
@@ -33,19 +32,19 @@ export type ExploreCategory = {
     tagClass?: string;
   }[];
   includes: string[];
-  guarantee: string;
+  /** Fineprint / important note (not a “guarantee”) */
+  note: string;
+  compounded: string;
+  illustrative: string;
+  ctaLabel: string;
   ctaTone: string;
 };
 
-const INCLUDES = [
-  "Physician consultation",
-  "Expedited shipping",
-  "Dedicated clinical support",
-  "Patient portal access",
-] as const;
+const SHARED_NOTE =
+  "Completing intake does not guarantee a prescription. Refund terms apply if treatment is not prescribed, as disclosed at checkout.";
 
-const GUARANTEE =
-  "Physician-directed care, medications from U.S. licensed compounding pharmacies, and only charged if treatment is prescribed — with flexibility to change or cancel anytime. Completing intake does not guarantee a prescription.";
+const ILLUSTRATIVE =
+  "Product imagery is illustrative; labels, lots, and concentrations shown are not real.";
 
 export const exploreCategories: ExploreCategory[] = [
   {
@@ -53,13 +52,13 @@ export const exploreCategories: ExploreCategory[] = [
     novimidId: "semaglutide",
     tab: "Semaglutide",
     tone: "semaglutide",
-    title: "Personalized Semaglutide care",
+    title: "Semaglutide Program",
     titleMaxCh: 18,
     summary:
-      "A weekly physician-directed Semaglutide program designed to support appetite regulation and weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
+      "A clinician-guided weight-management program using semaglutide, discussed only after clinical eligibility review. Treatment is never guaranteed by intake alone.",
     chip: "Weight Management",
     chipClass: "bg-[#dce8dd] text-[#2c3a35]",
-    stock: "In Stock",
+    stock: "Rx Only",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
     tabImage: "/images/icon-vial-a-v2.png",
@@ -67,13 +66,22 @@ export const exploreCategories: ExploreCategory[] = [
     products: [
       {
         name: "Semaglutide",
-        desc: "Gradual, physician-guided progress.",
+        desc: "Clinician-guided program · if prescribed",
         thumb: "/images/icon-vial-a-v2.png",
         thumbBg: "#dce8dd",
       },
     ],
-    includes: [...INCLUDES],
-    guarantee: GUARANTEE,
+    includes: [
+      "Clinical eligibility review first",
+      "Secure medical intake after checkout",
+      "Provider oversight if treatment continues",
+      "Discreet fulfillment when prescribed",
+      "Routine follow-up required by the program",
+    ],
+    note: SHARED_NOTE,
+    compounded: "May be compounded — not FDA-approved",
+    illustrative: ILLUSTRATIVE,
+    ctaLabel: "Start clinical intake",
     ctaTone: "semaglutide",
   },
   {
@@ -81,13 +89,13 @@ export const exploreCategories: ExploreCategory[] = [
     novimidId: "tirzepatide",
     tab: "Tirzepatide",
     tone: "tirzepatide",
-    title: "Personalized Tirzepatide care",
+    title: "Tirzepatide Program",
     titleMaxCh: 18,
     summary:
-      "A weekly physician-directed Tirzepatide program designed to support appetite regulation and weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
+      "A clinician-guided weight-management program using tirzepatide, with licensed-provider review. Completing intake does not guarantee a prescription.",
     chip: "Weight Management",
     chipClass: "bg-[#dce8dd] text-[#2c3a35]",
-    stock: "In Stock",
+    stock: "Rx Only",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
     tabImage: "/images/icon-vial-b-v2.png",
@@ -95,13 +103,22 @@ export const exploreCategories: ExploreCategory[] = [
     products: [
       {
         name: "Tirzepatide",
-        desc: "Physician-guided dual-pathway support.",
+        desc: "Clinician-guided program · if prescribed",
         thumb: "/images/icon-vial-b-v2.png",
         thumbBg: "#dce8dd",
       },
     ],
-    includes: [...INCLUDES],
-    guarantee: GUARANTEE,
+    includes: [
+      "Online licensed-provider review",
+      "Secure medical intake after checkout",
+      "Ongoing program support by secure message",
+      "Standard shipping when prescribed",
+      "Routine follow-up required by the program",
+    ],
+    note: SHARED_NOTE,
+    compounded: "May be compounded — not FDA-approved",
+    illustrative: ILLUSTRATIVE,
+    ctaLabel: "Start clinical intake",
     ctaTone: "tirzepatide",
   },
 ];

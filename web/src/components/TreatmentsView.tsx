@@ -19,55 +19,55 @@ type FaqItem = { q: string; a: string };
 
 const SEMA_FAQS: FaqItem[] = [
   {
-    q: "What is the Semaglutide Program at novimid?",
-    a: "Physician-directed Semaglutide care for weight management when clinically appropriate. Care begins with intake and physician review — every plan is built around you. Completing intake does not guarantee a prescription.",
+    q: "What is the Semaglutide Program at Novimid?",
+    a: "A clinician-guided weight-management program using semaglutide, discussed only after clinical eligibility review. Novimid is a technology platform that connects eligible patients with independent U.S.-licensed clinicians. Completing intake does not guarantee a prescription.",
   },
   {
     q: "What's the difference between Semaglutide and Tirzepatide?",
-    a: "Both support appetite regulation and weight management through related but different pathways. Your physician reviews your history and goals to determine what may be appropriate for you.",
+    a: "Both may be considered for weight management when clinically appropriate. A licensed clinician reviews your history and goals to determine what, if anything, may be appropriate for you.",
   },
   {
-    q: "Who is Semaglutide care for?",
-    a: "Semaglutide may be considered for adults seeking physician-guided weight management who meet clinical criteria. Eligibility is determined by a licensed physician based on your medical history, current health, and goals. Treatment isn't right for everyone — every plan begins with a provider review.",
+    q: "Who may be considered for Semaglutide?",
+    a: "Semaglutide may be considered for adults who meet clinical criteria after licensed-provider review. Treatment is not right for everyone. Eligibility is determined by a licensed clinician — not by purchasing a program.",
   },
   {
-    q: "How does the prescription process work?",
-    a: "You complete a short clinical intake, share your medical history, and connect with a licensed physician. If approved, medication is prepared through our licensed compounding pharmacy when indicated and shipped directly. Your physician stays involved as dosing is titrated over time.",
+    q: "How does the process work?",
+    a: "After checkout, you complete a secure medical intake and identity verification. A licensed clinician reviews your information. If treatment is prescribed, medication is fulfilled through a licensed pharmacy partner. Purchasing a program does not guarantee a prescription.",
   },
   {
     q: "What should I know about side effects?",
-    a: "Side effects vary by person. Common effects may include nausea, constipation, diarrhea, appetite changes, or digestive discomfort while your body adjusts. Your physician reviews your history, explains what to watch for, and can adjust your protocol if needed.",
+    a: "Side effects vary by person and should be discussed with a licensed clinician. Common effects may include nausea, constipation, diarrhea, appetite changes, or digestive discomfort. Seek urgent or emergency care for severe or sudden symptoms.",
   },
   {
     q: "Are compounded medications FDA-approved?",
-    a: "No. Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
+    a: "No. Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality before marketing.",
   },
 ];
 
 const TIRZ_FAQS: FaqItem[] = [
   {
-    q: "What is the Tirzepatide Program at novimid?",
-    a: "Physician-directed Tirzepatide care for weight management when clinically appropriate. Care begins with intake and physician review — every plan is built around you. Completing intake does not guarantee a prescription.",
+    q: "What is the Tirzepatide Program at Novimid?",
+    a: "A clinician-guided weight-management program using tirzepatide, with licensed-provider review. Novimid is a technology platform that connects eligible patients with independent U.S.-licensed clinicians. Completing intake does not guarantee a prescription.",
   },
   {
     q: "What's the difference between Semaglutide and Tirzepatide?",
-    a: "Both support appetite regulation and weight management through related but different pathways. Your physician reviews your history and goals to determine what may be appropriate for you.",
+    a: "Both may be considered for weight management when clinically appropriate. A licensed clinician reviews your history and goals to determine what, if anything, may be appropriate for you.",
   },
   {
-    q: "Who is Tirzepatide care for?",
-    a: "Tirzepatide may be considered for adults seeking physician-guided weight management who meet clinical criteria. Eligibility is determined by a licensed physician based on your medical history, current health, and goals. Treatment isn't right for everyone — every plan begins with a provider review.",
+    q: "Who may be considered for Tirzepatide?",
+    a: "Tirzepatide may be considered for adults who meet clinical criteria after licensed-provider review. Treatment is not right for everyone. Eligibility is determined by a licensed clinician — not by purchasing a program.",
   },
   {
-    q: "How does the prescription process work?",
-    a: "You complete a short clinical intake, share your medical history, and connect with a licensed physician. If approved, medication is prepared through our licensed compounding pharmacy when indicated and shipped directly. Your physician stays involved as dosing is titrated over time.",
+    q: "How does the process work?",
+    a: "After checkout, you complete a secure medical intake and identity verification. A licensed clinician reviews your information. If treatment is prescribed, medication is fulfilled through a licensed pharmacy partner. Purchasing a program does not guarantee a prescription.",
   },
   {
     q: "What should I know about side effects?",
-    a: "Side effects vary by person. Common effects may include nausea, constipation, diarrhea, appetite changes, or digestive discomfort while your body adjusts. Your physician reviews your history, explains what to watch for, and can adjust your protocol if needed.",
+    a: "Side effects vary by person and should be discussed with a licensed clinician. Common effects may include nausea, constipation, diarrhea, appetite changes, or digestive discomfort. Seek urgent or emergency care for severe or sudden symptoms.",
   },
   {
     q: "Are compounded medications FDA-approved?",
-    a: "No. Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and do not undergo FDA review for safety, effectiveness, or manufacturing quality.",
+    a: "No. Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality before marketing.",
   },
 ];
 
@@ -125,54 +125,54 @@ type ProtocolData = {
 };
 
 const SEMA_PROTOCOL: ProtocolData = {
-  heading: "Hunger was never the enemy. Clarity was missing.",
-  sub: "Novimid Semaglutide care helps restore the fullness signal your body already knows how to send \u2014 so appetite settles into something quieter, steadier, and finally easier to trust.",
+  heading: "Start with a clinical review — not a template.",
+  sub: "The Semaglutide Program may be discussed only after clinical intake and licensed-provider review. Completing intake does not guarantee eligibility or a prescription. If appropriate, care is individualized and fulfilled through a licensed pharmacy partner.",
   vialImg: IMG_PRODUCT,
-  vialAlt: "Personalized Semaglutide program vial",
+  vialAlt: "Illustrative Semaglutide program product photo — not a specific medication",
   cards: [
     {
       icon: <IconWave />,
-      title: "Supports the signal that tells your brain you\u2019re full.",
-      body: "After you eat, your body releases a natural fullness signal that travels to your brain and says: enough. Semaglutide helps reinforce that message. The result is a clearer, more consistent cue to stop eating.",
+      title: "Secure medical intake",
+      body: "After checkout, you complete a secure health intake and identity-verification steps so a licensed clinician can review your information.",
     },
     {
       icon: <IconDot />,
-      title: "Slows down how fast food leaves your stomach.",
-      body: "These treatments reduce the rate at which your stomach empties after a meal. The physical sensation of fullness lasts longer \u2014 and hunger returns more slowly.",
+      title: "Licensed-provider review",
+      body: "An independent U.S.-licensed clinician evaluates whether treatment is clinically appropriate. Purchasing a program does not guarantee a prescription.",
     },
     {
       icon: <IconLines />,
-      title: "Recalibrates your hunger system \u2014 not shuts it down.",
-      body: "Over time, with structured dosing reviewed by your provider, Semaglutide care helps restore a more balanced response to food \u2014 so the process feels steadier, not like a fight you\u2019re constantly losing.",
+      title: "Pharmacy fulfillment if prescribed",
+      body: "If prescribed, medication is dispensed by a licensed pharmacy partner. Compounded medications, when used, are not FDA-approved finished products.",
     },
   ],
-  ctaLink: "/start",
+  ctaLink: "/start?treatment=semaglutide",
 };
 
 const TIRZ_PROTOCOL: ProtocolData = {
-  heading: "Hunger was never the enemy. Clarity was missing.",
-  sub: "Novimid Tirzepatide care helps restore the fullness signal your body already knows how to send \u2014 so appetite settles into something quieter, steadier, and finally easier to trust.",
+  heading: "Clinician-guided care, if prescribed.",
+  sub: "The Tirzepatide Program may be considered after clinical intake and review by a U.S.-licensed clinician. Completing intake does not guarantee a prescription. If appropriate, care is individualized and fulfilled through a licensed pharmacy partner.",
   vialImg: IMG_PRODUCT,
-  vialAlt: "Personalized Tirzepatide program vial",
+  vialAlt: "Illustrative Tirzepatide program product photo — not a specific medication",
   modifier: "tx-protocol--tirzepatide",
   cards: [
     {
       icon: <IconWave />,
-      title: "Supports the signal that tells your brain you\u2019re full.",
-      body: "After you eat, your body releases a natural fullness signal that travels to your brain and says: enough. Tirzepatide helps reinforce that message through dual pathways. The result is a clearer, more consistent cue to stop eating.",
+      title: "Secure medical intake",
+      body: "After checkout, you complete a secure health intake and identity-verification steps so a licensed clinician can review your information.",
     },
     {
       icon: <IconDot />,
-      title: "Slows down how fast food leaves your stomach.",
-      body: "These treatments reduce the rate at which your stomach empties after a meal. The physical sensation of fullness lasts longer \u2014 and hunger returns more slowly.",
+      title: "Licensed-provider review",
+      body: "An independent U.S.-licensed clinician evaluates whether treatment is clinically appropriate. Purchasing a program does not guarantee a prescription.",
     },
     {
       icon: <IconLines />,
-      title: "Recalibrates your hunger system \u2014 not shuts it down.",
-      body: "Over time, with structured dosing reviewed by your provider, Tirzepatide care helps restore a more balanced response to food \u2014 so the process feels steadier, not like a fight you\u2019re constantly losing.",
+      title: "Pharmacy fulfillment if prescribed",
+      body: "If prescribed, medication is dispensed by a licensed pharmacy partner. Compounded medications, when used, are not FDA-approved finished products.",
     },
   ],
-  ctaLink: "/start",
+  ctaLink: "/start?treatment=tirzepatide",
 };
 
 function RetroProtocol({ data }: { data: ProtocolData }) {
@@ -195,7 +195,7 @@ function RetroProtocol({ data }: { data: ProtocolData }) {
               <p className="tx-protocol-card__body">{card.body}</p>
             </article>
           ))}
-          <Link href={data.ctaLink} className="tx-protocol__cta">Get Started</Link>
+          <Link href={data.ctaLink} className="tx-protocol__cta">Start clinical intake</Link>
         </div>
       </div>
     </section>
@@ -243,9 +243,9 @@ type ClinicalData = {
     sub: string;
     tag: string;
     tagColor: "purple" | "green" | "orange";
-    patientsBold?: string;
-    patientsRest?: string;
-    plans: { name: string; save?: string; badge?: string; was?: string; now: string; perMonth?: string }[];
+    features: string[];
+    priceLine: string;
+    fineprint: string;
     ctaLink: string;
   }[];
   modifier: string;
@@ -253,14 +253,18 @@ type ClinicalData = {
 
 const SEMA_CLINICAL: ClinicalData = {
   eyebrow: "Weight Management · Semaglutide Program",
-  heading: "Evidence-based\npharmacotherapy for\nweight management.",
+  heading: "Weight-management care,\nreviewed by licensed providers.",
   body: (
     <>
-      <p>Semaglutide engages pathways that govern satiety, gastric emptying, and metabolic balance — supporting measured, clinically supervised weight management care.</p>
-      <ul>
-        <li><strong>Semaglutide</strong> — selective receptor support for progressive appetite regulation when clinically appropriate.</li>
-      </ul>
-      <p>Each protocol is prescribed by a licensed physician and titrated to your response, tolerability, and clinical goals. Completing intake does not guarantee a prescription.</p>
+      <p>
+        A clinician-guided weight-management program using semaglutide, discussed only after clinical
+        eligibility review. Treatment is never guaranteed by intake alone.
+      </p>
+      <p>
+        If prescribed, dosing and follow-up are directed by your licensed clinician. Compounded
+        medications, when used, are not FDA-approved finished products.
+      </p>
+      <p>Completing intake does not guarantee a prescription.</p>
     </>
   ),
   vialImg: IMG_PRODUCT,
@@ -270,31 +274,38 @@ const SEMA_CLINICAL: ClinicalData = {
     {
       id: "semaglutide",
       vialImg: IMG_VIAL_A,
-      title: "Semaglutide",
-      sub: "Gradual, physician-guided progress.",
+      title: "Semaglutide Program",
+      sub: "Start with a clinical review",
       tag: "Weight Management",
       tagColor: "purple",
-      patientsBold: "Physician-guided",
-      patientsRest: "dosing protocols",
-      plans: [
-        { name: "Monthly supply", now: "Quoted after review" },
-        { name: "Multi-month supply", badge: "If prescribed", now: "Discussed with your clinician" },
+      features: [
+        "Clinical eligibility review first",
+        "Secure medical intake after checkout",
+        "Provider oversight if treatment continues",
+        "Discreet fulfillment when prescribed",
       ],
-      ctaLink: "/start",
+      priceLine: "Program price disclosed at checkout · if prescribed",
+      fineprint:
+        "Completing intake does not guarantee a prescription. Product imagery is illustrative.",
+      ctaLink: "/start?treatment=semaglutide",
     },
   ],
 };
 
 const TIRZ_CLINICAL: ClinicalData = {
   eyebrow: "Weight Management · Tirzepatide Program",
-  heading: "Evidence-based\npharmacotherapy for\nweight management.",
+  heading: "Weight-management care,\nreviewed by licensed providers.",
   body: (
     <>
-      <p>Tirzepatide engages pathways that govern satiety, gastric emptying, and metabolic balance — supporting measured, clinically supervised weight management care.</p>
-      <ul>
-        <li><strong>Tirzepatide</strong> — dual-pathway support for broader appetite regulation when clinically appropriate.</li>
-      </ul>
-      <p>Each protocol is prescribed by a licensed physician and titrated to your response, tolerability, and clinical goals. Completing intake does not guarantee a prescription.</p>
+      <p>
+        A clinician-guided weight-management program using tirzepatide, with licensed-provider
+        review. Completing intake does not guarantee a prescription.
+      </p>
+      <p>
+        If prescribed, dosing and follow-up are directed by your licensed clinician. Compounded
+        medications, when used, are not FDA-approved finished products.
+      </p>
+      <p>Individual results vary; no outcome is promised.</p>
     </>
   ),
   vialImg: IMG_PRODUCT,
@@ -304,26 +315,26 @@ const TIRZ_CLINICAL: ClinicalData = {
     {
       id: "tirzepatide",
       vialImg: IMG_VIAL_B,
-      title: "Tirzepatide",
-      sub: "Physician-guided dual-pathway support.",
+      title: "Tirzepatide Program",
+      sub: "Start with a clinical review",
       tag: "Weight Management",
       tagColor: "green",
-      patientsBold: "Physician-guided",
-      patientsRest: "dosing protocols",
-      plans: [
-        { name: "Monthly supply", now: "Quoted after review" },
-        { name: "Multi-month supply", badge: "If prescribed", now: "Discussed with your clinician" },
+      features: [
+        "Online licensed-provider review",
+        "Secure medical intake after checkout",
+        "Ongoing program support by secure message",
+        "Standard shipping when prescribed",
       ],
-      ctaLink: "/start",
+      priceLine: "Program price disclosed at checkout · if prescribed",
+      fineprint:
+        "Completing intake does not guarantee a prescription. Product imagery is illustrative.",
+      ctaLink: "/start?treatment=tirzepatide",
     },
   ],
 };
 
 function RetroClinical({ data }: { data: ClinicalData }) {
   const [activeProd, setActiveProd] = useState(data.products[0]?.id ?? "");
-  const [planByProduct, setPlanByProduct] = useState<Record<string, number>>(() =>
-    Object.fromEntries(data.products.map((p) => [p.id, 0])),
-  );
 
   return (
     <section className={`tx-clinical ${data.modifier}`} aria-labelledby="tx-clinical-heading">
@@ -348,7 +359,6 @@ function RetroClinical({ data }: { data: ClinicalData }) {
         </div>
         <div className="tx-clinical__products">
           {data.products.map((p) => {
-            const selectedPlan = planByProduct[p.id] ?? 0;
             const expanded = p.id === activeProd;
             return (
               <article
@@ -370,47 +380,29 @@ function RetroClinical({ data }: { data: ClinicalData }) {
                     <h3 className="tx-clinical-product__title">{p.title}</h3>
                     <p className="tx-clinical-product__sub">{p.sub}</p>
                     <p className={`tx-clinical-product__tag tx-clinical-product__tag--${p.tagColor}`}>{p.tag}</p>
-                    {p.patientsBold ? (
-                      <p className="tx-clinical-product__patients">
-                        <strong>{p.patientsBold}</strong> {p.patientsRest}
-                      </p>
-                    ) : null}
                   </div>
                   <span className="tx-clinical-product__check" aria-hidden="true"><IconCheck /></span>
                 </button>
                 {expanded ? (
-                  <div className="tx-clinical__pricing" role="radiogroup" aria-label={`Choose your ${p.title} plan`}>
-                    {p.plans.map((plan, i) => {
-                      const on = i === selectedPlan;
-                      return (
-                        <button
-                          key={i}
-                          type="button"
-                          className="tx-clinical-plan"
-                          role="radio"
-                          aria-checked={on}
-                          data-selected={on ? "true" : "false"}
-                          onClick={() => setPlanByProduct((prev) => ({ ...prev, [p.id]: i }))}
+                  <div className="tx-clinical__pricing">
+                    <ul className="mb-4 space-y-2.5 px-1">
+                      {p.features.map((feature) => (
+                        <li
+                          key={feature}
+                          className="flex items-start gap-2 text-[13px] font-medium leading-snug text-[#2c3a35]"
                         >
-                          <span className="tx-clinical-plan__radio" aria-hidden="true" />
-                          <span className="tx-clinical-plan__info">
-                            <span className="tx-clinical-plan__name">
-                              {plan.name}
-                              {plan.badge ? <span className="tx-clinical-plan__badge">{plan.badge}</span> : null}
-                            </span>
-                            {plan.save ? <span className="tx-clinical-plan__save">{plan.save}</span> : null}
+                          <span className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#2c3a35] text-white" aria-hidden>
+                            <IconCheck />
                           </span>
-                          <span className="tx-clinical-plan__price">
-                            {plan.was ? <span className="tx-clinical-plan__was">{plan.was}</span> : null}
-                            <span className="tx-clinical-plan__now">{plan.now}</span>
-                            {plan.perMonth ? <span className="tx-clinical-plan__per-month">{plan.perMonth}</span> : null}
-                          </span>
-                        </button>
-                      );
-                    })}
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mb-3 px-1 text-[13px] font-medium text-[#2c3a35]/70">{p.priceLine}</p>
                     <Link href={p.ctaLink} className="tx-clinical__cta">
-                      See if I qualify
+                      Start clinical intake
                     </Link>
+                    <p className="mt-3 px-1 text-[11px] leading-relaxed text-[#2c3a35]/55">{p.fineprint}</p>
                   </div>
                 ) : null}
               </article>
@@ -441,51 +433,51 @@ type ExpectCard = {
 };
 
 const SEMA_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
-  heading: "What to expect, week by week with your Semaglutide care",
-  sub: "No guesswork. Here’s how the first months typically look under physician-directed Semaglutide care. Individual experiences vary.",
+  heading: "How the Semaglutide Program typically proceeds",
+  sub: "Process steps after checkout — not outcome promises. Individual experiences vary. Completing intake does not guarantee a prescription.",
   cards: [
     {
       img: "/images/care-woman.jpg",
-      alt: "Patient examining dose and consultation summary",
-      label: "Week 1 → 4 · Your body is adjusting",
-      desc: "You start on a low dose — intentionally. Your Semaglutide protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
+      alt: "Adult reviewing intake materials at home",
+      label: "After checkout · Complete intake",
+      desc: "You finish the secure medical intake and identity-verification steps required for licensed-provider review. This reserves clinical review — it is not a purchase of a prescription.",
     },
     {
       img: "/images/how-care-experience.jpg",
-      alt: "Adult reviewing a care plan as the protocol settles in",
-      label: "Week 4 → 12 · The protocol starts to settle",
-      desc: "This is when most patients begin to feel more consistent regulation. Food noise and cravings often quiet. Fullness arrives earlier and stays longer. Your dose may be reviewed and adjusted.",
+      alt: "Adult reviewing a care plan after provider evaluation",
+      label: "Licensed-provider review",
+      desc: "A U.S.-licensed clinician reviews your information and may request follow-up details, labs, or a live consultation. Treatment is provided only if clinically appropriate.",
     },
     {
       img: "/images/care-man.jpg",
-      alt: "Patient at home as provider fine-tunes Semaglutide protocol",
-      label: "Month 3+ · Calibrated to you",
-      desc: "This is where care becomes truly personal. With how your body has responded — to the dose, to titration, to the protocol itself — your physician can fine-tune with real precision.",
+      alt: "Adult at home during ongoing program support",
+      label: "If prescribed · Ongoing oversight",
+      desc: "When prescribed, medication is fulfilled through a licensed pharmacy partner. Routine follow-up required by the program continues with your care team. Results are not guaranteed.",
     },
   ],
 };
 
 const TIRZ_EXPECT: { heading: string; sub: string; cards: ExpectCard[] } = {
-  heading: "What to expect, week by week with your Tirzepatide care",
-  sub: "No guesswork. Here’s how the first months typically look under physician-directed Tirzepatide care. Individual experiences vary.",
+  heading: "How the Tirzepatide Program typically proceeds",
+  sub: "Process steps after checkout — not outcome promises. Individual experiences vary. Completing intake does not guarantee a prescription.",
   cards: [
     {
       img: "/images/care-woman.jpg",
-      alt: "Patient examining dose and consultation summary",
-      label: "Week 1 → 4 · Your body is adjusting",
-      desc: "You start on a low dose — intentionally. Your Tirzepatide protocol is introduced gradually so your body can adapt. Some patients notice appetite changes early. Others take a few more weeks. Both are normal. Your physician is available throughout.",
+      alt: "Adult reviewing intake materials at home",
+      label: "After checkout · Complete intake",
+      desc: "You finish the secure medical intake and identity-verification steps required for licensed-provider review. This reserves clinical review — it is not a purchase of a prescription.",
     },
     {
       img: "/images/how-care-experience.jpg",
-      alt: "Adult reviewing a care plan as the protocol settles in",
-      label: "Week 4 → 12 · The protocol starts to settle",
-      desc: "This is when most patients begin to feel more consistent regulation. Food noise and cravings often quiet. Fullness arrives earlier and stays longer. Your dose may be reviewed and adjusted.",
+      alt: "Adult reviewing a care plan after provider evaluation",
+      label: "Licensed-provider review",
+      desc: "A U.S.-licensed clinician reviews your information and may request follow-up details, labs, or a live consultation. Treatment is provided only if clinically appropriate.",
     },
     {
       img: "/images/care-man.jpg",
-      alt: "Patient at home as provider fine-tunes Tirzepatide protocol",
-      label: "Month 3+ · Calibrated to you",
-      desc: "This is where care becomes truly personal. With how your body has responded — to the dose, to titration, to the protocol itself — your physician can fine-tune with real precision.",
+      alt: "Adult at home during ongoing program support",
+      label: "If prescribed · Ongoing oversight",
+      desc: "When prescribed, medication is fulfilled through a licensed pharmacy partner. Routine follow-up required by the program continues with your care team. Results are not guaranteed.",
     },
   ],
 };
@@ -538,7 +530,7 @@ function RetroKnowall({
       <div className="tx-knowall__inner">
         <div className="tx-knowall__left">
           <h2 id="tx-knowall-heading" className="tx-knowall__heading">
-            What most patients want to know before they begin.
+            Questions before you begin clinical intake.
           </h2>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="tx-knowall__vial" src={vialImg} alt={vialAlt} loading="lazy" decoding="async" />
@@ -576,7 +568,7 @@ function RetroKnowall({
               </li>
             ))}
           </ul>
-          <Link href={ctaLink} className="tx-knowall__cta">See if I qualify</Link>
+          <Link href={ctaLink} className="tx-knowall__cta">Start clinical intake</Link>
         </div>
       </div>
     </section>
@@ -593,8 +585,8 @@ function SemaStack() {
       <RetroKnowall
         faqs={SEMA_FAQS}
         vialImg={IMG_PRODUCT}
-        vialAlt="Personalized Semaglutide program vial"
-        ctaLink="/start"
+        vialAlt="Illustrative Semaglutide program product photo"
+        ctaLink="/start?treatment=semaglutide"
       />
     </>
   );
@@ -610,8 +602,8 @@ function TirzStack() {
       <RetroKnowall
         faqs={TIRZ_FAQS}
         vialImg={IMG_PRODUCT}
-        vialAlt="Personalized Tirzepatide program vial"
-        ctaLink="/start"
+        vialAlt="Illustrative Tirzepatide program product photo"
+        ctaLink="/start?treatment=tirzepatide"
         modifier="tx-knowall--tirzepatide"
       />
     </>
@@ -630,10 +622,13 @@ export function TreatmentsView() {
       {/* ── Headline ───────────────────────────── */}
       <section className="bg-white pt-3 pb-4 sm:pt-4 sm:pb-5 lg:pt-4 lg:pb-5">
         <div className="shell">
-          <h1 className="mx-auto max-w-[40rem] text-center text-[1.75rem] font-semibold leading-[1] tracking-[-0.04em] text-neutral-900 sm:text-[2.25rem]">
-            Explore our treatments below and choose what&apos;s best{" "}
-            <em className="font-semibold italic">for you.</em>
+          <h1 className="mx-auto max-w-[42rem] text-center text-[1.75rem] font-semibold leading-[1] tracking-[-0.04em] text-neutral-900 sm:text-[2.25rem]">
+            Weight-management programs,{" "}
+            <em className="font-semibold italic">reviewed by licensed providers.</em>
           </h1>
+          <p className="mx-auto mt-4 max-w-[36rem] text-center text-[15px] font-light leading-relaxed text-neutral-900/70">
+            Compare Semaglutide and Tirzepatide below. Completing intake does not guarantee a prescription.
+          </p>
         </div>
       </section>
 

@@ -82,7 +82,7 @@ export function PersonalizedTreatments() {
                     href={`/start?treatment=${program.id}`}
                     className="inline-flex h-11 flex-1 items-center justify-center rounded-full bg-sage px-5 text-[14px] font-medium text-white transition-colors hover:bg-[#5F8165]"
                   >
-                    See if I qualify
+                    Start clinical intake
                   </Link>
                   <Link
                     href="/treatments"

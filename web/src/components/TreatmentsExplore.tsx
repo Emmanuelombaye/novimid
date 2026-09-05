@@ -134,12 +134,14 @@ function ExplorePane({ cat }: { cat: ExploreCategory }) {
                 >
                   {cat.chip}
                 </span>
-                <span className="explore-hero-stock inline-flex items-center gap-1.5 rounded-full bg-[#d4ffd6] px-2 py-1 text-xs font-medium leading-none tracking-tight whitespace-nowrap text-[#14884c]">
-                  <span className="explore-stock-dot block h-1.5 w-1.5 rounded-full bg-[#14884c]" />
+                <span className="explore-hero-stock inline-flex items-center gap-1.5 rounded-full border border-[#2c3a35]/25 bg-white px-2 py-1 text-xs font-medium leading-none tracking-tight whitespace-nowrap text-[#2c3a35]">
                   {cat.stock}
                 </span>
               </div>
             </div>
+            <p className="relative z-[2] mt-3 text-[11px] font-medium leading-snug tracking-[-0.01em] text-[#2c3a35]/65">
+              {cat.compounded}
+            </p>
           </div>
 
           {/* Right open column — container for includes/guarantee side-by-side */}
@@ -184,7 +186,7 @@ function ExplorePane({ cat }: { cat: ExploreCategory }) {
             <div className="explore-hero-includes">
               <div className="explore-hero-plans">
                 <div className="explore-hero-plans-label text-sm tracking-[-0.01em] text-neutral-900/40">
-                  All plans include:
+                  Program includes:
                 </div>
                 <div className="explore-hero-plan-list mt-2.5 flex flex-col gap-3">
                   {cat.includes.map((label) => (
@@ -212,13 +214,17 @@ function ExplorePane({ cat }: { cat: ExploreCategory }) {
                     />
                     <span className="explore-hero-guarantee-rule block h-px w-[13px] rotate-90 bg-neutral-900/28" />
                     <span className="explore-hero-guarantee-word text-[14px] font-medium italic text-neutral-900">
-                      Guarantee
+                      Important
                     </span>
                   </div>
-                  <p className="m-0">{cat.guarantee}</p>
+                  <p className="m-0">{cat.note}</p>
                 </div>
               </div>
             </div>
+
+            <p className="mt-4 text-[11px] leading-relaxed tracking-[-0.01em] text-neutral-900/50">
+              {cat.illustrative}
+            </p>
 
             <div className="explore-hero-divider mb-9 hidden h-px w-full bg-[#eee] md:block" />
 
@@ -226,7 +232,7 @@ function ExplorePane({ cat }: { cat: ExploreCategory }) {
               {cat.priceBadge ? (
                 <div className="explore-hero-price-row explore-hero-price-row--badge-only mb-4 flex items-center justify-between md:mb-0">
                   <span className="explore-hero-price-label text-sm tracking-[-0.01em] text-neutral-900/40">
-                    Starting as low as:
+                    Program price if prescribed
                   </span>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -235,12 +241,16 @@ function ExplorePane({ cat }: { cat: ExploreCategory }) {
                     className="explore-hero-price-badge h-[72px] w-[72px] object-contain sm:h-[103px] sm:w-[103px]"
                   />
                 </div>
-              ) : null}
+              ) : (
+                <p className="mb-4 text-sm tracking-[-0.01em] text-neutral-900/55">
+                  Program price disclosed at checkout · if prescribed
+                </p>
+              )}
               <Link
-                href="/start"
+                href={`/start?treatment=${cat.novimidId}`}
                 className={`explore-hero-cta explore-hero-cta--${cat.ctaTone} flex w-full items-center justify-center rounded-full border-2 border-[#2c3a35] px-6 py-4 text-base font-bold leading-none tracking-[-0.01em] shadow-[3px_4px_0_0_#2c3a35] transition-[transform,box-shadow] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_2px_0_0_#2c3a35]`}
               >
-                See if I qualify
+                {cat.ctaLabel}
               </Link>
             </div>
           </div>
@@ -259,7 +269,7 @@ function IncludeGlyph({ label }: { label: string }) {
     stroke: "currentColor",
     strokeWidth: 1.25,
   };
-  if (label.includes("Consultation") || label.includes("consultation")) {
+  if (/review|eligibility|provider|clinical/i.test(label)) {
     return (
       <svg {...common}>
         <path d="M4.5 9.5c-1.2 0-2.2-.9-2.2-2.2V5A2 2 0 0 1 4.3 3h.7" strokeLinecap="round" />
@@ -268,7 +278,7 @@ function IncludeGlyph({ label }: { label: string }) {
       </svg>
     );
   }
-  if (label.includes("Shipping") || label.includes("shipping")) {
+  if (/shipping|fulfillment/i.test(label)) {
     return (
       <svg {...common}>
         <path d="M1 7h6l2-3h3" strokeLinecap="round" />
@@ -276,7 +286,7 @@ function IncludeGlyph({ label }: { label: string }) {
       </svg>
     );
   }
-  if (label.includes("Support") || label.includes("support")) {
+  if (/support|message|follow-up|oversight/i.test(label)) {
     return (
       <svg {...common}>
         <path d="M2 7a5 5 0 0 1 10 0" strokeLinecap="round" />
@@ -285,7 +295,7 @@ function IncludeGlyph({ label }: { label: string }) {
       </svg>
     );
   }
-  if (label.includes("Portal") || label.includes("portal")) {
+  if (/intake|checkout|secure/i.test(label)) {
     return (
       <svg width={14} height={14} viewBox="0 0 17 17" fill="none" stroke="currentColor" strokeWidth={1.25}>
         <path
@@ -298,9 +308,7 @@ function IncludeGlyph({ label }: { label: string }) {
   }
   return (
     <svg {...common}>
-      <path d="M4.5 9.5c-1.2 0-2.2-.9-2.2-2.2V5A2 2 0 0 1 4.3 3h.7" strokeLinecap="round" />
-      <path d="M9.5 9.5c1.2 0 2.2-.9 2.2-2.2V5A2 2 0 0 0 9.7 3h-.7" strokeLinecap="round" />
-      <path d="M5 8h4" strokeLinecap="round" />
+      <path d="M3.5 7.2 5.8 9.5 10.5 4.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }

@@ -70,7 +70,7 @@ export function TreatmentCards() {
                 href={`/start?treatment=${card.treatment}`}
                 className="inline-flex h-11 flex-[1.35] items-center justify-center rounded-full bg-sage px-4 text-[13px] font-normal text-white transition-colors hover:bg-[#5F8165]"
               >
-                See if I qualify
+                Start clinical intake
               </Link>
               <Link
                 href="/treatments"
