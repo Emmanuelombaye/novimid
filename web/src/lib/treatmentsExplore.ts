@@ -62,8 +62,8 @@ export const exploreCategories: ExploreCategory[] = [
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
-    tabImage: "/images/tab-metabolic.png",
-    productBg: "/images/novimid-card-glp1.png",
+    tabImage: "/images/icon-vial-a-v2.png",
+    productBg: "/images/card-vial-semaglutide.png",
     products: [
       {
         name: "Semaglutide",
@@ -90,8 +90,8 @@ export const exploreCategories: ExploreCategory[] = [
     stock: "In Stock",
     footerSocialBold: "Licensed",
     footerSocialSuffix: " U.S. provider review",
-    tabImage: "/images/tab-metabolic.png",
-    productBg: "/images/novimid-card-glp1.png",
+    tabImage: "/images/icon-vial-b-v2.png",
+    productBg: "/images/card-vial-tirzepatide.png",
     products: [
       {
         name: "Tirzepatide",

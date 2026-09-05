@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import { Reveal } from "./Reveal";
-import { SiteImage } from "./SiteImage";
-import { media } from "@/lib/media";
 
 const cards = [
   {
@@ -11,20 +9,24 @@ const cards = [
     badge: "Physician-directed",
     title: "Semaglutide Program",
     body: "A weekly physician-directed Semaglutide program designed to support appetite regulation and weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
-    product: media.product.glp1Hero,
+    vial: "/images/card-vial-semaglutide.png",
+    vialAlt: "Semaglutide injectable solution vial",
     stage: "bg-[#E7F0E8]",
+    treatment: "semaglutide",
   },
   {
     label: "Weight Management",
     badge: "Physician-directed",
     title: "Tirzepatide Program",
     body: "A weekly physician-directed Tirzepatide program designed to support appetite regulation and weight management when clinically appropriate. Completing intake does not guarantee a prescription.",
-    product: media.product.glp1Hero,
+    vial: "/images/card-vial-tirzepatide.png",
+    vialAlt: "Tirzepatide injectable solution vial",
     stage: "bg-[#EAF2EC]",
+    treatment: "tirzepatide",
   },
 ] as const;
 
-/** Treatment cards — tags, mint product stage, dual CTAs. */
+/** Treatment cards — separate vial per program. */
 export function TreatmentCards() {
   return (
     <div className="mt-8 grid gap-4 md:grid-cols-2 md:gap-5">
@@ -43,12 +45,13 @@ export function TreatmentCards() {
             <div
               className={`relative mx-auto mt-5 aspect-square w-full max-w-[14rem] overflow-hidden rounded-[22px] ${card.stage}`}
             >
-              <SiteImage
-                image={card.product}
-                fill
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={card.vial}
+                alt={card.vialAlt}
+                className="h-full w-full object-contain object-center p-4 sm:p-5"
                 loading="lazy"
-                className="!object-contain !object-center p-4 sm:p-5"
-                sizes="224px"
+                decoding="async"
               />
             </div>
 
@@ -64,7 +67,7 @@ export function TreatmentCards() {
 
             <div className="mt-6 flex items-center gap-2.5">
               <Link
-                href="/start"
+                href={`/start?treatment=${card.treatment}`}
                 className="inline-flex h-11 flex-[1.35] items-center justify-center rounded-full bg-sage px-4 text-[13px] font-normal text-white transition-colors hover:bg-[#5F8165]"
               >
                 See if I qualify
