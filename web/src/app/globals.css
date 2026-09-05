@@ -1137,10 +1137,46 @@ details[open] .faq-plus {
 }
 
 /* How-it-works sticky stack (ScrollTrigger cards) */
+.hiw-hero {
+  padding-block: 0.5rem 1.5rem;
+}
+
+.hiw-step-card {
+  isolation: isolate;
+  background-color: #fff;
+}
+
+.hiw-step-copy {
+  position: relative;
+  z-index: 1;
+}
+
 @media (min-width: 992px) {
+  .hiw-hero {
+    padding-block: 1rem 2.5rem;
+  }
+
   .hiw-step-card {
-    transform-origin: center;
-    will-change: opacity, transform;
+    transform-origin: center top;
+    will-change: opacity, transform, filter;
+    backface-visibility: hidden;
+  }
+
+  .hiw-step:not(:last-child) .hiw-step-card {
+    /* Opaque plate so underlying sticky content never shows through mid-fade */
+    box-shadow:
+      0 12px 40px rgba(44, 58, 53, 0.07),
+      0 0 0 1px rgba(226, 230, 227, 0.9);
+  }
+}
+
+@media (max-width: 991px) {
+  .hiw-steps {
+    gap: 2.75rem;
+  }
+
+  .hiw-step-card {
+    box-shadow: 0 8px 28px rgba(44, 58, 53, 0.05);
   }
 }
 
@@ -1151,6 +1187,9 @@ details[open] .faq-plus {
 
   .hiw-step-card {
     will-change: auto;
+    filter: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 
   .trust-marquee,
