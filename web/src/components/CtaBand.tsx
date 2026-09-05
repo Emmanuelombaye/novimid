@@ -34,7 +34,7 @@ export function CtaBand({
           image={image}
           fill
           loading="lazy"
-          className={`${objectPosition} scale-[1.01]`}
+          className={objectPosition}
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(44,58,53,0.72)_0%,rgba(44,58,53,0.45)_36%,rgba(44,58,53,0.18)_62%,rgba(44,58,53,0.06)_100%)]" />

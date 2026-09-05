@@ -221,7 +221,7 @@ function TreatmentCtaBand({
       primaryLabel="Get started"
       secondaryLabel="How it works"
       secondaryHref="/how-it-works"
-      objectPosition="object-cover object-[62%_center]"
+      objectPosition="object-cover object-[58%_top]"
     />
   );
 }
