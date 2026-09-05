@@ -22,6 +22,7 @@ const ORBIT_SLIDES: OrbitSlide[] = [
   { id: "logo", kind: "logo" },
   { id: "couple", kind: "lifestyle", src: "/images/orbit/life-couple.png", alt: "" },
   { id: "care-w", kind: "lifestyle", src: "/images/orbit/life-care-woman.jpg", alt: "" },
+  { id: "why", kind: "lifestyle", src: "/images/orbit/life-why.jpg", alt: "" },
   { id: "care-m", kind: "lifestyle", src: "/images/orbit/life-care-man.jpg", alt: "" },
 ];
 
