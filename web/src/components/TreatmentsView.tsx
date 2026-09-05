@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { faqItems } from "@/lib/content";
 import { media } from "@/lib/media";
 import { TreatmentsExplore } from "./TreatmentsExplore";
 import { CtaBand } from "./CtaBand";
@@ -10,66 +11,6 @@ import type { ExploreTone } from "@/lib/treatmentsExplore";
 const IMG_PRODUCT = "/images/product-glp1-v2.png";
 const IMG_VIAL_A = "/images/icon-vial-a-v2.png";
 const IMG_VIAL_B = "/images/icon-vial-b-v2.png";
-
-/* ─────────────────────────────────────────────
-   DATA
-───────────────────────────────────────────── */
-
-type FaqItem = { q: string; a: string };
-
-const SEMA_FAQS: FaqItem[] = [
-  {
-    q: "What is the Semaglutide Program at Novimid?",
-    a: "A clinician-guided weight-management program using semaglutide, discussed only after clinical eligibility review. Novimid is a technology platform that connects eligible patients with independent U.S.-licensed clinicians. Completing intake does not guarantee a prescription.",
-  },
-  {
-    q: "What's the difference between Semaglutide and Tirzepatide?",
-    a: "Both may be considered for weight management when clinically appropriate. A licensed clinician reviews your history and goals to determine what, if anything, may be appropriate for you.",
-  },
-  {
-    q: "Who may be considered for Semaglutide?",
-    a: "Semaglutide may be considered for adults who meet clinical criteria after licensed-provider review. Treatment is not right for everyone. Eligibility is determined by a licensed clinician — not by purchasing a program.",
-  },
-  {
-    q: "How does the process work?",
-    a: "After checkout, you complete a secure medical intake and identity verification. A licensed clinician reviews your information. If treatment is prescribed, medication is fulfilled through a licensed pharmacy partner. Purchasing a program does not guarantee a prescription.",
-  },
-  {
-    q: "What should I know about side effects?",
-    a: "Side effects vary by person and should be discussed with a licensed clinician. Common effects may include nausea, constipation, diarrhea, appetite changes, or digestive discomfort. Seek urgent or emergency care for severe or sudden symptoms.",
-  },
-  {
-    q: "Are compounded medications FDA-approved?",
-    a: "No. Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality before marketing.",
-  },
-];
-
-const TIRZ_FAQS: FaqItem[] = [
-  {
-    q: "What is the Tirzepatide Program at Novimid?",
-    a: "A clinician-guided weight-management program using tirzepatide, with licensed-provider review. Novimid is a technology platform that connects eligible patients with independent U.S.-licensed clinicians. Completing intake does not guarantee a prescription.",
-  },
-  {
-    q: "What's the difference between Semaglutide and Tirzepatide?",
-    a: "Both may be considered for weight management when clinically appropriate. A licensed clinician reviews your history and goals to determine what, if anything, may be appropriate for you.",
-  },
-  {
-    q: "Who may be considered for Tirzepatide?",
-    a: "Tirzepatide may be considered for adults who meet clinical criteria after licensed-provider review. Treatment is not right for everyone. Eligibility is determined by a licensed clinician — not by purchasing a program.",
-  },
-  {
-    q: "How does the process work?",
-    a: "After checkout, you complete a secure medical intake and identity verification. A licensed clinician reviews your information. If treatment is prescribed, medication is fulfilled through a licensed pharmacy partner. Purchasing a program does not guarantee a prescription.",
-  },
-  {
-    q: "What should I know about side effects?",
-    a: "Side effects vary by person and should be discussed with a licensed clinician. Common effects may include nausea, constipation, diarrhea, appetite changes, or digestive discomfort. Seek urgent or emergency care for severe or sudden symptoms.",
-  },
-  {
-    q: "Are compounded medications FDA-approved?",
-    a: "No. Compounded medications are prepared for individual patients pursuant to a valid prescription through licensed U.S. pharmacies when clinically indicated. They are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality before marketing.",
-  },
-];
 
 /* ─────────────────────────────────────────────
    ICON SVGs (inline)
@@ -512,13 +453,11 @@ function RetroExpect({ data, modifier }: { data: typeof SEMA_EXPECT; modifier?: 
 ───────────────────────────────────────────── */
 
 function RetroKnowall({
-  faqs,
   vialImg,
   vialAlt,
   ctaLink,
   modifier,
 }: {
-  faqs: FaqItem[];
   vialImg: string;
   vialAlt: string;
   ctaLink: string;
@@ -530,16 +469,16 @@ function RetroKnowall({
       <div className="tx-knowall__inner">
         <div className="tx-knowall__left">
           <h2 id="tx-knowall-heading" className="tx-knowall__heading">
-            Questions before you begin clinical intake.
+            Frequently asked questions
           </h2>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="tx-knowall__vial" src={vialImg} alt={vialAlt} loading="lazy" decoding="async" />
         </div>
         <div className="tx-knowall__right">
           <ul className="tx-knowall__list" role="list">
-            {faqs.map((item, i) => (
+            {faqItems.map((item, i) => (
               <li
-                key={i}
+                key={item.q}
                 className="tx-knowall__item"
                 data-open={open === i}
               >
@@ -583,7 +522,6 @@ function SemaStack() {
       <RetroClinical data={SEMA_CLINICAL} />
       <RetroExpect data={SEMA_EXPECT} />
       <RetroKnowall
-        faqs={SEMA_FAQS}
         vialImg={IMG_PRODUCT}
         vialAlt="Illustrative Semaglutide program product photo"
         ctaLink="/start?treatment=semaglutide"
@@ -600,7 +538,6 @@ function TirzStack() {
       <RetroClinical data={TIRZ_CLINICAL} />
       <RetroExpect data={TIRZ_EXPECT} />
       <RetroKnowall
-        faqs={TIRZ_FAQS}
         vialImg={IMG_PRODUCT}
         vialAlt="Illustrative Tirzepatide program product photo"
         ctaLink="/start?treatment=tirzepatide"
