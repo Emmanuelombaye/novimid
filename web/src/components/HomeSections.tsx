@@ -16,6 +16,15 @@ export function HomeSections() {
 
       <ClinicalProcess />
 
+      <CtaBand
+        image={media.ctaPortrait}
+        headline="Care that stays"
+        headlineLine2="clinical."
+        primaryLabel="Get started"
+        secondaryLabel="Is this right for me?"
+        objectPosition="object-cover object-[68%_center]"
+      />
+
       <SpecialistsGrid />
 
       <section className="bg-white py-12 sm:py-16">
